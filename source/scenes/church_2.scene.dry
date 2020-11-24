@@ -1,0 +1,125 @@
+title: Bible Study
+subtitle: Teacher Wang
+view-if: church = 1 and week = 4
+on-arrival: church += 1; aubrey += 1
+tags: weekend
+
+In Chinese they call him *Wang Laoshi*, or Teacher Wang. His name is James Wang, and he is the unofficial leader of this bible study group. He's older than most of this group, with gray hair and children already grown. He says the *daogao*, or prayers, with his eyes closed tight, hands held together. When he speaks, in his soft and breathy Mandarin, his bushy eyebrows move, giving him a wise appearance.
+
+"今天，我们感谢主... *Today, we give thanks to the Lord...*"
+
+- @listen: Listen and wait.
+
+@listen
+
+Wang *Laoshi* gives thanks for the meal, for everyone being able to come together here in the Gao family's house. He says that amidst the troubles of the modern world, all the corruption and sickness, the church and the community are sanctuaries of faith. He prays for the well-being of everyone here, for everyone to be healthy and prosperous, for their parents to be well, for their children to be obedient.
+
+His American wife recently left him for another woman. It's become the gossip topic of the month in this little community. You've tried to tune it out.
+
+After the group separates, you follow the line for the potluck. Then you and Aubrey end up in the basement again. No Spencer this time; as a senior he's busy with college apps.
+
+- @aubrey: Talk to her?
+- @ignore: Ignore her?
+
+@aubrey
+on-arrival: aubrey_interact += 1
+
+What are you going to say, though? You sit next to her, and hope that she talks to you first. Why does this always happen.
+
+- @homework: Ask her about homework.
+- @wang: Ask her about Wang Laoshi.
+
+
+@homework
+go-to: aubrey_start
+
+"So, uh, how's the chem homework?"
+
+"I just finished before coming here. It's really not that bad."
+
+"Oh. Uh, thanks."
+
+"Yeah. If you have any questions just ask me."
+
+"Thanks."
+
+You go back to eating silently. The silence lasts for a few minutes, until Aubrey starts talking to you again.
+
+@wang
+go-to: aubrey_start
+
+Wait, why? Why would you ask her about that? What would you say? 'What do you think of Wang Laoshi's ex-wife?' And what would be the point of that exactly? Are you hoping to learn something from her, as a probe into her psyche/sexuality by her reaction to...
+
+@ignore
+go-to: aubrey_start
+
+You don't have anything to say to Aubrey, so you don't say anything. Of course you'd only be lying to yourself if you thought that this is companionable silence rather than an awkward gap or something like that.
+
+Aubrey looks at you and speaks first. 
+
+@aubrey_start
+
+"So, what do you think of Wang Laoshi's situation? Did you hear about his wife?" 
+
+Oh God.
+
+- @um: Um......
+- @okay: No you never heard.
+
+@um
+
+You close your eyes. Fall backwards on the couch in a vaguely dramatic pose.
+
+"Hey, are you alright?", Aubrey asks.
+
+"Yeah. I mean no. Maybe."
+
+"Are you sure?"
+
+You open your eyes again. Aubrey is looking over you. Inexplicably your face starts to feel hot. You close your eyes again. 
+
+Well, maybe that worked.
+
+- @say_nothing: Finish eating.
+
+@okay
+
+"No, I've never heard," you lie. "What happened?"
+
+"His wife left him for another woman. Like, really? They've been married for twenty years. How do these things just happen?"
+
+- @say_something: Say something.
+- @say_nothing: Don't say anything.
+
+@say_something
+
+"Um..." You want to say something. But what? What are you supposed to say? What is the intersection of the things you want to say and the set of things that would not alienate Aubrey? You imagine what Wang Laoshi's wife feels right now. What's her new wife like? What was her old relationship with her husband? Did she love him all these years, or just stay out of obligation? Does she identify as lesbian, bisexual, something else? And how could you even begin to know? Could you contact her? Do you know how?
+
+"Oh, um, that's interesting," you say instead.
+
+"Yeah. It's weird," Aubrey says. "And I feel really bad for Wang Laoshi. I can't imagine how he feels right now."
+
+- @continue_eating: As quickly as it began, your conversation with Aubrey died.
+
+
+@say_nothing
+
+You go back to eating. The food has gone cold. Aubrey must have sensed that you ignored her. Is she hurt? What have you just implied by ignoring her question? Are you implying that you don't care about her opinions, or that you dislike her somehow? Perhaps you should have just said some boring platitudes? Is it too late to make up for it?
+
+"Sorry," you say.
+
+"For what?", Aubrey says with a chuckle.
+
+"Oh. Um, never mind."
+
+- @continue_eating: Soon you're done eating.
+
+
+@continue_eating
+
+After you finish eating, it's time to start working on your homework. Of course Aubrey is way ahead of you on this front; she's almost done with her homework for Monday, and you've barely started.
+
+There's a problem set in calc, plus some readings for World and Lit, and some vocab in Spanish. It feels as if you're never going to get it all done, but you will. Of course you will.
+
+You work on homework until mom sends your brother to tell you that they're going home. Aubrey smiles at you as she waves you goodbye. You try to smile as you wave back.
+

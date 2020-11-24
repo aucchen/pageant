@@ -1,0 +1,196 @@
+title: Bible Study
+subtitle: Saturday evening
+view-if: church = 0 and week < 3
+on-arrival: church += 1; aubrey += 1; aubrey_interact = 0
+tags: weekend
+
+The bible study meetings happen every Saturday evening. More than any theological relevance, they're gatherings of the local Chinese community, or at least your small slice of it. It takes place at a different house each week (though never yours, since your apartment is way too small). This week it's at the house of a vague acquaintance.
+
+- @acq: That acquaintance...
+
+@acq
+
+That acquaintance is named Aubrey Gao. She's a competitor in the sense that she's demographically similar to you and also aiming to get into the same universities. Everyone knows that the top universities have a fixed number of slots for Chinese girls from Massachussetts who are interested in science. And she's better than you in every way - GPA, test scores, ECs, and so on, with the same course load. Your parents make sure you know that.
+
+- @love: And worst of all, you used to be in love with her.
+
+@love
+
+She was probably your first crush, before you knew what a crush was, before you even knew you "liked girls". You've known her since you first moved here, right before middle school. She goes to the same school, and her dad was your dad's coworker back when he had a job, so naturally you became playmates. And you were sort of obsessed with her. You always wanted to hang out with her, and felt strange when you saw her with her other friends. But of course it never consciously occurred that...
+
+- @stop: The car stops.
+
+@stop
+
+You get off, helping mom carry a pot of soup. She presses the doorbell. Out comes Aubrey's mom to take the pot from your hands. *"进来，进来！Come in, come in!"*
+
+The "children" are in the basement, "children" referring to anyone young enough to prefer English to Chinese. You and your younger brother Kevin go downstairs.
+
+Downstairs you find Spencer Zhang and Aubrey Gao. Spencer also goes to your high school, but he's a senior. They're watching over the younger kids, who are watching some Japanese cartoon. Your brother joins them.
+
+"Hi, [+ first_name : +]." Aubrey waves to you.
+
+- @look: Stare at Aubrey.
+- @hi: "Um, hi."
+
+@look
+go-to: hi_2
+
+Aubrey sits on the couch, wearing a green sweater and light blue jeans, her long black hair brushed to one side. You stare into her eyes for what seem like an eternity.
+
+"Staring at people usually makes them uncomfortable, [+ first_name : +]."
+
+"Oh. Sorry," and you look away.
+
+@hi
+go-to: hi_2
+
+"Um, hi," you manage to reply.
+
+@hi_2
+
+You stand awkwardly next to Spencer and Aubrey. Spencer laughs at something ridiculous going on on the screen. You can't pay attention. You glance at Aubrey, and quickly look away. There's no good reason why you should be still attracted to her in any way, yet of course you still are. Does she know anything? Hopefully not.
+
+- @home: You want to go home.
+- @stay: Maybe staying here with Aubrey isn't too bad.
+
+@home
+
+Right now there's nothing you would like more than to go home. Back where you can be alone and free and not have to face the eyes of all these people. You probably have homework to do; that always works as an excuse.
+
+But then Aubrey looks at you, and you melt away. You can't deal with this.
+
+"Hey, do you want to sit down?", she says.
+
+You sit next to her. Why is she leaning against you. The probability that this *means* anything is approximately zero. But it's a pleasant feeling. Sort of. Maybe. Insofar that any feelings are pleasant.
+
+- @endure: Endure.
+
+@endure
+
+The bible study meeting proceeds as usual: the adults talk loudly in Chinese, while you and the children downstairs watch anime or whatever Spencer decides to show. All the while you sit next to Aubrey, not really saying anything, just... being there, like you always do.
+
+- @dinner: The call for dinner comes up soon.
+
+@dinner
+
+The dinner is a potluck with contributions from all the families. Wang *laoshi* says a brief prayer. The children get their food first, then the young people, which means the three of you. An array of plates and bowls lie on the table: steamed rice, *bing*, various forms of stir-fries and fatty meats, and your mom's famous lamb noodle soup. You take a paper plate and plastic fork and pile on the food.
+
+*"Do you want to eat with us?"*, mom says. *"Didi eat with us too."*
+
+- @family: Eat with your family.
+- @downstairs: Eat downstairs with Aubrey and Spencer.
+
+@family
+on-arrival: family_interact += 1
+
+You join your mom and Kevin in the living room, while your dad eats with the men in the kitchen.
+
+The moms eat dinner on the living room couches, with the youngest children sitting around the coffee table in the middle of the room. You listen to the adults talk about housing prices, their kids' extracurriculars, whatever. Aubrey (Liyun is her Chinese name) is doing well in school, apparently. Your mom wishes you could be more like her, make friends and do lots of ECs. But you're doing ECs already, you say. Well, Aubrey's doing all those and then some.
+
+- @bible_study: Afterwards, you're roped into bible study. 
+
+@bible_study
+
+The adults sit in a circle, their Chinese bibles open on their laps. The leader, Wang *laoshi*, invites everyone to read, one passage at a time around the circle. You sit next to mom, as she follows along with full attention. Kevin's already gone downstairs.
+
+When it's your turn, mom reads for you. She points to the characters with her fingers, leading you to follow along, but you're not even sure which book they're reading. Even though you were in Chinese school, the Bible is in traditional while all the Chinese you were taught was in simplified, not to mention the entirely different formal lexicon. You understand a few words here and there, but any Chinese out of everyday speech sounds strange.
+
+- @bible_study_2: The reading continues around the room.
+
+@bible_study_2
+
+It seems like forever before the meeting adjurns. The adults go back to chatting and gossiping. Some of them start to filter out of the house. Mom calls your brother up from downstairs, and you to pick up the empty pot. Her soup is always welcomed at these meetings. Dad comes back from a porchside conversation/cigarette-smoking session with some of the other dads. Mom glares at him. She coughs at the smell of smoke. Dad sighs. Aubrey comes back upstairs and waves at you as she leaves. You wave back. She smiles at you. You smile back, or at least try to.
+
+Soon your family decides to leave. The four of you get back into the 1999 Toyota Camry and drive home.
+
+
+@downstairs
+
+*"I'll eat downstairs,"* you say, and head back to the basement.
+
+You, Aubrey, and Spencer eat in silence, while some of the kids play around. Spencer looks at his cell phone. All the while you're next to Aubrey, but you don't say much. As usual. But...
+
+- @talk: Talk to Aubrey?
+- @wait: Just eat? And wait?
+
+@talk
+on-arrival: aubrey_interact += 1
+
+Talk about what?
+
+- @school: Talk about school stuff?
+- @scioly: Talk about science olympiad?
+- @pageant: Talk about the pageant?
+- @wait: Never mind.
+
+
+@school
+go-to: karen_talk
+
+What would you even talk about? Well, you have three classes together, and you've always been secretly competing with her over grades (you've usually lost). Sometimes you ask her for homework help. Sometimes she asks you. In fact, perhaps the majority of your conversations in the past have been about homework. Or something like that?
+
+
+@scioly
+view-if: scioly > 0
+go-to: karen_talk
+
+What would you even talk about? You're doing Protein Modeling with her. That's a sensible choice; both Aubrey and you are biology-focused people. She got the highest grade in the class in AP Bio last year, and you got... somewhere in the top five maybe? Anyway, that's water under the bridge. As for the science olympiad event itself, would she really want to talk about it at a time like this? 
+
+
+@pageant
+go-to: karen_talk
+
+Oh God. No. It's too embarrassing. How could you just talk about something like that? And what would you say? Hey Aubrey, I'm doing a beauty pageant? Could you just say something like that? And what would she say to that? Well, she could probably help you since she probably knows more about makeup and fashion or whatever than you but...
+
+@karen_talk
+
+"Hey [+ first_name : +], are you thinking about something?", Aubrey asks you out of the blue.
+
+- @huh: "Huh?"
+
+@huh
+
+"Huh? Oh. Why?"
+
+"You look like you're smiling to yourself."
+
+"Really?"
+
+"Yeah. It's really noticeable."
+
+- @relax: Try to relax.
+
+@relax
+
+"Oh. Um." You try to shift your facial muscles, to look neutral. "Sorry."
+
+"It's fine. But I'm sort of curious now." She laughs, and gently pats your arm. Oh God why.
+
+"It's nothing. I promise."
+
+Aubrey laughs again. You imagine some awkwardness in the way she pulls away from you, as she carries her empty dish upstairs. Great. Your food is cold, but you finish it anyway. It tastes as usual. The kids are engrossed by Spencer as he tells them about some cartoon's backstory. Your brother Kevin has come downstairs, to join the other kids. Bible study must be boring.
+
+- @no_talk: And so on...
+
+@no_talk
+
+It's almost 10 when your mom calls you to leave. By that time, you're thinking about all the homework that still has to be done, and how you messed everything up once more.
+
+@wait
+go-to: karen_talk
+
+You eat and sit in silence, not having any words to say. Except you can't help but glance at Aubrey sometimes. Sometimes you imagine the future that the two of you have together. Obviously she's straight, but whatever, the two of you will realize your feelings for each other and start dating and maybe even get married and realize all your dreams and...
+
+@stay
+on-arrival: aubrey_interact += 1
+
+It's awkward being here (as if anything's not), but being around Aubrey doesn't feel so bad. She's a nice person, unlike you. Why is she even here, though? Doesn't she have homework to do? She never seems busy, but she must have the same amound of homework as you, plus ECs and stuff so... maybe you should ask her?
+
+"Hey, do you want to sit down?", she says.
+
+"Oh. Um, okay."
+
+You sit next to her. Why is she leaning against you. The probability that this *means* anything is approximately zero. But it's a pleasant feeling. Sort of. Maybe.
+
+- @endure: Endure.

@@ -1,0 +1,162 @@
+title: Shopping with Mom
+subtitle: An option of last resort
+new-page: yes
+view-if: (week >= 4 and week <= 10 and week != 6) and shopping = 0
+on-arrival: shopping = 1; pageant_appearance += 2
+tags: weekend
+
+Historically, going shopping with mom has been one of your least favorite activities. This is true presently as well. However, this excursion is a necessary evil; you have a minimal number of clothing items that are fitting for the pageant. you need at least three and possibly four outfits: a dress for the interview (it has to be a dress), an evening gown, and athletic wear (no swimsuit thank God), plus something for the talent show (thankfully you already have a qipao for that). Unfortunately you own a negligible number of dresses, none of them appropriate for any of these situations.
+
+*"How many girls don't like to go shopping?"*, mom says as you enter the department store.
+
+- @at_least_one: At least one.
+
+@at_least_one
+
+*"At least one"*, you reply. Mom makes a tsk tsk sound.
+
+You enter the women's formal wear section. The first step is apparently to pick an interview dress, which is going to be the main dress that you'll wear throughout the day.
+
+*"What do you like?"*, mom asks, and it appears to be an actual question. There is a plethora of options, none of which are particularly appealing, at least for now. However, you have no choice but to pick one, so you just look through the cheapest ones.
+
+- @red_dress: A red lace dress with ruffles at the waist.
+- @purple_dress: A purple strapless dress with a black stripe.
+- @green_dress: A shimmery pleated green dress.
+
+@red_dress
+
+This is by far the cheapest, at only $15. It's pretty, but it feels too short for comfort, like it's revealing too much of your legs. As you put it on, it feels kind of uncomfortable, the fabric chafing against your skin.
+
+But maybe that's not so bad...
+
+- @buy_red_dress: Buy it.
+- @pick_dress: Look at others.
+
+@green_dress
+
+This dress costs $25. It looks kind of boring, without any real distinguishing features, but perhaps that's what fits you best, as a boring person yourself. It fits okay, only slightly uncomfortable, coming down just above the knees.
+
+- @buy_green_dress: Buy it.
+- @pick_dress: Look at others.
+
+
+@purple_dress
+
+This dress is the most expensive of the three, at $40, but mom said it was fine. You kind of like the colors; it looks like something a cartoon character would wear. As you try it on, it feels nice but leaves the top of your body feeling exposed. You would wear it with a scarf probably, if you weren't at the pageant.
+
+- @buy_purple_dress: Buy it.
+- @pick_dress: Look at others.
+
+
+@pick_dress
+
+Mom is insisting that you pick one out.
+
+Some of the dresses that caught your eye are...
+
+- @red_dress: A red lace dress with ruffles at the waist.
+- @purple_dress: A purple strapless dress with a black stripe.
+- @green_dress: A shimmery pleated green dress.
+
+@buy_red_dress
+on-arrival: red_dress = 1
+go-to: shoes
+
+Okay, you put the red dress in your shopping bag.
+
+@buy_green_dress
+on-arrival: green_dress = 1
+go-to: shoes
+
+Okay, you put the green dress in your shopping bag.
+
+@buy_purple_dress
+on-arrival: purple_dress = 1
+go-to: shoes
+
+Okay, you put the purple dress in your shopping bag.
+
+@shoes
+
+Next is shoes. Unfortunately the pageant de facto necessitates high-heel shoes, according to all the websites you've seen. However, you could try to get away with wearing flats, in which case you needn't buy anything here at all. But then you'll run the risk of being exposed as someone who is clearly not fit for the pageant.
+
+*"I should have taught you how to wear high heel shoes,"* mom says. You instantly think of how footbinding was often performed by mothers, but resist making that analogy. So you don't say anything at all.
+
+- @buy_high_heels: Buy high heels.
+- @dont_buy_high_heels: Don't buy high heels.
+
+@buy_high_heels
+on-arrival: has_high_heels = 1
+go-to: ball_gown
+
+You take the cheapest pair that fit you and look kind of fancy, and place it in your shopping bag. *"How fast,"* mom says.
+
+@dont_buy_high_heels
+go-to: ball_gown
+
+You have some fancy-looking flats at home. They'll be fine. Right?
+
+*"Do you really not want high-heel shoes? After the* pageant *you might still need them."*
+
+*"Really."*
+
+@ball_gown
+
+Next, you need to find a ball gown. This is kind of the centerpiece of the pageant, so it's kind of a big deal.
+
+*"Could we borrow one?"*, you ask.
+
+Mom looks contemplative for a moment. *"Fine. I'll ask my friends. Some of them will have one for sure."*
+
+You meant borrowing one from a store, like the ones that rent prom dresses or whatever. But that works too, and is way cheaper.
+
+Now all of the big clothing items are out of the way...
+
+- @makeup: Next is makeup.
+- @makeup_emily: Next is makeup.
+
+@makeup
+view-if: emily <= 3
+
+According to mom, you also need some makeup. The emotion that such a suggestion evokes in you is one of dismay.
+
+*"I really should have taught you when you were younger,"* she says. *"I'm always regretful I never taught you."*
+
+*"Can we just buy something quickly?"*
+
+*"We have to buy something high quality. In an event like this you can't have the simplest things."*
+
+Whatever. She's going to be shocked at the sticker price and just end up buying the cheapest things anyway.
+
+- @makeup_2: And that's what happens.
+
+@makeup_2
+go-to: jewelry
+
+So there's primer, foundation, concealer (actually a three-in-one for these), blush, eyeshadow, eyeliner, powder, mascara, lipstick, probably some other stuff you forgot. You'll use most of this stuff at most a few times before the expiration date. In total, selecting basically the cheapest items, it comes out to almost $100. You almost beg mom to leave some of them behind, but she insists that you can share, and she also needs makeup for various events. Like what? You don't really know.
+
+
+@makeup_emily
+view-if: emily > 3
+go-to: jewelry
+
+According to mom, you also need some makeup. Fortunately, Emily Chen has already given you some of hers. You tell mom that you already have some from a friend. She asks who it is; you say it's someone she doesn't know. She doesn't push on that.
+
+
+@jewelry
+
+Finally, there's jewelry. You have a few bracelets and necklaces that have accumulated as gifts over the years, like that jade pendant with an ox carving (your zodiac animal).
+
+*"Can I just wear that?"*, you ask.
+
+Mom waves her hand. *"With your dress, it doesn't match. You need western-style jewelry."*
+
+She picks out a fake diamond necklace, some fake pearl earrings (even though your ear piercings have already closed), and some silver bracelets.
+
+- @leave: Finally, the ordeal is over.
+
+@leave
+
+Mom and you leave several bags heavier and over $200 poorer.
+
+*"We have to hide, don't let dad see it,"*, she says as you near home. You tentatively agree. And in the end he doesn't.

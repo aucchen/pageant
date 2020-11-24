@@ -1,0 +1,54 @@
+title: Research
+subtitle: Lab meeting
+new-page: yes 
+view-if: week >= 1 and week < 10 and week_progress < 3 and research = 1 and weekly_research = 0 and stress < 15
+on-arrival: week_progress += 1; research += 1; stress += 1; weekly_research = 1 
+tags: top, research
+
+It's time for your first lab meeting.
+
+Fortunately you are just listening in, with no expectations. Today is what they call a "journal club", where a couple of the students present different papers that have been published in the field recently.
+
+To be honest, you hadn't done much since your last meeting except create your computer account. Which was hard enough to be honest. Now, Professor Chen wants you to listen in on the lab meeting "in order to understand what our work is really about".
+
+- @listen: Listen to the presentations.
+
+
+@listen
+
+Of course it turns out to be basically incomprehensible. Half of the words you don't understand, and the half you do are used in ways you've never heard before. Stella had sent links to the papers as well as some background articles that she said were "helpful", but it's not like any of that helped. You had tried reading the papers, but you stopped after even the abstracts were too dense for you.
+
+"So? How was it?", Stella asks you after the lab meeting, smiling as if nothing is wrong.
+
+- @fine: (partial lie) It was fine.
+- @notfine: It was not fine at all.
+
+@fine
+
+"It was fine. I think I understood, um, some of it? And yeah..."
+
+Stella smiles at you and says, "Don't worry too much. It'll take some time. Do you want to talk about some things now?"
+
+- @ok: Sure.
+
+@notfine
+
+"Um, I don't know..."
+
+"It's okay!", Stella says, smiling. "Science is hard. This is something you've never done before. Do you want to talk about the meeting now?"
+
+- @ok: Sure.
+
+@ok
+
+"So, what don't you understand?"
+
+"Uh, everything?"
+
+Stella laughs. "Well, let's start from the beginning. You've printed out the papers, right?"
+
+She sits next to you and goes over the papers, word by word, starting from the abstract. And it helps, you think. At the end you're still confused, but not quite as confused as before.
+
+"Okay, we can start writing code next week. Make sure to read all the Python docs."
+
+Soon it's 6PM. It's time to go home. Stella stays in the lab, saying that she still has work to do. You leave holding a new sense of possibility.

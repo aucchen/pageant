@@ -1,0 +1,47 @@
+title: Science Olympiad
+subtitle: After school
+new-page: yes 
+view-if: week >= 1 and week < 6 and week_progress < 3 and scioly = 0 and weekly_scioly = 0 and stress < 15 and class_visited = 1
+on-arrival: week_progress += 1; scioly += 1; stress += 1; weekly_scioly = 1 
+tags: top, scioly
+
+After the last period you head to the Science Olympiad club. It's a national competition where students work in teams on a bunch of different science events. To be honest your school usually doesn't do too well at these things, but you're trying to change that, right? Last year your school placed fourth at states; hopefully this year will turn out better.
+
+Not to mention, this is the most significant extracurricular that you partake in, which will become the cornerstone of the EC section of your college applications next year. And you enjoy it well enough, the thrill of victory, the agony of defeat, the camraderie of your squad, and so on. Or something like that.
+
+"[+ first_name : +]! Good of you to finally show up!" The captain, smiling and overly enthusiastic as usual, shouts as he walks up to you. "We have the schedule for the regional competition. How do you feel about doing four events this time?"
+
+- @okay: It's fine.
+- @maybe: Um...
+- @stare_captain: Stare at the captain.
+
+@okay
+go-to: alright
+
+"Sure, that's fine."
+
+@maybe
+go-to: alright
+
+"Um..."
+
+@stare_captain
+go-to: alright
+
+Why would you stare at him? Right, because he's staring at you. He's slightly shorter than you, skinny, half-Korean/half-Iranian, with a perpetually expressive face, and yeah.
+
+"So, can you do it?", he asks again.
+
+"Um, sure."
+
+@alright
+
+"Alright, you can do it? Great!" He gives you a thumbs up. "Make sure to meet your teammates and attend the weekly meeting. I know you're busy but they're very important! Make sure to come!"
+
+- @what: What does he know.
+
+@what
+
+Your four events are Cell Biology, Fossils, Protein Modeling, and Disease Detectives. You have partners for each of these events: Krishna Rao for Cell Biology, the captain for Disease Detectives, David Nguyen for Fossils, and Aubrey Gao for Protein Modeling.
+
+The meeting is beginning to wrap up. There's nothing more you have to do today, but you're only getting started..

@@ -1,0 +1,292 @@
+title: Emily
+subtitle: Inevitably awkward moments
+new-page: yes
+view-if: emily = 7 and week_progress < 3 and stress < 15 and (week < 10 or week = 11)
+on-arrival: week_progress += 1; stress += 1; emily += 1; pageant_interview += 1; weekly_emily = 1
+max-visits: 1
+tags: top, social
+
+"Do you think we'd be friends if I weren't at least adequate at performing femininity?"
+
+"What?"
+
+Emily is apparently in a logic-bomb-dropping mood today. Despite your interjection, which was more for stalling than anything else, you understood her the first time and are now trying to process it in your head.
+
+"So like, sorry for the awkward question," Emily begins, "but like, I expend so much fucking effort into, like, my physical presentation, and like..." She pauses for a bit, glancing around the Commons. She fidgets, as if searching for something to say.
+
+- @wait_1: Let her continue.
+- @real_question: Let her continue.
+
+
+@wait_1
+view-if: emily_date = 0
+
+"So like, you know how trans women's social acceptance is contingent on how well they perform femininity?"
+
+"Um..."
+
+"Would you still want to interact me if I were a lot more non-passing? If I looked more like a boy than I already do?"
+
+"Um..." You have no idea how to parse her question.
+
+- @idk_1: "I don't know?"
+
+@idk_1
+
+"Um, I don't know?"
+
+Emily sighs. "Sorry I kind of unloaded there. Forget about it."
+
+Her voice trails away. You don't know how to fill the silence. Or...
+
+- @confess_emily: Confess your (potential?) feelings for Emily.
+- @silence: Revel in the silence.
+
+@confess_emily
+
+What. What would you even say?
+
+- @confess_emily_2: You've thought about it...
+- @silence: On second thought...
+
+@confess_emily_2
+
+You run a dozen Monte Carlo simulations of this situation in your head. In fact you've already run them, over and over again in the depths of night when you had nothing better to do but ruminate. There are copious possibilities for words to say, phrases to use, to best express the multitudes of feelings that you presumably hold.
+
+But of course you will use the most generic and awkward phrase. That's just the kind of person you are.
+
+- @like_you: "Um, I like you."
+
+@like_you
+
+"Um, I, um, I kind of like you, or something like that."
+
+Did you say that out loud?
+
+- @not_say: No.
+- @say_out_loud: Yes.
+- @inaudible: Yes, but it was inaudible.
+
+@say_out_loud
+
+"Um, hey, I, um, I really kind of like you. Yeah."
+
+Emily turns and catches your eye. You glance away.
+
+- @ohgod: Oh God...
+
+@ohgod
+
+Emily laughs all of a sudden. "God, this is right where I was about to say something about basically any positive social interaction I have is contingent on my success in the optimization problem that is womanhood. And you just made my point for me." 
+
+Oh God oh god oh god oh god oh god....
+
+- @fucked_up: You completely fucked this up.
+
+@fucked_up
+
+You fucked this up horribly by "asking her out" at an extremely inopportune time and thus completely breaking any mood that was about to happen and thus dooming your friendship and potentially other kinds of relationships with Emily forever. Yeah. Also your line was terrible. You certainly are accomplished at the art of completely fucking up every interpersonal moment.
+
+"Hey, are you crying? It's fine. So, like, are you, uh, asking me out or something?"
+
+Oh God you're crying. "Um, I mean, yeah, I guess. Sorry."
+
+"It's okay. I'm not going to say no."
+
+- @oh_really: Really...?
+
+@oh_really
+
+"Oh. Really?" Don't get your hopes up, don't get your hopes up...
+
+"It'll be a long process. Can we hold off until... at the very least after graduating from high school?" Her voice is barely above a whisper. "I mean, ... It's that I want to be independent first, like, from my parents. And I want to be able to be more, like, actually out. And able to do more physical transitioning than now. Is that coherent?"
+
+- @yes_date: Yeah...
+
+@yes_date
+on-arrival: emily_date = 1
+
+"Yeah..."
+
+Emily takes off her glasses and rubs her eyes. "God, I need to stop smearing my eyeliner. Anyway, so my answer is yes. In one and a half years, if we're still alive, and the world still exists, I'll be your, um, official girlfriend. If that's what you still want at that time. I'm not going to date anyone else until at least then. Probably forever. Think of this as a contract if you would like."
+
+You smile, or make some facial gestures towards that effect. Emily reciprocates, or something like that.
+
+- @hug: Hug?
+
+@hug
+
+"Um, would physical contact be appropriate in this situation?"
+
+"Of course."
+
+The two of you make some sort of awkward but affectionate physical contact. It's a good feeling while it lasts.
+
+Besides, you have a sort-of girlfriend now. You can't help but smile to yourself on the walk home.
+
+- @wipe_away: Just make sure to hide it.
+
+@wipe_away
+
+At home, you make a conscious effort to avoid presenting any gesture of what has transpired. It seems to work. No one says a thing.
+
+
+
+
+@not_say
+
+Do you want to actually say that out loud?
+
+- @silence: No.
+- @say_out_loud: Yes.
+
+@inaudible
+
+She didn't seem to have heard you. Do you want to say that again?
+
+- @say_out_loud: Yes.
+- @silence: No.
+
+
+@silence
+
+You're not even sure if you *like* like Emily. Besides, there are so many complicating factors here, not least of which is the whole 'parents' issue.
+
+So you're okay with not declaring your love or doing anything ridiculous like that.
+
+Meanwhile, Emily restarts speaking. "Like, the whole pageant thing, that's kind of an encapsulation of the whole idea that womanhood is an optimization problem in which the only path to success is to reverse-engineer the desires that society places upon... sorry, am I rambling?"
+
+- @yes_rambling: "Yeah..."
+- @its_fine: "It's fine..."
+
+@yes_rambling
+go-to: okay_ramble
+
+"Yeah but... it's fine."
+
+@its_fine
+go-to: okay_ramble
+
+"No, it's fine..."
+
+@okay_ramble
+
+"Okay..." Emily stares off into the distance. It is a while before she restarts speaking.
+
+"I... sorry. Sometimes I get carried away with weird ideas and stuff."
+
+"It's fine."
+
+"Yeah... well okay."
+
+Emily doesn't seem to want to talk anymore. And to be honest, neither do you.
+
+
+
+
+
+@real_question
+view-if: emily_date = 1
+
+"So the real question is, would you still be interested in dating me if I were a boy?"
+
+More logic bombs from Emily tonight. What does she want to say? There are potential reasons that she would desire either answer but... What do you think, actually? Do you actually have an idea distinct from your interpolation of her desires for your answer?
+
+- @answer_no: No.
+- @answer_yes: (lie) Yes.
+
+
+@answer_no
+go-to: performance 
+
+"Um, probably not, I guess. Sorry."
+
+Emily sighs. "That is the correct answer, yes. That was the answer I was looking for." She glances at you, a small smile on her face. "God, I'm honestly just... kind of terrified of being seen as a boy in any context. And maybe this is irrational but, like,... it's validating in a way. That you see me, like..."
+
+Her voice trails away. You don't know how to fill the silence. But then Emily continues.
+
+
+
+@answer_yes
+
+"Um... yes? I guess?"
+
+Emily stares at you for a moment. "You're lying," she says. "And you gave the wrong answer. Did you think that would be the more socially acceptable answer? Really?"
+
+Oh no. You fucked up. You were always bad at lying. The probability that you've irreparably damaged your nascent relationship with Emily is rising exponentially and there's absolutely nothing you can do about it and...
+
+"Sorry..." you mutter.
+
+"It's fine." She sighs. "On the one hand, I'm glad that you were thinking the correct answer even if you didn't say it. On the other hand I'm kind of disappointed that you didn't understand the situation well enough to just say what you really thought. And that you would lie about it."
+
+- @yes_sorry: "Sorry..."
+
+@yes_sorry
+go-to: performance 
+
+"Oh. Sorry," you say a second time, because what else can you say?
+
+"You're not a good liar, you know." She offers a small smile. "It's fine. Don't worry about it. Our deal is still on. You know."
+
+"Oh. Uh, thanks."
+
+
+@performance
+
+"God, like, trans women's social acceptance is totally contingent on how well we perform femininity. Like, that's why you're here now, isn't it?"
+
+- @what_to_say: You have no idea what to say.
+
+@what_to_say
+
+Emily continues. "So like, being a woman might as well be an optimization problem, especially with something like the pageant itself where you're essentially trying to reverse-engineer the judges' expectations of you... and you probably don't want to hear my rants right now. Or ever."
+
+- @an_optimization_problem: Maybe conversation is also an optimization problem.
+
+@an_optimization_problem
+
+"Interpersonal interactions are also an optimization problem," you say. "Like right now. I'm trying to optimize what to say so that you, um, enjoy... um, spending time here. Or at least don't hate me forever."
+
+Emily sort of smiles.
+
+"Or nothing is," she says. "Or maybe living life as if it were an optimization problem is a highly suboptimal strategy."
+
+"Yeah, maybe, but how else are we supposed to live?"
+
+She shrugs. "I don't know how people do it. Like, how do normal people even know what to do in literally any circumstance?"
+
+"I mean, same."
+
+She almost laughs, and shakes her head.
+
+"God, we are such dorks," she says.
+
+- @optimization_yeah: Yeah...
+
+@optimization_yeah
+on-arrival: loneliness -= 1
+
+"This is why I, uh, ..." You know how to finish the sentence, but don't really have the energy to.
+
+"Like me?"
+
+"Oh my God. You can't just say things like that!"
+
+Emily laughs. She seems genuinely happy at this moment.
+
+- @and_you_are_happy: And you're happy too...?
+- @worries: But you feel... worried...?
+
+
+@and_you_are_happy
+
+And you're happy too? To be in this moment with Emily, to have one moment of something akin to companionship free from the vissicitudes of the world just for this one moment. Or something like that.
+
+For some reason you want to cry, but no tears come. It's an irrational reaction.
+
+@worries
+
+You're worried that this moment won't last, that you'll be separated by the vissicitudes of the world, that she'll change and you'll change and nothing like this moment will occur again.
+
+For some reason you want to cry, but no tears come. It's an irrational reaction.
+

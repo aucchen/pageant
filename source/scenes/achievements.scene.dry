@@ -1,0 +1,69 @@
+title: Achievements
+new-page: yes
+view-if: week = 100
+tags: epilogue
+max-visits: 1
+
+
+= Your Achievements:
+
+[? if pageant_success = 1 : Win the pageant. ?]
+
+[? if special_award = 1 : Win a consolation prize at the pageant. ?]
+
+[? if pageant_total_failure = 1 : Quit the pageant before it finishes. ?]
+
+[? if miri_date = 3 : Go on a date with Miri. ?]
+
+[? if miri_date = -1 : Miri confesses to you, but you reject her. ?]
+
+[? if miri_escape = 1 : Ruin your relationship with Miri. ?]
+
+[? if aubrey_date = 2 : Go on a date with Aubrey. ?]
+
+[? if emily_date = 1 : Confess to Emily. ?]
+
+[? if emily = 9 : Save Emily's life (maybe). ?]
+
+[? if scioly_final_scene = 1 : Become Science Olympiad co-captain. ?]
+
+[? if stories_viewed >= 1 and stories_2_viewed >= 1 : Listen to your parents' stories. ?]
+
+
+= Locked Achievements:
+
+[? if pageant_success = 0 : Win the pageant. ?]
+
+[? if special_award = 0 : Win a consolation prize at the pageant. ?]
+
+[? if pageant_total_failure = 0 : Quit the pageant before it finishes. ?]
+
+[? if miri_date < 3 : Go on a date with Miri. ?]
+
+[? if miri_date != -1 : Miri confesses to you, but you reject her. ?]
+
+[? if miri_escape != 1 : Ruin your relationship with Miri. ?]
+
+[? if aubrey_date < 2 : Go on a date with Aubrey. ?]
+
+[? if emily_date = 0 : Confess to Emily. ?]
+
+[? if emily < 9 : Save Emily's life (maybe). ?]
+
+[? if scioly_final_scene = 0 : Become Science Olympiad co-captain. ?]
+
+[? if stories_viewed = 0 or stories_2_viewed = 0 : Listen to your parents' stories. ?]
+
+- @credits_and_notes
+- @credits_debug
+- @continue
+
+@credits_debug
+title: Credits
+view-if: week = 0
+go-to: credits_and_notes
+
+@continue
+title: Back to start
+view-if: week = 0
+go-to: root

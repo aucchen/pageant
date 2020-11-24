@@ -1,0 +1,64 @@
+title: Pageant Prep
+subtitle: One last time...
+new-page: yes
+view-if: week = 11 and week_progress < 3 and pageant_prep >= 2 and stress < 15 and (pageant_talent < 10 or pageant_appearance < 10 or pageant_interview < 10 or pageant_platform < 10)
+on-arrival: pageant_prep += 1; week_progress += 1; stress += 1
+tags: top, pageant_prep
+
+It's the week before the actual pageant. You still have time to prepare, at least a few hours' worth of uninterrupted computer time, which should be enough, right? It's just like any other test, right?
+
+- @paperwork_prep: Check the last of the paperwork
+- @interview_prep: Prep for the interview
+- @appearance_prep: Focus on your appearance
+- @pageant_prep_pick_ball_gown: Pick a ball gown.
+- @pageant_prep_try_ball_gown: Try on your ball gown.
+
+
+@paperwork_prep
+view-if: paperwork_prep_seen = 0
+on-arrival: paperwork_prep_seen = 1; pageant_paperwork += 1; pageant_platform += 1; resume_completed = 1; platform_doc_completed = 1
+
+You double-check your forms, resume, platform statement, and all the rest. Eventually, it seems to be all in order, submitted online or printed.
+
+- @interview_prep: Prep for the interview
+- @appearance_prep: Focus on your appearance
+- @do_nothing: You might as well be done.
+- @pageant_prep_pick_ball_gown: Pick a ball gown.
+- @pageant_prep_try_ball_gown: Try on your ball gown.
+
+
+@interview_prep
+view-if: interview_prep_seen = 0
+on-arrival: interview_prep_seen = 1; pageant_interview += 1
+
+There are some last-minute things you could do to prepare for the interview. Read more example questions, practice talking to yourself in the mirror, watch videos of pageant interviews past...
+
+You start to despise your voice slightly less. An improvement.
+
+- @paperwork_prep: Check the last of the paperwork
+- @appearance_prep: Focus on your appearance
+- @do_nothing: You might as well be done.
+- @pageant_prep_pick_ball_gown: Pick a ball gown.
+- @pageant_prep_try_ball_gown: Try on your ball gown.
+
+
+@appearance_prep
+view-if: appearance_prep_seen = 0
+on-arrival: appearance_prep_seen = 1; pageant_appearance += 1
+
+Clothing choices, jewelry, hairstyle, makeup... God, this is all so overwhelming. Wikihow is somewhat helpful, as usual. There's no opportunity to buy clothes anymore, but you still have an opportunity to design appropriate outfits for the various pageant events, as well as learn more about how to do makeup.
+
+Hairstyle is one of the few things that you still have time to adjust. According to various websites you have type 1C hair; this means that your hair is basically straight but has bends near the ends. You could either try to straighten it, or accentuate the waviness and increase the volume. But you'll probably have to decide when the time comes, not exactly right now.
+
+And you need to practice your posture, facial expressions, body language, and things like that. You can't be doing bizarre gesticulation during the interview. You have to smile. You have to stand up straight, do that thing where you put your hands on your hips and lean backwards. So you practice in the bathroom until someone knocks on the door.
+
+- @paperwork_prep: Check the last of the paperwork
+- @interview_prep: Prep for the interview
+- @do_nothing: You might as well be done.
+- @pageant_prep_pick_ball_gown: Pick a ball gown.
+- @pageant_prep_try_ball_gown: Try on your ball gown.
+
+
+@do_nothing
+
+There's nothing else you really want to do regarding the pageant, for now. It's getting late; all you can do is wait until the fated day arrives.

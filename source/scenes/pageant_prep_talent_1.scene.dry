@@ -1,0 +1,40 @@
+title: Pageant Prep
+subtitle: Playing the erhu
+new-page: no
+view-if: week_progress < 3 and pageant_prep >= 1 and stress < 15
+on-arrival: week_progress += 1; stress += 1
+max-visits: 3
+
+[? if pageant_talent = 0 : What can you do for the talent portion? It should be something unique, but not so unique as to make the judges feel uncomfortable. You can play the *erhu*. That has to be unique, and it'll play up your "oriental" persona, if you go that route. ?]
+[? if pageant_talent > 0 : You're playing the *erhu* for the talent portion of the pageant. You should practice. ?]
+
+- @remember: Remember your lessons.
+- @regard: Look over the erhu.
+- @play: Play a simple piece.
+
+@remember
+
+You took lessons back when you still went to Chinese school, freshman year or thereabouts. Only a month after coming to Massachussetts, your parents enrolled you in Chinese classes on Saturdays (that was when your dad had his job). Erhu lessons started not long after. The teacher was an old man from Hong Kong with a long white beard, like one of those stereotypical characters from movies. He didn't speak English, and barely spoke Mandarin, so there was no chance of verbal communication. Instead, he communicated through the language of the soul.
+
+In truth he communicated by alternatively holding your hand and slapping it. Still, it worked, and now you have at least a basic level of erhu skill. 
+
+- @regard: Look over the erhu.
+- @play: Play a simple piece.
+- @away: Put it away.
+
+@regard
+
+The erhu looks the same as it always had. Two strings, a long neck, a sound box that looks like a drum. It's at least 10 years old, a gift from relatives before your family left China. Your parents always guilt-tripped you after you stopped taking lessons. How could you forget your heritage like that, they said, or something like that.
+
+- @remember: Remember your lessons.
+- @play: Play a simple piece.
+- @away: Put it away.
+
+@play
+on-arrival: pageant_talent += 1
+
+You take the instrument out of its case, and start to play a simple piece. It's been a while since you've had lessons, but muscle memory remains. The familiar melody rises through the squeaks and strains. By the time you finish, the door to your room is open, and mom and *didi* are clapping. You can't help but smile.
+
+@away
+
+You place the erhu back in its case. Maybe later.

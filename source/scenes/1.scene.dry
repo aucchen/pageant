@@ -1,0 +1,105 @@
+title: Home
+subtitle: Sunday, Week 1
+new-page: yes
+view-if: week = 0
+on-arrival: week = 1; gpa = 3.95; loneliness = 1; growth_points = 0; trauma_points = 0; first_name = "Karen"
+tags: top, pageant_prep
+
+Note: spoken dialogue is a mix of Mandarin and English. Mandarin dialogue will be in italics, like *"this"*.
+
+- @c: Continue
+
+@c
+
+It starts with a command from your mother. These sorts of things usually do.
+
+- @c2: Continue
+
+@c2
+
+It's Sunday afternoon in Massachussetts, a cool late October day that other people might call beautiful, and you're doing AP Chemistry homework in your room. You hear a knock on the door, before it opens without waiting for a response.
+
+- @c3: Mom is here.
+
+@c3
+
+"秋怡，快点出来。有一件事。*Qiuyi, come out. I have something to tell you.*" A pretty usual command in mom's sharp Mandarin. You've never been able to parse the tone of her voice. There's no way to tell if she's going to yell at you or congratulate you or if she's just telling you that dinner is ready. Whatever it is, she'll only chew you out more if you stay on your computer. So you head to the living room, where she's standing behind the table, across from your dad.
+
+*"Do you want to join a* beauty pageant?", she asks, except it's not really a question.
+
+- @um: "Um..."
+- @okay: "Okay?"
+- @not: "Not really..."
+
+@um
+go-to: intro2
+
+@okay
+go-to: intro2
+
+@not
+go-to: intro2
+
+@intro2
+
+Mom smiles. *"We've already signed you up."* She tosses a folder of printed forms in front of you. *"It's a good opportunity."*
+
+"Oh." It takes a moment to register. 
+
+- @really: *"Really? Do I have to?"* 
+
+@really
+
+*"Really? Do I have to? I think if I join I'll just lose-"*
+
+Your father silences you with a sigh.
+
+*"You're always spending time on the computer,"* he says, looking up from his laptop. *"You should go out more, make new friends. You need to learn how to communicate. You're still this young and you haven't had any real life experiences."*
+
+You want to argue with him, but it will be futile.
+
+*"Besides,"* mom continues, *"you want to go to MIT, right? How many Chinese girls who want to go go to MIT have done a beauty pageant? It'll make you special."*
+
+*"It will show* leadership," dad agrees. *"You need more* leadership. *If you just have good grades it won't be enough to get into a good university. If you want to go to a good university, you need* leadership."
+
+- @point: Unfortunately, they make a good case...
+
+@point
+
+Yes. Leadership (whatever that means). College apps. Important for both your future and your parents. Comprising approximately 90% of your existence.  
+
+You sit down at the dining table and look at the pageant website, sparse and pink and filled with cursive fonts. 
+
+*"There are no Chinese girls,"* you notice.
+
+*"You can be the first."*
+
+Mom passes you the registration forms, all filled out, just a blank for you to sign. Your parents' eyes are watching. There's no backing out now.
+
+- @beauty: You're not beautiful, so how...
+- @school: Maybe this really will be good for college apps...
+
+@beauty
+
+But how could you compete in a beauty pageant if you're not beautiful? Of course you're not beautiful. You never were. You walk to the bathroom and take a look at yourself in the mirror. The face that stares back looks gross to say the least. It's acne-riddled, with bags under the eyes barely covered by your crooked wire-frame glasses. The hair is unkempt, and maybe really does look like a bird's nest. At least your body is skinny, but it's the bad kind of skinny, more like bone papered with skin. You've never put on makeup by yourself, too much effort for someone who acts as if their body doesn't exist.
+
+If you're really going to do this pageant thing, you'd better start now.
+
+-@intro3: What's next?
+
+@school
+
+The only thing you might get out of this is a personal essay for your college apps. It would be a great Common App personal essay! Talk about how you got persuaded to do something beyond your comfort zone. Talk about how you managed to integrate your interests in science, how you wanted to make yourself a role model for young girls and used the pageant as a platform to do so. Even if you fail (which, let's be honest, you will), play up how you learned from it. Distinguish yourself from the masses of other Asian girls with perfect GPAs and 10 AP classes who don't do beauty pageants.
+
+And now you have a plan for the whole pageant thing. It could be worse.
+
+-@intro3: What's next?
+
+@intro3
+
+There's not a long time to prepare, just three months. In that time you'll have to become a new person, become the metaphorical butterfly breaking out of its cocoon, the metaphorical ugly duckling transformed into the beautiful swan. Or something like that.
+
+You sign the documents. Maybe part of you hopes that they'll forget to send the letter, that the post office would lose it, that the registration deadline's already passed. But you know that your fate is sealed.
+
+Tomorrow is a school day. There's no time to rest: go back to your room, do as much of your homework as you can, and hope for the best.
+

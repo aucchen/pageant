@@ -1,0 +1,248 @@
+title: Research
+subtitle: Future plans
+new-page: yes
+view-if: week = 11 and week_progress < 3 and research >= 4 and weekly_research = 0 and stress < 15
+on-arrival: week_progress += 1; research += 1; stress += 1; weekly_research = 1
+tags: top, research
+
+Physically you are in the lab, but mentally you are elsewhere.
+
+Granted, you are still reading about science, but not the kind of science that you are supposed to be working on. Instead you are investigating the far more interesting science of...
+
+- @ips: Assisted reproduction
+- @quantum: Quantum mechanics
+- @climate: Climate change
+
+@ips
+
+Sure, the potential applications of induced pluripotent stem cells are incredible, but the real benefit to the technology is the ability to create gametes typically associated with different chromosomal configurations.
+
+More specifically, you are reading a paper by (...) et al. on pubmed detailing an experiment in which a mouse with three fathers was created. You wonder if technology would allow for two people with XX chromosomes to have biological children together. Or rather, you wonder if you would ever be the one to invent such a technology. Is your current research/educational career leading to such a path? Probably not; all of the stuff being done here seems so ordinary.
+
+That sounds weird.
+
+- @stella_walks_in: You see a shadow.
+
+@quantum
+
+You've been reading popular articles about some of the more unintuitive implications of quantum mechanics. Schroedinger's cat, yes. And quantum immortality (the whole concept throws you for a loop; the more you read, the less you are sure of anything in reality). And the fact that you are far more likely to be a Boltzmann brain than anything else, based on certain thermodynamic assumptions or something like that. And there's quantum computing which can break various forms of encryption! Who can forget that?
+
+- @stella_walks_in: You see a shadow.
+
+
+@climate
+
+You have been reading about the associations between diet patterns and CO2 emissions. The research into this area is still in its infancy, for the most part, but it seems abundantly clear that meat consumption is responsible for a disproportionate share of CO2 emissions, especially with industrial agriculture in the US. There are the changes due to land use, due to the fact that the animal feed usually comes from plant agriculture in some capacity, and just the methane emissions from ruminant... farts or something like that. You're not ready to go vegetarian yet but it seems like the ethical choice.
+
+- @stella_walks_in: You see a shadow.
+
+
+@stella_walks_in
+
+It is then that you notice Stella the grad student standing behind you.
+
+- @close_window: Close the window.
+- @tab_out: Tab out.
+- @stella_sees: Don't bother.
+
+
+@close_window
+go-to: stella_sees
+
+It doesn't matter. Stella has already seen what you're looking at.
+
+@tab_out
+go-to: stella_sees
+
+It doesn't matter. Stella has already seen what you're looking at.
+
+@stella_sees
+
+"That doesn't look like your project," she says.
+
+"Sorry..."
+
+"No, it's fine! I'm glad you're interested in science beyond what we're doing in the lab right now."
+
+She grabs a chair and sits next to you.
+
+"So, you're getting ready to apply to college next year, right?"
+
+"Um, yeah..."
+
+"Do you know which colleges you're applying to?"
+
+- @apply_mit: Your top choice is MIT.
+- @top_colleges: You're applying to the "top" ones, of course.
+- @too_early: It's too early to say.
+
+
+@apply_mit
+
+Can you just say that you want to go to MIT? Would that make you seem like too arrogant?
+
+"Um, probably like... well my top choice is MIT but I don't think I'll get in. Haha."
+
+"Well, I wouldn't be so sure! You'd make a great scientist!" Stella beams.
+
+- @thats_a_lie: Objectively speaking, that's not true.
+- @you_wish: You wish, though...
+
+
+@top_colleges
+
+Can you just say that you're applying to HYPMS etc.? Would that make you seem like an arrogant and fundamentally unpleasant person?
+
+"Um, probably like... well my top choice is MIT but I don't think I'll get in. Haha."
+
+"Well, I wouldn't be so sure! You'd make a great scientist!" Stella beams.
+
+- @thats_a_lie: Objectively speaking, that's not true.
+- @you_wish: You wish, though...
+
+
+@too_early
+
+"Um, I don't know yet..." That's partly but not exactly true. You already know some of your top choices, but you don't know how you'll round out the list.
+
+"Not here, right? Haha. You could probably go to MIT if you wanted to."
+
+"Um, but that's really hard..."
+
+"Hey, don't be so humble! You'd make a great scientist!"
+
+- @thats_a_lie: Objectively speaking, that's not true.
+- @you_wish: You wish, though...
+
+
+@thats_a_lie
+
+"I mean, the admissions rates are so low and there are so many amazing people applying so..." You shrug. "And I haven't even taken my SATs yet."
+
+"I think you could be a great scientist no matter where you go," Stella says. "As long as you keep your focus."
+
+- @nice_thought: That's a nice thought...
+- @unrealistic: It's still unrealistic...
+- @jobs_in_science: Are there even jobs in science?
+
+
+@you_wish
+
+"Really? You think so?"
+
+"Yeah, I think so! But even if you don't, I think you could be a great scientist no matter where you end up." 
+
+- @nice_thought: That's a nice thought, but...
+- @unrealistic: It's rather unrealistic...
+- @jobs_in_science: Are there even jobs in science?
+
+
+@nice_thought
+go-to: said_too_much
+
+"Um, thanks but... I feel like it's going to be really hard..."
+
+"It is," Stella replies. "But I think you can work hard enough to do well."
+
+"What about my mom?" Did she not work hard enough, you wanted to add. Mom has told you that she didn't want you to end up like her, working as a permanent technician with a biology Master's degree.
+
+"You could probably do better than she did, especially if you get a PhD. Even she could probably do better if she wanted. There are other career paths out there."
+
+"Oh."
+
+"I'm pretty sure your mom could find a better job. There's plenty of positions using similar skills in industry that pay better. But maybe she's worried about health insurance or something. I mean, I'd be sad to see her go, but I want to see her do better."
+
+"Oh."
+
+
+@unrealistic
+go-to: said_too_much
+
+"I mean, so many people want to be scientists but, like, it's hard..."
+
+Stella laughs. "Yeah? If you want to be an R1 professor, that's hard, but there are a lot of jobs in science, depending on what you want to do."
+
+"Like my mom's?" Mom has told you that she didn't want you to end up like her, working as a permanent technician with a biology Master's degree.
+
+"You could probably do better, especially if you get a PhD. Even she could probably do better if she wanted. There are other career paths out there."
+
+"Oh."
+
+"I'm pretty sure your mom could find a better job. There's plenty of positions using similar skills in industry that pay better. But maybe she's worried about health insurance or something. I mean, I'd be sad to see her go, but I want to see her do better."
+
+"Oh."
+
+
+@jobs_in_science
+go-to: said_too_much
+
+"Are there still any jobs in science?" Mom has told you that she didn't want you to end up like her, working as a permanent technician with a biology Master's degree.
+
+"Ouch. That's a tough one." Stella pretends to wince. "Finding jobs in academia is... pretty difficult. If you want to be a professor like Dr. Chen, well, that's basically impossible. But there are industry jobs, which is probably what I'll end up doing since I don't want to be a postdoc forever."
+
+"Oh..."
+
+"But I don't know! Maybe things will change when you get older. Or maybe they'll get worse. You'll just have to be flexible."
+
+"Oh..."
+
+
+@said_too_much
+
+"Haha. I've probably said too much." Stella takes out her laptop and opens it next to you. "We were talking about college apps, right? Do you need any help with that? God, it feels like so long ago."
+
+- @taking_interest: She seems to be taking an uncomfortable amount of interest in you...
+- @could_use_help: You could use her help...
+- @what_help: Or is she just being nice and making a socially required offer not expecting you to actually accept?
+
+
+@taking_interest
+
+"Um... why?"
+
+"Why what?"
+
+"Why do you want to help me?" You immediately feel like you've said something wrong.
+
+"Ha! Is there anything wrong with wanting to help?"
+
+"No..."
+
+"It's just that I was in a similar place not long ago... actually quite long ago. But I see you a similar situation as me, and I think you can do better than I did."
+
+"Oh. Um, thanks."
+
+"Yeah, no problem!"
+
+- @back_to_work: You get back to work.
+
+
+@could_use_help
+
+"Um... okay, thanks? But like, I'm not even close to starting that."
+
+"Well, okay! When you get to that point feel free to ask me questions at any time, even if you're not working here anymore."
+
+"Thanks..."
+
+"Yeah, no problem!"
+
+- @back_to_work: You get back to work.
+
+
+@what_help
+
+"Um, thanks but I've got it."
+
+"Are you sure? Well, when you get to that point feel free to ask me questions at any time, even if you're not working here anymore."
+
+"Thanks..."
+
+"Yeah, no problem!"
+
+- @back_to_work: You get back to work.
+
+
+@back_to_work
+
+Stella is on her laptop, writing her thesis and making presentations or something like that. You're back to coding, only taking occasional glances at the unrelated papers from before she came. The two of you don't talk much, only glancing at each others' screens in a semi-futile attempt at keeping yourselves on task.

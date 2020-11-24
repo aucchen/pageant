@@ -1,0 +1,73 @@
+title: Stress
+subtitle: A fall
+new-page: yes
+view-if: stress >= 15
+on-arrival: stress -= 7; week_progress += 1; gpa -= 0.1
+tags: top, stress
+
+It's not as if you've never slept in class before. What harm could it do? And this is AP World; there's nothing you couldn't learn by yourself through reading the textbook and/or Wikipedia.
+
+You fall down.
+
+- @apoptosis: ...
+
+@apoptosis
+
+Apoptosis is the process of programmed cell death. It arises from many causes: natural growth, cell stress, DNA damage. If it did not happen, you would still have webbed fingers. The prevalence of cancer would become much greater. And you would not be able to become a functional multicellular organism.
+
+Out of death and destruction comes life, like a forest growing back out of a fire. Out of apoptosis comes the growth and differentiation of all human organs.
+
+You have no idea why these thoughts appear in your head.
+
+- @wake_up: You wake up in the nurse's office.
+
+@wake_up
+
+Perhaps you should have expected this, after having spent the last weeks sleeping only a few hours each night. With everything that's been going on, you haven't had much time to sleep. And the insomnia has been overwhelming; as you get more tired, more busy, more stressed, you become less able to sleep. It's a vicious cycle.
+
+"[+ first_name : +]? Are you okay?" Some voice calls to you.
+
+Your eyes finally open. The school nurse, with whom you only had a passing acquaintance, comes into your view.
+
+"Sorry, I wasn't feeling very well," is what you manage to say.
+
+"Well you certainly weren't! You know you passed out, right?"
+
+The nurse fusses over you, offers to call your parents. You decline.
+
+"You should get something nice to eat," she says. "Plus some rest. We can get you excused from classes for the rest of the day, if that's okay? It's fourth period. You can go bac home to rest."
+
+- @excused: Sure, a break would be nice.
+- @no_excuse: School is more important.
+
+@excused
+on-arrival: stress -= 2
+
+You nod, and the nurse smiles. Soon you fall back asleep.
+
+@no_excuse
+on-arrival: stress += 1
+
+You shake your head.
+
+"Are you sure?", she asks, her voice dripping with incredulous concern.
+
+- @excused_2: No...
+- @no_excuse_2: Yes...
+
+@excused_2
+on-arrival: stress -= 3
+
+You shake your head. After the nurse watches you for a moment, you finally open your mouth. "No. I mean, I want to get excused."
+
+"That's more like it."
+
+The nurse leaves. Soon you fall back asleep.
+
+@no_excuse_2
+
+You shake your head. After the nurse watches you for a moment, you finally open your mouth. "Yes. I mean, I don't need to be excused."
+
+"Well, alright then."
+
+You get up. You can still walk. It's going to be fine.

@@ -1,0 +1,86 @@
+title: Introspection
+subtitle: Who are you, really?
+new-page: yes
+view-if: week >= 1 and week < 5 and introspection = 0 and week_progress < 3
+on-arrival: introspection += 1; first_name = "Karen"
+priority: 2
+tags: top, introspect
+
+Who are you, really? Your legal name is Qiuyi Zhao, but people who aren't your parents usually call you Karen, since no one can pronounce Qiuyi. Hence at school your name is "Qiuyi (Karen) Zhao", with the parentheses indicating that "Karen" isn't officially your name. And technically, Qiuyi Zhao isn't your *real* name either; it's 赵秋怡, or Zhào Qiūyí.
+
+- @name: The name "Karen" originated from 1st grade English class.
+- @not_karen: Actually, my English name isn't Karen.
+
+@not_karen
+
+Your name as assigned at elementary school English class in China is...
+
+- @still_karen: It is Karen, actually.
+- @amy: Amy
+- @christina: Christina
+- @erica: Erica
+- @grace: Grace
+- @jenny: Jenny
+- @rachel: Rachel
+- @sarah: Sarah
+- @stephanie: Stephanie
+- @vivian: Vivian
+
+@still_karen
+go-to: name
+on-arrival: first_name = "Karen"
+
+@amy
+go-to: name
+on-arrival: first_name = "Amy"
+
+@christina
+go-to: name
+on-arrival: first_name = "Christina"
+
+@erica
+go-to: name
+on-arrival: first_name = "Erica"
+
+@grace
+go-to: name
+on-arrival: first_name = "Grace"
+
+@jenny
+go-to: name
+on-arrival: first_name = "Jenny"
+
+@rachel
+go-to: name
+on-arrival: first_name = "Rachel"
+
+@sarah
+go-to: name
+on-arrival: first_name = "Sarah"
+
+@stephanie
+go-to: name
+on-arrival: first_name = "Stephanie"
+
+@tina
+go-to: name
+on-arrival: first_name = "Tina"
+
+@vivian
+go-to: name
+on-arrival: first_name = "Vivian"
+
+
+@name
+
+[? if first_name != "Karen" : Right, your English name is [+ first_name : +]?].
+
+Your name was assigned back in Changchun, Jilin Province, People's Republic of China, the city where you were born. On the first day of English class, the teacher had each kid pick out a name from a box. Yours was [+ first_name : +]. 
+
+And somehow that name stuck as your family moved to America. First, it was to Los Angeles, when you were 7. Then, a couple of years later, your family moved to Illinois in pursuit of dad's career. A couple of years after that, you moved to Massachussetts, where you are now. You're 16 years old, a junior in high school, finally rooted in the same place after four different elementary schools, and a top 10-ranked AP student, wanting to but probably never going to MIT, and putative hypothetical beauty queen.
+
+- @gay: And by the way, you're gay.
+
+@gay
+
+Or something like that.

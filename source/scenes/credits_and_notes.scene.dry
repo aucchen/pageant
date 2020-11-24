@@ -1,0 +1,54 @@
+title: Credits and notes
+new-page: yes
+view-if: week = 100
+tags: epilogue
+max-visits: 1
+on-arrival: {! Q['var1'] = "abc"; !}
+
+= Credits
+
+*Pageant* was written between 2016 and 2020 by Autumn Chen.
+
+Developed using dendry by Ian D. Millington.
+
+I had started a prototype using Raconteur by Bruno Dias, but transitioned to dendry. A remnant of the original Raconteur story can be found at *A Christmas Party*, which is an alternate version of one of the key events in this game. 
+
+Thanks to everyone who has provided feedback at any time in the development process, even if it was only a few words of encouragement. Special thanks to brushmen for Chinese suggestions.
+
+= Inspirations:
+
+(in no particular order)
+
+*Bee* by Emily Short, for the storylet-based structure, coming-of-age story about a competition, and incidentally introducing me to dendry. This game would not exist if *Bee* did not exist.
+
+*Spy Intrigue* by furkle, for being amazing. Along those lines, *Venus Meets Venus* by kaleidofish and *Birdland* by Brandon Patrick Hennessy.
+
+*Enter Title Here* by Rahul Kanakia, for being a novel about the extent to which children of immigrants will go to make it in America.
+
+*Ivy Dreams*, a documentary about Asian-American students in the college applications process.
+
+*Butterfly Soup* by Brianna Lei, for being one of the very few stories about Asian-American lesbian teens. *Pageant* is a lot like *Butterfly Soup*, but not as funny.
+
+*Beauty Queens* by Libba Bray, for being a novel about beauty pageant contestants, some of whom are lesbian or trans (I only finished it after writing most of *Pageant*, though).
+
+*Black Closet*, *Magical Diaries*, and *Long Live the Queen* by Hanako Games, for the stat-raising gameplay and character development. More generally, *Pageant* was influenced by the "raising sim" gameplay style which has a long history in visual novels.
+
+Choice of Games in general, for showing what interactive fiction can do.
+
+*Life is Strange*, for filling me with spite. Along those lines, yuri manga and anime in general.
+
+*Love Nikki Dress-Up Queen*, for influencing the way in which Emily Chen theorized about fashion.
+
+Personal experiences.
+
+
+= Thank you for playing!
+
+
+
+For one possible sequel, see *A Christmas Party, Part 2*. In addition, a direct sequel to *Pageant* is in progress, hopefully coming in late 2021.
+
+- @end: To be continued...?
+
+@end
+game-over: true

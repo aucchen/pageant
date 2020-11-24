@@ -1,0 +1,162 @@
+title: Meeting with Emily
+subtitle: Goodwill, Afternoon
+new-page: yes
+view-if: emily = 2 and week_progress < 3 and stress < 15 and thanksgiving = 0
+on-arrival: emily += 1; week_progress += 1; pageant_appearance += 2; stress += 1; emily_2_seen = 1
+tags: top, social
+
+"Okay, so, you need at least two dresses just for the pageant, but it would be better if you had more. Dresses are nice. I like dresses."
+
+[? if emily_left_1 = 1 : Despite your awkward departure last time, you responded when she asked if you could meet again. And now you're here, shopping for dresses that you could use at the pageant. ?]
+
+Emily says that she buys all her clothes at Goodwill, which is why she wanted to meet you here. She looks like she's within her element, as she flits from dingy aisle to dingy aisle, brushing her hand against clothes and adding them to the pile on her arm.
+
+"Here. Try these on." She shoves a few dresses at you.
+
+- @try: Try them on.
+- @else: Do something else.
+
+@try
+
+You have never enjoyed wearing dresses. But maybe just this one time, it's going to be fine. The dress is a deep blue color, and reveals far too much of your body. It's a pain to put on by yourself.
+
+Emily smiles when she sees you leave the dressing room. "You look nice. I mean, really nice."
+
+You would have blushed if you could. "Um, thanks."
+
+"Yeah, no problem. I mean, not like in a weird way or anything but..."
+
+An awkward pause.
+
+"So, um, I can buy these things if you want?", she asks.
+
+- @thanks: Let her buy the clothes for you.
+- @thanks_2: Buy them yourself.
+- @thanks_3: Don't buy anything.
+
+@else
+
+You've never liked shopping, and liked wearing dresses even less.
+
+"Um... how will this help me in the pageant? Maybe we could go somewhere else?"
+
+"Oh. Sorry." Emily takes the pile back. "God, I'm just always thinking about myself. So what do you want to do?"
+
+"Um, I don't know. Maybe... go somewhere else?"
+
+"Okay. I'll buy these for you and let's go, uh, somewhere else."
+
+- @thanks: Let her buy the clothes for you.
+- @thanks_2: Buy them yourself.
+- @thanks_3: Don't buy anything.
+
+
+@thanks
+on-arrival: has_emily_goodwill_dress = 1
+
+"Um, thanks."
+
+"Yeah, sorry for dragging you here."
+
+Wait. Why did you just let her buy your clothes? Why did she offer to pay for your clothes in the first place? What kind of a relationship do you have? You ponder these thoughts as she pays for your clothes with cash. Though it's only ten dollars total for both you and Emily's items.
+
+- @library: Next...
+
+@thanks_2
+on-arrival: has_emily_goodwill_dress = 1
+
+"Um, I can, um, pay for these myself." It uses up the entirety of your bi-weekly allowance of ten dollars, but that's fine, since you've been saving.
+
+"Oh, uh, sorry. I mean, go ahead."
+
+You each pay for your own pile and leave the store.
+
+- @library: Next...
+
+@thanks_3
+
+"Um, I actually didn't want to buy anything..."
+
+"Oh, uh, sorry."
+
+You stand around awkwardly as she pays for her own items with cash (five dollars total), and you're glad when you finally leave the store.
+
+- @library: Next...
+
+@library
+
+Emily said that she wanted to go to the library to study, so the two of you take a train to Copley. You've always held some affection for the Central Library, with its vast rows of books that you could get lost in for days.
+
+"I like studying here because people I know don't usually show up," she says.
+
+"Same." She smiles at your answer. Maybe you have more similarities than you thought. You're still watching her hands when she takes out some papers with what looks like complicated math on them.
+
+"Oh, this is multivariable calculus," she says, enounciating the sylables with a bit of pride. "It's an advanced program through my school."
+
+"Oh. So, like, is math your favorite subject?" (what kind of a question is that?)
+
+"Probably. I think so."
+
+- @study: Study. Or at least try to.
+
+@study
+
+Wait, why are you here? With this Emily Chen person? Weren't you going to do pageant-related stuff? Has she become a *friend*? Or something like that? Would it be too awkward to ask?
+
+And this is just the second time you've met this person. She seems... nice? Weird? Trying to put your feelings into words is like trying to fit a linear regression onto an exponential dataset without a log-transform. Meanwhile you actually do have to fit some exponential curves for your chemistry homework.
+
+- @keep_studying: Keep studying.
+- @stare_em: Stare at Emily
+
+@keep_studying
+
+AP Chem cannot wait. Neither can AP World, AP Calc, and all of your other best friends.
+
+- @goodbye: Keep on trying to study.
+
+@stare_em
+
+This is the third time you have met Emily, and you have already moved on to the 'awkward staring' phase of your relationship. She is, again, attired nearly entirely in black: a black blazer over a black sweater and purple skirt and black jeans. Again, her face is caked in thick layers of makeup (probably; you're still not too good with makeup).
+
+"Why are you staring at me?," she eventually says, after an undeterminate amount of staring. You immediately look away.
+
+"Um, sorry..."
+
+"Do I look weird?"
+
+"Um, no... the opposite, actually..."
+
+"What does that mean?"
+
+"Sorry..."
+
+Emily goes back to her homework, and you try the same. But you can't help but feel as if you've caused a permanent black mark on your relationship, as if your relationship stats have irreparably lowered. That's not how this sort of thing works, though, or is it?
+
+- @goodbye: Yeah...
+
+@goodbye
+
+"Sorry, I have to go now," says Emily after what must have been between 30 and 90 minutes of 'studying', and you try to pretend that you were staring at the wall rather than at her. "God, I forgot we were trying to do pageant stuff. I'll make up for it next time."
+
+- @bye: Say goodbye.
+
+@bye
+
+"Sorry. I mean, bye. See you, um, later. Next time."
+
+You wave at her as she leaves.
+
+- @looking_forward: You're looking forward to next time.
+- @not_looking_forward: Will there even be a next time?
+
+@looking_forward
+
+Oh god is she your friend now?
+
+You're not sure, and you're not sure whether you want her to be.
+
+@not_looking_forward
+
+She's not exactly your friend, barely an acquaintance.
+
+But still...

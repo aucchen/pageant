@@ -1,0 +1,289 @@
+title: Emily
+subtitle: Escape
+new-page: yes
+view-if: emily = 8 and week_progress < 3 and stress < 15 and week = 11 and weekly_emily = 0
+on-arrival: week_progress += 1; stress += 1; emily += 1; pageant_interview += 1; pageant_appearance += 1
+tags: top, social
+
+It is late in the evening, and you are in your room alone. You are using the abominable internet platform known as "Facebook Messenger" in order to communicate with Emily. You've been talking with her more and more, almost becoming habituated to her presence online.
+
+Emily: I'm about to do something very drastic and self-destructive. Can you tell me not to do it?
+
+You: What?
+
+Emily: I'm considering running away from home.
+
+- @what: "Wait, what?"
+
+@what
+
+You: Wait, what? Is this a serious question?
+
+Emily: About 15 percent serious. But it's a thought.
+
+- @why: "Why do you want to run away?"
+- @where: "Where would you go?"
+
+@why
+view-if: emily_why_seen = 0
+on-arrival: emily_why_seen = 1
+
+You: Why do you want to run away?
+
+Emily: It's getting kind of bad.
+
+You: What is?
+
+Emily: Many things.
+
+Emily: Just, living in this space makes me want to, idk, engage in potentially self-destructive behaviors.
+
+Emily: God it's so fucking hard to talk about this without sounding like some cringy emo loser.
+
+Emily: And of course my parents feed and clothe me and let me live in this house that's way too big and therefore I'm an ungrateful b8tch.
+
+Emily: But it's becoming difficult to handle it.
+
+You: You're not a loser or anything like that...
+
+Emily: Thanks.
+
+- @where: "Where would you go?"
+- @convince_me_no: "Do you want me to tell you not to go?"
+
+@where
+view-if: emily_where_seen = 0
+on-arrival: emily_where_seen = 1
+
+You: Where would you go?
+
+Emily: New York, probably.
+
+Emily: For now.
+
+You: For how long?
+
+Emily: However long it needs be.
+
+- @why: "Why do you want to run away?"
+- @convince_me_no: "Do you want me to tell you not to go?"
+
+@convince_me_no
+view-if: emily_where_seen = 1 and emily_why_seen = 1
+
+You: Do you want me to tell you not to go?
+
+Emily: That would be helpful.
+
+- @science_future: What about science? What about your future?
+- @how: How would you survive?
+
+@how
+
+You: How would you survive?
+
+Emily: I can survive via sex work.
+
+You: Sorry, but like... people who say things like "I can survive via sex work" are probably not going to survive via sex work.
+
+Emily: Lol you're right. I won't. I would probably die either way; it's just a matter of when.
+
+- @science_future: What about science? What about your future?
+- @dont_be_morbid: Don't be morbid?
+
+@science_future
+
+You: What about science? What about your future?
+
+Emily: I don't know if I have a future.
+
+You: I thought you were interested in studying science?
+
+Emily: Yeah, well.
+
+Emily: It's kind of hard to think that far ahead.
+
+Emily: All I can do is imagine the ways in which I'll die.
+
+You: Sorry...
+
+- @dont_be_morbid: Don't be morbid?
+
+
+@dont_be_morbid
+
+You: Don't be morbid?
+
+You: In all likelihood you're not going to die anytime soon.
+
+Emily: The rational part of me wants to understand. But it's not that easy.
+
+Emily: Like sometimes I feel like I don't have much time left. Will I live until 20? 30? It feels like a toss-up.
+
+Emily: I know multiple trans girls on the internet who have died. Even communicated with a couple of them.
+
+Emily: Rationally speaking I know that some people would care if I died or disappeared. 
+
+Emily: But they care about the image of me that they have manufactured in their minds, not *me*.
+
+Emily: God this is so selfish.
+
+- @i_care: "I care..."
+- @where_now: "Where are you now?"
+
+@i_care
+
+You: I care...
+
+You: Well I don't know the "actual you" as well as maybe I should...
+
+You: But I'll try...
+
+Emily: Thanks.
+
+- @where_now: "Where are you now?"
+
+
+@where_now
+
+You: Where are you right now?
+
+Emily: South Station.
+
+- @go_to_emily: Can I head over?
+- @stay_here: Can you make it back home?
+
+
+@go_to_emily
+
+You: Can I head over?
+
+Emily: You don't have to.
+
+Emily: I'll head back by myself.
+
+You: Are you sure?
+
+Emily: Unfortunately I'm not so idiotic as to actually carry out the "running away from home" plan.
+
+Emily: But I would prefer if you would come over anyway, only if it's possible and convenient.
+
+You: I'm heading over.
+
+- @go_to_emily_2: Head to the T station.
+
+
+@go_to_emily_2
+
+You quietly leave the house, hopefully not alerting anyone that you are gone. The trains are only running for two more hours; there aren't many people heading downtown at this time so you have a car almost entirely to yourself.
+
+Emily: Sorry I'm like this.
+
+You: I'll be there in 20 minutes hopefully.
+
+Emily: I'll just stay here at the station.
+
+Emily: Don't worry about me. I'm fine.
+
+- @wait: Wait.
+
+@wait
+
+You watch the lights go by before the train plunges underground.
+
+Emily is in the train station, sitting alone on a bench with her head bowed. She wears her usual all-black outfit with a black overcoat, and carries a stuffed backpack.
+
+"Hey, um, Emily?", you manage to say, barely aloud. She somehow hears you.
+
+"Yeah. That's me. Sorry I made you come all the way out here." She lifts her head and glances at you. You sit down next to her, not too close, but not too far. She is silent for a while. When you glance at her face, you see a few streaks of tears. She covers her face with her hands.
+
+- @say_something: Say something?
+- @stay_silent: Stay silent?
+
+@say_something
+go-to: stay_silent
+
+You have no idea what to say.
+
+@stay_silent
+
+"Alright. I'll go home," she says. "Sorry I made you come here. I'll get a taxi."
+
+"I can stay until you, um, go," you say.
+
+"Do you want a taxi too?"
+
+"No, it's fine. I can take the T."
+
+Emily's taxi is waiting. She waves, and gets in. You wave back. The car drives off. You go back into the subway. There is no reception. Home is still 30 minutes away.
+
+
+@stay_here
+
+You: Okay. Can you make it back home?
+
+Emily: Yes. I can.
+
+Emily: Unfortunately I'm not so idiotic as to actually carry out the "running away from home" plan.
+
+Emily: But can you stay online?
+
+You: Of course...
+
+- @stay_here_2: There is a lull...
+
+
+
+@stay_here_2
+
+Emily is typing for a while.
+
+Emily: Okay I've got a taxi now. I would take a train/bus if it were still running but transit in the suburbs sucks.
+
+Emily: God my parents are going to kill me once they see the bills.
+
+You: Do you need any help?
+
+Emily: No. I'm in the taxi now.
+
+Emily: I'm doing fine. I'm going to live. For now.
+
+- @encourage: Say something encouraging???
+
+@encourage
+
+You have no idea what you could say that would be appropriate.
+
+You: Um... Good luck...
+
+Emily: Thanks.
+
+She is online but not typing for 20 minutes. You do not know what to say.
+
+Emily: I'm home now. Lights still on. Ready for fucked up shit to start happening.
+
+You: Sorry...
+
+Emily: It's my fault lol.
+
+Emily: Anyway I'm logging off.
+
+You: Wait...
+
+- @ask_picture: Ask for a picture, to make sure she's okay...
+
+@ask_picture
+
+You: Can you send me a picture of your current situation? I just want to know that you're really home...
+
+Is this attempting to do a good deed? Or paranoia? Or...?
+
+Emily: Lol alright. I wouldn't lie to you even if I were more self-destructive, by the way.
+
+She sends a selfie of her infront of her house. Her face is totally obscured by the darkness, but the house is lit.
+
+You: Thanks... sorry about that...
+
+Emily: It's okay.
+
+She is logged off. It is almost midnight. You are alone in your room, with no sounds save the apartment's heating. You still have homework to do, and the pageant less than a week away. You are not going to sleep, for now.

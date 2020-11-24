@@ -1,0 +1,73 @@
+title: Science Olympiad
+subtitle: A reminder or warning
+view-if: week > 5 and week < 10 and scioly < 2 and week_progress < 3 and scioly_pass_viewed = 0
+tags: scioly, top
+priority: 2
+
+Right after classes end, the science olympiad captain calls out to you as he passes by in the hallway.
+
+"Hey, I've barely seen you at SciOly all this year. What happened?"
+
+[? if scioly=0: SciOly, or science Olympiad, probably has been your number one EC in high school. It's a national competition where students work in teams on a bunch of different science events. ?]
+
+"Um, sorry..."
+
+"We have an invitational in less than a month. If you want to be on the team then you'd better start going to meetings."
+
+- @go: Tell him that you'll catch up.
+- @dont_go: Actually, you're not doing SciOly this year.
+
+@go
+on-arrival: scioly += 3; stress += 3
+
+"Sorry. I'll start going to the meetings. I'll catch up on... stuff..."
+
+He smiles. "Okay. You'll have to talk to a bunch of people and catch up on a lot of studying, but I know you can do it!"
+
+"Uh, thanks..."
+
+"And don't forget, you're better than you think you are."
+
+He hands you a packet. You have to catch up. More work, more stress, but you want to do this, right?
+
+@dont_go
+
+"Actually, I'm don't know if I'm doing SciOly this year..."
+
+"What? Why not?" He looks surprised and disappointed.
+
+- @go: Actually, you change your mind.
+- @tell_pageant: Tell him about the pageant.
+- @excuse: Make up an excuse.
+
+@tell_pageant
+
+"Okay. Um, this is going to sound ridiculous but..."
+
+"What is it?"
+
+"It's... um... I'm doing a beauty pageant and I sort of want to do well in it because it's going to be my hook for college apps which will be a better hook than scioly because so few Asians do that stuff so I'll be better off and..."
+
+He laughs. "Woah, seriously? You? In a beauty pageant? No offense, but, like, that's not you."
+
+"Yeah. My parents signed me up."
+
+"Okay. Uh, you don't have to do SciOly if you don't want to then. Thanks for telling me."
+
+@excuse
+
+"Sorry. It's just... that, um, I have too much stuff this year, and, um..."
+
+"Look, it's okay. But I think you're being too hard on yourself. Believe it or not, you make a really positive contribution to the team. You're really talented at science, one of the best we have, one of the top five at least. Besides, we're all nice people here, aren't we? You don't want to let the rest of us down, right?"
+
+- @go: Actually, you change your mind.
+- @persist: Persist in leaving SciOly.
+
+@persist
+on-arrival: scioly = 0; loneliness += 1; scioly_pass_viewed = 1
+
+"Um, sorry but..."
+
+"It's okay. I won't force you to stay. Look, just do your own thing, if that's what you want."
+
+He turns and walks away, leaving you a mess of confused feelings.

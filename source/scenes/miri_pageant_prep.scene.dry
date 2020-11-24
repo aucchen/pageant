@@ -1,0 +1,860 @@
+title: Pageant prep with Miri
+subtitle: After school
+new-page: yes
+view-if: week >= 1 and week_progress < 3 and miri >= 1 and weekly_miri = 0 and stress < 15 and miri_date = 0 and class_visited = 1 and miri_escape = 0 and week < 10
+on-arrival: week_progress += 1; weekly_miri = 1; miri += 1; stress += 1
+tags: top, pageant_prep
+
+
+[? if miri <= 1 : Miri: hey, if you want to do some stuff for the pageant, i'm free today. tell me if you wanna go anywhere, okay? ?]
+
+[? if miri > 1 : Miri: hey, if you want to do some stuff for the pageant, i'm free today. i just wanted an excuse to get away from my family for a bit. it gets messy here lol. ?]
+
+You read over the message. Miri was extremely generous in offering to help you prepare for the pageant, for reasons you still do not entirely understand. She offered a few suggestions for things you could do. You will not let her generosity go to waste.
+
+- @gym_1: Go to the gym.
+- @gym_visit_2: Go to the gym again.
+- @practice: Have a practice interview.
+- @practice_2: Have another practice interview.
+- @hang: Just hang out?
+- @hang_2: Just hang out again?
+
+
+@gym_1
+view-if: gym = 0
+on-arrival: gym += 1; pageant_appearance += 1
+
+"Okay, what do we do now?", you ask, hoping Miri knows something you don't.
+
+"I don't know." Your hopes are immediately dashed. "I mean, you asked to come here. I'm just along for the ride."
+
+The two of you are in the community center gym, which Miri suggested attending because the pageant has an "athletic wear" section (in lieu of swimsuits) and having some modicum of athleticism is a precondition for performing well in that section. Or something like that.
+
+Right now you're standing in the entryway wearing utterly inappropriate clothes gawking at all the regulars who look like they belong.
+
+- @gym_2: Enter the gym.
+- @back_out: Back out.
+
+@back_out
+
+"No, you can't just leave now!", Miri says, grabbing your arm. "You have to do this. I mean, I have to do this too. Just look at my physical manifestation."
+
+"I think you're fine the way you are."
+
+Miri rolls her eyes. "Whatever. Let's just get it over with."
+
+- @gym_2: Follow Miri inside.
+
+@gym_2
+
+"Wait. What do we actually do here?", Miri asks. "You know I've never been here before, right?"
+
+"I think we, um, just... use one of these things."
+
+"What?"
+
+"Treadmill. For running."
+
+"Oh. Okay."
+
+There are two empty treadmills next to each other. You take one and Miri takes the other. Your eyes are trained to the ground. If you don't see them, they won't see you, right? Right?
+
+- @run: Just run or whatever.
+
+@run
+
+You turn on the treadmill and start running. Of course, you get tired and go back to walking after five minutes. And it looks like Miri isn't doing any better; she's at the water fountain.
+
+"Wait, aren't you in gym?", Miri asks as she returns.
+
+"Well, technically it's not exactly gym. It's more of a, uh, health class. PE plus health."
+
+"Of course." She's panting. "Hey. Let's do something else." You're tired too; maybe it's time to take a break from the treadmill.
+
+- @follow: Follow Miri.
+
+@follow
+
+The two of you walk around the gym. There are weight machines. And people using them. Scary people, somewhat scarier than people in general.
+
+"Um, what do we do?", you ask.
+
+"Act like we belong," Miri replies. "And we do belong here, right?"
+
+You sit at some strange machine and try to move the bar. It doesn't budge.
+
+- @help_gym: "Um, help?"
+
+@help_gym
+
+Miri sighs. "You have to move the pin to a different level, to lower the weight. Here. I'll show you."
+
+"How do you know how to do that?"
+
+"Gym. This might be my only memory of that class."
+
+"Oh. Well. Thanks."
+
+- @lift: Finally you can start lifting.
+
+@lift
+
+You lift weights on the machine (you never find out its name) for a while. And then your arms get sore.
+
+After a total of perhaps 30 minutes in the community center, Miri and you decide to go home. You're still not sure how that prepared you for the pageant, and you have quite a few assignments left to do, so...
+
+- @waste_of_time: Waste of time?
+- @but_it_was_fun: But, it was fun spending time with Miri... Right?
+
+@waste_of_time
+
+Maybe, maybe not...
+
+@but_it_was_fun
+
+Yeah...
+
+@gym_visit_2
+view-if: gym > 0
+on-arrival: gym += 1; pageant_appearance += 1
+
+Now that you've been to the gym at least once in your lifetime, you feel slightly more prepared. And from the looks of it, so does Miri. She's wearing athletic clothes this time, and so are you.
+
+"Wow, you look better than usual," Miri says.
+
+- @gym_continue: Hit the gym.
+
+@gym_continue
+
+You run on the treadmill for a while, then lift some weights at the machines, all the while not looking at anyone else, and acting confident, as if no one is looking at you, as if you're the only one here (and Miri of course).
+
+You're not sure if you feel stronger at the end of thirty minutes. But based on most studies, your life expectancy, metabolism, mental health, and just about everything else should be improving given your exercise. Which is supposed to help with the pageant. Is that why you're here?
+
+
+@practice
+view-if: miri_practice = 0
+on_arrival: miri_practice += 1
+
+The score sheet says that interviews count for exactly 20% of the final score. [? if pageant_interview = 0 : Based on your current condition, you might be able to get... maybe 1%. ?][? if pageant_interview > 0 : You've done a little bit of practicing, but probably not enough. ?]
+
+Miri sits at a park bench, while you pace around. She reads from her phone.
+
+"Question 1: How would you balance academics and extracurricular activities if you were to win this title?"
+
+- @oh_god: "Oh God. Uh..."
+- @good_answer: "Well, that's a good question..."
+- @perfect_answer: "Both academics and extracurriculars are important to me..."
+
+@practice_2
+view-if: miri_practice > 0
+on_arrival: miri_practice += 1
+
+"Question 1: How would you balance academics and extracurricular activities if you were to win this title?"
+
+"Didn't you ask this question last time?"
+
+"Yeah. Answer it again."
+
+- @good_answer: "Well, that's a good question..."
+- @perfect_answer: "Both academics and extracurriculars are important to me..."
+
+
+@oh_god
+on_arrival: pageant_interview += 1
+
+"Oh God. Uh..."
+
+"'Oh God', she says. Next question: Oh wow." Miri can't keep a straight face. "Do you have a boyfriend? What does he think about you competing in pageants?"
+
+- @wtf: "What the heck?"
+
+
+@good_answer
+view-if: pageant_interview > 0
+on-arrival: pageant_interview += 1
+
+"Well, that's a good question." A pause. "Academics are very important to me, as are extracurriculars. And uh..."
+
+"But to be a balanced student I need more than coursework." Miri answers for you. "Participating in the pageant would allow me to better allocate my time away from all the unimportant stuff in life, and focus on what's really important to me."
+
+"Did you read that or just make it up?"
+
+"Just made it up."
+
+"Oh. That was good."
+
+"Well, thanks. You'd better memorize that for next time."
+
+- @next_question: "Anyway, what's next?"
+- @next_question_3: "Anyway, next question?"
+
+
+@perfect_answer
+view-if: pageant_interview > 2
+on-arrival: pageant_interview += 1
+
+You're finally prepared for this question, and take a breath.
+
+"Both academics and extracurriculars are very important to me, but sometimes there's only enough time in the day for so much. I care about the pageant a great deal, and I don't need to get 100% on everything at school or take all the hardest classes all the time."
+
+"Was that true?"
+
+"Of course not. How else would I get into MIT?"
+
+Miri makes some weird expression. "Anyway, it's clear you memorized the answer. And that's okay, but you'll have to pretend that you didn't memorize it."
+
+- @next_question: "I know. Next question?"
+- @next_question_3: "I know. Next question?"
+
+@next_question
+view-if: miri_practice = 0
+
+"Next question: Oh wow." Miri can't keep a straight face. "Do you have a boyfriend? What does he think about you competing in pageants?"
+
+- @wtf: "What the heck?"
+
+@wtf
+
+"What the heck? Wait, where are you getting these questions?"
+
+"Second google result for 'beauty pageant questions'. thepageantplanet dot com. You can look it up yourself."
+
+You do just that, and there it is. "Like, what the heck am I supposed to say here? That I'm gay, or something like that?"
+
+"You could just say that you don't have a boyfriend. But then there's the follow up."
+
+- @next_question_2: "Next question."
+- @followup: "What's the followup?"
+
+@followup
+go-to: next_question_2
+
+"What's the followup? I hope it's not something like... why don't you have a boyfriend."
+
+"If your boyfriend didn't want you to compete in pageants, what would you say?"
+
+You grimace.
+
+- @next_question_2: "Next question."
+
+@next_question_2
+
+"Next question."
+
+"What would you say to people who don't believe that pageants are a good influence on women?"
+
+"Oh no. I'd, uh, agree with them?"
+
+"No, see, that's the wrong answer. You can't answer these things honestly, well unless you're honestly a total loser. You have to think from the perspective of the pageant organizers. What answers would they want to hear? But you can't answer exactly what they want to hear, because then they'll know that you're cheating, or preparing too much. You have to say almost what they want to hear, but change it up just enough to make it seem like that's your actual opinion. And you have to make it sound like you're coming up with the answer on the spot."
+
+- @needlessly_complicated: That seems needlessly complicated
+
+@needlessly_complicated
+
+"That seems... needlessly complicated. And cynical. Like, I mean, I thought they would grade on how well you answer, not what you say."
+
+"It's obviously both. They care about how you answer it, and what your answer is. For the basic questions it's more how you answer them." Miri smirks as she stares at her phone. "It's just like college application essays, isn't it? And you should be plenty familiar with those."
+
+You can't help but sigh. "I should be, but, like, I guess I'm not."
+
+The two of you keep up this pageant interview game until dusk. She always picks the weird questions, and you dodge them. In the end, you're not sure if you actually learned anything that would help in the pageant. And you missed out on time you could have spent chipping away at your copious quantity of homework.
+
+- @waste_of_time: Waste of time?
+- @but_it_was_fun: But, it was fun spending time with Miri. Right?
+
+@next_question_3
+view-if: miri_practice > 1
+
+"Here's a basic question. Why do you want to participate in the pageant?"
+
+- @why_basic: Make up a basic but honest answer.
+- @why_good: Give the answer you think they're looking for.
+
+@why_basic
+
+"Um, because my parents made me do it?"
+
+"That's a terrible answer."
+
+You shrug. "What else am I supposed to say?
+
+"Do you really have no other reason for doing this? Are you really only doing this to satisfy your parents?"
+
+"Yeah. Basically."
+
+Miri rolls her eyes. "Well, then at least you have to come up with a better answer."
+
+"Okay... I'll try..."
+
+- @miri_interview_practice_final: Miri moves on.
+
+@why_good
+
+"Um, because I want to improve myself by, um..."
+
+Miri looks at you, waiting. "How do you want to improve yourself?"
+
+"By getting out of my comfort zone? Or, um, something like that."
+
+"That works, I guess," she says. "But you're going to need to say that with confidence at the actual pageant. You can't just say 'um' all the time."
+
+"Yeah..."
+
+- @miri_interview_practice_final: Miri moves on.
+
+@miri_interview_practice_final
+
+Miri keeps on asking questions, repeating many of the same ones you've already gone over, but also adding new ones. Fewer weird questions about boyfriends this time. You feel as if you're getting better, somehow.
+
+
+
+@hang
+view-if: miri_hang = 0 and miri > 2 and miri_practice > 0 and gym > 0
+on-arrival: miri_hang += 1
+
+"Wait, I thought you wanted to practice for the pageant?", she says.
+
+"Maybe we can... like, take a break or something like that?" You try your best to keep your voice from being too serious.
+
+"Oh, no, that's not what I meant at all! If you want to just..., like, hang out or whatever, that's fine too."
+
+Anyway, why did you want to hang out with Miri?
+
+- @because: Just because. No reason.
+- @lonely: You're lonely as heck.
+- @like_her: You like her.
+
+@because
+go-to: anyway
+
+You don't need a reason to want to hang out with somebody... right? You can relate to other people without treating them as a way to gain advantage... right?
+
+@lonely
+go-to: anyway
+
+You're lonely, and she's the only person whom you know would voluntarily be with you at this moment. Not that she's your friend of last resort, definitely not; she's pretty great.
+
+@like_her
+go-to: anyway
+on-arrival: miri_like += 1
+
+What's that supposed to mean? What does it mean that you "like" her? Would she be open to... never mind. You just hope she doesn't notice you surreptitiously glancing in her direction all the time.
+
+@anyway
+
+"where do you want to go?", Miri asks. "Wait. If you don't know, how about let's go downtown, and like, just walk around?"
+
+"Um. Sure. I guess. Like an impromptu trip downtown for no reason other than to wander about aimlessly?"
+
+"Yeah. Exactly."
+
+The two of you take the Orange Line to downtown, sitting without talking. Miri looks at something on her cell phone; you look out the window until the train enters the tunnel. What even is there to do here, and why did you go on a weekday? It's rush hour, when the commuters are getting out of their office towers and onto their cars and trains heading home. The commute back will be packed.
+
+- @walk_around: Just walk around?
+
+@walk_around
+
+It always feels pleasant just walking around the city, as if there were no burdens in the world.
+
+Miri starts to talk, after you cross the street towards the Public Garden. "Hey, I was wondering,..."
+
+"Um, what are you wondering?"
+
+"Just, what are you hoping to get out of the pageant? Like, what are you hoping to accomplish by doing this?"
+
+- @college_apps: College apps?
+- @self_improvement: Self-improvement?
+
+@college_apps
+
+"Uh, college apps?"
+
+"Seriously? Is that literally all you care about? Is there literally nothing else in life?"
+
+"I mean, like... yeah?"
+
+"Do you actually want to do the pageant?"
+
+"I... um, don't know? Like, it's just something that I do."
+
+Miri sighs. "I sometimes worry about you, you know."
+
+- @what_worry: You've had this conversation before.
+
+
+@self_improvement
+
+"Uh, self-improvement or whatever?"
+
+"Are you serious?", Miri says, but she already knows what your answer will be.
+
+"Maybe? I mean that's what my dad says and sometimes he's... not wrong?"
+
+"But is that what you want?"
+
+"Um, I guess?"
+
+Miri sighs. "I sometimes worry about you, you know."
+
+- @what_worry: You've had this conversation before.
+
+
+@what_worry
+
+You've had this conversation with Miri before. In fact it constitutes a good portion of your "serious" conversations with her.
+
+"Is something wrong?", she continues. "You've seemed kind of down lately. Would you like to talk about it?"
+
+- @nothing_wrong: Nothing's wrong.
+
+@nothing_wrong
+
+You take a long breath. "No. Um, nothing's wrong." Not technically a lie, just an extreme misdirection.
+
+"What do you mean?", she says, glancing into your eyes. The two of you are sitting on a bench overlooking a small artificial lake. No one else is close by; it's an overcast day too cold for tourists or joggers, and you can see her breath forming clouds between you.
+
+"You can tell me anything," Miri continues. "We're friends, right?"
+
+- @tell_her: Tell her?
+- @dont_tell_her: Don't tell her?
+
+@tell_her
+
+Tell her... what? Exactly? What does 'what's wrong with you' even mean?
+
+"Um... I don't know," is what you say after a long pause.
+
+"Come on. It's fine."
+
+- @it_happens: You can tell where this is going.
+
+@dont_tell_her
+
+You wouldn't even begin to know what to say. What does 'what's wrong with you' even mean?
+
+"No," is what you say after a long breath.
+
+"Come on. It's fine."
+
+- @it_happens: You can tell where this is going.
+
+
+@it_happens
+
+You've seen this happen before and you've tried to avert it. Miri thinks that talking about stuff will make it better. You know that it just makes everything worse. Besides, how do you even describe the "stuff" that's going on right now? Can you even put it into words?
+
+"Sorry," you say. "Why do you always ask what's wrong with me? Why don't you talk about your own problems?"
+
+"Come on!", Miri says. "Now's not the time for this."
+
+- @upset: For some reason, you're feeling kind of upset.
+
+@upset
+
+"Have you considered the possibility that nothings wrong and I'm just like this?"
+
+"That's it then, huh? Sorry I ever bothered."
+
+She turns away. 
+
+- @regret: You regret your words instantly.
+
+@regret
+
+You regret your words instantly. You lied. Of course something's wrong with you; it's the fact that you fuck up every time words come out of your mouth. You fucked up. Why would Miri ever talk to you again? Why would she not regret making your acquaintance? You should disappear forever, retreat from social life, never talk to anyone ever again.
+
+"Are you crying?", Miri asks in a neutral tone, but it's a rhetorical question.
+
+- @cry_for_no_reason: Cry for no reason.
+
+@cry_for_no_reason
+
+"No... it's just that... um..." You are crying as you try to hide your face. Crying for no reason, your evolved aptitude for emotional manipulation kicks into high gear for no purpose at all.
+
+God, why are you like this? Why do your words fail you at the most inopportune times? Why are you such an inherently horrible person who doesn't deserve even a modicum of companionship?
+
+- @why_bother: Why does Miri even bother with you?
+
+@why_bother
+
+It's a good question, isn't it? But applies to more than just Miri; why does any human being voluntarily interact with you? You, with no discernable positive qualities whose only goal in social interaction is the emotionally manipulative offloading of your banal burdens upon the handful of people who give a fuck. And even then...
+
+"Hey. [+ first_name : +]." Miri's words take you out of your mental loop.
+
+"Oh. Um." You stare at the grass.
+
+"Hey. Sorry I got kinda upset."
+
+"Oh." For some reason you feel like crying even more.
+
+- @sorry_2: Sorry...?
+
+@sorry_2
+
+"I should, um, be sorry," you say, as you try and fail to hold back your tears. You're not sure if you're sad or upset or what you're feeling anymore. "Sorry, this is emotionally manipulative as fuck..."
+
+"It's normal, okay? You can trust me. Really. Not to be cliche and all but I'm here for you."
+
+"That's the problem, isn't it?"
+
+"What's the problem?"
+
+- @sorry_3: "Unspecific and generic statements of support."
+- @just_go_away: "Just... I don't know..."
+
+@sorry_3
+
+"Okay, so, like... you make these..., like, unspecific and generic statements of support without background comprehension. You say you care about me but like... a substantial part of me distrusts that, and like, any statement of affection more generally. Or, um... fuck, I don't know what's wrong with me..."
+
+You have no idea what you're talking about anymore. But for some reason Miri looks as if she's still listening. She looks as if she's not going to hate you forever. Of courses you cannot be sure of that; you have no idea what she's thinking, and you're still uncertain what kind of relationship you actually have but...
+
+"Hey, it's okay," Miri says. "I'm sorry that I haven't been as aware as I should have." You're still crying. She takes your hand. 
+
+- @pull_away: Pull away.
+- @let_her_hold: Let her hold your hand.
+
+@pull_away
+view-if: stress >= 4
+
+You pull your hand away. This feels wrong. Everything feels wrong, as if the pressure within you has built up to an unmanageable level, and it's looking for a vent to be released. You're so fucked up. You don't deserve this. You deserve far worse.
+
+"Hey, [+ first_name : +]? What's up?"
+
+- @go_away: Run away.
+- @sit_back_down: Sit back down.
+- @fuck_you_miri: "Fuck off."
+
+@go_away
+go-to: sit_back_down
+
+Part of you wants to run away, but you don't have the energy to go anywhere. Your legs begin to buckle.
+
+
+@sit_back_down
+
+"Sorry," you say, and sit back down. "I've been... kind of on edge lately. I'm just so tired of everything."
+
+"Hey, it's okay," Miri says, gentler than you deserve. "Do you not, like, want to be touched right now?"
+
+- @not_sure_if_want: "I don't know."
+
+@not_sure_if_want
+go-to: sitting_sorry_4
+
+"Um, I don't know. That's kind of the problem though. That I don't know, like, anything."
+
+"Oh? Do you want to talk about that?"
+
+"No! That's the thing! I don't know what I want to talk about because I just, like, don't know! I just, can't come up with the words for any of this stuff. Something's going on but I don't know what."
+
+"Oh, okay... well, if you do, let me know."
+
+There are no more words.
+
+
+@fuck_you_miri
+view-if: stress >= 6
+on-arrival: miri_escape = 1; trauma_points += 1
+
+The very fact that you desired to say that to Miri makes you despise yourself, slightly more than usual.
+
+Of course you won't say anything like that. You won't say anything at all. You can't say anything at all.
+
+You feel like crying again for some reason. And you do, harder than before, and you don't know why. Your legs start to carry you, not in any particular direction but just away from here. Miri gets up, following you.
+
+"Hey, let's just... let's go home. Is that okay? We can go home separately."
+
+- @fu_nod: Nod.
+
+@fu_nod
+
+You nod. "Alright then," she says. "Hope I'll see you later." And she walks off.
+
+You sit back down. You can't go home like this. A few people pass you by, some staring, none stopping. Eventually your tears stop. The sun has set and it's too cold to be outside for so long.
+
+
+@let_her_hold
+on-arrival: growth_points += 1; miri_like += 1
+
+It's not such a bad feeling, Miri's mitten over your bare hand. She continues speaking. "I'm going to try to be more understanding in the future, okay? And there's nothing wrong with you."
+
+"Everything is wrong with me."
+
+She chuckles for some reason. "I knew you would say that."
+
+"Well fuck me for being so predictable."
+
+She's laughing now. And you don't feel like crying anymore.
+
+- @sitting_sorry_4: You sit there for a while.
+
+@sitting_sorry_4
+
+"I should wash my face," you say eventually. Miri is still holding your hand as you get up.
+
+- @go_home_5: Soon enough you're on the train home.
+
+@go_home_5
+
+Miri doesn't make much conversation on the trip home. You're not sure if it's a good silence or a bad silence.
+
+You make sure to clean your face before entering your parents' sight.
+
+@just_go_away
+
+"Just... God, I don't even know. I don't even know what I'm thinking. Just that, like, everything's wrong, and..."
+
+"Hey, it's okay," Miri says, and places her hand on top of yours. "You don't have to talk if you don't want to."
+
+- @pull_away: Pull away.
+- @let_her_hold: Let her hold your hand.
+
+
+
+
+@hang_2
+view-if: miri_hang = 1 and miri_practice > 0 and gym > 0
+on-arrival: miri_hang += 1
+
+"Sure, we can hang out," Miri says. "We've done enough pageant practicing. Where do you want to go? Or, do you want to go downtown again?"
+
+"Um..."
+
+When you begin to hesitate, Miri continues, "Actually let's just stay around town."
+
+"Sure, that's fine I guess."
+
+- @stay_here: Stay around here?
+
+@stay_here
+
+Your town has a little business district with a public square, near the school and the T stop. Of course it's absolutely filled with high school students and other miscellaneous acquaintances, so it's not your favorite place to be. Not that you really have a favorite place to begin with.
+
+"So, uh, sorry about last time," Miri says. "I can be a little pushy sometimes."
+
+"It's fine..."
+
+"Hey, like, I really care about you, you know."
+
+- @care_really: "Really?"
+- @care_thanks: "Thanks?"
+
+@care_really
+go-to: care_2
+on-arrival: loneliness -= 1
+
+"Really?"
+
+"Yeah. Really. I know you don't really believe it when people say things like that, but I mean it."
+
+@care_thanks
+go-to: care_2
+on-arrival: loneliness -= 1
+
+"Um, thanks?"
+
+"Like, I know you don't really believe it when people say things like that, but I mean it."
+
+@care_2
+
+"Um... thanks?"
+
+"Sure..."
+
+- @lull_conversation: There is a lull in the conversation.
+
+@lull_conversation
+
+"Is this a good time?", Miri says, breaking a long pause.
+
+"Good time for what?"
+
+Miri stares at you, her deep brown eyes wide open with an intense expression. She sighs, and turns away.
+
+"I kind of like you. Not kind of. I really do. In like, a romantic way, I guess."
+
+It takes a while for your mind to process the words.
+
+- @miri_what: What?
+- @miri_the: The?
+- @miri_ffff: ????
+
+@miri_what
+go-to: miri_ffff
+
+@miri_the
+go-to: miri_ffff
+
+@miri_ffff
+
+"Um..."
+
+You have no idea how to respond, somewhat more so than usual. Instead you stare off into the distance, as usual. A certain tree is particularly enticing. It is a coniferous tree, whereas the dominant biome around here is broadleaf forest. It looks out of place. Just as you must do.
+
+"Yeah. So that's that," Miri says. "You don't have to like, respond right now or whatever. But, like,..."
+
+- @miri_why:"Why...?"
+
+@miri_why
+
+"Why...?" is all you manage to say.
+
+"Why what?"
+
+"Why do you want to,... you know..."
+
+Miri sighs, and rests her hands on her lap. "Okay. Do you need a reason for liking someone? This shit's irrational." She picks a dry leaf off the ground. "So will you answer me?"
+
+- @miri_yeah_date: "Yeah...?"
+- @miri_maybe_date: "Maybe...?"
+- @miri_no_date: "Um, sorry but...?"
+- @miri_already_dating: "I already..."
+
+
+@miri_yeah_date
+view-if: emily_date = 0
+
+"Yeah..."
+
+- @miri_yeah_date_2: "Actually I like you too..."
+- @miri_maybe_date_2: "Maybe I would be..."
+- @miri_no_date_2: "I'm not really interested..."
+
+@miri_maybe_date
+view-if: emily_date = 0
+
+"Maybe... "
+
+- @miri_yeah_date_2: "Actually I like you too..."
+- @miri_maybe_date_2: "Maybe I would be..."
+- @miri_no_date_2: "I'm not really interested..."
+
+@miri_no_date
+
+"Um, sorry but..."
+
+- @miri_yeah_date_2: "Actually I like you too..."
+- @miri_maybe_date_2: "Maybe I would be..."
+- @miri_no_date_2: "I'm not really interested..."
+- @miri_already_dating: "I already..."
+
+@miri_already_dating
+view-if: emily_date = 1
+
+"I already... kind of... um, have... something..."
+
+You see Miri looking at you again, eyes wide, smiling broadly for some reason.
+
+"Wait, really?", she asks, seemingly surprised.
+
+"It's, uh, complicated I guess."
+
+"Would you mind telling me about it?"
+
+- @tell_miri_about_emily: Tell her...
+- @dont_tell_miri_about_emily: Don't tell...
+
+
+@tell_miri_about_emily
+
+"So, um, like, there's this human with whom I happen to be acquainted, and um, we, uh..."
+
+- @tell_miri_about_emily_2: That was weird. Why did you talk like that?
+
+@tell_miri_about_emily_2
+
+That was weird. But you continue anyway. "We have, sort of an arrangement I guess. Whereby, uh,... I guess like, neither of us are really ready to be in a relationship right now for family reasons so we might start after graduating. So yeah. Um, sorry."
+
+Miri is still smiling.
+
+"That sounds complicated and totally in-character, so that's great! I'm happy for you."
+
+Soon the "hanging out" session ends in an awkward silence, as usual. The two of you head back to your hometown on the train, leaning against each other as you hold the handrails, buffeted by the evening crowd.
+
+@dont_tell_miri_about_emily
+
+"Um, it's... I don't really want to talk about it. Sorry."
+
+Miri is still smiling.
+
+"Sure, no problem. I'm happy for you whatever you want to do."
+
+Soon the "hanging out" session ends in an awkward silence, as usual. The two of you head back to your hometown on the train, leaning against each other as you hold the handrails, buffeted by the evening crowd.
+
+@miri_yeah_date_2
+view-if: emily_date = 0
+on-arrival: miri_date = 2; loneliness -= 2
+
+"Actually, um, I like you too..."
+
+You see Miri looking at you again, eyes wide, smiling broadly.
+
+"So like, can we like, start dating?"
+
+"You mean, like, right now?"
+
+"Not like, right now right now. But like, kind of right now?"
+
+- @miri_yeah_date_3: "Um, okay..."
+
+@miri_yeah_date_3
+
+"Um, okay..."
+
+The two of you head back to your hometown on the train, leaning against each other as you hold the handrails, buffeted by the crowd around you, but still sticking together.
+
+
+@miri_maybe_date_2
+view-if: emily_date = 0
+on-arrival: miri_date = 1
+
+"Maybe I would be, um, interested in... that... but, like... maybe not right now?"
+
+You see Miri looking at you again, smiling at least a little.
+
+"So like, what does that mean?"
+
+"I'm not sure... Sorry, I'm not really sure of anything..."
+
+"Hey, that's okay. Do you want to forget this conversation ever happened?"
+
+"No, it's like..."
+
+- @miri_maybe_date_3: You have no idea what you're feeling.
+
+@miri_maybe_date_3
+
+You sigh, and hold your head. "Sorry. Could I think it over for a bit?"
+
+"Sure. Thinking is good! Just, don't take forever!"
+
+The two of you head back to your hometown on the train, leaning against each other as you hold the handrails, buffeted by the evening crowd.
+
+
+@miri_no_date_2
+on-arrival: miri_date = -1; loneliness += 1;
+
+"I'm not really interested in, um,... that... right now. Sorry."
+
+"Oh."
+
+Neither of you are looking at each other, or speaking. The tree is still present in your field of vision. It is still a coniferous tree. You wish you could name the species or the genus.
+
+It is Miri who breaks the silence.
+
+"Yeah. I guessed that was the case."
+
+- @miri_no_date_3: "Sorry..."
+
+@miri_no_date_3
+
+"Sorry..."
+
+"No. It's not your fault."
+
+"Uh... we're still friends, right?"
+
+"Yeah. Of course."
+
+It is over. You ride the train back together to your hometown, but become separated amidst the crowds.
+

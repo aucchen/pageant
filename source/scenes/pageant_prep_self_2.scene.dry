@@ -1,0 +1,221 @@
+title: Pageant Prep
+subtitle: Home, on the internet
+new-page: yes
+view-if: week >= 1 and week_progress < 3 and pageant_prep >= 2 and stress < 15 and (pageant_talent < 3 or pageant_appearance < 3 or pageant_interview < 3 or pageant_platform < 3) and week < 10
+on-arrival: pageant_prep += 1; week_progress += 1; stress += 1
+tags: top, pageant_prep
+
+You find yourself at home in the evening, on the internet, as usual. And instead of browsing Wikipedia, perhaps you could take this opportunity to prepare for the pageant.
+
+- @pageant_chances: What are your current chances?
+- @details_2: Paperwork. There's always paperwork.
+- @details: Look up details about the pageant.
+- @clothes: Find clothes and figure out your appearance.
+- @social: Interview practice.
+- @platform: Platform preparation.
+- @pageant_prep_talent_1: Talent practice.
+
+
+@pageant_chances
+on-arrival: temp_pageant_score = 2.25*pageant_appearance + 1.5*pageant_interview + 3*pageant_talent + 2*pageant_platform
+
+Let's be honest: you've never expected to win the pageant. The hope was to have an *interesting* experience, so that you would be able to write about it in your college application, so you would seem like a well-rounded student and not an Asian-American Academic Automaton.
+
+Nevertheless, you still desire to win, right? It's a human thing, the competitive instinct. The chance to prove your detractors wrong.
+
+Based on your current preparation, and on some formula you found on the internet, it appears that [? if temp_pageant_score <= 20 : you have no chance of winning the pageant. But that's what you expected, right? ?][? if temp_pageant_score > 20 and temp_pageant_score <= 40 : you might be able to get a respectable placement, but you won't win. But, that's better than you expected, right? ?][? if temp_score > 40 : ... well, you have some hope. Not a great deal of hope, but hope nevertheless. You'll still need more practice, though. ?]
+
+- @details_2: Paperwork. There's always paperwork.
+- @details: Look up details about the pageant.
+- @clothes: Find clothes and figure out your appearance.
+- @social: Interview practice.
+- @platform: Platform preparation.
+- @pageant_prep_talent_1: Talent practice.
+
+
+@details
+subtitle: Look up details about the pageant.
+view-if: pageant_details = 0
+on-arrival: pageant_details += 1
+
+The website for the state pageant is very pink. And sparse. So sparse that it barely has any information; where are the forms? Where are the scoring sheets? All the webpage has are some pictures from last year.
+
+How are people supposed to know anything about the pageant? Do you have to actually *contact* people, like a barbarian?
+
+- @nationals: Go to the nationals website, mabye?
+- @details_2: Look through the paperwork you already have.
+
+@nationals
+
+Anyway, the national website has scoring sheets and all that stuff. But apparently the relationship between the state and national pageants are sort of complicated. Then you go on Wikipedia, and browse through the list of all pageant winners from all 50 states for both the adult and teen pageants of your selected franchise. One of the adult state winners last year was openly gay; you bookmark her Wikipedia page and read it a few times, and go down a few hundred posts through her Twitter. It's all quite boring. Which would make it easy to emulate if you would be placed in that situation, or something like that.
+
+After some time, the lights in the hallway go dark. You've already tabbed over from Wikipedia to TVTropes to look through the pages of video games you'll never play, and then from there to your long-open webcomic and fanfiction tabs. It's fascinating stuff but you should go to sleep.
+
+- @details_2: But there are still details about the pageant to work through.
+
+@details_2
+view-if: pageant_paperwork = 0
+on-arrival: pageant_paperwork += 1
+subtitle: Forms. Lots of forms. This is probably important.
+
+This is quite important. In fact this is so important that if you don't complete this part, you'll probably be disqualified for the pageant before you can even start.
+
+There are approximately 20 forms that you must fill out. Several of which were completed by your parents and sent in as the registration. Then the the organizers emailed you the rest of the forms that must be filled out.
+
+- @resume: First of all, there's the resume.
+- @platform_doc: There's a platform statement too.
+
+@resume
+view-if: resume_completed = 0
+on-arrival: resume_completed = 1
+
+First of all, there's the resume. You have not had an actual job before (no, the nepotistic way in which mom got you a research opportunity does not count), so you do not have an actual resume. When you asked your parents if you could get a job, mom just said "孩子们不应该打工,应该学习 *children shouldn't work, they should study*" and left it at that. You didn't push it. But the experience would have been helpful right now. What is a resume, anyway? What would it involve?
+
+The good thing is that there is a template, and some examples online. The fields are deceptively simple: leadership roles, academic honors, accomplishments, interesting facts, marketing plan. Have you ever had any leadership roles? Or accomplishments for that matter? Or interesting facts? You might be the most boring human being to ever exist.  
+
+- @spin_resume: But, isn't this like a college app?
+
+@spin_resume
+
+So basically this is like a college app. Once your mind enters that frame, things start to fall into place. Soon enough, it's adequately completed, or something like that.
+
+- @platform_doc: There's also the platform doc.
+- @docs_done: You're done with the documents...?
+
+
+@platform_doc
+view-if: platform_doc_completed = 0
+on-arrival: platform_doc_completed = 1; pageant_platform += 1
+
+This document is supposed to describe your platform. The platform, in the context of the pageant, is supposed to be something that you are "advocating". In your case, it's something to do with cancer research or science or whatever.
+
+Alright. You just have to write an essay about why you care about science, and why other people should care too. There. That's it.
+
+- @resume: There's also the resume.
+- @docs_done: You're done with the documents...?
+
+@docs_done
+view-if: resume_completed = 1 and platform_completed = 1
+
+You're done with the first drafts of the documents now, and it's only 1AM. You're tired, but what else is new. Five hours is enough sleep, right?
+
+
+@clothes
+subtitle: Look for tips on fashion and makeup.
+
+You browse through pictures of past pageant contestants. What do they have that you don't? Light skin, for one. Makeup. Styled hair that's not black. And dresses. And you're supposed to learn from them somehow.
+
+- @makeup: Look up makeup tips.
+- @fashion: Look up tips on clothes.
+- @body_language: Look up tips on body language.
+- @pageant_prep_pick_ball_gown: Find a ball gown.
+- @pageant_prep_try_ball_gown: Try on the ball gown.
+
+
+@makeup
+on-arrival: pageant_makeup += 1; pageant_appearance += 1
+max-visits: 1
+
+The last time you put on makeup was... perhaps the memory was so traumatic you've excised it from your brain. But you need to do this. It's s just a skill like any other, nothiing more to it.
+
+Wikihow is where you end up at, of course. You write out the list of ingredients: moisturizer, primer, foundation, concealer,... God, that's a lot of money that could probably be put to better use. The videos all look so effortless. But in reality of course it's going to be anything but.
+
+- @makeup: Look up makeup tips.
+- @fashion: Look up tips on clothes.
+- @body_language: Look up tips on body language.
+- @pageant_prep_pick_ball_gown: Find a ball gown.
+- @pageant_prep_try_ball_gown: Try on the ball gown.
+- @pageant_prep_done: That's enough for tonight.
+
+
+@fashion
+on-arrival: pageant_fashion += 1; pageant_appearance += 1
+max-visits: 1
+
+Thank god there's no swimsuit competition. But it's bad enough as it is. There's an evening gown contest, an athletic wear portion, in addition to the dress you have to wear for the interview, and the talent outfit.
+
+You spend a couple of hours paging through Wikihow. How to pick your best color. How to choose dresses for a beauty pageant. And so on. The first thing you learn is how much you've failed to learn. You read about undertones and color theory and how to match your skin tone and hair color and so on. Do all "normal" girls know this?
+
+[? if emily > 1 : Maybe Emily was right. Maybe fashion really is a science. ?]
+
+- @makeup: Look up makeup tips.
+- @fashion: Look up tips on clothes.
+- @body_language: Look up tips on body language.
+- @pageant_prep_pick_ball_gown: Find a ball gown.
+- @pageant_prep_try_ball_gown: Try on the ball gown.
+- @pageant_prep_done: That's enough for tonight.
+
+
+@body_language
+max-visits: 1
+on-arrival: pageant_appearance += 1; pageant_body_language += 1
+
+There is an unsourced internet statistic going around stating that 70 to 90 percent of human communications is nonverbal. Nonverbal communication is, unfortunately, one of the primary determinants of your success or failure on the pageant. And you're terrible at it.
+
+There are video tutorials on this, women telling you how to look at the judges, how to smile, how to comport and contort yourself on stage. There are wikihow tutorials on this, presenting the same information but in textual format.
+
+You try to absorb this information. It's hard without practice, and it's hard to practice while sitting at your desk in your cramped room.
+
+- @makeup: Look up makeup tips.
+- @fashion: Look up tips on clothes.
+- @body_language: Look up body language.
+- @pageant_prep_pick_ball_gown: Find a ball gown.
+- @pageant_prep_try_ball_gown: Try on the ball gown.
+- @pageant_prep_done: That's enough for tonight.
+
+
+@social
+subtitle: Search for interview questions to practice.
+on-arrival: pageant_interview += 1
+
+You start watching videos of "epic fails" in the interviews: women tripping over their words, repeating themselves, making vaguely banal remarks. You skip the homophobic ones because you wouldn't be able to resist looking at the comments.
+
+Unfortunately, it's obvious that you'd do worse than any of them, if you were able to come up with words at all.
+
+- @social_practice: Practice.
+
+
+@social_practice
+
+You look over the questions that have been asked, and imagine how you would answer them. And there are some tips they tell you to always remember. Practice, but don't practice too much, don't bother memorizing the questions because the judges can always tell what a canned answer sounds like. Even if your answer is canned, make it sound natural, as if you're coming up with it on the spot. But don't actually come up with it on the spot unless you're a charismatic social genius.
+
+The questions themselves are annoyingly vague and open-ended, like "What do you think the youth of today need to do better?" and stuff like that. If you were asked that you would either go blank or ask them what they mean by "youth" and "today" and "better".
+
+
+@platform
+subtitle: Work on your platform.
+view-if: pageant_platform < 2
+on-arrival: pageant_platform += 1
+
+What does the platform exactly entail, anyway? Do you actually have to go out and raise money? Or is "advocacy" enough?
+
+- @cancer: Your platform is something to do with science research?
+- @ed: Your platform is something to do with science education?
+
+@cancer
+view-if: platform = 0
+go-to: cause
+
+Yes, something to do with scientific research, using cancer research in particular as a focal point. What, exactly? Raise funds for a research foundation?
+
+@ed
+view-if: platform = 1
+go-to: cause
+
+Yes, something about science education. What, exactly? What do other people do? Do you raise funds for a foundation?
+
+@cause
+on-arrival: platform_doc_completed = 1
+
+But how the heck are you going to do that? Looking online, it turns out that for the pageant, you don't actually have to do anything concrete; you just have to advocate for your cause. Which means writing an essay and giving a short speech. And that's it.
+
+Well, that won't be too bad, would it? You won't have to go door to door, begging people for money. You've never even gone trick-or-treating; how the heck would you beg for money for a "good cause"? Anyway, it's good that you don't need to do that.
+
+But you do have to write that speech, and essay.
+
+Thus, eventually you get some writing and editing done. Whatever.
+
+
+@pageant_prep_done
+
+Anyway, you're done with this for tonight. No point in spending more time.

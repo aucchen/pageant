@@ -1,0 +1,626 @@
+title: A Christmas Party
+subtitle: The Gao Household, December 24
+new-page: yes
+view-if: week = 10 and christmas_party = 0
+on-arrival: christmas_party = 1; week_progress += 1
+tags: top, christmas
+
+Every year, your family's Bible study group holds a Christmas gathering at the Gao household, since they have the largest house of any family in the group. The whole Saturday church group usually comes, plus a bunch of other families you don't know too well.
+
+As with all of these gatherings, it's a potluck. As with all of these gatherings, your mom made a northwestern-style spicy cumin lamb noodle soup. As with all of these gatherings, the ordeal begins with you and Kevin riding in the back seat of your family's Toyota Camry.
+
+- @not_long: It's not a long drive.
+
+@not_long
+
+It's not a long drive, seeing as how you live in the same town, even though the Gaos live in the supposedly "nice" part of town. It's just not that large of a municipality.
+
+Your family is one of the last ones to arrive. Cars line the sides of the streets, and Christmas lights shine bright from the houses all around. Aubrey greets you as you enter.
+
+"We're playing Scrabble upstairs," she says, as you place the pot of soup on the counter. "Right now it's just me and --- Chen. You should really join us!"
+
+- @freeze_1: ...Emily Chen?
+
+@freeze_1
+
+You freeze for a moment. Is Emily here? It could be just a coincidence. You try to run the probability calculations; how many teenagers have that name in the area? It can't be that many; there are only tens of thousands of Chinese people around here. How likely are they to be acquainted with the Gao family? How many Chinese Christmas parties are going on in the Boston area at this time?
+
+"Hey, are you coming?", Aubrey says, breaking your attempt at a Fermi calculation.
+
+"Um, yeah. Sure."
+
+- @see_her: It's Emily for sure.
+
+@see_her
+
+You see Emily Chen sitting on the floor in Aubrey's room. She looks at you. You look at her. She has no reaction. You hope you're having no reaction.
+
+Your parents never told you about them coming; you'd think that mom would have known, and would have told you, so at least you could prepare. You didn't see Professor Chen downstairs. The Chens aren't even Christian, as far as you know. So why are they here? Are you feeling good or bad about it?
+
+- @feeling_good: Feeling good?
+- @feeling_bad: Feeling bad?
+- @feeling_neutral: I don't know?
+
+@feeling_good
+go-to: feeling_neutral
+
+@feeling_bad
+go-to: feeling_neutral
+
+@feeling_neutral
+
+Whatever. It doesn't matter anyway. The important thing is, Emily is here. Right now.
+
+It must have been a long moment, as Aubrey interrupts your reverie. "So, do you two know each other?", she asks.
+
+"Kind of," Emily says, not turning her head.
+
+"Anyway, we're playing Scrabble here," Aubrey says. "It'd be great if you joined us."
+
+- @join_scrabble: Of course you would join.
+
+@join_scrabble
+
+Of course you would join. You love contests of wit and knowledge such as this game of Scrabble right here, and it is here that your prolific lexicon would provide you with an advantage.
+
+But it's a bit hard to concentrate with Emily here, glancing at you every once in a while.
+
+- @stare_emily: Stare at Emily?
+- @ignore_emily: Ignore emily for now?
+
+@stare_emily
+on-arrival: stared_emily = 1
+
+She does not return your gaze, looking away as soon as you make eye contact.
+
+Emily is wearing gray sweatpants and a Tufts sweatshirt, all loose fitting.
+
+You are wearing a dress, a rare occasion. It's a simple red and black dress that once belonged to mom, which you're wearing under a cardigan. So is Aubrey. Her dress is green. She doesn't comment on your outfit (she's far too nice for that), but some of the adults do. 她长得真漂亮, you hear more than once. Ugh. It's not even worth translating. 不得不得, mom obligatorily says.
+
+- @continue_game: Continue the game.
+
+@ignore_emily
+view-if: emily <= 7 and emily_date = 0
+on-arrival: stared_emily = 0
+
+You ignore Emily to the best of your ability, instead making sure to concentrate on assembling words on the board using your copious classical literature-inflected vocabulary. It's all fine for a while, even if you do feel kind of bad about it.
+
+She gradually decreases the frequency of her awkward glances, it seems. That's slightly less awkward.
+
+- @continue_game: Continue the game.
+
+@continue_game
+
+"You have an excellent poker face," Aubrey tells Emily. "Its like totally blank. Not like [+ first_name : +]. I can always tell what she's thinking."
+
+You must have frowned, because Aubrey says, "She's thinking 'no you can't' right now. I can tell, see?"
+
+"Why dont you just call me an inscrutable oriental already?" Emily says. "That was a joke," she adds as Aubrey looks confused.
+
+"See, poker face," Aubrey says.
+
+- @stare_back: Emily is staring at you more now.
+- @continue_game_1: The game continues.
+
+@continue_game_1
+view-if: stared_emily = 0
+go-to: continue_game_2
+
+
+@stare_back
+view-if: stared_emily = 1
+
+You return her look, with what you imagine is a conspiratorial expression. She keeps her usual blank look, but says, "Could we take a break and talk for a bit?"
+
+Aubrey looks at the two of you. "Uh, okay," she says.
+
+- @follow_emily: Follow Emily?
+
+@follow_emily
+
+"I'm feeling inclined to do something foolish and potentially dangerous," she says once you're in an abandoned alcove. "In other words, help me out here."
+
+"What are you about to do?"
+
+"Come out to Aubrey."
+
+"Oh."
+
+- @why_come_out: "Why?"
+
+@why_come_out
+
+"Why?"
+
+"Social experiment, I guess," she says. "Hey, it worked with you. Plus I kind of read some not-straight vibes from her."
+
+"Wait seriously?"
+
+"55% serious. Anyway, should I do it?"
+
+- @yes_come_out: Yes?
+- @no_come_out: No?
+- @maybe_come_out: I don't know?
+
+@yes_come_out
+go-to: come_out_to_aubrey
+
+"Um, sure?"
+
+"Okay. I'm going to do it."
+
+@no_come_out
+go-to: go_back_to_game
+
+"No, probably not. She's like... I don't think she'll take it well."
+
+"Oh. Well. Let's go back."
+
+@maybe_come_out
+go-to: go_back_to_game
+
+"I don't know... um, what do you want to do?"
+
+"I don't know. That's the problem." She sighs. "I guess I won't. It's probably more likely to have negative consequences. Let's go back."
+
+@come_out_to_aubrey
+on-arrival: come_out_christmas_party = 1
+
+The two of you reenter Aubrey's room. No one else is there. You take a peek at Emily's face. No expression, as usual.
+
+"What took you guys so long?", Aubrey asks.
+
+"Hey, um," you begin.
+
+"I'm trans. I'm a girl," Emily says, ripping the bandaid right off.
+
+"What? Wait, what?"
+
+- @watch_it_unfold: Watch it unfold.
+
+@watch_it_unfold
+
+Emily coughs. "I'm a trans girl," she says. "So like, I was assigned male at birth, see, and now I'm a girl."
+
+"Oh. So..." Aubrey looks at Emily, and then at you. "[+ first_name : +], did you know this already?" 
+
+"She does," Emily says.
+
+"But you're like, genetically male, right?"
+
+You cringe. Emily visibly rolls her eyes. "Human biology is more complicated than that," she says. "There are things more important than chromosomal configuration. Life finds a way, with the help of technology."
+
+"Oh, uh. Okay. What do you want me to do?"
+
+Emily sighs. "Sorry. This wasn't a good idea. Forget I said anything."
+
+"I can't just forget that, can I?"
+
+"Yes. You can."
+
+- @dinner: The call to dinner saves you.
+
+
+@go_back_to_game
+
+"What took you guys so long?", Aubrey asks as the two of you return.
+
+Emily shrugs. "Not much. We just knew each other from before."
+
+"Huh." Aubrey looks over to you, a little puzzled. "Okay."
+
+- @continue_game_2: The game continues as before.
+
+
+@continue_game_2
+
+One of the younger kids comes in. "Can you help us with the TV?", he says to Aubrey. Then to Emily, "You sit like a girl". Emily is sitting with her legs tucked to the side.
+
+"Thanks," Emily replies, her face blank as usual. You almost feel like snickering, and you can't help but grin a little. Hopefully no one notices.
+
+"Sorry about that," Aubrey says.
+
+"I took it as a compliment," Emily says.
+
+- @you_win: You win the first round of Scrabble.
+- @you_win_emily_leaves: You win the first round of Scrabble.
+
+@you_win
+view-if: stared_emily = 1
+
+It's close, but you managed to use Q and Z, which made the difference in the end.
+
+"Okay, the two of you are definitely staring at each other, right?", Aubrey says. "Is there something going on that I'm not aware of?"
+
+"No, nothing's going on," Emily says. "We've just known each other before. Our parents work together. That's all."
+
+"Is that really all?"
+
+Emily stares at Aubrey, as if she were in a one-sided staring contest. It continues for half a minute.
+
+"Um, sorry," Aubrey says. "Forget I ever said anything." But then she glances at you with a slight smile. You try to contort your expression back to a safe neutral, but it probably doesn't work.
+
+- @dinner: The call to dinner saves you.
+
+
+@you_win_emily_leaves
+view-if: stared_emily = 0
+
+It's close, but you managed to use Q and Z, which made the difference in the end.
+
+"I have to use the bathroom," Emily says, and presumably leaves to do just that, but not before shooting a strange glance in your direction. You look away. Did she want something from you? Was she looking for some kind of reassurance that you failed to provide her?
+
+You start to feel worse about yourself, somewhat more than usual.
+
+"Hey [+ first_name : +]?"
+
+- @emily_leaves_2: "What?"
+
+@emily_leaves_2
+
+"Oh. Um, what?"
+
+"You're zoning out."
+
+"Oh. Sorry."
+
+- @dinner: The call to dinner saves you.
+
+@dinner
+
+Dinner is a potluck, as usual for these gatherings. Also as usual, before dinner comes a prayer, lead by Wang Laoshi.
+
+- @open_eyes: Keep your eyes open.
+- @close_eyes: Close your eyes.
+
+@open_eyes
+go-to: start_eating
+
+Most of the others have their eyes closed, including your parents and Kevin. Emily's eyes are still open. She looks at you. You bow your head. Wang Laoshi's words wash over you.
+
+@close_eyes
+go-to: start_eating
+
+You close your eyes and clasp your hands, as usual, letting Wang Laoshi's words wash over you.
+
+
+@start_eating
+
+Now it is time to start eating. The younger children go first, your brother among them. Then it is the teenagers. Emily picks the meat away, taking only the vegetables and rice. "Are you a vegetarian?", Aubrey asks. "Trying, at least," Emily replies. "Wow," some adults say. *"How can a child be like this?"*
+
+The three of you carry your paper plates and plastic sporks back up to Aubrey's room.
+
+- @aubrey_ask_em: Aubrey asks Emily...
+- @aubrey_ask_karen: Aubrey asks you...
+
+
+@aubrey_ask_em
+view-if: come_out_christmas_party = 1
+
+"So, can you tell me more about the whole transgender thing?"
+
+Emily, of course, stares at Aubrey for a few tense moments. "Fine. What do you want to know?"
+
+"So like, you're a boy who wants to be a girl, right?"
+
+Emily visibly rolls her eyes once more and shakes her head.
+
+"Sorry! Is that a bad question?", Aubrey continues.
+
+"Ugh. I mean, sorry, just forget I ever mentioned that. Can we go back to the game?"
+
+Aubrey seems hurt by Emily's reaction. "Once we're done eating, maybe," she says.
+
+- @anywhere_else: You wish you were anywhere but here.
+
+
+@aubrey_ask_karen
+view-if: come_out_christmas_party = 0
+
+"So, uh, [+ first_name : +]..." Aubrey trails off.
+
+"Yeah?"
+
+"You're, like, gay, right?"
+
+You stare at your plate of food.
+
+"I mean, what's it to you?"
+
+"Nothing. --- knows, right?"
+
+Emily nods. Respectfully, Aubrey should have thought harder before outing you to a potential stranger, but it's not like she really knows about the etiquette of such matters.
+
+"So like, do the two of you, like, have a thing going on?"
+
+- @anywhere_else_2: You wish you were anywhere but here.
+
+@anywhere_else
+go-to: end_scrabble
+
+The conversation dies, replaced by an awkward lull. Aubrey and Emily are not looking at each other. Sounds of Chinese adults talking/yelling filters from downstairs. You wish you were anywhere but here.
+
+Soon enough the three of you are finished eating. Everyone returns to the game of Scrabble.
+
+@anywhere_else_2
+
+"What do you mean by 'thing'?", you respond.
+
+"Forget it," Aubrey says. "Let's go back to scrabble."
+
+- @push_aubrey: Push the matter.
+- @drop_aubrey: Let it drop.
+
+@push_aubrey
+go-to: end_scrabble
+
+"No, really, what do you mean?"
+
+"I mean, in your words, are the two of you pursuing a romantic relationship," she sounds in a forced robotic monotone, enounciating every word.
+
+"Why would you think that?"
+
+Aubrey sighs. "You know what, forget about it."
+
+@drop_aubrey
+go-to: end_scrabble
+
+"Alright, let's, uh, move on," you say. You're glad to be rid of that topic.
+
+Soon enough the three of you are finished eating. Everyone returns to the game of scrabble.
+
+@end_scrabble
+
+The game proceeds, the air taut with tension. Emily and Aubrey do not look at each other. Emily still gives you the occasional furtive glance, but you attempt to avoid returning them. From below, some of the adults have begun singing Christian songs with piano accompaniment.
+
+"I'm going to go downstairs," Aubrey says, and leaves without explicating further.
+
+Now you're left alone with Emily.
+
+- @follow_aubrey: Follow Aubrey downstairs.
+- @stay_with_emily: Stay with Emily.
+
+@follow_aubrey
+
+You wave apologetically to Emily before exiting the room and following Aubrey downstairs. The sounds of singing grow louder. Aubrey is not joining them, but hanging back in the periphery. She notices you, and waves.
+
+"Hey, [+ first_name : +]," she begins. "Did I make a fool of myself with ---?"
+
+- @correct_aubrey: Correct her naming.
+- @yes_you_did: "Yes, you did."
+- @shrug: Just shrug.
+
+@correct_aubrey
+view-if: come_out_christmas_party = 1
+go-to: aubrey_sits_down
+
+"Her name is Emily," you say. Immediately you somewhat regret making that comment; would Emily actually want you to bring more attention to that?
+
+"What? Oh. That." Aubrey sighs.
+
+@yes_you_did
+go-to: aubrey_sits_down
+
+"Yeah... you kind of did..."
+
+"Well, sorry about that." Aubrey sighs.
+
+@shrug
+go-to: aubrey_sits_down
+
+You just make some sort of awkward shrug. Aubrey sighs.
+
+@aubrey_sits_down
+
+She sits down on the couch, and glances at you. You sit down next to her.
+
+"So, I'm really an idiot, huh?", she says, her expression in between a smile and a grimace.
+
+"Um... no... you're not?"
+
+She shrugs. "Too bad. I'm a tactless idiot who can't socialize my way out of a paper bag. Do you know how I broke up with Edwin?"
+
+You shake your head.
+
+"He said that I didn't care about anyone except myself, much less him. He said that I was willfully blind to other people's struggles. In those exact words."
+
+Aubrey shrugs. "And here we are."
+
+- @confess_to_aubrey: Confess to Aubrey.
+- @silent_with_aubrey: Continue in silence.
+
+@confess_to_aubrey
+view-if: emily_date = 0 and miri_date < 2
+
+This is a now-or-never moment. There is no better time to do something like this. There is also no worse time to do something like this, which is why you have to do it at this moment.
+
+Are you sure you want to do this?
+
+- @confess_to_aubrey_2: You're sure.
+- @silent_with_aubrey: No. You're not.
+
+@confess_to_aubrey_2
+
+You're sure... right? Right??? You take deep breaths and hope nobody notices your heart rate.
+
+- @confess_to_aubrey_3: You're sure that you wish to confess your affections for Aubrey Gao, the human in front of you right now.
+- @silent_with_aubrey: No. You're not.
+
+@confess_to_aubrey_3
+
+Okay. You're ready to do this. Well, no you're not, but you won't ever be more ready.
+
+"Um... hey?"
+
+"Yeah?"
+
+"I don't think you're a bad person."
+
+"Oh. Thanks for the vote of confidence."
+
+"No, really, I mean, um, I think you're an excellent person, and, um,..., um..."
+
+No one is around. No one is listening.
+
+- @confess_to_aubrey_4: "I like you..."
+- @silent_with_aubrey: It's not too late to back down.
+
+@confess_to_aubrey_4
+
+"And, um, I, um, like you..." is what you manage to say.
+
+"Oh." She does not exactly sound surprised.
+
+"Sorry...", you begin.
+
+"No, don't be sorry! I've been thinking about this for a while. Do you think I never guessed how you felt?"
+
+- @ca5: Oh.
+- @confess_to_aubrey_5: Shit.
+
+@ca5
+go-to: confess_to_aubrey_5
+
+@confess_to_aubrey_5
+on-arrival: aubrey_date = 1
+
+Aubrey continues. "It's been going on for a long time, ever since I heard from Miri that you were, you know. I've seen how you acted, like, around me. It's kind of obvious."
+
+A pause. Thankfully, she does not pause for long. "And I've wondered, what would I do if you actually confessed? Now, I'm pretty sure I'm straight. But like, that's not working out either. Ha. So like, I don't make any promises, but maybe we could try something out. Just for now."
+
+- @ca6: Take a deep breath.
+
+@ca6
+
+You're pretty sure your stomach is about to explode right now. That would be inconvenient.
+
+"Um..., so..."
+
+"Like, I'm just saying, this probably won't work out, but I wouldn't mind going on a date or two with you. Just to see how it turns out." You glance at her. She is smiling, just barely. You're still too nervous to cry.
+
+"So um... can we..."
+
+"Yeah. We'll talk later, okay? Someone's coming."
+
+- @shrink_away: Shrink away.
+
+@shrink_away
+
+An adult Chinese woman sits on the couch.
+
+*"Liyun, how are you these days? Are you applying to colleges?"*
+
+Then Aubrey's mom arrives. Then they have a discussion about SATs and college, which you tune out. Typical. You still can't get your mind off of what had just taken place. It's all the better when the adults mostly ignore you.
+
+Emily comes downstairs. Aubrey gets up, and you follow her to get more drinks from the counter. Not much conversation is to be had. You wonder if Aubrey is treating you differently; you really can't tell.
+
+In the background, the adults are talking. Aubrey's mom and that woman are talking about college apps again. The woman's daughter is also in high school but decided not to come here. The younger children are glued to their electronic devices; the girls are playing some dress-up game on the ipad, while the boys are playing Minecraft. Typical.
+
+- @party_over: The party is over.
+
+@silent_with_aubrey
+
+There is a pause. A long pause interrupted by the conversations of the adults, who are now in the room with you. One woman sits next to Aubrey.
+
+*"Liyun, how are you these days? Are you applying to colleges?"*
+
+Another woman approaches, Aubrey(Liyun)'s mom, leaning against the couch. *"She's only in the third year of high school. Next year she'll apply for colleges."*
+
+*"But she's taken the SATs, right?"*
+
+*"Yes,"* Liyun's mom says. *"Can you tell auntie what score you got?"*
+
+Aubrey makes a barely perceptible sigh. *"2300."*
+
+*"What's the highest?"*, the woman asks.
+
+*"2400"*, Aubrey says.
+
+*"Wow! That's great!"* She turns to you. *"Who is this?"*
+
+*"This is Zhao Qiuyi, Old Zhao's daughter,"* Aubrey's mom says. *"She is also very good at studying."* 
+
+You and Aubrey glance at each other.
+
+- @get_out_with_aubrey: Get out of there?
+
+@get_out_with_aubrey
+go-to: aubrey_is_sorry
+
+You and Aubrey stand up almost in unison. *"Aiya, daughters don't want to hear old lady's talking,"* the woman says, and laughs.
+
+The two of you walk to the kitchen and fill your cups with more drinks. Soon Emily comes downstairs to join you.
+
+@aubrey_is_sorry
+
+"I'm sorry," Aubrey says.
+
+[? if come_out_christmas_party = 1 : "Oh. Apology accepted, I guess." Aubrey smiles at her. ?]
+
+[? if come_out_christmas_party = 0 : "For what?" ?]
+
+[? if come_out_christmas_party = 0 : "Never mind," Aubrey says. ?]
+
+In the background, the adults are talking. Aubrey's mom and that woman are talking about college apps again. The woman's daughter is also in high school but decided not to come here. The younger children are glued to their electronic devices; the girls are playing some dress-up game on the ipad, while the boys are playing Minecraft. Typical.
+
+Aubrey and Emily aren't talking very much. Or at all. You aren't either.
+
+- @party_over: The party is over.
+
+@stay_with_emily
+
+Emily is silent. And so are you, for the moment.
+
+"So, uh, I guess I won?", she says.
+
+"Um, yeah, I guess you did."
+
+For some reason, Emily starts laughing. "God, this was so awkward," she says, and starts clearing the Scrabble board. "Did she really leave us alone in her room? What the hell is she thinking?"
+
+- @help_clean_up: Help clean up.
+
+@help_clean_up
+
+You and Emily clean up the board game and cups and paper plates, and bring the trash downstairs.
+
+*"Her SAT, what did she get?"*, you overhear a woman say. Aubrey is sitting on a couch, next to a woman you do not recognize, who is talking to Aubrey's mom.
+
+*"2300,"* Aubrey replies. Emily seems to grimace.
+
+- @ask_emily_sat: Ask Emily what her SAT was.
+- @dont_ask_sat: Why would you randomly ask someone that???
+
+@ask_emily_sat
+go-to: aubrey_is_sorry
+
+"Um, what did you get?", you ask Emily, trying to seem as nonchalant as possible.
+
+"2190," she replies. "Yeah, it's not that good. What about you?"
+
+"I haven't taken it yet."
+
+"Oh."
+
+Aubrey sees you and Emily, and she gets up, walking towards you.
+
+
+@dont_ask_sat
+go-to: aubrey_is_sorry
+
+Instead of talking about the SAT, you should be talking like a normal person. Except you have no idea what normal people are supposed to do, in this situation or any situation.
+
+Aubrey sees you and Emily, and she gets up, walking towards you.
+
+
+@party_over
+
+It is not long before your parents collect you and Kevin to leave. You wave goodbye to Emily and Aubrey; hopefully the two of them won't get into any more trouble.
+
+Not long after you get home, it is officially Christmas. "Merry Christmas," dad says as the TV announces the same. "Merry Christmas," mom answers.
+
+- @merry_christmas: "Merry Christmas."
+
+@merry_christmas
+
+"Merry Christmas," you say. Kevin is already too tired to stay awake. Mom puts him to bed. Dad fell asleep on the couch. You turn off the TV and the light, and head back to your room.
+

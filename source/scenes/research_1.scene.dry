@@ -1,0 +1,134 @@
+title: Research
+subtitle: Downtown, after school
+new-page: yes 
+view-if: week >= 1 and week < 7 and week_progress < 3 and research = 0 and stress < 15 and class_visited = 1
+on-arrival: week_progress += 1; research += 1; stress += 1; weekly_research = 1 
+tags: top, research
+
+You've always wanted to do actual science, hands-on research, advancing the scope of human knowledge. Dr. Professor [+ first_name : +] Zhao, creator of some miraculous scientific breakthrough. Like technology to allow two people of the same chromosomal configuration to biologically reproduce, for example. A dream, of course, but you would do whatever you can to make it reality. Now you might be one tiny step closer.
+
+You try to dismiss these thoughts. Impossible. Pointless. Can't let anyone else know, can't start your meeting by being weird to the professor.
+
+Especially since nepotism is how you got to this position. This professor is someone who worked in a office in the same building where your mother worked. 
+
+- @downtown: You can meet him after school today, your mother told you.
+
+@downtown
+
+Professor Song Chen's office is at a medical school downtown, a straight ride down the Orange Line. You're scared to go in. Actually scared is an understatement. Terrified. On the verge of a panic attack. What if you ran away and disappeared forever? It wouldn't be as bad as the embarrassment you'll feel if everything goes wrong. What is everything? Well, everything basically, if you let yourself go, if you say the wrong thing, if you are too curt or too loquacious or ruin your reputation with this man forever which could obviously happen no matter what you do and then you'll have to explain to your parents and then there will be a web of complications and your science career will be ruined forever before you even get to college and-
+
+- @breathe: Breathe.
+
+@breathe
+on-arrival: research_1_breathe += 1
+view-if: research_1_breathe <= 2
+
+It'll be okay...
+
+[+ research_1_breathe : +]...
+
+- @breathe: Breathe.
+- @knock: Just knock.
+
+@knock
+view-if: research_1_breathe > 2
+
+His office door is half open. You knock, trying to control your trembling.
+
+"Come in," he says, in the accented English you expect.
+
+You go in, trying to not let your eyes wander too freely. He sits at his desk, and turns away from his desktop monitor to meet you. You vacillate between meeting his gaze and averting it.
+
+"Sit down." You sit down on the chair he points to. "I heard you were interested in research!" His voice is punctuated with an enthusiasm you can't tell is genuine.
+
+- @stare: Stare at the professor.
+- @research: "Um... yeah. Could you tell me more about what you do?"
+
+@stare
+
+There is an approximately 95% chance that you have seen him somewhere before at one of the various familial Chinese gatherings. Although you cannot claim to have ever spoken with him in the past. That places him within the uncanny valley, or rather atop the awkwardness hill, of social interaction: familiar enough to recognize, but not familiar enough to understand.
+
+"What do you know about biology?," he asks, but it's not really as a question. "I work on single-cell gene expression. Have you ever heard of RNAseq?"
+
+"Anyway," he continues, "I study how stem cells differentiate into somatic and germ line cells through the lens, of gene expression. We develop techniques, sequencing techniques, and computational techniques, for identifying the changes in gene expression that are associated with cell differentiation. Does this make sense?"
+
+- @yes: Yes
+- @maybe: Sort of.
+- @no: Not really.
+
+@research
+
+The words come out of your mouth with a fluidity that surprises you.
+
+"I'm glad you asked! What do you know about biology? I work on single-cell gene expression. Have you ever heard of RNAseq?"
+
+"Anyway," he continues, "I study how stem cells differentiate into somatic and germ line cells through the lens, of gene expression. We develop techniques, sequencing techniques, and computational techniques, for identifying the changes in gene expression that are associated with cell differentiation. Does this make sense?"
+
+- @yes: Yes
+- @maybe: Sort of.
+- @no: Not really.
+
+@yes
+go-to: no
+
+@maybe
+go-to: no
+
+@no
+
+"Okay, good," he says, nodding and not even looking at you.
+
+He continues, and you start to get a better sense of what the work will entail. He's looking for people who can do stuff on the computer, basically, because biologists can't do computer stuff. Your mom must have told him that you were good with computers.
+
+"You can talk to my graduate student Stella. She'll work with you and tell you what to do. Follow me."
+
+- @leave: Follow him.
+
+@leave
+
+You follow him out of the office and into the lab space. "Hi, Stella, this is [+ first_name : +]," he says, to the Asian woman sitting at a stool. "She is the high schooler I told you about. She'll be working with us on the cell profiling project."
+
+She looks up from her laptop and extends her hand. "Hi [+ first_name : +]. Nice to meet you." You shake her hand, awkwardly of course.
+
+"Now, Stella will give you the details. Good luck." With that Professor Chen returned to his office, leaving you alone with Stella.
+
+"Don't worry, I won't bite. You can sit down."
+
+She seems nice and patient enough as she explains the details. They have the data already, and they just need someone to help analyze it. That is, you. This is apparently their first project that has any computational component, and you're their first programmer. Not that you're much of a programmer, but you can learn, right?
+
+"So, what do you think?"
+
+- @like: You're happy to be doing this.
+- @other: You wish you're doing actual lab work.
+- @reconsider: You're reconsidering research as a career.
+
+@like
+go-to: end
+
+"Um, this sounds interesting!" You muster as much enthusiasm in your voice as you can, but it falls flat.
+
+Stella smiles. "Okay. Good to know."
+
+@other
+go-to: end
+
+"Um, I sort of want to, you know, do more wet lab type stuff."
+
+Stella chuckles. "Yeah, everyone does. If you do well on this project we'll see what you can do next."
+
+@reconsider
+go-to: end
+
+"Um, I don't know..."
+
+Stella smiles, somehow sensing your nervousness. "It's fine. Everyone has a rough start in science. But we'll make it though, okay?"
+
+@end
+
+She continues, "I'll email you with instructions on how to access the data and the compute clusters. Let's have regular meetings at this time every week. Is that fine?"
+
+"Okay. Yeah."
+
+That wasn't so bad, was it? You feel almost like a real scientist now.
+
+

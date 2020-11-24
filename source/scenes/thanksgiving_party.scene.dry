@@ -1,0 +1,830 @@
+title: Thanksgiving Party
+subtitle: The Chen Household
+new-page: yes
+view-if: week = 6
+on-arrival: thanksgiving = 1
+tags: weekend
+
+It's 4:30 PM, and the sun is already starting to fall as your parents pack your brother and you into their gray Toyota Camry. This year the annual "Dongbei Laoxiang" Thanksgiving party is hosted at Professor Song Chen's house, a thirty minute drive.
+
+- @know_prof: Of course, you know him from your research.
+- @someone: He's apparently an academic bigwig or something like that.
+
+@know_prof
+view-if: research >= 1
+go-to: hate
+
+Of course, Professor Chen is your research advisor at the university. Beyond that, you know next to nothing about him. He's relatively rich, with a big house. He apparently has a son about your age.
+
+@someone
+view-if: research = 0
+go-to: hate
+
+He was your parents' classmate at Jilin University. He left for his PhD in the US, while your parents stayed in China. Beyond that, you know next to nothing about him. He's relatively rich, with a big house. He apparently has a son about your age.
+
+@hate
+
+You're not much of a fan of parties, especially parties thrown by your parents' Chinese friends. You usually stand in a corner by yourself while your parents tell other parents about how your 3.9 unweighted GPA will never be good enough to get into MIT and how you have zero leadership or social skills. At least the food is usually not bad.
+
+- @drive: The drive is filled with the monotone drone of NPR.
+
+@drive
+
+The drive is filled with the monotone voices of NPR that always put you to sleep. You think about your AP World and AP Chem homework. You always take your homework to these parties, not that you ever get much done.
+
+Professor Chen's house is strewn with lights, and the road in front is already full of cars, all newer than your parents' last century Camry. You help your parents carry their pot of soup up the icy driveway. It's a lamb soup, a specialty of Shaanxi province where your mother is from. Kevin rings the doorbell. The door opens, and you're greeted by a Chinese man smiling widely as he beckons your family inside.
+
+- @inside: Inside...
+
+@inside
+
+The house is big, much bigger than your  parents' apartment, and permeated with warmth and gregarious Chinese voices.
+
+*"Ai-you, Ai-you, it's too heavy, I'll help you carry this*," Professor Chen's wife yells, and she takes the pot from your hands. Professor Chen takes your coat and hangs it up. *"She doesn't need help, she can do it herself,"* your mother says out of obligation. You remain silent.
+
+*"Sorry there aren't many children your age here,"* Professor Chen says. *"My son is in his room. He's also a junior. Maybe you can play with him."*
+
+He takes you upstairs and knocks on a door. *"---, open the door,"* he says. You hear the shuffling of feet and a click of the doorknob.
+
+- @meet_emily1: The door opens...
+- @meet_emily2: The door opens...
+- @meet_emily3: The door opens...
+
+@meet_emily1
+view-if: emily <= 1
+on-arrival: meet_emily = 0
+go-to: play_nicely
+
+The person that emerges is about your height, with unruly shoulder-length hair, wearing a t-shirt and pajamas.
+
+
+@meet_emily2
+view-if: emily > 1 and emily < 4
+on-arrival: meet_emily = 0
+go-to: play_nicely
+
+When you see the person who emerges, you almost do a double take. You can almost place it; you've met this person before.
+
+@meet_emily3
+view-if: emily >= 4
+on-arrival: meet_emily = 1
+go-to: play_nicely
+
+When you see the person who emerges, you almost do a double take. It's Emily Chen. Undeniably. Her face shifts in recognition. Neither of you make a sound.
+
+@play_nicely
+
+*"Play nicely with Qiuyi-jiejie, okay?"*, Professor Chen says. He leaves, leaving the two of you alone.
+
+- @talk_emily: ...
+- @say_hi: "Um. Hi."
+
+@talk_emily
+view-if: emily >= 4
+
+"Um...", you begin, but you can't find any words. You look away. Feel your pulse. You don't know what to say. You don't even know what to think; your mind's gone blank.
+
+Here are the facts. This is Emily. She's trans. Her father must not know. And you do.
+
+Emily sighs, breaking you out of your reverie. "Just don't tell anyone, okay? God, I'm so sorry."
+
+"No. It's fine. I'm sorry." You let out a long breath.
+
+"Anyway, uh, I have to do homework."
+
+"Yeah. Me too."
+
+- @homework_emily: Do homework.
+
+@say_hi
+view-if: emily < 4
+on-arrival: meet_emily = 0
+
+"Um. Hi," you manage to say.
+
+He stares at you for a second before turning around and sitting back at his chair, fiddling with his computer. "Sorry for the mess. Sit down anywhere."
+
+You sit down on the carpet. A long moment of silence passes between the two of you, punctuated only by the tapping of the keyboard.
+
+- @wait: You're sure you know this person.
+- @homework: "Can I do my homework here?"
+- @just_do_homework: Just start doing your homework.
+
+
+@homework_emily
+
+You sit down on the carpet, as Emily sits at her desk. Her computer is on, and it looks like she's typing some sort of essay.
+
+"Don't tell anyone, okay?", she reiterates.
+
+"Of course."
+
+You unzip your backpack and take out your textbook. The assignment is just to read the relevant chapters of the textbook and answer a few basic questions on them. Maybe you'll get something done after all.
+
+- @do_homework: Do your homework.
+- @talk_emily_2: Talk to Emily.
+
+@do_homework
+
+You try to work on your AP World reading. The assignment is just to read the relevant chapters of the textbook and answer a few basic questions on them. Maybe you'll get something done after all.
+
+Occasionally you take glances at Emily. She's typing on her laptop, apparently writing some sort of essay or another.
+
+- @off_track: Of course, your mind goes off track.
+
+
+@talk_emily_2
+
+"Sorry," you say, for lack of anything else to say.
+
+"No, it's... just, I'm so sorry," Emily says.
+
+"No, I'm sorry," you say.
+
+For some reason Emily starts chuckling to herself. "It's fine," she says. "Just, like, take it easy here. I'm literally closeted to like everyone I know IRL."
+
+"Except me?"
+
+"Yeah I guess?" Emily makes a little chortle.
+
+You and Emily stare at each other awkwardly for a few moments or minutes; you can't tell, until sounds from downstairs break your reverie.
+
+"[+ first_name : +], ---, *food is ready!*", your mom shouts. 
+
+- @dinner_known: It's time for dinner.
+
+@off_track
+
+You try to focus on the homework, but you can't. You think about *things*, but mostly about how awkward the current moment is. You feel as if you should say something to break the silence because it's awkward but you don't know if it's actually a good idea and maybe Emily really wants to be doing whatever her computer thing is and probably doesn't even want you to be here and honestly maybe you don't even want to be here and you're all only here because of the machinations of your parents and...
+
+"[+ first_name : +], ---, *food is ready!*", your mom shouts. 
+
+- @dinner_known: It's time for dinner.
+
+@dinner_known
+
+The two of you head downstairs, following the fragrance of steamed rice and myriad oils and sauces. Some of the younger children have already started filling their plates. Emily fills her plate first, and then starts to head upstairs before his father calls after her.
+
+*"---, come eat with us down here."* She turns around with a sigh and heads to the living room sofas, but not before giving you a knowing look. 
+
+- @eat_research_known: You fill your plate and sit next to her.
+- @eat_research_unknown: You fill your plate and sit next to her.
+
+
+
+
+@wait
+view-if: emily >= 1
+
+Yes. You definitely know this person before. But it's not going to be a big deal because you must have met every Chinese kid who lives in this area at some point in your life.
+
+But somehow you feel like he's acting sort of strange around you. Something different from the usual awkwardness.
+
+- @know_you: "Do I know you?"
+
+
+@know_you
+on-arrival: meet_emily = 1
+
+"Um..." You're not sure how to phrase it without being rather awkward. "Do I, um, know you or something?"
+
+He stares at you for a moment, as if thinking about something.
+
+"I'm Emily Chen."
+
+"Oh. Wait, what?"
+
+He (no, she?) coughs a few times. "God, fuck." Her voice sounds different, somehow. "I fucking hate this. Sorry by the way. I'm trans. I'm a trans girl. God it sounds so fucking ridiculous to say this. If you didn't know that before. Still 90% closeted. My parents hate me."
+
+- @okay: Okay...
+
+@okay
+
+You have no idea how to react. (You guess that she *did* look kinda feminine-ish??? And from her face, she did look like the Emily Chen you met before, minus a ton of makeup? You're curious about her but at the same time you feel super awkward so ...)
+
+"Whatever," she says. "Don't fucking talk about this to anyone. Or else..."
+
+- @um_sure: "Um, sure."
+
+@um_sure
+
+"Um, sure. Of course," you say, or something like that. You look away. You should do your homework. It's the safe option. "Sorry," you say, for lack of anything else to say.
+
+"No, it's... just, I'm so sorry," Emily says.
+
+"No, I'm sorry," you say.
+
+For some reason Emily starts chuckling to herself. "It's fine," she says. "Just, like, take it easy here. I'm literally closeted to like everyone I know IRL."
+
+"Except me?"
+
+"Yeah I guess?"
+
+- @special: "Oh." 
+
+@special
+
+"Oh. Does that make me, like, um, special?" (that was awkward).
+
+"Yeah I guess?"
+
+You and Emily stare at each other awkwardly for a few moments or minutes; you can't tell, until sounds from downstairs break your reverie.
+
+"[+ first_name : +], ---, *food is ready!*", your mom shouts. 
+
+- @dinner_known: It's time for dinner.
+
+@just_do_homework
+view-if: emily < 4
+
+You sit down, not bothering to talk to your host. It doesn't matter anyway, unlike your AP World homework. So you unzip your backpack and take out your textbook. The assignment is just to read the relevant chapters of the textbook and answer a few basic questions on them. Maybe you'll get something done after all.
+
+As you do the reading, you hear tapping on the keyboard. Your host is writing some essay or another.
+
+- @drift: Your mind drifts...
+
+@homework
+view-if: emily = 0
+
+"Can I do my homework here?", you say.
+
+"Oh, sure. What is it?"
+
+"Oh, AP World."
+
+"Oh. I'm taking AP Euro right now. My school doesn't have AP World."
+
+You unzip your backpack and take out your textbook. The assignment is just to read the relevant chapters of the textbook and answer a few basic questions on them. Maybe you'll get something done after all.
+
+"Hey, what classes are you taking?", he asks, breaking your focus.
+
+- @homework_2: You're taking...
+
+
+@homework_2
+
+"Um, AP Chem, Calc BC, AP World, AP Lit, AP Spanish, and, uh, PE."
+
+"That's not bad. No music or art?"
+
+"Um, well, I do play the *erhu*."
+
+He laughs. "That's like, the most Asian thing I've ever heard."
+
+"Yeah, I guess," you say. He remains silent. You have a habit of killing off every conversation you're ever in. 
+
+- @drift: Your mind drifts...
+
+
+@drift
+
+You try to focus on the homework, but you can't. You think about *things*, but mostly about how awkward the current moment is. You feel as if you should say something to break the silence because it's awkward but you don't know if it's actually a good idea and maybe he really wants to be doing whatever his computer thing is and probably doesn't even want you to be here and honestly you don't even want to be here and you're all only here because of the machinations of your parents and...
+
+"[+ first_name : +], ---, *food is ready!*", your mom shouts. 
+
+- @out: You're glad to be out of there.
+
+@out
+
+The two of you head downstairs, following the fragrance of steamed rice and myriad oils and sauces. Some of the younger children have already started filling their plates. Your reluctant companion fills his plate first, and then starts to head upstairs before his father calls after him.
+
+*"---, come eat with us down here."* He turns around with a sigh and heads to the living room sofas. 
+
+- @eat_research_known: You fill your plate and sit next to him.
+- @eat_research_unknown: You fill your plate and sit next to him.
+
+@eat_research_known
+view-if: research > 0
+
+*"How have you been progressing with the research?"*, Professor Chen asks.
+
+"Um, a little bit..."
+
+He laughs and pats you on the back. *"It's fine, it's fine. Stella said good things about you."*
+
+- @party_conversations: And it goes on and on.
+- @party_conversations_known: And it goes on and on.
+
+
+@eat_research_unknown
+view-if: research = 0
+
+*"Qiuyi, I heard your studies are very good,"* Professor Chen says. *"Your parents say that you like to study biology. Would you like to come and work for me?"* He uses the same voice on you that he uses on the five year-olds.
+
+"Um, *I don't know?"*
+
+*"Haha. It'll be good on your college applications."*
+
+*"Oh."*
+
+- @party_conversations: And it goes on and on.
+- @party_conversations_known: And it goes on and on.
+
+@party_conversations
+view-if: meet_emily = 0
+
+The conversations continue. --- is accosted by another parent asking about his college application plans. You lose track of him after a while. Someone asks you about why you're entering a beauty pageant, because apparently it's a low-tier extracurricular. *"But for Chinese kids it's different because not many Chinese kids do this,"* your mom argues. *"And she doesn't have other specialties."*
+
+- @listen_more: Keep on eating. And listening.
+
+@party_conversations_known
+view-if: meet_emily = 1
+
+The conversations continue. Emily is accosted by another parent asking about her college application plans. You lose track of her after a while. Someone asks you about why you're entering a beauty pageant, because apparently it's a low-tier extracurricular. *"But for Chinese kids it's different because not many Chinese kids do this,"* your mom argues. *"And she doesn't have other specialties."*
+
+- @listen_more: Keep on eating. and listening.
+
+@listen_more
+
+As the adults shuffle about and you get seconds, you overhear more.
+
+You overhear your parents and the Chens talk about you. Actually, just the moms. *"Your daughter works so hard!"* *"Aiya, not really."* *"Does she have a boyfriend?"* *" No, no, of course not. She's a bookworm. Does your son have a girlfriend?"* Laughter. *"I don't know. I guess not. He doesn't like to talk either."*
+
+- @listen_more_2: And more.
+
+@listen_more_2
+
+Now they're speaking in hushed tones, but you're good at eavesdropping.
+
+*"Hey, have you ever thought that your daughter might be homosexual?"* *"Of course not! She can't be!"* *"Our son might be gay."* *"What? Really?"* *"He always likes to try and look like a girl, likes to look at the women's section in stores."* *"No way!"*
+
+- @done_eating: You're done eating.
+- @done_eating_known: You're done eating.
+
+@done_eating
+view-if: meet_emily = 0
+
+You're done eating, so you throw away your paper plate and put your chopsticks in the sink, and head upstairs again, back to ---'s room.
+
+"What were they talking about down there?", --- asks.
+
+- @tell: Tell --- about the conversation.
+- @dont_tell: Don't tell --- about the conversation.
+
+@tell
+
+"Um, your mom thought you were gay or something."
+
+--- laughs, a strange and possibly nervous laugh. "Why would you tell me that?"
+
+- @because_gay: "Because I'm also a gay and I would like to find solidarity."
+- @for_no_reason: "For no reason in particular."
+
+@because_gay
+go-to: for_no_reason
+
+You can't just say things like that.
+
+@for_no_reason
+
+"Because, um...", you start, but you don't know what to say. You glance around the room. Suddenly it feels warmer. You feel the clothes clinging to your skin. You notice the palpable human/laundry odor probably from --- but maybe from you (you can't tell). You realize that your stomach is gurgling from all the food you ate. And most of all you feel ---'s gaze upon you, like some sort of death ray. You close your eyes as you can't bear to look.
+
+"Sorry," you manage to say. You open your eyes again. Did he notice?
+
+--- sighs. "It's fine. Can I tell you something, like a deep and dark secret?"
+
+- @tell_secret: "Sure..."
+
+@dont_tell
+
+"Um, not much, really. Just... school and stuff. I guess."
+
+"Really?" --- looks at you curiously.
+
+What are you supposed to say in a situation like this? Is this a battlefield within the Chen household in which you have become an unwitting player? You should be on ---'s side, right? Right? What if you've done something wrong? Did he overhear the conversation as well, and is just testing you? Is that something that normal people do? And did you just fail that test?
+
+"Um..." You take far too long blinking, and completely forget your train of thought.
+
+--- sighs. "It's fine. Can I tell you something, like a deep and dark secret?"
+
+- @tell_secret: "Sure..."
+
+@tell_secret
+
+"Sure..." is all you manage to say.
+
+"Okay. Like. So, my parents think I'm gay, right? But like, that's not exactly wrong." --- sighs. "Look. Okay. This is going to sound dumb as fuck but, like, I'm actually a girl. I'm trans."
+
+He-no, she, buries her face in her hands, and coughs. "Look, I'll show you," she says, her voice changing somehow. She coughs again, and enters the closet.
+
+- @secret_2: "Um..."
+
+@secret_2
+
+"Wait, um, you don't have to..."
+
+"But I want to." Her voice is muffled by the closet door. "God, I've spent so much fucking time on this shit I have to... God, I'm so ridiculous right now..."
+
+There's shuffling from the closet. From downstairs come the sounds of obedient children playing the piano, and the ever-present chatter of adults speaking in Chinese.
+
+"Oh yeah, by the way, my name's Emily. Other trans girls all pick fucking unique names but I just pick a fucking generic name like Emily."
+
+- @its_okay: "Um..."
+
+@its_okay
+
+"It's, uh, okay..." Truth be told you have no idea how to respond.
+
+"No, it's not," she says. "Anyway I'm almost done. Here. How do I look."
+
+She emerges from the closet looking way more like a girl than you ever have. She wears a black sweater with a skirt. And breasts or something like that. She looks... pretty? cute? beautiful? brave? better than you?
+
+"Sorry I couldn't put on makeup. I fucking hate my facial structure but..."
+
+- @look_nice: "Um,..., you look nice?"
+
+@look_nice
+
+"Like, but, would I pass? I mean, would people see me as a girl if I just walked outside?"
+
+"I..., um, probably? But, like, walking outside right now... might be bad?"
+
+She smiles, laughing softly as she covers her mouth. It's the first time she's seemed happy since you saw her. "Thanks. I try, like, a lot."
+
+There's an awkward pause, as she stands there, not exactly looking at you. Maybe this is where you should say something.
+
+- @ask_self: Ask her about herself.
+- @party_say_nothing: Say nothing.
+
+@ask_self
+
+"So, um, can you tell me about..." and you forget what you were going to say. If you even knew in the first place.
+
+Emily chuckles to herself. "What, like, do you want to know my whole trans experience? Sure. What is there to say? I mean, I'm not that interesting."
+
+She pauses for a moment and glances at you. You look away; you realize that you were staring. "What about you? Can you tell me about yourself?"
+
+- @really_boring: "I'm... really boring?"
+
+@really_boring
+
+"I'm, uh, a really boring human."
+
+"Yeah. Well." She pauses. "Like, what do you do for fun?"
+
+"Nothing. Homework. Reading miscellaneous internet articles. And, uh, other stuff. And, what about you?"
+
+"Well, that's not too different from me." She looks at you and smiles. You look away, but you're smiling too. It's awkward, of course, but somehow it doesn't feel so wrong.
+
+- @hear_footsteps: Until you hear footsteps on the stairs.
+
+@party_say_nothing
+
+Or maybe not.
+
+"Um, why are you staring at me?", Emily asks.
+
+"Oh. Sorry," you say, and you look away.
+
+Emily sits on the bed, not looking at you. You feel awkward, a bit more than usual. Maybe you should say something to break the tension.
+
+- @um_emily: "Um, Emily?"
+
+@um_emily
+
+She looks at you and smiles. "Can you, like, keep on saying that?"
+
+"Saying what?"
+
+"My name. Actually, nevermind. It's, uh, sort of a big deal but also sort of not."
+
+"Uh, hi, Emily." As you say that, she smiles again.
+
+"Wait, stop," Emily says.
+
+- @hear_footsteps: And you hear footsteps on the stairs.
+
+
+
+
+
+
+
+
+@done_eating_known
+view-if: meet_emily = 1
+
+You're done eating, so you throw away your paper plate and put your chopsticks in the sink, and head upstairs again, back to Emily's room.
+
+"What were they talking about down there?", Emily asks.
+
+- @tell_failure: "That I'm a failure at everything I do?"
+- @tell_gay: "That they think you're gay or whatever?"
+
+@tell_failure
+
+"That I'm a failure at everything I do. That we both are. Or something like that."
+
+Emily shrugs. "Par for the course, I guess."
+
+- @what_mean: "What does that expression even mean, par for the course?"
+
+@what_mean
+
+"What does that expression even mean, par for the course?", you ask. To keep the conversation flowing in the only way you know.
+
+"Well, a par is like in golf. It's supposed to be the average score, I guess? So it must mean that something's typical. Expected."
+
+"Oh. Yeah I guess."
+
+The conversation dies down as Emily returns to doing her homework, or whatever she's doing at her computer.
+
+- @talk_after_dinner: Talk to Emily?
+- @homework_after_dinner: Try to do homework?
+
+
+@tell_gay
+
+"Um, your mom thought you were gay. Or something like that."
+
+Emily chuckles. "They still think being trans is like being ultra-gay or whatever. I mean, not that I'm not ultra-gay, but, like,..." She trails off there and smiles strangely to herself. "Sorry."
+
+- @dont_know_what_to_say: You don't know what to say.
+
+@dont_know_what_to_say
+
+The conversation dies down as Emily returns to doing her homework, or whatever she's doing at her computer.
+
+- @talk_after_dinner: Talk to Emily?
+- @homework_after_dinner: Try to do homework?
+
+
+@talk_after_dinner
+
+Somehow, this moment feels familiar, perhaps because it's the recapitulation of every social interaction you've ever had. You want to talk to Emily, but you don't know what to talk about, or if she wants to talk to you or would rather do homework. And besides, there's the awkwardness of... you know.
+
+Whatever. Maybe you should do homework instead, which obviously you have a ton of. So you do.
+
+- @quiet: It's quiet for a while.
+
+
+@homework_after_dinner
+
+Yes, you should do homework. Of course there's plenty of homework that's been assigned over Thanksgiving. AP World is the most pressing, with a full chapter of assigned reading, but you also have problem sets in AP Calc and AP Chem.
+
+You take out your books from your backpack once more, but as usual you can't focus.
+
+- @quiet: It's quiet for a while.
+
+
+@quiet
+
+It's quiet until Emily stands up and walks to her closet. "Hey, like, do you want some of my clothes? You're doing the pageant, right? And you need clothes and your current wardrobe is entirely inadequate?"
+
+- @want_clothes: "Sure...?"
+- @what_clothes: "What...?"
+
+@want_clothes
+go-to: ball_gown
+
+"Sure... I guess?"
+
+
+@what_clothes
+go-to: ball_gown
+
+"What...? I mean, doesn't the pageant need, like,..."
+
+
+@ball_gown
+on-arrival: appearance += 1; has_gown = 1
+
+"Oh, I have a ball gown," she says, and she's already inside the closet. "I don't know if it fits you but I think we're pretty similar in height at least."
+
+Emily tosses a violet dress in your direction, and it drapes over your head.
+
+"Thanks, I guess." You quickly shove it in your backpack.
+
+"Want anything else?", she asks. "I don't want my parents to find any of my dresses. They know they're there, they just don't know where to look. Not yet."
+
+"Um..."
+
+- @hear_footsteps_2: And you hear footsteps coming up the stairs.
+
+
+@hear_footsteps_2
+
+*"---, where are you?"* Emily's mom enters the room, shouting. Emily emerges from the closet clutching a handful of clothes. She quickly tosses them back in.
+
+*"---, how many times have we told you to not do this? Chen Song, come up here!"*
+
+Emily stays still, looking away from the door.
+
+- @confront: Confront Emily's mom.
+- @no_confront: Don't say anything.
+
+
+
+@hear_footsteps
+
+"Oh, shit. I have to change," Emily says, but the door already opens, and Emily's mom enters.
+
+*"---, how many times have we told you to not do this? Chen Song, come up here!"*
+
+Emily stays still, looking away from the door.
+
+- @confront: Confront Emily's mom.
+- @no_confront: Don't say anything.
+
+@confront
+
+You want to say something, but your brain and your mouth refuse. You open your mouth, but you can't call up the words from your head. 
+
+- @professor_chen_arrives: And soon Professor Chen arrives.
+
+@no_confront
+
+You look away, ignoring her mother, trying to look as small as possible. Both of them are silent as footsteps pound closer.
+
+- @professor_chen_arrives: And soon Professor Chen arrives.
+
+@professor_chen_arrives
+
+*"---, you did this again,"* Professor Chen says. *"You're already a man. You shouldn't be doing this anymore."*
+
+*"Qiuyi, we're sorry,"* he says to you. *"Go downstairs."*
+
+You look away from them, shrink back into a corner, pretend you aren't there, pretend you aren't hearing or seeing anything. "Um..." You're dumbfounded. You block out the yelling from your mind. You don't hear the shouts, the screaming, Emily's voice rising but her parents' voices rising more, the Chinese profanities you don't even understand.
+
+You close your eyes and only open them when the door slams shut.
+
+- @coward: You're a fucking coward.
+
+@coward
+
+"Time to drink bleach," Emily says, her voice flat. She stands up and starts to walk towards the door.
+
+- @please_dont_1: "Wait! Um, please don't?"
+- @please_dont_2: "Wait! Um, please don't?"
+
+
+
+@please_dont_1
+view-if: has_gown = 0
+
+"Wait! Um, please don't?"
+
+"Okay. I was just kidding." She sighs. "Fuck. What do I do now." She paces about the room, still wearing her girl clothes. You notice the red in her eyes.
+
+"Sorry..."
+
+"What the fuck are you sorry for? If you weren't here they would have been way worse."
+
+Emily sighs before she ducks back into the closet, and emerges in her pajamas again. You hear your mom calling for you from downstairs.
+
+"[+ first_name : +], *come down!"*, she shouts. *"We're going to leave now!"*
+
+- @leave_now: Go downstairs.
+- @leave_later: Stay here, at least for a little while.
+
+
+@please_dont_2
+view-if: has_gown = 1
+
+"Wait! Um, please don't?"
+
+"Okay. I was just kidding." She sighs. "Fuck. What do I do now." She paces about the room, still in her pajamas. You notice the red in her eyes.
+
+"Sorry..."
+
+"What the fuck are you sorry for? If you weren't here they would have been way worse."
+
+"Oh."
+
+- @hear_mom: You hear your mom calling for you from downstairs.
+
+@hear_mom
+
+"[+ first_name : +], *come down!"*, she shouts. *"We're going to leave now!"*
+
+- @leave_now: Go downstairs.
+- @leave_later: Stay here, at least for a little while.
+
+@leave_now
+
+*"Okay, wait a little bit!"*, you reply.
+
+You pack your things and get ready to leave. It's far too early. Perhaps Emily's parents communicated something about the incident to your parents.
+
+"Um, thanks," Emily says, still in her high voice.
+
+- @for_what: "For what?"
+
+@for_what
+
+"For what?"
+
+"Just, for being here, I guess."
+
+"But I didn't even do anything."
+
+"Well, I guess I just have low expectations." Emily stands up. "God, just don't talk about this to anyone. And like, can we just, like, keep talking later?"
+
+"Um, sure, I guess." You look at her eyes for a moment before turning away. She stands at almost exactly your height.
+
+- @hug: Somehow this feels like the time for a hug.
+- @leave_for_real: Just leave.
+
+@hug
+
+You're not habituated to physical contact. Your heart races as you walk next to her and put your arms around her shoulders. She almost jolts backward at first, but she reciprocates, wrapping her arms around you. It's a few moments before you let go.
+
+"Uh, thanks... for the hug," Emily says. [? if meet_emily = 0 : "Keep in touch, okay?" ?][? if meet_emily = 1 : "We'll meet again, okay? ?]
+
+- @see_you: "Yeah..." 
+
+@see_you
+
+"Yeah. See you sometime in the, uh, near future I guess."
+
+"And if you dont talk to me I'll talk to you whenever I feel like it, okay?"
+
+"Yeah, that would be nice."
+
+- @leave_for_real: Leave, for real.
+
+@leave_for_real
+on-arrival: emily = 6
+
+With that, you pack your backpack and wave Emily goodbye. You feel tears forming in the corner of your eyes, which you try to suppress. When you reach your parents your facial expression is back to normal. They don't ask you what's wrong, or tell you about what happened with Emily Chen and her parents. Instead they quickly whisk you and your brother into the car. He's already asleep.
+
+- @go_home: As always, it's "don't ask, don't tell" in the Zhao household. 
+
+
+@leave_later
+
+*"I'll stay here for a little bit!"*, you shout.
+
+You want to say something to Emily, so you look at her, but you immediately forget what you were going to say. If you even knew in the first place. But maybe Emily can tell how awkward you feel, because she speaks first.
+
+"So, like, you aren't going to leave now?"
+
+Normally you would be all too eager to leave these parties, but you don't want to leave so soon. You sit on Emily's bed, not looking at her, and not wanting to move.
+
+- @dont_want_leave: "I don't know..."
+
+@dont_want_leave
+
+"I don't know... I feel like, I don't want to leave right now."
+
+"Oh." She sits on the bed next to you, keeping some distance. [? if emily > 0 : "Hey, wanna talk about the pageant?" ?][? if emily = 0 : "So I heard you were doing a pageant." ?]
+
+- @omg: "Oh my God. Really?"
+
+@omg
+
+You laugh. "Oh my God. Really?"
+
+"Hey, what's wrong?"
+
+"It's just that... after all that just happened..."
+
+Emily smiles even as she rubs the tears from her eyes. "It's fine. Here. You need my clothes. And I have to get rid of them before my parents find out. And like, my makeup and stuff too."
+
+- @thanks_clothes: "Thanks..."
+- @thanks_clothes_0: "Thanks..."
+
+@thanks_clothes
+view-if: emily > 1
+on-arrival: pageant_appearance += 1
+
+"Um, thanks..."
+
+"Yeah, no problem. They're safer with you than with me. But we're gonna have to stay in touch now."
+
+*"Zhao Qiuyi, I'll say this again, we're going to leave now!"* Your mom's voice calls again from downstairs.
+
+Emily stands next to you, almost close enough to feel her breath. "Um..."
+
+- @hug: Somehow this feels like the time for a hug.
+- @leave_for_real: Just leave.
+
+@thanks_clothes_0
+view-if: emily <= 1
+on-arrival: pageant_appearance += 2
+
+"Um, thanks..."
+
+You and Emily go over her clothes. She tells you what each piece is called, when you should wear them, what you should wear them with. She sounds excited, her words so quick that they skip by your ears. Your backpack bulges.
+
+"Where did you get all this?", you ask when she finally stops talking.
+
+"Oh, Internet. And, like, goodwill."
+
+*"Zhao Qiuyi, I'll say this again, we're going to leave now!"* Your mom's voice calls again from downstairs.
+
+Emily stands next to you, almost close enough to feel her breath. "Um..."
+
+- @hug: Somehow this feels like the time for a hug.
+- @leave_for_real: Just leave.
+
+
+
+@go_home
+
+Your mind churns during the car ride home, but you feel incapable of thinking, unable to focus on any idea in particular. So you just... exist, or something like that. So you let the world pass by. Nothing feels real. But then you arrive home, back to your bed and desk and computer and Kevin's toys strewn about. And it's real and it all exists and you exist and so does Emily and...
+
+- @final_party: Close your eyes. 
+
+
+@final_party

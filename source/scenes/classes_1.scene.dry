@@ -1,0 +1,206 @@
+title: Classes
+subtitle: School, Monday morning
+new-page: yes
+view-if: week >= 1 and week < 6 and week_progress < 3 and pageant_prep = 0 and stress < 15
+on-arrival: week_progress += 1; pageant_prep = 1; miri = 1; class_visited = -1; stress += 1
+priority: 2
+tags: top, pageant_prep
+
+Your class schedule for first semester:
+
+    1. AP English Literature
+
+    2. AP World History
+
+    3. AP Calculus BC
+
+    4. AP Chemistry
+
+    5. AP Spanish
+
+    6. Health & PE
+
+For most people this would be a rather difficult courseload, to put it mildly. For you, well, you can't afford to be 'most people'. You've maintained a top-10 weighted class rank, even if your unweighted GPA could be better thanks to a few A-minuses in 10th grade.
+
+The important thing is that you're going to start preparing for the pageant this afternoon.
+
+- @prep: But before that...
+
+@prep
+
+Last night you looked up some details about the pageant. First of all, the pageant is only for teens aged 14 to 18. There are a few different "events" or something like that: evening gown, athletic wear, the interview, a talent show, and the platform. Each of these events is 20% of the final score. The top two scorers in the regional pageant in January get sent to the state pageant in March, and the winner of the state pageant gets to go to the national pageant, a live televised event in New York. Regional winners get scholarships of $500, and state winners get $2000 (you didn't bother to look at national prizes), which is at most two weeks of tuition at MIT. Still, you're doing this for the college application points, not the money, and it's not like any of your other ECs are tossing out unrestricted scholarships.
+
+It all sounds simple enough, except for the fact that, well, you're *you*, and pageants are just not something you do...
+
+- @miri: And so...
+
+@miri
+
+If you're going to do this pageant thing, you need friends to help you prepare. Well, friend, rather. Her name is Miriam Brooks, but everyone calls her Miri. She's not someone your parents exactly approve of, but she is your one friend. Probably.
+
+You still don't know how the two of you became friends, since she and you have nothing in common. She's loud, rambunctious, and outgoing, while you have to be dragged out of your personal alcoves. She's into anime and video games, and you're into molecular biology and 19th century Russian literature (and anime and video games too, unfortunately). She has plenty of other friends, but somehow she sticks with you. Opposites attract, maybe? Well, not that way, probably.
+
+- @meet_miri: You asked Miri to meet you in one of the music practice rooms.
+
+@meet_miri
+
+It was an emergency text at around 1AM last night/morning, while you were high on sleep deprivation and internet browsing and generalized loneliness. She responded not long after (maybe that's why you're friends; she's the only person with the same circadian rhythm as you), and agreed to meet today.
+
+The two of you are in a tiny soundproof room, she sitting at a piano bench, you leaning against the door.
+
+"I still can't believe you're serious about this pageant thing," she says. "And why are you asking me for help of all people? You do know that I'm like, the antithesis of the kind of people who do pageants, right?"
+
+You shrug. "You're better than me at that sort of thing, at least."
+
+Miri laughs. "Fine, if you say so."
+
+- @look: Stare at Miri.
+- @attractive: Pageant step 1: appearance.
+
+@look
+on-arrival: stare += 1 
+
+Miri has a round face and brown skin, with curly black hair brushed to one side. She's around five feet two, quite a bit shorter than you, and chubby. She's half-Black, half-Vietnamese. Also she's bisexual, not that it matters.
+
+"You okay? You wanted to talk about the pageant, right?"
+
+- @attractive: Right.
+
+@attractive
+
+The most important part of the pageant is your physical appearance, despite all the propaganda about building a well-rounded woman with good character or whatever. There's the evening gown and the athletic wear portions, plus the fact that all the judges will be looking at you all the time. You hate being looked at. But hopefully it could be a learning experience? Or something like that.
+
+"So, uh, first question. Um, am I physically attractive?"
+
+"That's kind of a loaded question."
+
+"Oh. Sorry. But, um, yeah. It is an awkward question, isn't it."
+
+Miri shrugs, and looks into your eyes. You look away.
+
+"Eh. I think you'll do alright."
+
+"What does that mean?"
+
+Miri stifles a chuckle. "Dude, you're skinny. That's enough. That's like 95% of the hegemonic definition of female attractiveness right there."
+
+- @thanks: "Um, thanks?"
+- @flaws: "What about my flaws, though?"
+
+@flaws
+
+"What about my flaws, though?"
+
+"That's an awkward question."
+
+"Oh. But, uh, it's important. Right?"
+
+"Okay, how do I say this?" She laughs, as if to herself. "Just in terms of physical stuff... Fashion choices. Shitty skincare. Facial expressions. Lack of body tone. And, like, that's all I can think of right now. But don't worry about it. You're skinny. That's all that matters." 
+
+- @thanks: "Um, thanks?"
+
+@thanks
+
+"Um, thanks?"
+
+"No problem," Miri says. "So what's next on your pageant to-do list?"
+
+- @platform: Step 2: platform
+
+@platform
+on-arrival: platform = 0
+
+The platform is apparently a community service or advocacy project that pageant contestants have to do. It's part of showing that pageants have moved on beyond chauvinism, that they care about something besides women's appearances. In practice, no matter how wonderful your platform is, appearance still matters the most. But having a good platform won't hurt.
+
+You tell Miri about the platform and ask what you can do.
+
+"Cancer."
+
+"That's it? Like, what about cancer?"
+
+"You're a scientist, right? So can't you talk about how you want to support research and stuff?"
+
+"But I need a compelling hook... Like, why does this matter to me? My grandfather died of lung cancer but... it doesn't feel right. So maybe I should just do something like... supporting basic science research. Maybe science can be the big thing and cancer is just a small part of it. Or something like that."
+
+"Sounds fine to me," Miri says with a shrug.
+
+- @gayplatform: "What about... uh, LGBT stuff?"
+- @stemplatform: "What about STEM education?"
+- @scienceplatform: "Science is good. I guess."
+
+@gayplatform
+
+"What about... uh, LGBT stuff?"
+
+"Aren't you closeted to most people? Especially your parents?"
+
+"Right. So, science it is?"
+
+"Yeah. Wouldn't that be for the best?"
+
+- @step3: Step 3: ???
+
+@stemplatform
+on-arrival: platform = 1
+
+"What about STEM education? Like, my platform could be, um, like, being a role model for girls in STEM?"
+
+"Sure, that sort of thing's in vogue these days, isn't it?"
+
+"Probably."
+
+"So go for it then."
+
+Right. Now that's decided.
+
+- @step3: Step 3: ???
+
+@scienceplatform
+
+"Yeah, science is good, I guess."
+
+"Yeah. You can't go wrong with science. They're all into STEM girls these days."
+
+"Plus it helps my mom keep her job funding."
+
+- @step3: Step 3: ???
+
+@step3
+
+"Okay, so, um, what's next?", you ask.
+
+"I don't know." Miri looks into your eyes again (why does she do that?), and you look away again. "What more do you want to do? Like, out of all the things that you need for the pageant, what's the most important to improve?"
+
+- @appearance: Appearance
+- @interview: Interview
+- @platform_1: Platform
+
+@appearance
+on-arrival: pageant_appearance += 1
+go-to: next
+
+"Like everyone says it's about character, but obviously the beauty parts are most important. Like even if I were the most eloquent girl in the world there'd be no chance if I came in looking like this."
+
+Miri smiles. "Good for being realistic. Though, um, you'll probably have to talk to someone other than me if you want help with that."
+
+@interview
+on-arrival: pageant_interview += 1
+go-to: next
+
+"Maybe like, generally having to talk to people without dying or something like that." As much as you hate to admit it, your parents might just be right about that part of you.
+
+Miri smiles. "I guess, if that's what you want."
+
+@platform_1
+on-arrival: pageant_platform += 1
+go-to: next
+
+"You know, I think the platform is the only thing that could help me out even if I lose. So, even if I lose I can still put it on my college apps as volunteer work and write my essay about how I became a role model for young science people and talk about stuff like that. Or something like that."
+
+Miri smiles. "I guess that's as good a plan as any."
+
+@next
+
+The pageant can't be the only thing you spend your time on. As a top university-bound student you need to have a full portfolio of extracurricular activities and leadership opportunities filling up every moment of every waking hour. Okay, that was an exaggeration. But not by much. You're a part of the science olympiad team, and everyone's counting on you to help carry the team or something. Also, you're supposed to be working with a professor (whom your mom set you up with) on a research project. Somewhere along the way, your parents and brother want to see you at home for dinner. And don't forget, it's best if you interact with other humans in a non-academic, non-family capacity once in a while.
+
+So, best to get started.

@@ -1,0 +1,149 @@
+title: Meeting with Emily
+subtitle: A personal conversation
+new-page: yes
+view-if: emily = 3 and week_progress < 3 and stress < 15 and thanksgiving = 0
+on-arrival: emily += 1; week_progress += 1; pageant_appearance += 1; stress += 1; emily_3_seen = 1
+tags: top, social
+
+It is past 11PM, and you are conversing with Emily via the vile platform known as Facebook Messenger. The discussion has been productive so far; she has been sending photographs of every item in her makeup kit and describing their usage in excruciating detail. You have not assimilated much from the conversation, but at least now you have a reference regarding makeup.
+
+Emily: Do you know how I know so much about makeup and shit?
+
+- @no: "Um, no, how?"
+
+@no
+
+You: Um, no... how?
+
+Emily is typing for a while now.
+
+Emily: Sorry but this is easier to talk about online than in person
+
+Emily is typing again.
+
+- @go_on: "It's alright...?"
+
+@go_on
+
+You: It's alright... you don't have to talk about it if you don't want to?
+
+Emily: No I kind of have to. It's now or never.
+
+Emily: Okay. I'm trans.
+
+Emily: Do you know what that means?
+
+- @sure: "Um, sure...?"
+
+@sure
+
+You: Um, sure...?
+
+Emily: Okay, so, like, I was coercively assigned male at birth...
+
+Emily: And now I definitively am not...
+
+You: I know.
+
+Emily: Oh.
+
+You: Wait, I didn't know, I mean, like
+
+Emily: No, it's okay.
+
+Emily: Sorry, let's get back to, like, whatever we were doing.
+
+- @what: "What were we doing, anyway?"
+
+@what
+
+You: Um, what were we doing again?
+
+Emily: God, I guess...
+
+Emily: I don't know anymore. Sorry that was so awkward. But you're okay with it?
+
+You: With what?
+
+Emily: Never mind.
+
+Emily is still typing, and has been for a while, but she says no more. Somehow the moment that follows seems more awkward than usual. You feel your pulse rise. You've anticipated a conversation much like this one, but never thought to come up with a script.
+
+- @okay: "It's okay..."
+- @go: Leave the conversation right now.
+
+@okay
+
+You: It's okay...
+
+Emily: What?
+
+You: The, um, trans thing. I don't know how to say it, but, um...
+
+- @not: "I don't think of you any lesser as a human being."
+- @still: "You're still Emily Chen, right?"
+
+@not
+go-to: what_to_do
+
+You: I don't think of you any lesser as a human being.
+
+That was a good line, right? You have no idea.
+
+Emily: Thanks :)
+
+@still
+go-to: what_to_do
+
+You: You're still Emily Chen, right? Nothing's changed then. I don't think any differently of you I guess.
+
+That was a good line, right? You have no idea but you probably should not have added "I guess" at the end.
+
+Emily: Yes, I guess so.
+
+@go
+
+You: Um, sorry, but, um...
+
+Should you go right now? Should you really? Wouldn't that make everything worse? Wouldn't that make her think that you think lesser of her because of her confession? And is that really what you want? You close your eyes and think of what to say.
+
+You: It's okay.
+
+Emily: what?
+
+You: the, um, trans thing. I don't know how to say it, but, um...
+
+- @not: "I don't think of you any lesser as a human being."
+- @still: "You're still Emily Chen, right?"
+
+@what_to_do
+
+There is a long pause where Emily is typing. You imagine what she's doing now. Is she feeling as nervous and awkward as you are? Probably much more so. Or maybe she's in the bathroom, or maybe it isn't such a big deal at all for her.
+
+Emily: Okay, let's call it a day for now.
+
+Emily: Sorry but I have to go do now.
+
+You: Okay...
+
+Emily: Oh yeah, thanks for listening to me.
+
+Emily: I really appreciate it. I really do.
+
+Emily: Bye.
+
+Her status changes to offline. You let out a sigh.
+
+- @look_forward: You look forward to seeing Emily again.
+- @maybe_not: You're not sure if you still want to have these meetings.
+
+@look_forward
+
+For some reason you've grown attached to these meetings with Emily. They've become a part of your routine, and you enjoy these sorts of conversations. Despite the awkwardness.
+
+
+
+@maybe_not
+
+Weren't you supposed to be doing practice for the pageant? How much practice are you actually getting done? Wouldn't there be activities that are more productive?
+

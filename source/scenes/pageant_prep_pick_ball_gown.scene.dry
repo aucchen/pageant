@@ -1,0 +1,64 @@
+title: Pick a ball gown
+on-arrival: pageant_appearance += 1
+view-if: ball_gown = 0
+max-visits: 1
+
+You need to find a ball gown for the evening dress portion of the pageant; it is an absolute necessity. Or is it an evening gown? What's the difference, anyway? If there even is a difference?
+
+Mom has pictures of the ball gowns that she's able to borrow from... someone or somewhere (you don't know exactly). Even though you don't have an opportunity to try it out, she asserts that they will all fit you, since her friends' daughter have basically the same body type as you (you doubt that, but still). You're supposed to pick from among one of them.
+
+First is a long black dress with stringy shoulder straps, with a white bow tied like a belt around the waist. It looks featureless and flat except for the white belt, with a soft but slightly imposing texture.
+
+Next is a deep green strapless dress with a pleated bottom. It has a simple look, with something like a belt gathered at the waist, and seems like it would be soft.
+
+Then, there is a light blue dress with a V-shaped neck and thin straps, and a belt of shiny stones just below the breast. Below the belt, it is solid light blue without much texture.
+
+Finally, there is a shiny blood-red strapless dress. It looks kind of fancy, with texture that drapes like a layer cake, and glittery stuff covering the breasts and scattered down the dress.
+
+Which one would you like?
+
+- @dress_1: The first (black) dress.
+- @dress_2: The second (green) dress.
+- @dress_3: The third (blue) dress.
+- @dress_4: The fourth (red) dress.
+
+ 
+@dress_1
+on-arrival: ball_gown = 1
+go-to: done
+
+The black dress has an elegant simplicity to it, which fits your persona, or something like that.
+
+*"It looks like going to a funeral"*, mom says. *"But if you think it's good then it's good."*
+
+
+@dress_2
+on-arrival: ball_gown = 2
+go-to: done
+
+The green dress is simple and elegant, and you like the color.
+
+*"It looks too simple,"* mom says. *"But if you think it's good then it's good."*
+
+
+@dress_3
+on-arrival: ball_gown = 3
+go-to: done
+
+The blue dress looks... alright.
+
+*"It looks too childish," mom says. *"But if you think it's good then it's good."*
+
+
+@dress_4
+on-arrival: ball_gown = 4
+go-to: done
+
+The red dress seems like the fanciest one, and it's beautiful, probably.
+
+*"For you, it's too exaggerated,"* mom says. *"But if you think it's good then it's good."*
+
+
+@done
+
+Okay, that's done. You'll still have to try it on sometime, though.

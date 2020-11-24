@@ -1,0 +1,148 @@
+title: Introspection
+subtitle: Nearing the end
+new-page: yes
+view-if: (week = 9 or week = 11) and introspection >= 1 and (pageant_prep >= 2 or scioly>=2 or research >= 2 or family >= 2) and week_progress < 3
+on-arrival: introspection += 1
+tags: top, introspect
+max-visits: 1
+
+It's getting close to the pageant. The hour of reckoning. Or something like that. How's your progress been?
+
+- @pageant: Think about the pageant.
+- @scioly: Think about science olympiad.
+- @research: Think about your research.
+- @people: Think about people you know.
+
+
+@pageant
+on-arrival: temp_pageant_score = 2.25*pageant_appearance + 1.5*pageant_interview + 3*pageant_talent + 2*pageant_platform
+max-visits: 1
+
+[? if pageant_appearance >= 8 : Your progress with the actual "beauty" parts of the pageant have been somewhat decent. You feel like you have a better grasp of the basics of appearance-enhancing technique than you did before the start of this ordeal. ?]
+
+[? if pageant_interview >= 5 : You feel like you've made progress regarding the interview. Not that you've "cured" your social anxiety or anything like that, but for the very specific context of the pageant interview, you have established a nonzero amount of preparation. ?]
+
+As for your actual chances for winning the pageant... based on some formula that you found on the internet, it appears that [? if temp_pageant_score <= 20 : you have no chance of winning the pageant. But that's what you expected, right? ?][? if temp_pageant_score > 20 and temp_pageant_score <= 40 : you might be able to get a respectable placement, but you won't win. But, that's better than you expected, right? ?][? if temp_score > 40 : ... well, you have some hope. Not a great deal of hope, but hope nevertheless. You'll still need more practice, though. ?]
+
+[? if ball_gown = 0 : You still haven't picked out a ball gown yet. In order to do well on the pageant, you have to pick out a ball gown and try it on. ?]
+[? if ball_gown = 1 and try_on_ball_gown = 0 : You've picked out a ball gown, but you haven't tried it on yet. You should try it on if you'd like to do well at the pageant. ?]
+
+- @scioly: Think about science olympiad.
+- @research: Think about your extracurriculars.
+- @people: Think about people you know.
+- @stop: Enough thinking for now.
+
+
+@scioly
+max-visits: 1
+view-if: invitational = 1
+
+Well, you attended the invitational, and got [+ medal_count : +] medals. That's a somewhat respectable count. However, you still need to do more practice and preparation; the team as a whole is not good enough for the regional or state competitions.
+
+- @pageant: Think about the pageant.
+- @research: Think about your research.
+- @people: Think about people you know.
+- @stop: Enough thinking for now.
+
+@research
+max-visits: 1
+view-if: research >= 4
+
+Your work at Professor Chen's lab is... continuing? You don't really know how to assess your progress for something like that.
+
+- @scioly: Think about science olympiad.
+- @pageant: Think about the pageant.
+- @people: Think about people you know.
+- @stop: Enough thinking for now.
+
+
+@people
+max-visits: 1
+
+- @emily: Think about Emily.
+- @miri: Think about Miri.
+- @aubrey: Think about Aubrey.
+- @parents: Think about mom and dad.
+- @kevin: Think about Kevin.
+- @stop: Enough thinking for now.
+
+
+@emily
+max-visits: 1
+
+[? if emily_date > 0 : You're... well, you kind of made a very vague agreement with Emily that you could start dating... eventually. Besides that, though, you feel like you know her better than before? Like even if you don't end up dating or it doesn't work out, which is highly likely, you'll still be friends? Or something like that. But you want to go out with her sometime, right? ?]
+
+[? if emily_date = 0 : You kind of got to know Emily better at the Thanksgiving party. She feels like a friend now, despite only having known of her for a couple of months. Or something like that. ?]
+
+- @emily: Think about Emily.
+- @miri: Think about Miri.
+- @aubrey: Think about Aubrey.
+- @parents: Think about mom and dad.
+- @kevin: Think about Kevin.
+- @stop: Enough thinking for now.
+
+
+
+@miri
+max-visits: 1
+
+[? if miri_date > 0 : You're... well, she asked you out, and you said yes. So you're... girlfriends now? Or something like that? It's hard to think about, but it feels good, and it's what you want. Probably. ?]
+
+[? if miri < 2 : You haven't interacted much with Miri recently. Are you still friends? Do you still have any kind of relationship? ?]
+
+[? if miri = 2 or miri = 3 : You've been asking Miri for help on the pageant somewhat. ?]
+
+[? if miri > 3 : You've been working with Miri on preparing for the pageant. She's been pretty helpful. ?]
+
+- @emily: Think about Emily.
+- @miri: Think about Miri.
+- @aubrey: Think about Aubrey.
+- @parents: Think about mom and dad.
+- @kevin: Think about Kevin.
+- @stop: Enough thinking for now.
+
+
+@aubrey
+max-visits: 1
+
+Aubrey is pretty much the same as usual. [? if aubrey_scioly > 0 : You worked with her on science olympiad stuff. ?]
+
+- @emily: Think about Emily.
+- @miri: Think about Miri.
+- @aubrey: Think about Aubrey.
+- @parents: Think about mom and dad.
+- @kevin: Think about Kevin.
+- @stop: Enough thinking for now.
+
+
+@parents
+max-visits: 1
+
+You love your parents, of course, but... [? if argument_viewed = 1 : they kind of argue a lot, especially recently... ?]
+
+[? if stories_2_viewed : They've been telling stories of the past, seemingly more so recently. You're not sure how to feel about that. ?]
+
+- @emily: Think about Emily.
+- @miri: Think about Miri.
+- @aubrey: Think about Aubrey.
+- @parents: Think about mom and dad.
+- @kevin: Think about Kevin.
+- @stop: Enough thinking for now.
+
+
+@kevin
+max-visits: 1
+
+Kevin is your brother, who is supposed to sleep in your room but usually sleep in your parents' room. That's good for you. But it makes you feel selfish for wanting a space to yourself when no one else in the family has their own room.
+
+- @emily: Think about Emily.
+- @miri: Think about Miri.
+- @aubrey: Think about Aubrey.
+- @parents: Think about mom and dad.
+- @kevin: Think about Kevin.
+- @stop: Enough thinking for now.
+
+
+@stop
+
+Thinking about things just makes you feel bad. Unfortunately, it's rather difficult to stop thinking. Thus, you distract yourself with internet browsing. It works in getting your mind off whatever it was you were thinking about.

@@ -1,0 +1,114 @@
+title: Bible Study
+subtitle: The Zhou household
+view-if: church = 2 and week = 5
+on-arrival: church += 1; aubrey += 1
+tags: weekend
+
+The gathering this week is at the Zhou household. The mom is an engineer, and the dad works in biomedical research. They have two young children, one girl your brother's age, and another girl barely a year old.
+
+Like every other week, there's a potluck meal, and with the other children (and Aubrey and Spencer), you grab your food and eat in the basement. After you finish eating, you carry your empty plate back upstairs. Aubrey follows. The adults are starting to sing church songs, as Aubrey's dad plays the piano. Your brother is sitting with mom.
+
+*"Sing with us!"* one of the adults calls out to the two of you.
+
+Aubrey looks at you and shrugs. "Alright. Fine." She goes to join them.
+
+- @join_singing: Join the singing.
+- @no_sing: Go back downstairs.
+
+
+@join_singing
+
+Mom lays the book with lyrics on her lap, as you look on. They start with a Mandarin rendition of Amazing Grace. You don't know the words, so you just hum along. Mom claps her hands with the beat. Even though no one else can sing either, it doesn't sound so bad. Their lack of vocal skills are made up for by their passion and emotion. Someone starts to cry. You glance at Aubrey. She's enthralled, it seems. 
+
+Soon it's over, and they move on to other songs. People call out names of songs that you don't recognize. They start, and you keep humming. At the end, they come back to Amazing Grace. 
+
+- @bible_study: After the singing comes the Bible study. 
+
+ 
+@bible_study 
+
+You try to follow along as the adults read some verses. Not well, given that you're semi-literate at best. But Aubrey apparently can read Chinese far better than you, just like with everything else. When it's your turn to read, you say, *"Sorry, I don't know how to read."* The adults laugh. Mom takes the turn to read instead. You look over at Aubrey, and she grins at you.
+
+- @bible_study_over: Thankfully, the Bible reading session ends.
+
+@bible_study_over
+
+It seems like forever before it ends, but it does. 
+
+- @scream_2: And after it ends, you hear your brother's screaming from the basement.
+
+@scream
+
+He's hurt himself by falling down. He's bawling, crying his eyes out. The other children circle around, looking on with vaguely guilty expressions.
+
+- @comfort_brother: Comfort him.
+- @get_parents: Get your parents.
+
+
+@get_parents
+
+*"Mama, Baba, Chunchun fell!"*
+
+Your parents come rushing downstairs. Mom pulls him upstairs.
+
+After scolding the other children, she tells you that you're all leaving early.
+
+- @talk_aubrey: You didn't even get to talk to Aubrey
+- @no_homework: You didn't even get to do your homework.
+
+
+@scream_2
+
+He's hurt himself by falling down. He's bawling, crying his eyes out. The other children circle around, looking on with vaguely guilty expressions.
+
+Your parents are already here, and mom carries him upstairs. After scolding the other children, she tells you that you're all leaving early.
+
+- @talk_aubrey: You didn't even get to talk to Aubrey
+- @no_homework: You didn't even get to do your homework.
+
+
+
+@comfort_brother
+
+*"Where were you hit?"*, you say, as you try to comfort him with a hug. 
+
+But then mom comes downstairs and takes him away from you. She carries him upstairs. After scolding the other children, she tells you that you're all leaving early.
+
+- @talk_aubrey: You didn't even get to talk to Aubrey
+- @no_homework: You didn't even get to do your homework.
+
+
+@talk_aubrey
+
+@no_homework
+
+
+@no_sing
+
+Downstairs is where all the children except for Aubrey stay during these gatherings, as usual. Spencer Zhang is here too, doing something on his laptop.
+
+"What are you doing?", you ask, not knowing what else to say.
+
+"Oh. College apps," he says, without looking up at you. "Guess what. You should be glad you're still a junior."
+
+"Oh. How's that?", you ask, wondering if you should attempt to make conversation.
+
+"Man, what do you think?" He sighs. "Like, there's no way I'm getting into MIT. But my parents are still making me apply."
+
+"Oh. Sorry."
+
+- @silence: Just do your homework.
+- @continue_talk: Try to talk to Spencer?
+
+@continue_talk
+go-to: silence
+
+But, there's nowhere for the conversation to go after that. Your parents have a standing order for you to get advice about college apps from anyone who's been through the process, which means Spencer. But, honestly, you don't really feel like it.
+
+- @silence: So maybe you should do homework instead.
+
+@silence
+
+You sit down on some couch. You have homework. You should do your homework. That's important or urgent or something like that. The easiest part of your homework is a Calc problem set. So you get started. It's hard to work, with all the children running around. The basement is large enough that they can play hide and go seek. Some adults shout that it's dangerous, but the children don't listen.
+
+- @scream: Suddenly you hear your brother's scream.

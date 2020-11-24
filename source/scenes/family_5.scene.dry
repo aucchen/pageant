@@ -1,0 +1,117 @@
+title: Family
+subtitle: Dad's time
+new-page: yes
+view-if: week > 1 and week_progress < 3 and family = 5 and weekly_family = 0 and argument_viewed = 1 and dad_viewed = 0 and week < 10
+on-arrival: week_progress += 1; family += 1; weekly_family = 1; stress += 2; loneliness += 2; dad_viewed = 1; trauma_points += 1
+max-visits: 1
+tags: top, family
+
+You instantly regret coming home when you see the pair of shoes behind the door.
+
+Your father is sitting at the dinner table, watching some CCTV drama on his laptop and smelling vaguely of alcohol. He likes to talk to you for some reason, because according to him you don't get enough opportunities to talk.
+
+"姑娘阿... *Daughter*...", he begins.
+
+- @god: Oh God.
+
+@god
+
+Mom keeps telling him to look for a job, saying her research associate salary isn't enough to support the family. But it's worked out so far. None of you have particularly expensive needs, and your family's two-bedroom apartment is one of the cheapest in the area. It's obvious that dad isn't even looking for a job anymore, and you don't know what he's doing during the days.
+
+*"I know you like girls."*
+
+Fuck.
+
+- @freeze: Freeze.
+
+@freeze
+
+You freeze. Your mind empties. It's as if your brain is encased in ice.
+
+*"I looked at the books you borrowed."* He lets out a breath, and shakes his head.
+
+Fuck, why'd you leave your Sarah Waters books at home? It wasn't worth it.
+
+- @freeze_2: Wait.
+- @leave: Try to get out of here.
+
+@leave
+go-to: freeze_2
+
+Try as you might, you can't move.
+
+@freeze_2
+
+Your body is still frozen in place. Your heart is about to explode inside your chest.
+
+*"Your mama doesn't know. If she knew, she would have a heart attack. Hmph."*
+
+He continues on. Oblivious. Probability that he's drunk: >50%.
+
+*"We shouldn't have moved to America. How good would it have been to stay in China? In China you wouldn't have been like this. We could have watched you closer. There wouldn't be this so-called '*privacy*', this so-called human rights."*
+
+He sighs again. *"Cry, right? You always cry. You haven't worked. You haven't starved. Knows nothing else, just how to cry. I'll watch you cry, fine?"*
+
+- @youre_drunk: "You're drunk."
+- @no_but: Hide.
+- @kill_self: Kill yourself right now.
+
+
+@no_but
+
+You force your muscles to move. Retreat into your room. Walk away without taking a look back. Shut the door behind you, but don't slam it. 
+
+*"Come back. I want to talk to you."*
+
+- @ignore: Ignore him.
+
+@ignore
+
+You ignore him. Pretend he isn't here. You hear footsteps approaching. Knocks on the door. It opens.
+
+*"I just want to talk. Why did you run away? 世界怎么成这样子？"*
+
+- @hide: Hide.
+
+@hide
+
+There's nowhere for you to go. You sit on your bed. Not moving. Not looking.
+
+He stands in the doorway. He sighs.
+
+*"I just wanted to talk and you run away. This really is a bad child. Can't even talk to baba for one moment. What is wrong with the children?"*
+
+He leaves, slamming the door.
+
+- @alive: You're alive.
+
+
+@alive
+
+You're alive. That's all you could ask for right now.
+
+Finally you manage to breathe. It's fine. He didn't hurt you. He's not that kind of person. He'll have forgotten about this entire incident by tomorrow. And if this were a rational argument as to whether or not you liked girls or whatever, you would be able to bring up rational reasons to defend yourself, and it's not as if he actually has hard evidence.
+
+- @fine: It's going to be fine
+
+@fine
+
+It's going to be fine, you repeat to yourself. It's going to be fine.
+
+
+
+@youre_drunk
+
+*"You're drunk,"* you say. *"You should drink less during the daytime."*
+
+*"I'm fine,"* he says. As if the bottle of baijiu on the table wasn't obvious. *"You haven't drank, and you still don't know how to talk to me."*
+
+He stares at you, as if expecting some response.
+
+- @no_but: Leave.
+
+
+@kill_self
+go-to: no_but
+
+No. You're not going to listen to the first voice inside your head. But the impetus to action is there. That part works. You can't stay here any longer.

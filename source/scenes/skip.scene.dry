@@ -1,0 +1,238 @@
+title: Skip to later weeks
+subtitle: Debug
+view-if: debug_mode = 1 and week = 0
+on-arrival: first_name = "Karen"
+tags: top, debug
+
+
+- @skip_5: Skip to week 5 (before Thanksgiving)
+- @skip_9: Skip to week 9 (before Christmas)
+
+@skip_5
+on-arrival: week = 5; class_visited = 1
+
+Skipping to week 5...
+
+Pageant prep status:
+
+- @w5_pageant_1: You're doing well in preparing for the pageant.
+- @w5_pageant_2: You haven't really prepared.
+
+@w5_pageant_1
+on-arrival: pageant_prep = 4; stress += 2; pageant_appearance += 2; pageant_details += 1; pageant_paperwork += 1; pageant_platform += 1; platform_doc_completed += 1 
+go-to: w5_scioly_status
+
+@w5_pageant_2
+on-arrival: pageant_prep = 2; pageant_appearance += 2
+go-to: w5_scioly_status
+
+@w5_scioly_status
+
+Science olympiad status:
+
+- @w5_scioly_1: You've been heavily involved in science olympiad.
+- @w5_scioly_3: You have not been involved in science olympiad.
+
+@w5_scioly_1
+on-arrival: scioly = 4; david_scioly += 1; fossils += 1; aubrey_scioly += 1; protein_modeling += 1; krishna_scioly += 1; cell += 1; edwin_scioly += 1; disease += 1
+go-to: w5_research_status
+
+
+@w5_scioly_3
+on-arrival: scioly = 0
+go-to: w5_research_status
+
+@w5_research_status
+
+Research status:
+
+- @w5_research_2: You've started on research.
+- @w5_research_3: You haven't been involved in research.
+
+@w5_research_2
+on-arrival: research = 2; stress += 1
+go-to: w5_emily_status
+
+@w5_research_3
+on-arrival: research = 0
+go-to: w5_emily_status
+
+@w5_emily_status
+
+Relationship with Emily:
+
+- @w5_emily_1: You're friends with Emily.
+- @w5_emily_3: You have not interacted much.
+
+@w5_emily_1
+on-arrival: emily = 4; pageant_appearance += 2
+go-to: w5_miri_status
+
+@w5_emily_3
+on-arrival: emily = 1
+go-to: w5_miri_status
+
+@w5_miri_status
+
+Relationship with Miri:
+
+- @w5_miri_1: You've spent some time with Miri.
+- @w5_miri_3: You have not interacted much.
+
+@w5_miri_1
+on-arrival: miri = 4; gym = 1; miri_practice = 1; miri_hang = 1; pageant_appearance += 1; pageant_interview += 1;
+go-to: w5_parents_status
+
+
+@w5_miri_3
+on-arrival: miri = 1
+go-to: w5_parents_status
+
+
+@w5_parents_status
+
+Relationship with parents:
+
+- @w5_parents_1: You've interacted somewhat with your parents.
+- @w5_parents_3: You've been avoiding them.
+
+@w5_parents_1
+on-arrival: family = 3
+go-to: end_skip
+
+@w5_parents_3
+on-arrival: family = 0
+go-to: end_skip
+
+
+
+
+
+
+
+
+
+
+
+@skip_9
+on-arrival: week = 9; class_visited = 1
+
+Skipping to week 9...
+
+Pageant prep status:
+
+- @w9_pageant_1: You're doing well in preparing for the pageant.
+- @w9_pageant_2: You haven't really prepared.
+
+@w9_pageant_1
+on-arrival: pageant_prep = 8; pageant_appearance += 4; pageant_talent += 2; pageant_platform += 2; pageant_interview += 2; pageant_details += 1; pageant_paperwork +=1; resume_completed += 1; platform_doc_completed = 1; stress += 2
+go-to: w9_scioly_status
+
+@w9_pageant_2
+on-arrival: pageant_prep = 4; pageant_appearance += 2; pageant_paperwork += 1; pageant_details += 1; pageant_paperwork += 1
+go-to: w9_scioly_status
+
+@w9_scioly_status
+
+Science olympiad status:
+
+- @w9_scioly_1: You attended the study party and the invitational, and got a lot of medals.
+- @w9_scioly_2: You attended the study party and the invitational, but did not do as well as you hoped.
+- @w9_scioly_3: You have not been involved in science olympiad.
+
+@w9_scioly_1
+on-arrival: scioly = 7; medal_count = 4; invitational = 1; study_party = 1; stress += 4; david_scioly += 2; fossils += 2; aubrey_scioly += 2; protein_modeling += 2; krishna_scioly += 1; cell += 1; edwin_scioly += 1; disease += 1; roxana_seen = 1
+go-to: w9_research_status
+
+@w9_scioly_2
+on-arrival: scioly = 3; medal_count = 2; invitational = 1; study_party = 1; stress += 2
+go-to: w9_research_status
+
+@w9_scioly_3
+on-arrival: scioly = -1
+go-to: w9_research_status
+
+@w9_research_status
+
+Research status:
+
+- @w9_research_1: You've been working in the lab regularly.
+- @w9_research_2: You've started on research.
+- @w9_research_3: You haven't been involved in research.
+
+@w9_research_1
+on-arrival: research = 6; stress += 4
+go-to: w9_emily_status
+
+@w9_research_2
+on-arrival: research = 3; stress += 2
+go-to: w9_emily_status
+
+@w9_research_3
+on-arrival: research = -1
+go-to: w9_emily_status
+
+@w9_emily_status
+
+Relationship with Emily:
+
+- @w9_emily_1: You're good friends with Emily.
+- @w9_emily_2: You're dating... ish?
+- @w9_emily_3: You have not interacted much.
+
+@w9_emily_1
+on-arrival: emily = 7; pageant_appearance += 5
+go-to: w9_miri_status
+
+@w9_emily_2
+on-arrival: emily = 7; emily_date = 1; pageant_appearance += 5
+go-to: w9_miri_status
+
+@w9_emily_3
+on-arrival: emily = 6; pageant_appearance +=  2
+go-to: w9_miri_status
+
+@w9_miri_status
+
+Relationship with Miri:
+
+- @w9_miri_1: You've spent some time with Miri.
+- @w9_miri_2: You're dating Miri.
+- @w9_miri_3: You have not interacted much.
+
+@w9_miri_1
+on-arrival: miri = 5; gym = 2; miri_practice = 2; miri_hang = 1; pageant_appearance += 2; pageant_interview += 2
+go-to: w9_parents_status
+
+@w9_miri_2
+on-arrival: miri = 6; gym = 2; miri_practice = 2; miri_hang = 2; pageant_appearance += 2; pageant_interview += 2
+go-to: w9_parents_status
+
+@w9_miri_3
+on-arrival: miri = 1
+go-to: w9_parents_status
+
+
+@w9_parents_status
+
+Relationship with parents:
+
+- @w9_parents_1: You've interacted a lot with your parents.
+- @w9_parents_2: You haven't interacted so much with them.
+- @w9_parents_3: You've been avoiding them.
+
+@w9_parents_1
+on-arrival: family = 6; dad_viewed = 1; argument_viewed = 1; stories_viewed = 2; bravery_viewed = 1; argument_viewed = 1
+go-to: end_skip
+
+@w9_parents_2
+on-arrival: family = 3; stories_viewed = 2
+go-to: end_skip
+
+@w9_parents_3
+on-arrival: family = 0
+go-to: end_skip
+
+@end_skip
+
+Alright, skipping now...

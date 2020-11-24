@@ -1,0 +1,8 @@
+title: An end
+new-page: yes
+view-if: pageant_success = 0
+on-arrival: week = 100
+tags: ending, top
+game-over: true
+
+It's over. Your parents pick you up. You've lost.

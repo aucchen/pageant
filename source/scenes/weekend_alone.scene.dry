@@ -1,0 +1,47 @@
+title: A Lonely Weekend
+subtitle: A typical weekend
+view-if: week <= 10 and week != 6 and a_lonely_weekend_seen <= 2
+on-arrival: loneliness += 1; stay_in_count = 0; a_lonely_weekend_seen = 1
+tags: weekend
+max-visits: 2
+
+You are alone in your room. Kevin and your parents have left for some errand or another. It is 2pm. You are barely awake. You have not eaten.
+
+- @get_up: Get up. 
+- @stay_in: Stay in bed.
+
+@get_up
+on-arrival: stay_in_count += 1
+view-if: stay_in_count < 3
+
+It's hard. You're tired. It's hard to open your eyes, and even harder to move.
+
+- @get_up: Get up. 
+- @get_up_for_real: Get up for real.
+- @stay_in: Stay in bed.
+
+
+
+@stay_in
+view-if: stay_in_count < 3
+on-arrival: stay_in_count += 1
+
+It's so easy to stay in bed. To lie in, doing nothing. To run through fictional scenarios in your mind. Alternate universes where everything is either much better or much worse. Think about how things could be if you were someone else, someone altogether different living in a place where the physical laws do not necessitate that you have to feel so tired all the time.
+
+- @stay_in: Stay in bed.
+- @get_up: Get up.
+- @get_up_for_real: Get up for real.
+
+
+@get_up_for_real
+view-if: stay_in_count >= 3
+
+You finally get up for real. You put on pants. You leave your room. There's food left for you on the kitchen table: soy milk, a banana, and some slices of bread. There's a post-it note on the table. They've gone shopping.
+
+After eating the laid-out breakfast, you microwave some leftovers for lunch. Then mom opens the door, with Kevin close behind.
+
+*"Why did you get up so late?"*, mom admonishes. *"You should have more energy. You're so young."*
+
+*"Sorry,"* you reply. *"I didn't sleep well."*
+
+*"Aiya, this child."* She drops her purse on the floor. Dad isn't here. You know better than to ask.

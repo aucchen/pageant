@@ -1,0 +1,71 @@
+title: Loneliness
+subtitle: A normal evening
+new-page: yes
+view-if: loneliness > 2 and week_progress < 3 and week < 100
+on-arrival: week_progress += 1; trauma_points += 1; loneliness_1_week_seen += 1
+priority: 3
+max-visits: 3
+tags: loneliness
+
+As usual, you are alone in your room. As usual, Kevin is sleeping in the same room as your parents, leaving his bed empty. As usual, you have had minimal social contact all day. As usual, you are on the computer, homework approximately 40% completed for the next few days, with some inkling of continuing for tonight.
+
+You do not particularly feel like doing homework right now. Thus, you engage in your perhaps most frequently engaged activity, browsing through your usual collection of tabs like a scripted security guard.
+
+- @wikipedia: Go on Wikipedia.
+- @social_media: Go on social media.
+- @webcomic: Read the webcomic.
+- @homework: Do your homework.
+- @homework_real: Do your homework (for real this time).
+
+
+@options
+
+- @wikipedia: Go on Wikipedia.
+- @social_media: Go on social media.
+- @webcomic: Read the webcomic.
+- @fanfic: Read fanfiction.
+- @homework: Do your homework.
+- @homework_real: Do your homework (for real this time).
+
+@wikipedia
+view-if: wiki_seen = 0
+on-arrival: loneliness -= 1; wiki_seen = 1
+go-to: options
+
+You like starting out at the homepage, click one of the links, and seeing where you end up. Your critical brain shuts down as you absorb knowledge about the populations and political distributions of various UK locales. The UK apparently has a ridiculously convoluted system of local government with a bunch of different layers and uneven administrative divisions that change every few decades. You made it your goal to understand what exactly is a "county".
+
+@social_media
+view-if: social_media_seen = 0
+on-arrival: social_media_seen = 1
+go-to: options
+
+You have twitter and tumblr accounts, but they are almost entirely used for lurking. You have never posted on your twitter account, and very rarely post on tumblr. The act of scrolling through your dashes is not particularly therapeutic; the opposite in fact. But still, it's something to do, something to make you feel a little less isolated, as if you are in fact not alone.
+
+@webcomic
+view-if: caught_up = 0
+on-arrival: caught_up = 1
+go-to: options
+
+It was Miri who introduced you to the webcomic, which is somewhat strange as she seemed to despise said webcomic despite following each of its "upd8s" like an eagle. The comic had been on hiatus for approximately a year; only recently did it start again, with a poorly conceived metatexual segment that is thankfully soon over.
+
+You have not caught up to the latest developments yet, so you might as well do so. A lot of major characters have just died in a major incident; apparently one of the surviving characters is going back in time to fix things, but not before a lot of seemingly irrelevant but probably crucial content. It's moderately clever.
+
+@fanfic
+view-if: caught_up = 1 and fanfic_seen = 0
+on-arrival: fanfic_seen = 1
+go-to: options
+
+There is a plethora of fanfiction for the webcomic. You like reading the ones about the romantic relationship between two of the girls, one a human and the other a vaguely insectoid alien. They are both canonically deceased now, but that is expected to be fixed, as the webcomic works on the principle of "all who die come back again." Or they'll end up as ghosts or something like that.
+
+Anyway, none of that matters for fanfiction. There are so many stories taking place in the interstices of the primary narrative, in the places the original author failed to elaborate. And there are the alternate universes, the stories where everyone is a high school student, where one is a vampire, and the stories in which the two girls are working as caretakers in a retirement home on Earth (you might be misremembering). 
+
+@homework
+go-to: options
+
+It's hard to bring yourself to start writing the literature essay. You can't give a reason why. It's as if there's a mental block preventing you from putting words on the screen.
+
+@homework_real
+view-if: wiki_seen = 1 and social_media_seen = 1 and caught_up = 1
+on-arrival: wiki_seen = 0; social_media_seen = 0; fanfic_seen = 0; loneliness -= 1
+
+Okay. You've procrastinated long enough. Time to start on the essay, or something like that. You open the gdocs tab that's been open for days. It's blank. Start with a header. You might as well continue while you're at it, starting the intro and an outline. Good enough for now?

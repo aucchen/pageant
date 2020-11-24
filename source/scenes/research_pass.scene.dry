@@ -1,0 +1,56 @@
+title: Research
+subtitle: A reminder or warning
+view-if: week > 5 and week < 10 and research = 0
+tags: research, top
+priority: 2
+
+You hear a knock on the door. It opens. Mom is there.
+
+*"Professor Chen says you still haven't met him."*
+
+"Oh. Sorry."
+
+*"Why haven't you talked to him? I told him you would meet him. I don't want to be a liar. Is it too far away? I can drive you if I have time."*
+
+*"It's not because..."*
+
+*"Then why?"*
+
+- @dont_want: "I don't want to."
+- @forgot: "I just forgot."
+
+@dont_want
+on-arrival: research = -1
+
+*"I just... don't want to go."*
+
+*"Why?"* Her voice turns accusatory.
+
+*"I don't know."*
+
+*"You certainly do know."*
+
+You look around. Look away. Play with your pencil. Toss your phone from one hand to the other. Mom sighs.
+
+*"I'll tell him you don't want to go. Okay?"*
+
+*"Okay."*
+
+She leaves the room, leaving the door open.
+
+@forgot
+
+*"I just forgot."*
+
+*"Is that really true?"*
+
+"Yeah. *It is.*"
+
+*"You're going to meet him soon?"*
+
+*"Okay."*
+
+*"Good."*
+
+She leaves the room, leaving the door open.
+

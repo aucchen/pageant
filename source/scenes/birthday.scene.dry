@@ -1,0 +1,364 @@
+title: Birthday
+subtitle: A party?
+view-if: week = 3
+on-arrival: birthday_party = 1
+tags: weekend
+
+It's your 17th birthday this Sunday, November 9. Normally you're not much one for birthdays, but your parents said that they wanted you to celebrate or something like that, have some fun, do something besides sit in your room. They say that you have friends, that you should invite them over for once.
+
+- @invite_miri: Invite Miri.
+- @invite_aubrey: Invite Aubrey.
+- @no_invite: Don't invite anyone.
+
+@invite_miri
+view-if: birthday_miri_invited = 0
+on-arrival: birthday_miri_invited = 1; miri += 1
+go-to: prepare
+
+If you invite anyone to your birthday party, it should be Miri. After all, she's probably your best friend, or something like that.
+
+You text Miri asking if she wants to come to your birthday celebration thing.
+
+"anyone else", she replies.
+
+"Potentially" you reply back.
+
+"sure ill come".
+
+@invite_aubrey
+view-if: birthday_aubrey_invited = 0
+on-arrival: birthday_aubrey_invited = 1; aubrey += 1; aubrey_interact += 1
+go-to: prepare
+
+Aubrey... well, she's probably your friend. She'll want to come to this thing.
+
+You can text Aubrey asking if she wants to come to your birthday party. Should you though? What would you say? Okay. Just send the message and it'll be fine.
+
+"My parents said that your parents told them about this", she replies, and you cringe. "Sure, I'll come," she texts next.
+
+@no_invite
+
+So you'll celebrate your birthday with your family? And no one else? Or not have a birthday celebration at all?
+
+- @no_celebrate: Don't have any celebration.
+- @family: Let your parents decide on something. 
+
+@no_celebrate
+on-arrival: loneliness += 2; stress -= 2
+
+*"You really don't want to celebrate your birthday?"*, mom says.
+
+*"I have to do homework,"* you say. It's an excuse that always works.
+
+*"Alright. We're still going to leave. We're going to the museum. Be careful at home."*
+
+And now you're home alone on your birthday. You shouldn't feel lonely. You should be used to this. But you never are, not completely.
+
+- @do_homework: As usual, it's time for homework.
+
+@do_homework
+
+In the end you manage to finish a lab report for AP Chem, but not before wasting a couple of hours on the internet. A couple of precious hours thrown away on useless trivialities, a couple of hours that you'll never get back.
+
+"Happy birthday!", read all the messages on Facebook. You don't reply to any of them. You never reply to your wall posts on Facebook. It might be a bad habit. 
+
+"happy bday", read Miri's text. "sorry we didn't do anything today?"
+
+"We'll make it up later?", you replied.
+
+It's around 7 in the evening when your family returns. Your brother can't wait to tell you about his adventures at the museum.
+
+@family
+
+*"You really don't want to invite anyone?"*, mom asks. *"You have friends at school, right?"* You shrug.
+
+*"Okay,"* she continues. *"It's your birthday. What do you want to do?"*
+
+*"I don't know,"* you say.
+
+"哎呀！你真烦人。你从来没有自己的注意。" *"Aiya! You're really annoying me. You never have any ideas of your own. This is your problem."*
+
+*"Okay,"* you try to respond. *"I'm just going to do homework."*
+
+*"You don't want to come with us to the museum?"*
+
+This isn't the first time mom's capriciousness confused you like this. Maybe she's doing it on purpose. Probably.
+
+- @no_celebrate: Stay home and do homework.
+- @family_celebrate: Go with them to the museum.
+
+@family_celebrate
+on-arrival: loneliness += 1; stress -= 1
+
+The four of you take the T to the Museum of Science. You used to enjoy this place when you were younger and more innocent, with its interactive exhibits that made you feel like you could understand anything. Now it's your brother's turn. His eyes glow as he plays with glowing buttons and touch-screen displays, and he runs from dinosaurs to planets and everything in between.
+
+*"Boys just like these scientific things,"* dad says.
+
+You stand a ways back, look down at the floor, hoping no one you know will see you there. Of course no one you know is there. High schoolers don't go to science museums for fun.
+
+- @family_celebrate_2: It's time to leave. 
+
+@family_celebrate_2
+
+Eventually the four of you leave to have dinner in Chinatown. It's a Peking Duck dinner, which must have been incredibly expensive. You try to avoid thinking about the cost.
+
+*"Congratulations, congratulations!"*, dad says.
+
+"For what?", you say.
+
+*"Passing birthday! Let's sing!"*
+
+You shrink from the attention as the servers sing. There's a cake. You scrape off the frosting (never liked that much). Your brother Chun-chun plays Minecraft on the iPad.
+
+The food isn't bad, but you can't stop thinking. About what? You don't even know.
+
+@prepare
+
+So what's next?
+
+- @invite_miri: Invite Miri.
+- @invite_aubrey: Invite Aubrey.
+- @done: Done inviting people.
+
+@done
+
+Okay. There's that.
+
+*"We're going to leave,"* mom says. *"Be careful here."*
+
+Now you're left alone in the apartment. Waiting for the party to start. Or something like that.
+
+- @aubrey_party: Aubrey shows up not long after.
+- @miri_party: Miri shows up not long after.
+- @both_party: Eventually both Miri and Aubrey arrive.
+
+@aubrey_party
+view-if: birthday_aubrey_invited = 1 and birthday_miri_invited = 0
+on-arrival: aubrey += 1
+
+"So, um, this is your birthday party?"
+
+You feel your heart beat faster. This is a pathetic excuse for a party.
+
+"Congratulations. Uh, you're the only one here. Haha." You try to make some sort of joke but nothing comes of it.
+
+"Oh. Um, that's fine. Don't worry about it. What do you want to do?"
+
+You can't move, and you're trembling.
+
+- @aubrey_party_2: Um...
+
+@aubrey_party_2
+
+"Um..."
+
+Aubrey sits down on the couch. "Sorry. Is this awkward?"
+
+"Yeah..."
+
+"Did your parents force you to invite me?"
+
+"Not really... sort of..."
+
+"Ugh. Well, if you want me to leave,-"
+
+"No! I, uh, enjoy your company and appreciate you as a human being. Or like... yeah." You can't help but cringe a little. God, you sound like such a failure.
+
+Aubrey smiles. "So you like me after all?"
+
+- @aubrey_party_3: ...What?
+
+@aubrey_party_3
+
+"What?"
+
+""Never mind," she says. "Let's just hang out here. A study birthday party?" She laughs. "I brought my chem homework. Do you want to work on that?"
+
+"Uh, sure." This has to be the most Asian thing you've ever done.
+
+So the two of you work on AP chem homework. It might be the best way of interhuman bonding for people like you. Or something like that.
+
+"Before I forget, happy birthday! Believe it or not, I got a present before I came here. Actually my mom bought it, but hey!"
+
+- @aubrey_party_4: It's an AP Chem study book.
+
+@aubrey_party_4
+
+"Uh, thanks." You laugh. Of course her mom would give you an AP prep book.
+
+"Yeah, no problem!"
+
+You spend your birthday doing homework together. It's better than doing homework by yourself, or doing whatever your parents would have you do. Academics might be the one way in which you can relate to other people, but if that person is Aubrey, then it might work out. Or something like that.
+
+
+@miri_party
+view-if: birthday_aubrey_invited = 0 and birthday_miri_invited = 1
+on-arrival: miri += 1; loneliness -= 1
+
+"Where is everyone?"
+
+You feel your heart beat faster. This is a pathetic excuse for a party.
+
+"Sorry, um..." You look away. Your hand starts to tremble.
+
+"Haha, no, it's fine! This is like, what do you call it, an intimate moment."
+
+"Um..."
+
+"Come on, laugh! It was a joke!"
+
+- @dont_get: You don't really get it but...
+
+@dont_get
+
+"Oh, um, haha..." Wait, is she implying- no, that's not possible of course it was a joke...
+
+"So like, your parents aren't home? What do you want to do?" Then she notices the look on your face, and says, "Actually, bad question. Would you be interested in the gift of Japanimation?"
+
+- @miri_party_2: Take a deep breath.
+
+@miri_party_2
+
+Everything will be fine. Miri is your friend.
+
+"Sure," you say with an awkward smile. "I await whatever nefarious, uh, production you have prepared."
+
+"Hey, don't doubt me."
+
+"Oh yeah, and, uh, thanks for being here."
+
+"Hey, thanks for inviting me! Like, we're friends. This is what humans do."
+
+"Yeah. Humans."
+
+"Humans."
+
+- @miri_party_3: Watch whatever Miri has prepared.
+
+@miri_party_3
+
+The two of you spend the way watching Miri's latest yuri series, this one about Japanese high school girls who play mahjong. Girls with improbable bodies and short skirts who play mahjong and are supposedly gay but not really. It's horrible, of course, but so what? She laughs. You laugh. Maybe she does care about you after all. Or something like that?
+
+"Oh yeah, and here's your present. It's another, uh, Japanimation product. Hope you'll keep it." It's a Madoka Magica DVD set. That was one of the first anime series the two of you watched together, and probably the first anime you really enjoyed.
+
+"Oh, uh, thanks."
+
+"There's a gift card too." Miri looks almost bashful.
+
+The two of you spend time just... hanging out or whatever. But it's fine; you aren't physically hurting anymore, and you're feeling better after hanging out with miri.
+
+- @success: This party was... a success?
+
+@success
+
+
+@both_party
+view-if: birthday_aubrey_invited = 1 and birthday_miri_invited = 1
+on-arrival: miri += 1; aubrey += 1; loneliness -= 1; stress += 1
+
+"So, this is a party!" Miri laughs. "I thought it would be just the two of us."
+
+"Oh, hi, Miri, right?", Aubrey says with a quick wave. "I know your name but I don't really, like, know you. Do you know [+ first_name : +] well?"
+
+"Yeah! I'm pretty sure I know her better than most other humans. Anyway, what are you doing here?"
+
+This is going to be an awkward day.
+
+- @both_party_2: Try to say something.
+
+@both_party_2
+
+You're frozen in place. Aubrey and Miri have started to hit it off. They're talking to each other. Their words are coherent but you don't hear them. You're alone, staring awkwardly, tossing your phone from one hand to the other. Your brain can't focus. Your hand is trembling. You drop the phone.
+
+"Oh, sorry!", Miri says. "I can't believe we were ignoring you on your birthday!" 
+
+She walks closer to you and puts her arm around your shoulder. Aubrey watches. "What do you want to do?", she asks.
+
+"Um..." Your eyes dart, to Miri, to Aubrey, to the stain on the carpet, to the ceiling, averting their gazes. You try to say something. 
+
+- @both_party_3: Say something.
+- @hug_miri: Hug Miri.
+- @hug_aubrey: Hug Aubrey.
+
+@hug_miri
+go-to: both_party_3
+
+Why the fuck would you want to do that?
+
+Okay. Time for words.
+
+@hug_aubrey
+go-to: both_party_3
+
+No. No. No.
+
+Okay. Time for words.
+
+@both_party_3
+
+"Humans. Too many. Uh, in vicinity. Here. Sorry." Aubrey looks confused. Miri smiles.
+
+"Let's just sit down here," Miri says.
+
+"Oh god." Your eyes dart between the two of them. Three humans too many. Miri puts her arm around your shoulder. Aubrey waits a second and does the same.
+
+Tears. You're crying. Why are you crying? Oh God. Your heart is beating in all sorts of directions. You close your eyes, and you can barely open them afterwards.
+
+- @both_party_4: Try to stop crying.
+
+@both_party_4
+
+Why can't you be normal for once? Why the fuck do you have to be like this? Were you always like this, this fucking pathetic? Why would anyone want to be around you if they weren't forced to be?
+
+You close your eyes and open them. They're still there, around you. You can't see their faces.
+
+Aubrey separates first. "So, um, do you want the AP Chem prep book my parents bought for you?"
+
+- @laugh: Laugh.
+- @cry: Keep on crying.
+
+@cry
+go-to: okay
+
+You cry, but start laughing at the same time. Your throat hurts.
+
+@laugh
+go-to: okay
+
+You start laughing. Oh god, why? And for some reason you can't stop. Your throat hurts.
+
+@okay
+
+"Are you okay?", Aubrey asks. Miri's started to laugh too.
+
+"No, but I've never been okay. And like, that's the one constant fact that's existed throughout my whole life or something like that, like it's that i've never been okay and i don't get why people always ask that and..."
+
+"Hey. It's fine," Miri says. "Want some water?"
+
+- @water: "Yeah."
+
+@water
+
+"Yeah. Thanks."
+
+Miri goes to the fridge and gets a cup of water, handing it to you. Your throat feels a little better now.
+
+"Group hug?", Miri says, eyeing you and Aubrey.
+
+- @group_hug: Group hug.
+
+@group_hug
+
+"Before I forget, I have a gift too," Miri says.
+
+She hands you a gift card and a Madoka Magica DVD set.
+
+"What's that?", Aubrey asks.
+
+"Oh boy do I have news for you," Miri says with a smirk. "Let's put it on."
+
+Everything is fine once more. Miri shows some anime, which Aubrey promptly ignores while she tries to study for an AP World test. And then you and Miri get roped into studying as well. Somehow it became a study-birthday-party. Just as well. You'd have it no other way.
+
+Academics might be the one way in which you can relate to other humans, but this time it works. Or something like that.
+
+By the time the two of them have to leave, you've finally grown comfortable. Blissful, even. It's not a bad feeling. You could get used to this.

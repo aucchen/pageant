@@ -1,0 +1,59 @@
+title: Feeling tired
+subtitle: Home, Afternoon
+new-page: yes
+view-if: stress > 6 and week_progress < 3 and stress_1_seen >= 1 and week < 100
+on-arrival: stress -= 3; week_progress += 1
+max-visits: 3
+priority: 3
+tags: top, stress
+
+
+Today has been another difficult day. The homework piles up: AP Calc and AP Chem are the largest offenders as usual, but AP World and AP Lit are also part of the struggle. You would estimate that there is a total of four hours of homework today, and that's only if you manage to avoid all distractions and procrastination.
+
+- @start_hw: Time to get started, or something like that.
+
+@start_hw
+
+It's not even 4pm yet. You have ample time, as long as you start before... 8pm or so? So you have at least a few hours to slack off.
+
+- @put_it_off: Put it off.
+- @work: Work.
+
+@put_it_off
+
+You'll have time later in the day, right? You can relax for a little bit right now.
+
+- @browse_internet: Browse the internet.
+- @nap: Take a nap.
+
+@browse_internet
+
+You cycle through your usual internet haunts: social media sites, webcomics, fanfiction archives, wikipedia...
+
+Not much is going on in any of these domains. At least not much different from usual. Nevertheless, you get sucked into one brief Wikipedia loop before you back out and realize that you are incredibly tired right now.
+
+- @nap: Take a nap.
+
+@nap
+
+You're feeling so tired you could fall asleep right now. And you do, collapsing on the couch with your netbook still open. Your thoughts fade away for a moment...
+
+- @mom: Mom opens the door.
+
+@work
+
+You try to start, but it seems as if you're too tired to work. Your brain still feels fried from all the hours spent in school and at your extracurriculars. Not just from today. From all the days of living on three to five hours of sleep.
+
+Since you can't concentrate, why not try doing something else for now?
+
+- @browse_internet: Browse the internet.
+- @nap: Take a nap.
+
+
+@mom
+
+The door opens. There is no other source of light; the window is dark.
+
+*"What are you doing? Come eat,"* mom says, and opens the light.
+
+Your eyes burn.

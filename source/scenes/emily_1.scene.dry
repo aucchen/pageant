@@ -1,0 +1,193 @@
+title: Meeting with Emily
+subtitle: Downtown, Afternoon
+new-page: yes
+view-if: emily = 1 and week_progress < 3 and stress < 15 and thanksgiving = 0
+on-arrival: emily += 1; week_progress += 1; stress += 2; pageant_appearance += 1; emily_1_seen = 1
+tags: top, social
+
+Emily told you to wait for her at a downtown Starbucks. It was she who initiated this meeting; she asked you when you could meet, and you replied. But she's running late. You sip on your sugary strawberry drink; you don't drink coffee since your heart is beating fast enough as it is.
+
+- @background: You've done your background research.
+
+
+@background
+
+The two of you had friended each other on the abhorrent social media platform known as f@cebook. She lives in a suburban town about thirty minutes from you, a bastion of rich academics with a "good" school district. She says that her parents don't approve of her doing stuff like the pageant. Kind of the opposite situation from yours, or something like that.
+
+You've also done research on the meeting location. Since there are very few suburb-to-suburb public transit routes, the best place to meet would be downtown. She had suggested this store; you would have picked a less expensive place. But it's not like you have anything better to spend your allowance on.
+
+She comes decked out in shades of black, in what might be the same outfit that she wore at the meeting. She takes a furtive glance around before sitting down at your table.
+    
+"Hi. Not sure what you expected but I'm Emily." Her voice is deep but soft, barely above a whisper, and carefully controlled, enunciating every word. "So you wanted to discuss the pageant stuff?"
+
+- @stare: Stare at Emily.
+- @emily_2: Sure.
+- @emily_why: Why are you even here?
+
+
+@stare
+
+Emily is still Emily, the girl you met at the pageant pre-meeting. She's Asian, skinny, and about your height. Her attire is still entirely black, a black dress and black coat and black tights and black shoes. She has tussled shoulder-length hair, worn loosely this time, and what looks like loads of makeup, not that you really know anything about that. Her expression is guarded, and she's constantly looking around the room, as if scanning for dangers.
+
+She looks you in the eye. You must have been staring, so you look away. "So, uh, did you want to talk about the pageant?"
+
+- @emily_2: Sure.
+
+
+@emily_why
+
+Suddenly you wonder why you're here. Why did you accept Emily's invitation? Because you were interested in what she had to say regarding the pageant? Or for another reason entirely?
+
+She looks you in the eye. You must have been staring, so you look away. "So, uh, did you want to talk about the pageant?"
+
+- @emily_2: Sure...
+
+
+@emily_2
+
+"Um, yeah. That's what I want..."
+
+"No offense but you don't look like the sort to be into pageants," Emily says. [? if pageant_appearance < 10 : You look down at your gray MIT sweatshirt and old jeans and the frayed ends of hair. Of course you don't. ?][? if pageant_appearance >= 10 : You wonder whether or not to be offended at this insinuation, given how much you've prepared. ?]
+
+- @are_you: "What about you?"
+
+
+@are_you
+
+"So what about you?", you ask.
+
+"What do you mean?"
+
+"I mean, like, why are you doing the pageant?" Interlaced with the question is the insinuation that, since Emily is obviously a nerdy Asian girl like you, she should not be the one questioning you for your choices.
+
+Emily sighs. "I'm not, probably." A pause. She takes a sip from her caffeinated beverage. "Parents don't really approve. I just thought it would be an interesting topic to study as if I were participating."
+
+"Oh... Why?"
+
+"It kind of presents an interesting challenge. Like a dress-up game but in real life."
+
+"Oh."
+
+- @weird: This is weird.
+- @hear_her_out: But maybe you should hear her out.
+- @appreciate: She clearly has a logical approach; maybe that'll be helpful.
+
+
+@weird
+go-to: emily_weird
+
+Yeah. It is strange that she would take part in the pageant meeting without doing the pageant. Old PSAs about not trusting strangers come to mind. But you don't have a real reason to distrust her, and you know how Asian parents can be.
+
+
+@hear_her_out
+go-to: emily_weird
+
+Strange as she may be, she is probably not acting maliciously. And you kind of appreciate her logical approach.
+
+
+@appreciate
+go-to: emily_weird
+
+You appreciate the fact that she is approaching the pageant in a logical manner. It is an approach agreeable to yours; you might even be able to learn something from her. Even if she is a bit strange for attending the meeting without doing the pageant.
+
+
+@emily_weird
+
+"Sorry if that was weird," she says, and takes another sip. "I just... don't have much of an opportunity to get into this sort of thing. If you think I'm weird or creepy feel free to leave now. Or if you don't. Feel free to leave for any reason whatsoever."
+
+- @a_little_weird: "It's a little weird, but..."
+- @not_weird: "It's okay..."
+- @too_weird: Maybe it's time to leave?
+
+
+@a_little_weird
+go-to: emily_thanks
+
+"Um, it's... a little weird, but..." You shrug. "It's not a big deal." 
+
+
+@not_weird
+go-to: emily_thanks
+
+"Um, it's really okay that..." You shrug. "It's cool that you're um, kind of logical about the pageant thing."
+
+
+@too_weird
+
+Maybe it's time for you to leave. Not so much because Emily is weird, but because of the awkwardness of the interaction. But is it really much more awkward than usual, and wouldn't you be making things more awkward by packing up and leaving before your pageant discussion has really begun?
+
+- @a_little_weird: "It's a little weird, but..."
+- @not_weird: "It's okay..."
+- @leave_for_real: "Sorry but I have to go..."
+
+
+@leave_for_real
+on-arrival: emily_left_1 = 1
+
+"Um, sorry but,... I have to go right now," you say.
+
+Emily barely looks up from her drink. "Oh. Alright then. Sorry if I was being kind of weird."
+
+You wave and take your leave.
+
+
+@emily_thanks
+
+"Oh, um, thanks," she says, almost smiling. "So anyway, should we talk about the pageant?"
+
+"Um, sure...?"
+
+- @listen: Emily quickly begins an explanation.
+
+
+@listen
+
+"So there are a few different components to the pageant: the interview, the platform, the talent, and the most important part, the beauty competition. You know this already, right?"
+
+You nod.
+
+"Sorry. So I can't do much to help you on the interview or platform or talent, but I can help out with the beauty part, and that's the most important axis of the competition overall. Is that okay?"
+
+- @listen_2: "Okay..."
+
+
+@listen_2
+
+"Um, okay..."
+
+"Alright. The first thing to know is that it's all just an optimization game. People say that fashion is an art and shit like that, but what they really mean is that they want you to play by their rules. In reality it's a system like any other. So let's see what we can do better."
+
+Emily proceeds to tell you all about her fashion theories, and to be honest you have no way to tell whether she's actually giving good advice or just making stuff up. She mentions color theory, which is supposedly about which colors go well together. Then comes talk of body type (in which you're pretty similar), skin tone (again, pretty similar), and hair (God it's like you're sisters, or just both Asian, except her hair is a bit shorter and surprisingly neater than your tangled mess that you refuse to have cut).
+
+- @listen_3: Just listen.
+
+
+@listen_3
+
+You don't talk much, just making vague gestures of assent.
+
+At some point she makes up some equations (those were definitely fake), and something about spreadsheets and algorithms (which might unfortunately be real). So you just smile and nod through her explanations, acting like you're listening and understanding.
+
+"We should meet again sometime," she says. "Sorry I've just been talking all this time. I should go back home now."
+
+- @meet_again: You hope to meet again.
+- @maybe_not_meet_again: You're not sure if you would ever meet again.
+
+
+@meet_again
+go-to: emily_goodbye
+
+"Um, see you later?", you say. You kind of want to see her again. Well, that depends on what she wants.
+
+
+@maybe_not_meet_again
+go-to: emily_goodbye
+
+"Um, goodbye?", you say. You're not sure if you would ever see her again. Well, that depends on what she wants.
+
+
+@emily_goodbye
+
+"We'll meet again," she says. "Next time we should go shopping or something."
+
+She waves at you, and you wave back.

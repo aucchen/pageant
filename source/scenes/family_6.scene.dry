@@ -1,0 +1,151 @@
+title: Family Dinner
+subtitle: An impromptu road trip
+new-page: yes
+view-if: week > 6 and week_progress < 3 and family = 6 and weekly_family = 0 and argument_viewed = 1 and week < 10
+on-arrival: week_progress += 1; weekly_family += 1; stress += 2; trauma_points += 1
+max-visits: 1
+tags: top, family
+
+The mold in the bathroom is proliferating again, since the fan isn't working properly. Bob the superintendent came by with a bottle of bleach and nothing else. Unfortunately the bathroom doesn't have any windows, so spraying toxic chemicals on the walls essentially means that you'll have to evacuate the whole house. So that's what you did: your family left your apartment, and now you're all in the old Camry, driving on some family expedition to only dad knows where.
+
+- @so_yeah: So yeah.
+
+@so_yeah
+
+So you're on an impromptu family day trip. In the evening in winter, when it's dark outside already. On a school day.
+
+Dad's driving north, towards New Hampshire.
+
+"我们去哪儿？ *Where are we going?*", mom asks.
+
+"谁知道。 *Who knows*," dad replies. You've just passed the New Hampshire state line. The sky is a deep shade of navy blue.
+
+"你不知道怎么还开车？ *If you dont know how are you still driving?*", mom says.
+
+Dad sighs. "你们总是这样子。总不信我。 *You all are always like this. Always questioning me. Never trusting what I do.*"
+
+"我们不能在附近待着吗？ *We couldn't have just stayed nearby?*", mom says, her voice becoming shrill. "没有必要去这么老远地方！ *You didn't need to bring us to the middle of nowhere!*"
+
+"要是你会收拾屋子我们就可以在家带着。 *If you knew how to clean, we wouldn't have to do this*," dad fires back. "我们家多脏阿？不会收拾屋子的媳妇儿有什么用啊？ *How messy is our house? A wife who doesn't know how to organize, what's the use?*"
+
+- @keep_happening: It keeps happening.
+
+@keep_happening
+
+Kevin glances at you with a knowing look on his face. There's no escaping this one. Part of you is glad that dad's ire isn't directed at you this time. The other part is ashamed for being glad.
+
+"你怎么没想收拾屋子？ *Why didn't you think of cleaning?*", mom responds.
+
+"在我们老家谁有这样的媳妇儿？ *In our old home who would have this kind of wife?*", dad fires back
+
+"我每天上班赚钱，你干什么阿？你每天家里蹲，看电视。 *Everyday I go to work and make money, and what do you do? You sit at home, watch TV.*"
+
+Mom continues on her argument. "家里谁赚钱阿？房租，饭钱从哪儿来的阿？你真觉得你自己了不起吗？ *Who makes money in our family? Where does the rent and money for food come from? Do you really think you're all that?*"
+
+Mom shoves dad's shoulders. Dad slams the steering wheel. ”我在开车！*I'm driving!*“ He pumps the brakes. Honks come from behind.
+
+- @be_careful: ”小心开车“
+
+@be_careful
+
+”小心开车“, you say. "*Be careful driving.*"
+
+Your words seems to have diffused some of the tension. Dad sighs deeply. Then mom and dad are both quiet. It's an uncomfortable silence, a respite rather than a peace.
+
+- @wait_1: Wait.
+
+@wait_1
+
+The car ride is silent until you arrive at a restaurant somewhere in a rural part of New Hampshire. It's a little past 7. It's cold and the sky is black.
+
+"我们在这儿吃。*We're eating here*," dad commands. You know better than to talk back.
+
+It's an American restaurant in approximately the middle of nowhere, a place where your family seems out of place for obvious reasons.
+
+- @go_bathroom: Go to the bathroom.
+
+@go_bathroom
+
+You get up and say you're going to the bathroom. Mom follows. "去吧，去吧。*Go, go*," dad says brusquely.
+
+"对不起。*Sorry*," she whispers on the way. She holds your hand. "我们不应该在车里吵架。*We shouldn't argue in the car.*"
+
+- @oh_okay: Oh.
+
+@oh_okay
+
+"Oh. Okay."
+
+Mom continues. "不只是爸爸的错。也是我的错。我们真的没有给你们一个好的环境。*It's not only dad's fault. It's my fault too. We really didn't give you a good environment growing up.*"
+
+- @its_fine: It's fine. I'm okay.
+- @why_apologize: Why are you apologizing right now?
+
+@why_apologize
+
+That's what you would like to say. Is this more games in the power struggle your parents are playing? Is she attempting to ingratiate herself with you to gain your support in their eventual divorce? On the other hand, she's probably objectively better than dad right now. But you can't say that. Part of you wishes you knew your parents better, and that you could let them know you better.
+
+But you don't say that. Instead you say, "我没事儿。*I'm fine.*"
+
+- @dotdotdot: ...
+
+@its_fine
+
+"我没事儿。*I'm fine.*"
+
+- @dotdotdot: ...
+
+@dotdotdot
+
+You're washing your hands. Mom is next to you, looking at you in the mirror. Mom's eyes are red, her face streaked with tears.
+
+"秋怡阿, 我好久没有看你了。你长得真漂亮了。 *Qiuyi, I haven't seen you in a long time. You look beautiful.*"
+
+- @oh_2: Oh.
+
+@oh_2
+on-arrival: trauma_points += 1
+
+You have no idea what to say after that.
+
+Dad and Kevin are sitting at the table in silence, across from each other, staring sideways. Mom sits next to Kevin, leaving you to sit next to Dad. Mom pats Kevin's hair. He shrinks away. Dad ruffles your hair. You try to avoid shrinking away. No one talks. The menus are here. Dad unfolds it and buries his face in it. The waiter arrives with water. Are your orders ready? Yes they are you suppose. Dad orders a burger. Mom orders a salad. You want to chuckle at the heteronormativity of this but you can't allow yourself to react. Kevin points out a mac and cheese from the kids' menu. Finally you order the cheapest sandwich on the menu.
+
+- @eat_1: Wait.
+
+@eat_1
+
+The waiter leaves.
+
+The tension among the four of you dissipates ever so slightly. But it's still there, still filling the spaces among the table. It's in the conspicuous silence. It's in the glances mom gives you, the knowing smiles. It's in dad's sighs, and mom's attempts to not react. It's in Kevin's eyes, constantly downcast. 
+
+Or, at least that's how you feel. It's not impossible that this whole "conflict" or whatever was entirely of your imagination. It's not impossible that in reality, mom and dad are getting along perfectly right now. Maybe you're just getting anxious for no reason, like you usually do, getting worried about some remote possibilities.
+
+Or maybe not. You can't really tell.
+
+- @eat_2: Wait.
+
+@eat_2
+
+Anyway, waiting is all you can do.
+
+The waiter returns with all four dishes. The sandwich is okay, not the best but not the worst. A little soggy but that's fine. You'll be fine. One bite after another. The silence continues. 
+
+Everything is fine. Everything is going to be fine.
+
+- @home_eventually: Eventually you end up back home.
+
+@home_eventually
+
+And then, after approximately an hour of awkwardness, it's over. Pack back into the car. Drive home.
+
+No conversations. Everyone's tired (you think; you can't really tell). It's after 9pm when you end up back in the apartment.
+
+"睡觉吧。 *Go to sleep*", mom tells you and Kevin. Then mom and dad retreat into their room. Kevin is sleeping in yours again tonight. You turn off the lights, and take out your laptop under the sheets. Kevin turns away.
+
+- @finally_alone: Finally you're alone.
+
+@finally_alone
+
+Finally you're alone. Maybe if you were a more emotionally in-tune individual you would be talking with someone about the events of tonight. But really, you don't care. It doesn't matter anymore. You're just going to keep on following the same paths you've always followed; what else can you do?
+
+So what happens is, you browse Wikipedia until you fall asleep.

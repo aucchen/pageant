@@ -1,0 +1,407 @@
+title: Emily
+subtitle: Friends...?
+new-page: yes
+view-if: emily = 6 and week_progress < 3 and stress < 15 and week < 10 and thanksgiving = 1
+on-arrival: week_progress += 1; stress += 1
+max-visits: 1
+tags: top, social
+
+You and Emily Chen are friends now. Right?
+
+- @right: Right...
+- @or: Or something else...
+
+@right
+
+Yes, that's right. [? if meet_emily = 0 : Even though you didn't really know her before the party. ?][? if meet_emily = 1 : Especially after the party. ?] Or is it?
+
+- @anyway: Anyway...
+
+@or
+
+No, that's not right. Or is it?
+
+- @anyway: Anyway...
+
+@anyway
+
+Anyway, somehow, in a flurry of facebook messages after the party, the two of you decided that you would meet. Emily initiated it, as usual. Now you're sitting on a bench at Copley Square, waiting for her to arrive. Her bus is late, she texted you. It's still a bit remarkable how she manages to get here by transit all the way from Lexington.
+
+- @wait: Wait.
+
+@wait
+
+What more can you do? You take out some homework that you always carry with you. And just as you're starting to get involved in the AP World textbook, Emily appears in the corner of your eyes, with her usual all-black attire, thick scarf and long jacket and leggings and a hat.
+
+"Um, hi," she says, with a wave.
+
+- @hi: "Hi."
+
+@hi
+
+"Hi," you manage to say, as Emily sits down on the bench next to you.
+
+"Sorry about my parents."
+
+"Um, no problem?..."
+
+Then it's quiet. Now you're back at that awkward moment in every social interaction where you want to say something but you have no idea what words to speak, and neither does she. This is an impasse that one of you will have to break.
+
+- @speak: Break the silence.
+- @wait_emily: Wait for Emily to break the silence.
+
+@speak
+go-to: speak_2
+
+What are you supposed to do at a time like this? You try to run mental simulations for this situation. Enumerate all of the possible sequences of words you could say at the moment, and imagine what it would be like if you uttered those words, how Emily would react. Or how she wouldn't react.
+
+@wait_emily
+go-to: speak_2
+
+You stay silent, and surprise, so does Emily, neither of you looking at the other. It stays like this for who knows how long. Is this companiable silence or awkward silence? You've never been good at judging that distinction.
+
+@speak_2
+
+It ends up being Emily who speaks first.
+
+"Okay. Tell me about your life."
+
+- @what: "What?"
+
+@what
+
+"What? I mean, why?"
+
+"We're friends now, right? And let's be honest, you know more about me than basically anyone else IRL. So let's make it even. Tell me something no one else knows."
+
+- @im_gay: "I'm gay?"
+
+@im_gay
+on-arrival: pageant_interview += 1
+
+"Um... I'm gay. Actually a few people know that so, uh, I don't know if that counts."
+
+Emily makes a soft laugh. "I knew that already. Sorry. You don't have to if you don't want to."
+
+"No, it's okay. Um, I have a bunch of secrets so..."
+
+You think about what else to say...
+
+- @science: "So, you know I like science and..."
+- @girl_1: "So, there's this girl..."
+- @worries_1: "So, I'm worried about a lot of things..."
+- @no_secret: "So, can I not tell a secret?"
+
+@worries_1
+on-arrival: emily = 7
+
+"So, you know I have like, really severe anxiety, right? Especially, like, social anxiety?"
+
+Emily grins to herself. "Yeah. That's hardly a secret."
+
+"Okay. There's more. Every time I talk to someone, I'm imagining all the ways I could... mess up, I guess. Like, it's some sort of visual novel or something where if I make the wrong choice, the person I'm talking to will hate me forever. Except it's not a visual novel, it's something worse, like... like..."
+
+"It's okay," says Emily as she puts a hand on your back.
+
+- @worries_2: I'm...
+
+@worries_2
+
+You want to say something, but you don't know what to say. Story of your life, really.
+
+You wish that you had the words to make sense of yourself, to be able to communicate the tangled mess of cognition that you experience during the sequence of awkward moments that comprise your life. But you can't. Not even with Emily.
+
+"I won't hate you," Emily says in a voice barely above a whisper. "No matter what you say."
+
+"Seriously? No matter what I say? So if I say that..."
+
+Emily derails your train of thought with a chuckle. "Don't take that completely literally." A pause. "So was that your secret?"
+
+- @yeah_secret: Yeah...
+
+@yeah_secret
+
+"Um, yeah, I guess. Sorry, I didn't know what I was going to say."
+
+"No, that's fine..."
+
+The conversation is dead, and you have killed it. Now Emily sits in silence, watching the cars go by. You do much the same, sometimes taking passing looks at her.
+
+- @emily_parents: Sit and wait.
+
+
+@science
+on-arrival: emily = 7
+
+"So, you know I like science and biology in particular, but, um, do you know why?"
+
+"Because it's interesting?"
+
+"That too. But, um, I've always wanted... God, it's gonna sound so ridiculous, but I've always wanted to develop something so that two women can reproduce. I mean, people with XX chromosomes."
+
+Emily makes a strange noise.
+
+- @sorry: "Sorry..."
+
+@sorry
+
+"Um, sorry," you manage to say.
+
+"No, it's pretty cool!" Emily laughs and glances at you. "I mean, I never want biological children, but it's a pretty interesting idea. Have you thought about how you would, uh, actualize that?"
+
+- @geek_out: "Yes, in fact..."
+
+@geek_out
+go-to: emily_science
+
+"Yes, actually. So, we first have induced pluripotent stem cells, which is quickly becoming a technology thanks to Yamanaka et al. and others I guess. Then, we just need to find the correct triggers to induce spermatogenesis. It shouldn't require too many Y-chromosome genes, since there aren't a lot of Y-chromosome genes to begin with, but some epigenetic and signalling modifications we should be able to do it. I mean I haven't looked at the full regulatory pathway and we probably don't know the complete regulatory pathways yet, but,... um,..."
+
+You glance over at Emily. She has some kind of smile on her face.
+
+
+@emily_science
+
+"Wow, that sounds really interesting," says Emily. "I know that sounds insincere but I really mean it."
+
+"Seriously...?"
+
+"Yeah! I mean, if we're going into genetic engineering, I would focus on other priorities, but I'm glad that *someone* is thinking about that stuff! God, you're worth more than every cis dude tenured professor."
+
+- @gratified: You feel... gratified? Or something like that...
+
+@gratified
+
+"Um, thanks..." is all you can say.
+
+"I think that drug production is what I would study, if I were doing genetic engineering. We could engineer yeast or E. coli to produce essential drugs. Do you think that's feasible?"
+
+"Yeah... well, biosynthesis is kind of hard because every chemical is going to have a radically different synthesis pathway so you have to focus on one drug, and even after that, it's hard to get the microbe to produce a useful quantity of the substance in question, because there's no selective advantage to producing the stuff that you want it to produce is not going to help the organism survive and reproduce and may in fact be detrimental, so there's just, so many variables that you would have to optimize, and you're messing with a system that's already had billions of years to develop, and like with all in-vitro systems it's just... like..."
+
+You take a break from your science-induced rant to glance at Emily. For some reason she's still smiling and nodding.
+
+"That's fascinating. No really, it is."
+
+It feels like there's nothing more to talk about here, so you both stay silent for a while.
+
+- @emily_parents: Sit and wait.
+
+@no_secret
+on-arrival: emily = 7
+
+"My secret is that, uh, I don't want to tell you. Sorry." That came off as more brusque than you had intended.
+
+"Well, that's fine. That's okay." Emily looks back down at her lap. "Sorry if I'm being weird."
+
+"No, it's not weird..."
+
+Emily stays silent for a while.
+
+- @emily_parents: Sit and wait.
+
+
+@emily_parents
+
+"I guess that's it for today?", Emily says. "My parents expect me at home. Before that I have to go change. And before that I have to take the bus to Lexington. So..."
+
+She gets up and glances at you. "Bye."
+
+"Goodbye..." You wave as she walks away.
+
+
+@girl_1
+view-if: miri_date = 0
+
+"So, there's this girl..."
+
+- @know_well: "I've known her for a while, but..."
+- @dont_know_well: "I don't know her very well, but..."
+
+@know_well
+
+"I've known her for a while, but I sort of feel like I still dont really, well, *know* know her. All I know is that she seems..."
+
+- @beautiful: "Beautiful ..."
+- @kind: "Kind..."
+- @talented: "Talented..."
+
+@dont_know_well
+
+"I feel like I don't know her very well, but I really wish I could get to know her better, because she's like..."
+
+- @beautiful: "Beautiful..."
+- @kind: "Kind..."
+- @talented: "Talented..."
+
+@kind
+go-to: beautiful
+
+@talented
+go-to: beautiful
+
+@beautiful
+
+"Well, she's beautiful, talented, kind, basically everything I've always admired. I... um, I think I love her very much. And I wish I could ... like, be with her, you know..."
+
+- @sit_next: "And she's sitting next to me..."
+- @so_yeah: "So yeah..."
+
+@sit_next
+on-arrival: emily_date = 1; emily = 7; growth_points += 1
+
+"And that girl is sitting next to me right now. Sorry."
+
+It takes a moment for what you said to process through your mind.
+
+Oh God oh god oh god oh god oh god oh god....
+
+- @ohgod: Oh God...
+
+@so_yeah
+on-arrival: emily = 7
+
+"So, um, yeah. That's the story of my life right now. I have a, uh, crush. On an unspecified person whom you probably might or might not know but most likely not. Sorry."
+
+Okay. Let's be honest here. Who were you thinking about?
+
+- @aubrey: Aubrey
+- @miri: Miri
+- @emily: Emily
+- @no_one: No one in particular
+
+@aubrey
+go-to: emily_response
+
+Okay. That's fine.
+
+@miri
+go-to: emily_response
+
+Okay. That's fine.
+
+@emily
+go-to: emily_response
+
+Really? Why couldn't you just say so? Of course, you know why. Anyway...
+
+@no_one
+go-to: emily_response
+
+Okay. That's fine.
+
+@emily_response
+
+"Oh, well, thanks for telling me your story," Emily responds. "I do wonder who this girl is, though..."
+
+"You wouldn't know her anyway... Sorry."
+
+"It's okay!" She smiles. "I hope you, uh, have good luck with your crush."
+
+She looks away. There's nothing more to talk about.
+
+- @emily_parents: Sit and wait.
+
+@ohgod
+
+You take a deep but hopefully non-noticeable breath.
+
+Did you just ask Emily out? She's not saying anything; how long has it been? Seconds? Minutes? It feels noticeably colder, or perhaps you had just ignored the coming evening chill in your rambling. Why did you say that, anyway? You meant it, right? You had to have meant it. And it's true, isn't it? Why did you say that? What force brought you to say those specific words which you've wanted to say for a while but never had the chance to?
+
+Out of the corner of your eyes you see Emily turn towards you.
+
+- @look_at_her: Look at her.
+- @dont_look: Don't look at her.
+- @run_away: Run away.
+
+
+@look_at_her
+go-to: emily_speak_1
+
+You turn your head. Slowly but surely. She has an unreadable expression (smile? cringe? somewhere in between?) as she starts to speak.
+
+@dont_look
+go-to: emily_speak_1
+
+You don't look at her, but she starts to speak.
+
+@emily_speak_1
+
+"Okay, so just making sure, you're... asking me out, right?"
+
+You... nod, or try to make some gesture with your head to that effect.
+
+"Okay. Um, wow. Thanks, I guess."
+
+When she sees that you probably look dumbfounded, she sighs and starts to speak again.
+
+"Um... thanks, but, uh, sorry but I think you're setting your expectations too high. Your description of me was objectively incorrect. I'm not exactly a good person, you know, right?"
+
+- @disagree: "You're wrong..."
+- @doesnt_matter: "It doesn't matter..."
+
+
+@disagree
+go-to: noise
+
+"Um, that's wrong... you're, uh, better than you think..."
+
+
+@doesnt_matter
+go-to: noise
+
+"It doesn't matter... I mean, it doesn't matter what kind of person you are because - wait, it does matter but, um, ..."
+
+Congratulations. You've failed once more at not being awkward, and at a moment like this.
+
+@noise
+
+Emily makes a weird noise that sounds vaguely like a chortle. She glances at you for approximately three-fourths of a second, and then glances at a squirrel in a tree in the distance. You stare intently at that same squirrel. Then you hear a deep inward breath.
+
+"I think you're amazing too, but... can we hold off until... at the very least after graduating from high school?" Her voice is barely above a whisper. "I mean,..."
+
+You sneak a glance at Emily. She's looking intently at you.
+
+- @turn_away: Turn away.
+- @return_stare: Return her stare.
+
+@return_stare
+go-to: turn_away
+
+This somehow feels both more and less awkward than before.
+
+
+@turn_away
+
+"What I mean is," Emily continues, while continuing to stare in your general vicinity, "It's that I want to be independent first, like, from my parents. And I want to be able to be more... openly... you know. And able to do more physical transitioning than now. Is that coherent?"
+
+"Yeah. I mean, I'm good at waiting."
+
+Emily takes off her glasses and rubs her eyes. "God, I need to stop smearing my eyeliner. Anyway, so my answer is yes. In one and a half years, if we're still alive, and the world still exists, I'll be your, um, official girlfriend. If that's what you still want at that time. I'm not going to date anyone else until at least then. Probably forever. Think of this as a contract if you would like."
+
+You smile, or make some facial gestures towards that effect. Emily reciprocates, or something like that.
+
+- @hug: Hug?
+
+@hug
+
+"Um, would physical contact be appropriate in this situation?"
+
+"Of course."
+
+The two of you make some sort of awkward but affectionate physical contact. It's a good feeling while it lasts.
+
+Besides, you have a sort-of girlfriend now. You can't help but smile to yourself on the train ride home.
+
+- @wipe_away: Just make sure to hide it.
+
+@wipe_away
+
+At home, you make a conscious effort to avoid presenting any gesture of what has transpired. It seems to work. No one says a thing.
+
+@run_away
+go-to: emily_speak_1
+
+Yes. Running away is always a possibility, perhaps even a desirable one. You would escape. You could escape all of this, this whole mess of anxiety and this whole morasse of tangled emotions that consumes your free time with ruminations and useless self-pitying angst.
+
+But you don't run away. You can't really bring yourself to.
+
+Then Emily begins to speak.

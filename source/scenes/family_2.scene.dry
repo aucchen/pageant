@@ -1,0 +1,75 @@
+title: Family Dinner
+subtitle: Stories of China
+new-page: yes 
+view-if: week > 1 and week_progress < 3 and family >= 1 and weekly_family = 0 and stories_viewed < 2 and week < 10
+on-arrival: week_progress += 1; family += 1; weekly_family = 1; stories_viewed += 1
+tags: top, family 
+
+At dinner, in between bites of steamed rice and stir-fried vegetables and meat, your parents like to tell stories of the past. They say that they want you, and your brother especially since he was born in America, to understand your culture and heritage or something like that. The stories are repeated over and over, sometimes with new variations.
+
+- @dad_1: Dad tells stories about growing up.
+- @mom_1: Mom tells a story about school.
+
+@dad_1
+
+Your father starts telling the stories of the cold and starving winters of Jilin Province in northeastern China. On the day Chairman Mao died, he remembered crying and hugging his brothers. The younger children were too young to understand, and their parents quickly shushed them when they asked what was the big deal, who was this Chairman Mao anyways, because children's loose lips were what got their parents arrested.
+
+- @mom_2: Mom chimes in.
+- @dad_2: Dad continues.
+
+
+@mom_1
+
+In those days there was no paper or pencil. Instead they wrote on stone tablets. The first characters they learned to write were Chairman Mao's name. They practiced writing it on their stone tablets until their hands were sore. Your mom tells you of how she learned to write the character "Mao" (毛): the hook points at the door, the teacher yelled while hitting her hand with a ruler. Somehow she always remembered that. Dad asks if you know how to write Mao Zedong. You don’t, and he smiles.
+
+- @mom_3: Mom continues.
+- @dad_3: Dad chimes in.
+
+@mom_2
+
+Mom chimes in. In Shaanxi during the Cultural Revolution the Red Guards went to her family's house and beat her father until he admitted to being an illegitimate son of a minor landlord. Back then family was everything. You could be sent to the back of the rations queue if you had landlord blood. Your father makes some joke you don't understand about capitalists or something like that. This grandpa is still alive, living on the sixth floor of an elevator-less building in Xi'an. Climbing the stairs made you tired. You liked him, you think. He's a nice person, and he wants to live to see his great-grandchildren (you tried to smile, to make your face neutral. you were good at that).
+
+- @mom_1: Mom tells a story about school.
+- @self_doubt: You think about the stories.
+- @nothing: You're tired of this talk.
+
+
+@dad_2
+
+Dad continues. Your father's father was a Communist, like his father before him. He had fought in the People's Volunteer Army against the Americans in Korea, and he was a member of the Communist Party's village committee or something like that. During the Cultural Revolution he somehow escaped being purged. Probably too minor of a figure to bother with. He died of lung cancer a few years ago. Was always a smoker. You have no memory of him but you still feel bad when your parents stare at you, expecting you to have some emotional reaction.
+
+- @mom_1: Mom tells a story about school.
+- @self_doubt: You think about the stories.
+- @nothing: You're tired of this talk.
+
+@mom_3
+
+Mom tells you about the first time they got a television, in the 1980s. The first program they watched was some Russian program, an adaptation of Anna [+ first_name : +]ina. She and her three sisters glued themselves to the screen, probably looking at the first white people they had ever seen, probably the first time they had a live view of anything outside their province or maybe even their county. They were enthralled with the glamor of it all, the beautiful dresses, the lights and crystals that were so far away from their house carved out of dirt.
+
+- @dad_1: Dad tells stories about growing up.
+- @self_doubt: You think about the stories.
+- @nothing: You're tired of this talk.
+
+@dad_3
+
+The meal is potatoes, so of course dad has to chime in. When he was young, during winter all they had to eat were potatoes and yams and maybe a few grains of millet and sorghum. That's why he doesn't like potatoes, dad says. Meat was once a year. Cabbage was once a week. Or was meat once a month? Either way, they had half their yearly meat at Chinese New Year’s when they made dumplings filled with fatty pork. It was the most delicious thing dad ever ate. You stare at the pieces of fatty meat left uneaten on your plate.
+
+- @dad_1: Dad tells stories about growing up.
+- @self_doubt: You think about the stories.
+- @nothing: You're tired of this talk.
+
+@self_doubt
+on-arrival: stress += 1; loneliness += 1
+
+You think about yourself. How the fuck does being a fucking closeted queer matter compare to this? How the fuck can you say that you've ever suffered a day in your life? How can you say that you know anything about suffering when you've never even been malnourished? How can you be so ungrateful, so ungrateful as to even think about not perpetuating your parents' wishes when they've suffered so much for you?
+
+- @continue: You start to hate yourself, a bit more than usual.
+
+@nothing
+on-arrival: stress += 1; loneliness += 1
+
+You're becoming inured to these stories. Always the same, always about hardships that happened worlds away from you. The subtext behind it all is clear: you have to work hard, study in school, find a husband and give them grandchildren, so that all your parents' suffering wouldn't be in vain. You know all that, yet your parents continue to use guilt to manipulate you into aligning your goals and views to theirs.
+
+- @continue: And the worst part is, they've succeeded.
+
+@continue

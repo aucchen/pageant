@@ -1,0 +1,529 @@
+title: Science Olympiad
+subtitle: A regular meeting
+new-page: yes 
+view-if: week >= 1 and week < 8 and week_progress < 3 and scioly >= 1 and scioly <= 4 and weekly_scioly = 0 and stress < 15
+on-arrival: week_progress += 1; scioly += 1; stress += 1; weekly_scioly = 1 
+tags: top, scioly
+
+During Science Olympiad meetings, you're supposed to meet with your event partners and make plans for studying. Or something like that.
+
+- @aubrey: Meet with Aubrey Gao for Protein Modeling.
+- @aubrey2: Keep studying with Aubrey for Protein Modeling.
+- @david: Meet with David Nguyen for Fossils.
+- @david2: Keep studying with David for Fossils.
+- @roxana: Study with Roxana Nguyen for Fossils.
+- @krishna: Meet with Krishna Rao for Cell Biology.
+- @krishna2: Keep studying with Krishna for Cell Biology.
+- @edwin: Meet with the captain for Disease Detectives.
+- @edwin2: Keep studying with the captain for Disease Detectives.
+
+@aubrey
+view-if: aubrey_scioly = 0
+on-arrival: aubrey_scioly += 1; aubrey += 1; protein_modeling += 1
+
+Aubrey is sitting in front of her open laptop. She does not stop typing as you sit across from her.
+
+"Um, like, what is protein modeling?", you ask, even though you know full well what protein modeling is, just to break the awkward silence. This event wasn't around the last two years, but it is being re-introduced this year.
+
+"Well, it's a combination study and building event. First of all you have to build a model of the protein, like a physical model out of plastic parts. The second part is building a protein model from scratch at the exam. And then there's a knowledge-based test on proteins."
+
+"Oh."
+
+- @aubrey_scioly_2: An awkward pause ensues...
+
+@aubrey_scioly_2
+
+"So, how do you want to split this?", Aubrey asks, breaking the silence.
+
+- @protein_study: "I can do the knowledge thing..."
+- @protein_either: "Either is fine..."
+
+@protein_study
+go-to: protein_else
+
+"Um, I can do the knowledge part."
+
+"Great," Aubrey says. "Then I'll do the building part."
+
+@protein_either
+go-to: protein_else
+
+"Um, either one is fine, I guess."
+
+"Alright," Aubrey says. "Then you should focus on the knowledge test and I'll do the building part."
+
+@protein_else
+
+"Okay."
+
+"So, let's start. What do you know about proteins?"
+
+- @proteins_what_do_you_know: You do know a lot about proteins.
+
+@proteins_what_do_you_know
+
+"Proteins are, um, one of the basic building blocks of life. Along with carbohydrates, lipids, and nucleic acids. They are, um, made of long chains of various amino acids." 
+
+Aubrey nods. "Sure. Tell me about protein structure."
+
+"Um, there's primary structure which is just the amino acid chain. Then secondary structure is repeated structural elements like the sheets and helices and stuff, and then tertiary structure which is how these elements are assembled together. And there's quaternary structure, which is like, multiple proteins interacting together?"
+
+"That works. How many amino acids are there, that make up proteins?", Aubrey asks, starting off with the basics.
+
+- @protein_20_amino_acids: 20?
+
+@protein_20_amino_acids
+
+"20, I guess?"
+
+"21 in eukaryotes. 22 total. There are 20 unique codons in eukaryote DNA, but there's also selenocystein, which is coded for in a more complex way."
+
+"Oh. Right." You had read that on Wikipedia sometime.
+
+"Next up. Define peptide bond, disulfide bond, hydrogen bond, phosphodiester bond, hydrophobic, hydrophilic."
+
+- @protein_bonds: You kind of know this.
+
+@protein_bonds
+
+"Peptide bonds are the bonds that hold together polypeptide chains, or proteins. Disulfide bonds are, uh, bonds between two sulfur atoms? Hydrogen bonds are weak bonds between a hydrogen atom and a more negatively charged atom, like an oxygen in H2O. A phosphodiester bond is what connects chains of nucleic acids together, like DNA. Hydrophobic and hydrophilic mean, um, afraid of water and attracted to water; they're properties of different molecules."
+
+"This is alright, but you should do more studying." Aubrey smiles before closing the computer. "We're gonna do great," she says, before waving you goodbye and doing one of her other club activities, most likely student council or something like that. So there's nothing left for you to do here, besides studying by reading Wikipedia in the computer lab. You read about proteins for a while, only occasionally getting distracted by tangents into 14th century European feudal wars.
+
+@aubrey2
+view-if: aubrey_scioly > 0
+on-arrival: aubrey_scioly += 1; protein_modeling += 1; aubrey += 1
+
+Aubrey is sitting by herself in a corner of the classroom. She waves at you as you approach and sit next to her.
+
+"Ready to prepare?", she asks.
+
+"Um, yeah, I guess."
+
+[? if aubrey_scioly = 2 : "Alright. You're doing the studying part of the event, so I'm going to quiz you on one of the past exams. Question 1: How many nitrogen atoms are found in the backbone of each amino acid?" ?]
+
+[? if aubrey_scioly > 2 : "Alright. I'm going to ask the same questions as last time, just to see what you've remembered. Question 1: How many nitrogen atoms are found in the backbone of each amino acid?" ?]
+
+You should know this, but you're still not sure...
+
+- @a1: 1
+- @a2: 2
+- @a3: 3
+- @a4: 4
+- @dont_know: You have no idea.
+
+@a1
+go-to: protein_question_2
+
+"Yes, that's right!", Aubrey says. [? if aubrey_scioly >= 2 : "Just making sure you remembered." ?]
+
+@a2
+go-to: wrong_study
+
+@a3
+go-to: wrong_study
+
+@a4
+go-to: wrong_study
+
+@wrong_study
+go-to: protein_question_2
+
+"Sorry, that's wrong," Aubrey says. "You'd better study some more. The answer is 1, by the way. It's part of the amine group, which is NH3."
+
+"Oh. Sorry." You should have known this question. It was literally the easiest one there was. Oh well. Time to do some more studying.
+
+@dont_know
+go-to: protein_question_2
+
+"Um... I have no idea..."
+
+Aubrey sighs. "This is like the most basic question there is. The answer is 1, by the way. It's part of the amine group, which is NH3."
+
+"Sorry."
+
+"No, it's fine. Just... do more studying."
+
+"Right..."
+
+@protein_question_2
+
+"Okay, next question. What does a nuclease do?"
+
+This one's easy.
+
+- @protein_question_2_correct: Cuts up nucleic acids like DNA or RNA
+
+@protein_question_2_correct
+
+"It cuts up nucleic acids, like DNA or RNA."
+
+"Right. Which of the following amino acids contains sulfur: tryptophan, glutamic acid, methionine, or histidine?" 
+
+- @pq2_a1: Tryptophan
+- @pq2_a2: Glutamic acid
+- @pq2_a3: Methionine
+- @pq2_a4: Histidine
+
+@pq2_a1
+go-to: pq2_wrong
+
+"Tryptophan?"
+
+@pq2_a2
+go-to: pq2_wrong
+
+"Glutamic acid?"
+
+@pq2_a3
+go-to: pq3
+
+"Methionine?"
+
+"Correct. The other amino acid that contains sulfur is cysteine."
+
+@pq2_a4
+go-to: pq2_wrong
+
+"Histidine?"
+
+@pq2_wrong
+go-to: pq3
+
+"Wrong. The correct answer is methionine. The only two amino acids that contain sulfur are methionine and cysteine."
+
+@pq3
+
+She continues. "Alright. Next question. What does a zinc finger motif do?"
+
+- @pq3_correct: Binds to specific DNA sequences.
+- @pq3_no_idea: You have no idea.
+
+@pq3_correct
+
+"It, um, binds to specific DNA sequences."
+
+"Sure. Yeah."
+
+- @proteins_2_final: The quizzing continues.
+
+@pq3_no_idea
+view-if: proteins <= 2
+
+"Um... I don't know?"
+
+"It recognizes and binds to specific DNA sequences."
+
+- @proteins_2_final: The quizzing continues.
+
+@proteins_2_final
+
+The quizzing continues. At the end, Aubrey tells you to study more. You can't really disagree.
+
+
+
+@david
+view-if: david_scioly = 0 and roxana_seen = 0
+on-arrival: david_scioly += 1; fossils += 1
+
+David Nguyen is a quiet and awkward kid. Well, almost as awkward as you (there are a lot of awkward people in Science Olympiad but you're probably near the top in that department, but maybe David has you beat). Besides that, you don't know him very well, but apparently he's good at fossils.
+
+"Um, fossils," you say.
+
+"Right," he says, before going back to looking at his cell phone. "Sorry, I have to go to work right now. I'll share my notes with you later."
+
+With that, he gets up and leaves the room. Well, that was helpful.
+
+- @david_wiki: So you go to the computer lab and read some wikipedia.
+
+@david_wiki
+
+Fossils is a knowledge-based event: the more you've memorized about everything, the better you'll do. So you study. The most important part of the event is identification: you have to identify the names of two pages' worth of fossil organisms. That part's not too difficult; only the brachiopods are sort of indistinct, and occasionally they'll drop something obscure like horse teeth, which look weirdly like coral for some reason. Then there's the general knowledge components, a grab bag of basically anything related to paleontology. There's the ordered list of geographical time periods, taphonomy (how fossils are formed), geographical events like orogenies (when mountain ranges form), and so on.
+
+You keep on reading Wikipedia, making sure to follow the external links on the bottom of the page, until you have to go home.
+
+@david2
+view-if: david_scioly = 1 and roxana_seen = 0
+on-arrival: david_scioly += 1; fossils += 1
+
+"Um, should we study fossils?"
+
+David Nguyen is looking at his cell phone, as always. Did he hear you?
+
+- @david_what: "What are you looking at?"
+
+@david_what
+
+"Um, what are you looking at?"
+
+He shows you the pictures of various archetypal Burgess Shale organisms: *Opabinia*, *Anomalocaris*, *Wiwaxia*, and so on.
+
+"No, I heard you," he says. "Sorry. I just got a bit caught up with, uh, some hypotheses regarding the Cambrian explosion."
+
+- @david_talk_about_fossils: Talk about fossils?
+
+@david_talk_about_fossils
+
+"So what are the hypotheses?", you ask, trying to provoke conversation with perhaps the only Science Olympiad team member who's more awkward than you.
+
+"Um... it's kind of a long story..." He rolls his eyes, but continues. "So this is about the relationship between the Ediacaran biota and the Cambrian ones. The Ediacaran period was immediately before the Cambrian, around 600 to 540 million years ago. The Ediacaran period had a bunch of, you know, really weird life forms. So did the Cambrian, but at least they were recognizable as arthropods or molluscs and stuff like that. But the Ediacaran life was stranger; they looked like weird leaf-like blobs with asymmetrical segmentation, like *Dickinsonia*, or things that sort of rememble worms but aren't actually like worms at all, like *Spriggina*, or that kind of thing. They might not even have been animals." He pauses. "You should already know all this, right?"
+
+You nod, and David continues. "So the question here is, why did the Ediacaran life disappear, and what relationship did that have with the Cambrian explosion. Some people think that the Ediacaran life forms all died out in a mass extinction, like the other five mass extinctions, because of something abiogenic. Others think that the Cambrian animals gradually replaced the Ediacaran ones, outcompeted them. Or the change over is just a preservation artifact. Actually there could be a lot of preservation artifacts that make us misunderstand the nature of early animal life..." Here David takes a break, and glances sheepishly at you and then back at his phone.
+
+"Sorry. I've been talking a lot. I get... sort of interested in this stuff."
+
+- @david_its_fine: It's fine...
+
+@david_its_fine
+on-arrival: loneliness -= 1
+
+"It's fine," you say. "I like, uh, Paleozoic life too. It's very, um, relevant to fossils."
+
+It appears as if he doesn't want to talk any more, as he turns away and returns to his phone. Of course there is also the possibility that he actually would like to talk and you have just killed the conversation. But, there's nothing you can do about that. Or is there? Maybe you should try to talk to him. Or maybe he doesn't want to talk.
+
+Instead you read web pages on fossils by yourself. You sit next to him in the half-empty classroom, neither of you talking much. You try to remember the distinctions between *Juresania* and *Leptaena*, two brachiopods that look way too similar. Once in a while you glance over at what David is working on. He's also reading about fossils and taking notes. But maybe you shouldn't bother him. 
+
+When it comes time to leave, David leaves without saying another word to you. But he did wave. Okay. That's fine. You leave by yourself too.
+
+
+@roxana
+view-if: roxana_seen = 1
+on-arrival: david_scioly += 1; fossils += 1
+
+"So um... hi..."
+
+"Can you act like nothing's changed?", Roxana says.
+
+"Oh, um. Okay."
+
+"Can we go over fossil identification now?"
+
+"Um, sure."
+
+
+
+@krishna
+view-if: krishna_scioly = 0
+on-arrival: krishna_scioly += 1; cell += 1
+
+Krishna Rao is notable for being the only other gay in Science Olympiad. That you know of, anyway. He's one of the approximately two people you've come out to (and that was on accident). Also, he's a genius who's probably going to MIT, and interested in biology as well, which would make him a competitor.
+
+"Um, cell biology," you say. "We should start, like, studying."
+
+"Yeah."
+
+- @cell_bio: Cell Biology is another memorization event...
+
+@cell_bio
+
+Cell bio is yet another event where you just have to memorize as much about the relevant topics as possible. The topics in question being, obviously, cell biology. It's like an AP bio exam, only harder, or something like that. You do a lot of those events because you're good at memorizing boatloads of useless information.
+
+"How do you want to split up the topics?", Krishna asks.
+
+- @cell_bio_split: "Um, it doesn't matter?"
+
+@cell_bio_split
+
+"Um, it doesn't matter? We could both study, like, everything, as much as possible."
+
+"But shouldn't we at least try to avoid too much duplication?"
+
+"Sure, I guess. What do you want to do?"
+
+Krishna glances at you, shaking his head. "How did I know this would happen? Okay. I'll do this." He circles some items on the event rules sheet, and hands it to you. "You do these. I'll do the rest."
+
+"Um... thanks."
+
+"It's fine."
+
+- @cell_bio_questions: You look at the cell bio study guide.
+
+@cell_bio_questions
+
+You had thought that you knew a lot about cell biology already, but you do not know enough. The topics can get very detailed, well beyond what was covered in AP Bio.
+
+
+@krishna2
+view-if: krishna_scioly > 0
+on-arrival: krishna_scioly += 1; cell += 1
+
+"Here's a question," Krishna says as soon as he sees you. "In aerobic respiration, the greatest ATP production occurs in which stage of the process?"
+
+- @glycolysis: Glycolysis
+- @krebs: Krebs cycle
+- @etp: Electron transport chain
+
+@glycolysis
+view-if: cell <= 2
+go-to: is_this_a_joke
+
+"Um, glycolysis?"
+
+@krebs
+view-if: cell <= 2
+go-to: is_this_a_joke
+
+"Um, Krebs cycle?"
+
+@is_this_a_joke
+
+"Are you serious? Weren't you in AP Bio?"
+
+"Um. Haha. I was just kidding."
+
+Krishna sighs. "Just study more next time. Okay, next question. What are two organelles that originated from endosymbiosis?"
+
+This question is easy.
+
+- @mitochondria: Mitochondria and chloroplasts.
+
+@etp
+
+"The electron transport chain."
+
+"Yeah. This was too easy. Maybe we should try a harder question."
+
+"Yeah..."
+
+"Okay, next question. What are two organelles that originated from endosymbiosis?"
+
+This is an easy question.
+
+- @mitochondria: Mitochondria and chloroplasts.
+
+@mitochondria
+
+"Mitochondria and chloroplasts."
+
+"Maybe this was too easy. Can you ask me a question now?"
+
+- @cell_easy: What are the functions of microtubules?
+- @cell_hard: Describe the overall reaction that happens in Photosystem I.
+
+@cell_easy
+
+"What are the functions of microtubules?", you ask.
+
+"Stabilizing cell structure and shape, and cell motility, like how amoebas move. Oh yeah, they also position chromosomes during mitosis."
+
+"There's also transportation, with kinesins that move along microtubules."
+
+"Yeah. I knew that."
+
+- @end_cell_questions: The quzzing continues.
+
+@cell_hard
+
+"Describe the overall reaction that happens in Photosystem I," you ask.
+
+"Oh man. I literally remember nothing about plants."
+
+"Um. Sorry."
+
+He sighs. "God, just keep going."
+
+- @end_cell_questions: The quzzing continues.
+
+@end_cell_questions
+
+So the two of you go over some more questions, with you quizzing Krishna and him quizzing you in turn. It goes alright; you might actually be learning things.
+
+
+@edwin
+view-if: edwin_scioly = 0
+on-arrival: edwin_scioly += 1; disease += 1
+
+The captain was Aubrey's boyfriend last year. Your parents first heard it from Aubrey's parents on Wechat before you ever knew of it (you aren't embedded deep enough in the school's rumor networks). Sometime later they apparently broke up; you never found out how or why. Nor do you care.
+
+The distinguishing characteristics for the captain are that he's overly enthusiastic and obviously loves science.
+
+"Are you ready to work on Disease Detectives?", he asks.
+
+- @disease_detectives:  "Um, sure..."
+
+
+@disease_detectives
+
+Disease Detectives is a study event about, you guessed it, epidemiology. It's a mix of general knowledge questions about epidemiology, and some more in-depth case studies.
+
+"Let's look at some tests from past years," the captain says. "How many of these questions do you know?"
+
+The first question: What is the epidemiologic triad?
+
+- @disease_answer1: Host, agent, environment
+- @disease_answer2: CDC, WHO, NIH
+- @disease_answer3: Mumps, Measles, Rubella
+- @disease_answer4: Bacteria, Viruses, Fungi
+
+@disease_answer1
+
+"Host, agent, environment."
+
+"Yep, that's right. That was a really easy question."
+
+- @disease_questions_2: The questions continue.
+
+
+@disease_answer2
+go-to: disease_wrong_answer_1
+
+"CDC, WHO, NIH?"
+
+@disease_answer3
+go-to: disease_wrong_answer_1
+
+"Mumps, measles, rubella?"
+
+@disease_answer4
+go-to: disease_wrong_answer_1
+
+"Bacteria, viruses, fungi?"
+
+@disease_wrong_answer_1
+
+"Is that a joke?"
+
+"Um, ... yeah. I mean, it was."
+
+The captain sighs. "Host, agent, environment. You'd better know that."
+
+"Yeah. Of course. Sorry."
+
+"That's fine. Let's go over some more stuff."
+
+- @disease_questions_2: The questions continue.
+
+@disease_questions_2
+
+Next the captain starts feeding you slightly more difficult questions. What are Koch's Postulates? What are Hill's Criteria for Causation? What are the false positive and false negative rates for a given statistical test, given the population size? Given this particular scenario, what is the relative risk? And so on.
+
+You don't know this stuff nearly as well as you should.
+
+
+
+@edwin2
+view-if: edwin_scioly = 1
+on-arrival: edwin_scioly += 1; disease += 1
+
+The captain is sitting in his usual spot, hunched over a practice packet.
+
+"Hey [+ first_name : +]. Ready for Disease Detectives?"
+
+"Yeah, I guess."
+
+"That's not good enough. You have to be absolutely ready if we're going to win. We're up against schools where every other kid's parent is a professor at MIT or Harvard, and we don't have nearly the resources or connections that they do, so we absolutely have to work harder."
+
+Huh. A new motivational speech.
+
+"Well, my mom's a research associate," you say with a shrug. "Is that good enough?"
+
+The captain stares at you for a moment. "That's not the point. The point is, we have to work harder. What we're doing right now isn't good enough. Let's start right now."
+
+- @disease_part2: He hands you a study packet.
+
+
+@disease_part2
+
+"Here, I printed this out," he says. "Memorize every single word on these pages. Memorize all of the case studies. Go on the CDC epidemiology case studies website and memorize everything on that site."
+
+Along with the captain, you study in silence. You pore over the packet for the remainder of the meeting, until your brain becomes immersed in talk of case definitions and etiologies and odds ratios. At home tonight, you spend at least three hours on https://www.cdc.gov/eis/casestudies.html. It's quite fascinating.

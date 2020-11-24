@@ -1,0 +1,10 @@
+title: Weekend
+subtitle: Time to relax, maybe
+new-page: yes
+view-if: week_progress >= 2 and week < 8
+on-arrival: loneliness += 3 - week_progress; week += 1; week_progress = 0; stress -= 1; weekly_family = 0; weekly_scioly = 0; weekly_research = 0; weekly_social = 0; weekly_pageant = 0; weekly_miri = 0; loneliness_1_week_seen = 0; weekly_emily = 0
+tags: top, enter_weekend
+
+You have some free time this weekend, time that you probably don't have to spend on homework or ECs or whatever. What would you like to do?
+
+- #weekend

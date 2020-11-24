@@ -1,0 +1,71 @@
+title: Research
+subtitle: Progress?
+new-page: yes 
+view-if: week >= 1 and week < 10 and week_progress < 3 and research = 2 and weekly_research = 0 and stress < 15
+on-arrival: week_progress += 1; research += 1; stress += 1; weekly_research = 1 
+tags: top, research
+
+You start your project in earnest when you're at the lab, with the lab's computer open and Stella Zhang watching over your shoulder. It's awkward being around her, but for some reason she puts you at ease. 
+
+You've done a little bit of programming before, but nothing like this. Still, you manage. Sort of. "No, don't do this," she says. Or, "Why don't you google that instead of asking me?"
+
+- @code: Code.
+
+@code
+
+It's as if you enter a trance state, with nothing on your mind but Python. Stella stops talking. You stop talking. It's as if the world outside doesn't exist, except the white and green characters on the 25% transparent black screen and the reassuring theme of StackOverflow.
+
+And slowly but surely, something comes together. You run the script, and the output files are there, the neat bar plots with the error bars in the right place, and how can you tell that they're correct? Because Stella tells you so?
+
+You're disappointed at the end of the day when she tells you that you've just replicated something she did last year.
+
+"But don't worry! You did great!"
+
+- @not_really: "Not really..."
+- @thanks: "Oh, thanks..."
+
+@not_really
+go-to: thanks
+
+"Um, not really... it must have been easy..."
+
+"No, that's not true. I certainly couldn't have done this when I was in high school."
+
+@thanks
+
+"Oh, um, thanks."
+
+"Yeah! Maybe we'll have to do just one more practice project before you can work on cutting-edge stuff."
+
+You leave the lab with more work, this time for you to do at home. Your netbook can't exactly run data analysis, but you've finally gotten SSH access to the lab server. Research is...
+
+- @fun: Fun?
+- @interesting: Interesting?
+- @none_of_the_above: Neither?
+
+@fun
+go-to: output
+
+Yeah. It's fun. Or something like that.
+
+@interesting
+go-to: output
+
+Yeah. Maybe it's interesting. Or something like that?
+
+@none_of_the_above
+go-to: output
+
+If it's not fun or interesting, then what is it? Meaningful preparation for a future career in science? Sure, let's go with that.
+
+@output
+
+Still, you can't help but think about why you're *really* doing this. Here at the lab, they work on stem cells, and stem cells are what you need to induce the production of gametes so that two people of the supposedly incompatible chromosomal configurations could produce compatible gametes and thus gay people can have biological children with their partners and thus homophobia solved. But no. Instead you're working on combining numbers into bigger numbers.
+
+Nevertheless, in order to do what you *really* want to do, the research training would help, right? You'll need a top-tier PhD, and in order to get a PhD, you'll have to get into a good grad school, and in order to get into a good grad school, you'll need a good undergrad, and in order to get a good undergrad, you need to do the fricking beauty pageant to stand out among all the other Asians who want to go to MIT only because their parents say it's good and not because they really need it like you do.
+
+- @train: It's your train stop.
+
+@train
+
+You get off the train, your chain of thought interrupted. Doing research will help in your college applications, maybe more so than the pageant. And it's fun, and makes your mom happy. Not many kids your age get the opportunity to do scientific research.

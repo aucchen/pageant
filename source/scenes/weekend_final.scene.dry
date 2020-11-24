@@ -1,0 +1,8 @@
+title: The Weekend of the Pageant...
+subtitle: It's here.
+new-page: yes
+view-if: week_progress >= 2 and week = 11
+on-arrival: week += 1; week_progress = 0; stress -= 1; weekly_family = 0; weekly_scioly = 0; weekly_research = 0; weekly_social = 0; weekly_pageant = 0; weekly_miri = 0
+tags: top, enter_weekend
+
+- #weekend

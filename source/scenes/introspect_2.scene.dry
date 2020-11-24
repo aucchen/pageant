@@ -1,0 +1,138 @@
+title: Introspection
+subtitle: Progress check
+new-page: yes
+view-if: week >= 4 and week <= 6 and introspection = 1 and (pageant_prep >= 2 or scioly>=2 or research >= 2 or family >= 2) and week_progress < 3
+on-arrival: introspection += 1
+priority: 2
+tags: top, introspect
+max-visits: 1
+
+- @pageant: Think about the pageant.
+- @research: Think about research.
+- @scioly: Think about science olympiad.
+- @people: Think about the people you know.
+- @self: Think about yourself.
+
+@pageant
+view-if: pageant_prep >= 2 and seen_pageant_introspect_2 = 0
+on-arrival: seen_pageant_introspect_2 = 1; temp_pageant_score = 2.25*pageant_appearance + 1.5*pageant_interview + 3*pageant_talent + 2*pageant_platform
+
+The pageant is getting closer and closer every day, and you've started your preparations. Somewhat.
+
+[? if pageant_appearance >= 2 : You've been working on the physical aspects of the pageant: styling, makeup, and so on. You've learned more than you ever thought you would. It's a domain of knowledge like any other, is the angle you're going with this. ?]
+
+[? if pageant_interview >= 2 : You've been practicing for the interview. Hopefully you won't cry on stage. ?]
+
+As for your actual chances for winning the pageant... based on some formula that you found on
+the internet, it appears that [? if temp_pageant_score <= 20 : you have no chance of winning the pageant. But that's what you expected, right? ?][? if temp_pageant_score > 20 and temp_pageant_score <= 40 : you might be able to get a respectable placement, but you won't win. But, that's better than you expected, right? ?][? if temp_score > 40 : ... well, you have some hope. Not a great deal of hope, but hope nevertheless. You'll still need more practice, though. ?]
+
+[? if ball_gown = 0 : You still haven't picked out a ball gown yet. In order to do well on the pageant, you have to pick out a ball gown and try it on. ?]
+[? if ball_gown = 1 and try_on_ball_gown = 0 : You've picked out a ball gown, but you haven't tried it on yet. You should try it on if you'd like to do well at the pageant. ?]
+
+- @research: Think about research.
+- @scioly: Think about science olympiad.
+- @people: Think about the people you know.
+- @self: Think about yourself.
+- @stop: Stop thinking about stuff.
+
+
+
+@research
+view-if: research >= 2 and seen_research_introspect_2 = 0
+on-arrival: seen_research_introspect_2 = 1
+
+Your research is... progressing? It's hard to tell; you're not sure what's progress and what isn't. Stella is nice and so is Professor Chen, for the most part..
+
+- @pageant: Think about the pageant.
+- @scioly: Think about science olympiad.
+- @people: Think about the people you know.
+- @self: Think about yourself.
+- @stop: Stop thinking about stuff.
+
+
+@scioly
+view-if: scioly >= 2 and seen_scioly_introspect_2 = 0
+on-arrival: seen_scioly_introspect_2 = 1
+
+You've gotten into science olympiad this year, like the past two years. Beyond the college app benefits, it's something you enjoy doing. Probably. Besides, it's an opportunity to spend time with Aubrey (and also Krishna and David and the captain and all your other friends/acquaintances).
+
+The invitational is coming up soon. You're doing four events: Protein Modeling, Fossils, Cell Biology, and Disease Detectives.
+
+If you want to do well at the invitational, you still need to study these events:
+[? if protein_modeling < 2 : proteins, ?]
+[? if fossils < 1 : fossils, ?]
+[? if cell < 2 : cell, ?]
+[? if disease < 1 : disease ?].
+
+- @pageant: Think about the pageant.
+- @research: Think about research.
+- @scioly: Think about science olympiad.
+- @people: Think about the people you know.
+- @self: Think about yourself.
+- @stop: Stop thinking about stuff.
+
+
+@people
+
+- @emily: Think about Emily.
+- @miri: Think about Miri.
+- @aubrey: Think about Aubrey.
+- @parents: Think about your parents.
+- @brother: Think about Kevin.
+- @self: Think about yourself.
+- @stop: Stop thinking about stuff.
+
+@emily
+view-if: emily > 1 and seen_emily_introspect_2 = 0
+on-arrival: seen_emily_introspect_2 = 1
+go-to: people
+
+Emily is... not much more than a stranger, objectively speaking, yet you feel as if you understand her already. She's ... similar to you in some important ways, and completely different from you in other but probably less important ways. You should probably get to know her better, or something like that.
+
+@miri
+view-if: miri > 0 and seen_miri_introspect_2 = 0
+on-arrival: seen_miri_introspect_2 = 1
+go-to: people
+
+Miri is... your friend. Probably. She's probably the person you're closest to in the whole world, barring immediate family. And you like her, and enjoy being in a close vicinity to her. But you can't help but feel as if there's a lot that you're keeping from each other.
+
+@aubrey
+view-if: aubrey > 0 and seen_aubrey_introspect_2 = 0
+on-arrival: seen_aubrey_introspect_2 = 1
+go-to: people
+
+Aubrey is... Aubrey, or something like that. She's your friend, probably, or something like that. She's like the better version of you, at least according to parents. You used to have a vague crush on her and to be honest you still kind of do, even though you're trying to get better.
+
+@parents
+view-if: family >= 2 and seen_parents_introspect_2 = 0
+on-arrival: seen_parents_introspect_2 = 1
+go-to: people
+
+Despite everything, your parents love you. Probably. And you love them, too. Probably.
+
+@brother
+view-if: family >= 2 and seen_brother_introspect_2 = 0
+on-arrival: seen_brother_introspect_2 = 1
+go-to: people
+
+He's the only person you can trust in this household. No, not really, since he won't keep secrets from your parents.
+
+@self
+
+Let's talk about your personal inconsistencies:
+
+Things that give you anxiety: talking to more than one person at once. Speaking to someone on the internet. Meeting someone new. Talking in an unfamiliar context to someone of higher social status than you (which includes all adults).
+
+Things that don't give you anxiety: public transportation, commercial transactions, academic interactions for the most part except when they do.
+
+Anyway, maybe you should go to therapy. But that would have to involve your parents and you do not want to aggravate them more than you already have, not to mention your mom's insurance probably doesn't cover that stuff. Maybe you could get SSRIs somewhere. Those are supposed to help with the sort of mental condition that you have, right? But what if you don't actually have problems that can be solved via neurological means? Or what if they completely mess you up even more than you are already?
+
+- @end: This is all pointless.
+
+@stop
+
+This is all a pointless exercise. You should be doing something productive with your time.
+
+@end
+
+You should be doing something productive with your time, not wasting it on self-centered introspection.

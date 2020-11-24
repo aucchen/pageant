@@ -1,0 +1,58 @@
+title: Christmas Break
+subtitle: An opportunity...?
+new-page: yes
+view-if: week = 10 and christmas_break <= 2 and week_progress < 3
+on-arrival: christmas_break += 1; week_progress += 1; stress += 1
+tags: top, christmas
+
+*"This winter break,"* mom says in the opening to one of her lectures, *"is a very good opportunity. You have so much free time, you can do your science, your *pageant*, your anything is fine. Also don't forget to do your homework. You shouldn't wait until January 1st to do it."*
+
+Mom has a point, sort of, as with all of her lectures. You can do anything, but there are some things you should do during this break.
+
+- @practice_pageant: Prepare for the pageant.
+- @homework: Do your homework.
+- @videogames: Play video games.
+
+@practice_pageant
+go-to: pageant_prep_self_2
+
+
+@homework
+max-visits: 1
+
+Yes, of course there is homework over Christmas break. Who do you think you are? The first semester isn't technically over until the end of January, so you still have finals to contend with.
+
+It feels too early to be doing homework, but you get started anyway. There's a book that you're supposed to be reading for AP Lit, so why not just start on that.
+
+- @read: Read.
+
+
+@read
+go-to: end_homework
+on-arrival: gpa += 0.01
+
+You spend some time reading the novel. It's supposedly a classic, a great work of American literature from the 19th century, so it's rather difficult to get into. It takes an hour just to read through the first few chapters, while taking notes.
+
+
+@end_homework
+
+- @practice_pageant: Prepare for the pageant.
+- @homework: Do your homework.
+- @videogames: Play video games.
+- @do_nothing: Just sit around doing nothing.
+
+
+@videogames
+max-visits: 1
+
+You don't have a computer that can play video games. In fact, there is no computer in this house that can play recent-ish video games. Kevin sometimes wonders if you would play Minecraft with him, but your computer is too weak to even run Minecraft without killing its memory. On social media you see that Miri is getting into the third Dragon Age game.
+
+You could always play text-based games, though. Or just browse the internet and stuff.
+
+- @practice_pageant: Prepare for the pageant.
+- @homework: Do your homework.
+- @videogames: Play video games.
+- @do_nothing: Just sit around doing nothing.
+
+
+@do_nothing

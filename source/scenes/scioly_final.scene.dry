@@ -1,0 +1,151 @@
+title: Science Olympiad
+subtitle: The race for captain
+new-page: yes
+view-if: week = 11 and week_progress < 3 and weekly_scioly = 0 and invitational = 1 and (gold_count > 0 or silver_count > 0 or bronze_count > 2)
+on-arrival: week_progress += 1; scioly += 1; stress += 1; weekly_scioly = 1; scioly_final_seen = 1
+tags: top, scioly
+
+The old captain is graduating. A new captain has yet to be chosen. Now, science olympiad is a time of monsters.
+
+"As usual, we want to choose the new captains before the regionals," says the advisor, "so that they can grow into their new role over the spring semester."
+
+There is going to be a vote. It has been decided that there will probably be co-captains. There are only two candidates that you know of so far: Krishna and his friend Daniel Salas.
+
+The old captain pulls you aside to talk immediately after the meeting officially ends.
+
+"I want you to run," he says. "I think you would be great as captain."
+
+- @no: Um... no?
+- @maybe: Um... maybe?
+- @yes: It could be a good idea...
+
+@no
+go-to: captain_continues
+
+Of course you can't be captain; you have approximately zero social skills, much less leadership capability.
+
+@maybe
+go-to: captain_continues
+
+Maybe you could be captain? You would have to take much greater responsibility than before, and actually talk to people, but it could be done... 
+
+@yes
+go-to: captain_continues
+
+Well, you don't think you would be much worse than Krishna or Daniel, and it would be a good display of leadership for college apps...
+
+@captain_continues
+
+"The current field isn't so great," the captain says. "No offense to Krishna or Daniel, but they wouldn't be the best at motivating the team. Maybe you and Aubrey should enter the contest. Or David even."
+
+Before you can speak up, the captain continues. "I know you might think that you don't have the people skills, but I have confidence in you. You're one of the best players we have. Besides, I think you're an empathetic and caring person. Even if you don't think so, you're good at getting along with people."
+
+- @best_player: Are you really one of the best "players"?
+- @empathetic: The only reason he calls you "empathetic" is because it is a feminine-coded trait.
+- @getting_along: How are you good at getting along with people?
+
+@best_player
+go-to: what_do_you_think
+
+In terms of getting medals, you might have done well, but your partners worked harder than you every step of the way. You were just along for the ride.
+
+@empathetic
+go-to: what_do_you_think
+
+The captain called you "empathetic" because it is a feminine-coded trait, and you are apparently a feminine-coded person. In truth you have no idea if you are particularly empathetic or not.
+
+@getting_along
+go-to: what_do_you_think
+
+The idea that you are good at "getting along with people" seems to be a near-total lie. Is this another instance of being arbitrarily assigned a feminine-coded trait?
+
+@what_do_you_think
+
+"So what do you think? Do you think you can do it?"
+
+He smiles at you, waiting for an answer.
+
+- @sure_why_not: Sure, why not?
+- @take_time: Maybe? Or maybe not?
+- @of_course_not: Of course not.
+
+@sure_why_not
+
+"Um, sure, I can do it, I guess."
+
+"Great!", the captain says. "We'll talk to Aubrey and try to get her to join with you."
+
+Aubrey is still sitting around in the science olympiad room with her friends. "Hey, Aubrey, how are you doing these days?", he begins.
+
+"What's the deal?", she replies curtly. There is definitely subtext between the two, given their somewhat recent breakup.
+
+"Straight to business as usual. Have you considered running for captain?"
+
+"Actually, I was just talking about that. Diana and I were thinking about entering together."
+
+Diana Choi is sitting next to Aubrey. She waves at you. You sort of wave back.
+
+"Well, I was just talking to [+ first_name : +] here, to see if she would run for captain. But hey, the more the merrier, right?"
+
+"Right. Yeah..." Aubrey smiles at you with what you imagine as some sort of pity or condescension. She is probably considering all the ways in which you would be terrible as a captain. You can't entirely disagree with her.
+
+- @conversation_dies: Anyway the conversation dies.
+
+@conversation_dies
+
+The meeting is soon dismissed, and you go home.
+
+- @want_to_be_captain: You sort of like the idea of being captain.
+- @dont_want_to_be_captain: To be honest... you don't really want to to be captain anymore.
+
+
+@take_time
+go-to: scioly_end
+
+"Um, can I think about it for a bit?"
+
+"Sure, you have a week to think about it," the captain says. "I'll ask you again then."
+
+
+@of_course_not
+go-to: scioly_end
+
+"Um, is it okay if I don't run for captain?"
+
+"It's okay, but I want you to think about it," the captain says. "The deadline for entering is in a week. I'll ask you again then."
+
+
+@scioly_end
+
+Now, the captain moves on to talk to Aubrey. There is some weird subtext going on there since they were apparently dating at one point. You overhear that Aubrey is apparently already running for captain with her friend Diana Choi. So apparently you don't really need to run for captain anymore? There's no way you would beat them in a vote.
+
+But the captain goes back to you. "You might think that you can't beat Aubrey," he says, "but I think you should at least try. For the sake of the team."
+
+"But how would I be better than Aubrey?", you can't help but say.
+
+"Because you care about science! It's not just a college apps game for you; you really have passion for this sort of thing. Anyway, give it some thought this week."
+
+You have no comment about the veracity of his comments.
+
+- @want_to_be_captain: To be honest... you sort of like the idea of being captain.
+- @dont_want_to_be_captain: To be honest... you don't really want to to be captain.
+
+@want_to_be_captain
+on-arrival: growth_points += 1
+
+It wouldn't be so bad, wouldn't it?
+
+However, there are currently two sets of candidates: Aubrey and Diana, and Krishna and Daniel. All of them are more popular than you are, and just as talented in the science. So despite what the captain has said, there is no rational reason for you to enter into the race.
+
+But you might enter the election anyway, for no reason in particular.
+
+
+@dont_want_to_be_captain
+on-arrival: growth_points += 1
+
+You aren't really temperamentally fit for a leadership position at this point.
+
+There are currently two sets of candidates: Aubrey and Diana, and Krishna and Daniel. All of them are more popular than you are, and just as talented in the science. So despite what the captain has said, there is no rational reason for you to enter into the race.
+
+But you might enter the election anyway, for no reason in particular.
+

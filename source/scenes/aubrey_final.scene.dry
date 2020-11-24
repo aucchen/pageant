@@ -1,0 +1,290 @@
+title: Aubrey
+subtitle: A date...?
+new-page: yes
+view-if: week = 11 and aubrey_date = 1 and week_progress < 3
+on-arrival: aubrey_date = 2
+tags: top, weekend, aubrey, social
+max-visits: 1
+
+Aubrey had originally sent you a list of potential locations for the date. Then, realizing that you are really bad at making choices, she unilaterally decided that you two were going to go downtown and just wander around. Which is basically what you would have chosen for a date. Which is a positive sign. Probably.
+
+Now the two of you are sitting in a brick-covered, concrete-lined downtown plaza, by the Brutalist city hall. The sun is about to set. Tourists and workers are swarming about.
+
+"So, how was the date?", Aubrey asks.
+
+- @date_beginning: To answer, you must go back in time.
+
+@date_beginning
+
+The two of you had met at the T station in your town. You only live a few blocks away, while Aubrey lives quite a ways away. She was smiling as she approached you, wearing a puffy green jacket and black pants. You waved back.
+
+"Ready to go?," she asked. You nodded, and boarded the next train.
+
+- @sitting_on_train: It felt so mundane...
+
+@sitting_on_train
+
+You make an attempt to initiate conversation. "So, um..., did you tell... ?"
+
+"No, I dont tell everything to my parents!" She laughed. "I told them I was meeting a friend. Which is true, isn't it?"
+
+You were gratified by the fact that she thought of you as a friend.
+
+- @introspect_date: But you were going on a date...
+
+@introspect_date
+
+You were going on a date with your long term crush? This should have been a moment of supreme happiness and supreme nervousness. However you only felt moderate happiness and moderate nervousness.
+
+It didn't feel like you were embarking on a date. You weren't nervous enough. Your heart was not pounding its way through your chest. Your stomach was not twisting itself into knots. So it was fine. Too fine.
+
+You did not talk much more on the train. You do not particularly enjoy talking on trains given the level of noise present, and it seemed that Aubrey agreed.
+
+- @getting_off: You disembarked at Downtown Crossing...
+
+@getting_off
+
+"Do you want to just, like, walk around for a bit?," Aubrey asked after you disembarked.
+
+"Sure."
+
+- @hold_hands: You asked her if you could hold hands.
+- @no_hold_hands: You followed her path.
+
+@hold_hands
+go-to: walk_path
+
+Would that be too forward? Would you come off as aggressive for pursuing this? She's probably not even attracted to you in *that* way; why ruin it?
+
+But then again, women hold hands as friends all the time, right? In China all the women held hands with each other without thinking that it's gay.
+
+Either way, the very thought was so anxiety-inducing that you put it off.
+
+@no_hold_hands
+go-to: walk_path
+
+You thought about holding hands, but quickly backed off on the idea; it would have been too forward and rather inappropriate for the situation, in your opinion.
+
+@walk_path
+
+"Just wondering, have you ever done anything like this before?", Aubrey asked. "Like, a date or anything like that?"
+
+- @no_date: No...
+- @yes_date: (lie) Yes, of course!
+
+@yes_date
+go-to: no_date
+
+There's no reason for you to lie about this. None whatsoever.
+
+@no_date
+
+"Um, no..."
+
+"Haha. Yeah, that's what I thought." She didn't say this in a mocking way, probably, more in a total matter-of-fact manner, as if you were exactly the kind of person that she thought you would be. And to be fair, you are, probably.
+
+After a pause, she continued. "I'm sorry I'm ruining your first date, then. Haha."
+
+- @why_ruin_date: "Why?"
+
+@why_ruin_date
+
+"Why?", you ask.
+
+"You know, because I'm not like, you know."
+
+"Yeah. Sorry."
+
+"No. I should be sorry. I should have thought about your feelings before setting this up."
+
+"What do you mean?"
+
+"Oh man." Aubrey laughed before glancing at you. "Isn't it obvious that I'm just stringing you along? This isn't like, going to be a thing."
+
+- @no_expectations: "To be fair, I expected nothing."
+- @sorry: "Sorry..."
+
+@no_expectations
+
+You didn't have any expectations that this was going to be a 'thing', so to speak.
+
+"It's fine," you said. "I didn't really expect that."
+
+"Then let's just try to enjoy this time," Aubrey replied, her voice sounding... resigned? Or something like that.
+
+- @back_to_present: Back to the present...
+
+@sorry
+
+"Um, sorry..."
+
+"No, what are you sorry for? Stop saying sorry." Her voice sounded exasperated.
+
+"Um, okay..."
+
+"Let's just, like, have fun," Aubrey said, as if she did not know what 'fun' meant at that particular time.
+
+- @back_to_present: Back to the present...
+
+@back_to_present
+
+So the two of you wandered around downtown, dodging crowds of tourists and workers. There was no direction or goal. She led, and you followed, for the most part. You bumped into each other a few times. There was not much in the way of conversation. Just small talk, or something like that.
+
+And now she's sitting with you on a concrete bench in a Brutalist plaza. The sun is disappearing behind the buildings, and people walk all around you, most paying you no mind.
+
+So, how was the date, Aubrey asked. How was it?
+
+- @date_good: "It was... good?"
+- @date_alright: "It was... okay?"
+- @date_um: "Umm..."
+
+
+@date_good
+go-to: aubrey_hold_hand
+
+"It was... um, good?"
+
+"Really? Well, I'm glad."
+
+
+@date_alright
+go-to: aubrey_hold_hand
+
+"It was... um, okay?"
+
+"Just okay? Haha. Figures."
+
+
+@date_um
+go-to: aubrey_hold_hand
+
+"Um... I..."
+
+"You don't want to say? Haha. Figures."
+
+
+@aubrey_hold_hand
+
+A pause. Aubrey slowly glances around the surroundings, and you follow her gaze. The sun has mostly set; the sky is a gradient of orange and red. The crowds are starting to thin. No one is looking in your direction.
+
+"Can you hold my hand?", she says, looking at you with a smile.
+
+*What.*
+
+- @why_hold_hand: "...Why?"
+- @okay_hold_hand: "...Okay?"
+- @sorry_hold_hand: "...Sorry, but..."
+
+
+@why_hold_hand
+
+"Um..., why?"
+
+"I just felt like it, I guess. Why not?"
+
+- @okay_hold_hand: "...Okay?"
+- @sorry_hold_hand: "...Sorry, but..."
+
+
+@okay_hold_hand
+on-arrival: aubrey_hold_hand = 1
+
+"Um..., okay?"
+
+She reaches towards your lap, and lays her gloved hand on top of your bare hand. You place your other hand on top of hers.
+
+"Hey, this is nice!", she says.
+
+"Yeah. It is."
+
+Now Aubrey leans her body against you. "Isn't it nice to just sit close to someone you care about like this?"
+
+- @am_i_someone: "Am I someone you care about?"
+- @is_she_someone: Is she someone you care about?
+
+
+@am_i_someone
+
+"Um, am I someone you care about?"
+
+"I should be asking you that. Am *I* someone *you* care about?" She has a wide smile, perhaps a bit too wide.
+
+"Um... yes? I guess?"
+
+"You don't sound very confident."
+
+"Do I ever sound confident?"
+
+"Honestly, no, outside of like, class and science olympiad."
+
+- @aubrey_silence_2: She is silent.
+
+
+@is_she_someone
+
+Is Aubrey someone you care about? Yes, of course. Otherwise, why would you be sitting here with her?
+
+"So, am I someone you care about?", she asks. She has a wide smile, perhaps a bit too wide.
+
+"Um... yes? I guess?"
+
+"You don't sound very confident."
+
+"Do I ever sound confident?"
+
+"Honestly, no, outside of like, class and science olympiad."
+
+- @aubrey_silence_2: She is silent.
+
+
+@aubrey_silence_2
+
+There is a long moment of silence. Her head rests on your shoulder, her fingers intertwined with yours.
+
+- @not_bad: It's not a bad feeling...
+- @wont_last: But it won't last...
+
+
+@not_bad
+
+Honestly you're kind of enjoying this moment. It's a pleasant feeling, the soft skin of her face leaning so close to yours. It's easy to become lost in yourself, to imagine that there is something else going on here, that the two of you are really *in love* or something like that. But even so, you're friends, right? She cares about you, right? Right?
+
+- @have_to_leave: It's time to leave.
+
+
+@wont_last
+
+She doesn't *like you* in *that way*, you have to remind yourself. It's easy to get caught up in the moment, to imagine that the two of you are *a thing*, but of course it's not like that. It'll never be like that.
+
+But even so, you're friends, right? She cares about you, right? Right?
+
+- @have_to_leave: It's time to leave.
+
+
+@sorry_hold_hand
+
+"Um, sorry but..." You keep your hands on your lap. Suddenly the situation feels incredibly awkward.
+
+"It's okay!", Aubrey says. "I know you're not good with touching!"
+
+"Oh. Thanks." But you wonder how she knows that.
+
+- @silence_dont_hold_hand: There is a silence.
+
+
+@silence_dont_hold_hand
+
+She is silent. You are silent. The two of you sit next to each other, not touching. It's a slightly awkward moment, but not that much more awkward than the rest of the date thus far.
+
+- @have_to_leave: It's time to leave.
+
+
+@have_to_leave
+
+The sun has already set. You have homework. She has homework.
+
+Aubrey gets up first. "It's been a good time," she says. "We should hang out more. Like, as friends."
+
+"Yeah..."
+
+You head back by train together, your feelings left unsaid, or perhaps unknown even to yourself.

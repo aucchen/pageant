@@ -1,0 +1,120 @@
+title: Family Dinner
+subtitle: A normal conversation
+new-page: yes 
+view-if: week > 1 and week_progress < 3 and family > 1 and family < 5 and weekly_family = 0 and bravery_viewed = 0 and week < 10
+on-arrival: week_progress += 1; family += 1; weekly_family = 1; bravery_viewed = 1; loneliness += 1; stress += 1
+max-visits: 1
+tags: top, family 
+
+You're at dinner with your parents and your brother Kevin as usual. You push around the white rice on the plate; you're not feeling particularly hungry tonight. *"Why aren't you eating?"*, mom asks. *"Is the food I made not good?"*
+
+*"No... I'm fine."* You pick at some pieces of celery with your chopsticks. Honestly, the food isn't bad, but you're not in the appetite to eat a lot tonight.
+
+*"Are you trying to lose weight?"* Your mom sounds worried, like she always does. *"You don't have to loose weight. You're already skinny enough. You really need to get fatter, that's what would be good."*
+
+*"Girls don't need to grow fat,"* dad says. 
+
+- @note: In Chinese, "fat" doesn't really have the negative connotation it does in English and in fact sometimes has a positive connotation especially among older people, due to experiences with hunger and so on...
+
+@note
+
+"Hey, does everyone have a mom and dad?" Kevin asks this innocuous question which causes your heartbeat to rise and you're afraid you've already started shaking and-
+
+"Yes. Everyone has a mom and dad," dad says in English.
+
+"But what about Carl? He only has a mom."
+
+"He must have had a dad. Maybe his parents are divorced."
+
+"Oh. Yeah." Kevin is so innocent. "I forgot. Carl told me that."
+
+"See? That's right."
+
+"But can anyone have two moms?"
+
+- @listen: Try to focus on eating. Don't listen.
+
+@listen
+
+*"Why did you think of that?"* your mother says in Chinese. Kevin knows Chinese, but doesn't speak it.
+
+"I was just wondering." You think about why he would be wondering. Did you mention anything to him anytime? You hope to God he doesn't implicate you.
+
+"No. That's impossible, of course."
+
+You imagine that your father is addressing you as he says this, even though you're pretty sure no one in your family knows. You imagine that it's an attack against you, against your "chosen lifestyle." You're not sure if it's a good thing or bad thing that your brother doesn't know anyone with two moms.
+
+- @ivf: What about sperm donation and IVF and stuff like that?
+- @trans: What about trans people?
+- @ips: What about, uh, new stem cell technologies?
+- @nothing: Say nothing.
+
+@assisted_reproduction
+
+What other methods of assisted reproduction are there?
+
+- @ivf: What about sperm donation and IVF and stuff like that?
+- @trans: What about trans people?
+- @ips: What about, uh, new stem cell technologies?
+- @nothing: Say nothing.
+
+
+@ivf
+view-if: seen_ivf = 0
+on-arrival: seen_ivf = 1
+
+Of course you don't say anything. You've simulated this conversation enough times that you already have a good idea of what your father would say, and what you would say in response. At some point you know that either he or your mother would say that it's a shame for those children that don't have a real father and then you're going to want to cry again because you want to have children and your parents will tell you that your children will grow up hating themselves and why can't you just marry a man and do it the proper way and so on. Of course you would start crying; the one time you had this argument before you cried and your parents still never suspected that you were actually gay yourself. Hopefully.
+
+God, why do you suddenly start to feel like crying? From literally nothing more than your reminiscing? Why does this happen? You start to hate yourself, a bit more than usual. What's worse is that you hate yourself for your self-pity, so much that your mind becomes an ouroborous of despair. It's not a very pleasant feeling.
+
+- @end: The rice is getting cold. 
+
+@trans
+view-if: seen_trans = 0
+on-arrival: seen_trans = 1
+
+You wouldn't even dare talking about that. You doubt that your parents even know about the existence of trans people, much less trans gay men and trans lesbians. Just bringing up the topic would be a way to start an argument that you had no chance of winning. Whatever your father or mother would say, you know it would make you feel like shit.
+
+[? if emily >= 3 and emily_ship = 0 : You think about Emily (she's probably the trans person you know best irl). What does she think about... and you snap out of it. God, why are you like this. And if you and her were to... God. Stop thinking about this. ?]
+
+Instead you try to eat your rice and vegetables, and stay silent and stay out of the conversation. Someday it will be your time to speak up. But not today. When will that someday come? You thought that you would not speak of the matter until you were financially independent. That's a long ways away, but you have patience aplenty.
+
+- @assisted_reproduction: There are other ways of having children, though...
+- @end: The rice is getting cold. 
+
+@ips
+view-if: seen_ips = 0
+on-arrival: seen_ips = 1
+
+That's a science fiction joke, and you know it. Although, you've been thinking about how you would implement this ever since you took AP Bio. First you need to de-program existing somatic cells to produce induced pluripotent stem cells (iPSCs); that's already been done. If you could decipher the signaling and regulatory pathways associated with gamete development, you could provide your reprogrammed cells with the right signaling molecules and environment, and the gametes would develop. However, sperm development requires some genes only present on the Y-chromosome (the SRY gene in particular, maybe others?), which is troublesome. The good thing is that there aren't too many of these genes so you could just make an artificial chromosome with just the genes you need, but that's hard, and you'd have to express those genes in the correct amounts too which probably involves epigenetic modification not that you know anything about that. Does that mean you'd have to work on DNA synthesis too? Add that to the list of "[+ first_name : +]'s research goals". That list has to be getting longer and longer.
+
+*"你笑什么？What are you smiling about?"*, mother asks you.
+
+- @oh: "Nothing."
+
+@oh
+
+Your face contorts back to a safe neutral. *"I'm not smiling about anything."*
+
+*"Oh really?"*, father asks. *"What are you hiding?"*
+
+You just shake your head. *"I'm not hiding anything."*
+
+And that was that. You remember years ago when in church you said that you never remembered telling any lies. It must have been a lie then, and it's even more of a lie now. You're just one big sack of secrets.
+
+But, science will solve this. Science is always the answer, right? Somehow you feel your hope becoming ever more hollow.
+
+- @end: The rice is getting cold. 
+
+@nothing
+
+Of course you don't say anything. This isn't an argument you could ever win. Your hands feel cold. Your chopsticks are bent. The vegetables are getting soggy. Your head grows heavier. You close your eyes. It doesn't matter.
+
+*"Are you zoning out?"*, mother asks.
+
+You shake your head and pick up your chopsticks again. It doesn't matter.
+
+- @end: The rice is getting cold. 
+
+@end
+

@@ -1,0 +1,91 @@
+title: Family
+subtitle: More stories of China
+new-page: yes
+view-if: week = 11 and week_progress < 3 and family >= 5 and weekly_family = 0 and argument_viewed = 1
+on-arrival: week_progress += 1; family += 1; weekly_family = 1; stress += 1; loneliness += 1; stories_2_viewed += 1
+tags: top, family
+max-visits: 2
+
+At dinner, in between bites of stir-fried tofu and steamed rice, your parents tell you stories of the past. They enjoy reminiscing about their old lives, all the places and things that your brother and you have not and will not experience. They like to remind you of all that they went through so that they are able to provide you with a good life in America.
+
+- @dad_1: Dad talks about his parents.
+- @mom_1: Mom talks about growing up in the village.
+
+
+@dad_1
+
+Dad talks about his parents, your grandparents. Both of them were factory workers who worked 8-hour shifts, apparently in the clothing or textiles industry. Their shifts would change each week; the factory had to keep going for 24 hours, so sometimes they would be working the night shift. Grandma (nai-nai) retired at age 50. An impossibility in America today, of course. You don't even have to hope.
+
+The conversation moves on.
+
+- @dad_2: Dad talks about his time at school.
+- @mom_2: Mom talks about her English classes at school.
+
+
+@mom_1
+
+Mom tells a story about collecting pine needles. At her village school, the teachers would require the students to collect 5 *jin* of pine needles and pine cones from the surrounding woods, in order to burn for heat in the winter. The forest floors would be scraped bare by groups of youth. Now, leaves and needles are allowed to litter the streets and sidewalks. What a waste, mom says.
+
+The conversation moves on.
+
+- @dad_2: Dad talks about his time at school.
+- @mom_2: Mom talks about her English classes at school.
+
+
+@dad_2
+
+Dad talks about reading books in middle or high school. For all its poverty, the school had a decent library. There were Chinese translations of Soviet and some Western science fiction, which he voraciously devoured. He talked about a story where a man wakes up in the future after being frozen for a thousand years. You mention that you've read similar stories.
+
+What kinds of books do you like, he asks. You like science fiction too, and give brief and non-incriminating descriptions of the books you've read. Your parents don't really read English literature so they don't have much to say.
+
+- @dad_3: Dad talks about the place where you were born.
+- @mom_3: Mom talks about the place where you grew up.
+
+
+@mom_2
+
+Mom talks about learning English for the first time. It was in high school, and only recently had China switched from teaching Russian as the main second language to teaching English. The teacher had spent a year in the UK, but the curriculum was based on American English, the *English for Today* books or something like that. The teacher had a horrible accent and was all in all a bad teacher, in retrospect. Mom and dad both say that they learned English by listening to Voice of America and BBC broadcasts.
+
+In the books, they learned all about the beautiful green fields of Wisconsin, the rural landscapes of gently rolling hills and neat cornrows, dotted with isolated farmhouses and silos. Dad had the same curriculum, and when you lived in the Midwest, they always mentioned it when driving through.
+
+- @dad_3: Dad talks about the place where you were born.
+- @mom_3: Mom talks about the place where you grew up.
+
+
+@dad_3
+
+Dad talks about the place where you were brought up. Your parents were students when you were born, living in a tiny student apartment with a bunk bed and a single desk, where every household on the floor shared a kitchen and a bathroom. The kitchen walls were blackened from the cooking soot. There were fights, sometimes with people brandishing knives. You lived there for two months, before they sent you to your grandparents in Xi'an. They speak as if you are somehow supposed to remember this.
+
+- @history: You wish you could learn more.
+- @tired: You're tired of the stories.
+- @no_matter: It doesn't matter; you don't care about their stories.
+
+
+@mom_3
+
+Mom talks about the apartment that you moved to, after you returned to your parents from your grandparents after you were four. It was a fifth-story unit in a six-story building without any elevators. It was a good place, with its own bathroom and kitchen, but every week dad had to carry a tank of natural gas upstairs for cooking. You never liked to take baths in the bathroom because you were afraid of falling down the squatting toilet. Eventually there was even an air conditioner, carried upstairs and installed by two very strong men, one of whom hung outside with nothing more than a loop of rope. It was a different time back then, dad says, not like now. It was a hard time, not like now.
+
+- @history: You wish you could learn more.
+- @tired: You're tired of the stories.
+- @no_matter: It doesn't matter; you don't care about their stories.
+
+
+@history
+
+Hearing your parents' stories makes you feel nostalgic for a world that you never experienced. Part of you wishes that you could preserve the memories for the future, that the memories and histories contained therein *must* be saved somehow. Your parents are products of a time long gone, of a generation raised in trauma and change, whose memories are inconvenient to the powers-that-be in the country of your birth. That's why these stories are precious.
+
+Mom sometimes says that she wants to write a novel about your family history. It would be in Chinese, of course. She asks if you would help. You don't know how.
+
+
+@tired
+
+You're tired of the stories. You're tired of the implications that you are an ungrateful child, that your parents went though so much hardship only to end up with a spoiled waste of a daughter like yourself. They ate so much bitterness to give the next generation a better life and what did they end up with? A self-centered lesbian loser who can't even talk to someone without getting a panic attack?
+
+Does this subtext really exist, though? Or is it a product of your imagination and paranoia? Of course you can't ask. All you can do is learn their lessons and start to hate yourself, somewhat more than usual.
+
+
+@no_matter
+
+There are a lot of things that happen to you without you being particularly conscious of. It feels as if your parents' words pass through your ears without making a stop in your brain. It is like so many other things that you experience, as if you are not here, like everything is just a movie that you are viewing through someone else's perspective.
+
+"Oh, okay," you would say after a long story. And it would go on.

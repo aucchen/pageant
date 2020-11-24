@@ -1,0 +1,109 @@
+title: Try on the ball gown.
+view-if: ball_gown > 0
+on-arrival: pageant_appearance += 2; try_on_ball_gown = 1
+max-visits: 1
+
+The ball gown that you discussed with mom earlier has been delivered. She enters your room and lays it out on the bed.
+
+[? if ball_gown = 1 : It is a black gown with a white bowtie belt. ?]
+[? if ball_gown = 2 : It is a simple deep green strapless pleated dress. ?]
+[? if ball_gown = 3 : It is a light blue V-neck dress. ?]
+[? if ball_gown = 4 : It is a shiny blood-red strapless dress. ?]
+
+*"Try it on,"* she tells you. *"I'll help you."*
+
+- @try_it_on: Try it on.
+
+
+@try_it_on
+
+It's a bit awkward, but you manage to put on the dress. Unfortunately it really is a two-person endeavor, with mom helping to zip up the back.
+
+*"How beautiful!"* mom says. *"I've never seen you wear a dress like this."*
+
+"Oh. *Thanks.*"
+
+*"Really! After this is over you should try wearing more dresses."*
+
+- @okay_1: "Okay."
+
+
+@okay_1
+
+"Oh. Okay."
+
+*"You have to learn how to walk in this. You need good posture."*
+
+- @okay_2: "Okay."
+
+
+@okay_2
+
+"Okay."
+
+*"You have to learn how to smile."*
+
+- @okay_3: "Okay."
+
+
+@okay_3
+
+"Okay." You try to avoid visibly rolling your eyes.
+
+*"And, you can't do that with your eyes. And you can't sigh."*
+
+- @okay_4: *"Okay."*
+
+
+@okay_4
+
+*"Okay,"* you say in Chinese this time. *"I know."*
+
+*"It's not enough to know. It needs practice."*
+
+*"Should have given me this earlier,"* you say.
+
+*"Aiya, I know!"*, mom shouts, surprising you. *"I didn't have a way to get it! Should have practiced earlier, wearing other clothes is fine. You just need to practice more."*
+
+- @okay_5: "Okay."
+
+
+@okay_5
+
+"Okay." You look away.
+
+*"Walk around a little. How does it feel."*
+
+You do so. You walk around the living room. Kevin barely looks up from his tablet. *"Really beautiful,"* dad says before going back to his phone.
+
+Anyway, you practice walking around, not tripping, standing up straight, making pageant poses, pretending to smile, and so on, until mom is almost satisfied, or something like that.
+
+*"Good,"* mom says finally, as she helps to undo the back. *"You should practice more. Not much time left."*
+
+You don't bother responding this time.
+
+- @shes_right: You know she's right.
+- @but_not: But that doesn't make you feel better.
+- @screw_pageant: Screw the pageant.
+
+
+@shes_right
+
+You should have practiced more. Practiced earlier. If you really wanted to win. It's simply unfortunate that she only became attached to your pageant practice this late in the game.
+
+Well, it's too late now. You'll just have to hope for the best.
+
+
+@but_not
+
+You start to feel terrible about yourself, somewhat more than usual. Mom was right about everything. She's going to blame you for not listening to her if you lose.
+
+Your parents have the talent of making you feel terrible about yourself whenever they want. And you have the talent of letting them.
+
+
+@screw_pageant
+
+There are more important things to your current existence than the pageant. You're not going to feel bad about yourself, no matter how you end up ranking.
+
+Oh, who are you kidding, you're going to feel bad about yourself no matter what happens. You'll just have to deal with it.
+

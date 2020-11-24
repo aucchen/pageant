@@ -1,0 +1,510 @@
+title: Science Olympiad
+subtitle: The only study party
+new-page: yes
+view-if: week = 7 and scioly > 1 and stress < 15 and study_party = 0
+on-arrival: scioly += 1; stress += 1; study_party = 1
+tags: top, weekend
+
+The Science Olympiad study party is being hosted at the captain's house. It's about a 20-minute walk from yours, in one of the "nicer" parts of town. You were given excuse from the usual Bible study groups to attend; your parents are very concerned about your extracurricular performance and what it means for college apps. They probably assumed that the "study" part will take precedence over the "party" part. Of course they're mistaken, but why correct them?
+
+- @knock: Knock on the door.
+
+@knock
+
+It's after knocking that you realize that you have no idea what you're doing here. It's cold outside. You're underdressed. Why are you wearing the same outfit you wore for the past five days? Why are you imposing yourself upon a group of people who obviously had no desire for your presence? What is *you*, even? Why are you even *here* in any sense? You close your eyes and try to take deep breaths, but it doesn't work. You feel as if you're viewing life passing by through a body that isn't yours. Does that even make sense?
+
+The captain opens the door to greet you, breaking you out of your mental loop, at least for a moment.
+
+"Hey [+ first_name : +]! Welcome!
+
+- @go_in: Go in.
+
+@go_in
+
+The captain waits for you to enter before closing the door.
+
+"So, food is here, and groups are already studying. Most of us are in the basement. Have fun!" He then runs off to appease another group of students.
+
+You stand in the living room, alone now. There is the kitchen, with a post-it note with an arrow labeled "free food!!!".
+
+- @get_food1: Get some food?
+- @get_food2: Food is good.
+- @get_food3: Food is necessary for human homeostasis.
+
+@get_food1
+go-to: get_food3
+
+@get_food2
+go-to: get_food3
+
+@get_food3
+
+The counters in the kitchen are loaded with open bags of nachos and salsa, various brands of chips and soda, and so on. You take a paper plate and help yourself.
+
+Food is always good at social gatherings because it gives you a cover, a way to not talk to anyone and still not look too awkward. Or would they notice you anyway, would they notice the fact that you're standig in a corner by yourself even though you have a plate of food with you?
+
+Anyway, you should probably join the rest of the team downstairs.
+
+- @conversation: Go downstairs.
+- @stay_alone: Stay here, alone.
+
+
+@stay_alone
+go-to: conversation
+
+That does not seem to be the best strategy. After all, this is supposed to be a study party, not a party party. And the whole purpose of a study party is to interact with your teammates in order to prepare for the competition.
+
+
+@conversation
+
+The real, actual, verified study party is occurring as of this moment in the basement.
+
+There are groups of people lounging around on couches, while other groups are intent at work going over books or discussing topics potentially related to science.
+
+- @krishna: Join Krishna's group.
+- @aubrey: Join Aubrey's circle.
+- @captain: Join the captain's clique.
+- @corner: Sit in a corner by yourself.
+
+
+@corner
+
+Ah yes, why not engage in your typical strategy for coping with social situations, the strategy of "sit in a corner and hope everyone else ignores you but also sort of hope someone would bother you by initiating conversation".
+
+What are you even doing here? What did you think you would get done here?
+
+- @krishna: Join Krishna's group.
+- @aubrey: Join Aubrey's circle.
+- @captain: Join the captain's clique.
+- @corner_2: Continue to sit in a corner by yourself.
+
+@corner_2
+
+While you're in this alcove, you might as well do something productive... or not?
+
+- @productive: Do something productive.
+- @wallow: Wallow in your misery.
+
+@productive
+
+You've brought your notes and your computer, making you all too prepared to partake in quasi-academic exercises even in the invariable occasion that you end up alone in a corner. You have past exams with solutions, various compiled notes for all of your events, and the wi-fi password.
+
+You glance over the previous exams, and the words melt together on the page. You try to read notes on your laptop, and the text becomes a blur. It's too loud here, but that isn't the problem. 
+
+Why can't you focus?
+
+- @wallow: Wallow in your misery.
+- @breakdown: Have a mental breakdown.
+
+@wallow
+
+There is no better place to wallow than the corner of a basement in a quasi-acquaintance's house. This is your pigsty. Your pool of mud. And you're gonna roll in it like... whatever a pig is like when it rolls in a pool of mud.
+
+And there is no better time to wallow than during a Science Olympiad study party. You can't focus. You can't concentrate on studying, and you can't bring yourself to join any of the groups that are engrossed in their studying/non-studying activities.
+
+You never feel more alone than when you're at a party.
+
+- @breakdown: Have a mental breakdown.
+
+@breakdown
+on-arrival: trauma_points += 1
+
+You should have known this moment was coming. 
+
+It's as if the energy of the party is becoming a miasma, choking the air out of you. The voices grow more obnoxious, the shuffling and laughter turn to poison within your brain. You try to shut it out. It doesn't work. The miasma pervades you, invades your mind, stifles your thoughts, turns everything you perceive against yourself.
+
+- @shouldnt_have_come: You shouldn't have come.
+
+@shouldnt_have_come
+
+A semblance of rational thought returns to your brain. You'd rather it didn't.
+
+You're always like this. You shouldn't have come. You're just making everyone else feel uncomfortable. You're a social vampire, draining the energy from your companions by your very presence. You're too angsty, so fucking all the time, an overflowing bucket of negative emotion. It's only right that your friends cut their ties with you. If you don't love yourself, how can anyone else love you? All these cliches that you read on the internet somewhere are coursing through your mind.
+
+God, you're so fucking lonely.
+
+You're sitting alone and entirely unnoticed in an alcove, and you feel like you're about to cry. Everyone here should be your friend, right? Aubrey's your friend, right? And she's here? So why? Why are you acting like this? There's no reason for you to be like this and yet...
+
+"Hey [+ first_name : +], are you alright?"
+
+- @oh: Oh.
+
+@oh
+
+That was Aubrey. You concentrate just long enough to suppress the rising bile. Close your eyes for a moment (like a long blink). It's going to be fine. It's going to be okay.
+
+"Um, hi. Yeah. Of course."
+
+"Hey. We're having an apples-to-apples game. Would you like to join us?"
+
+You cough, for no reason in particular.
+
+- @yeah_okay: "Yeah. Okay."
+
+@yeah_okay
+
+"Yeah. Okay."
+
+You check your face to make sure that you're not crying. And you were. Maybe you still are. You aren't sure if she noticed, or if she was too kind to say anything. You don't know which you would prefer.
+
+"You should hang out with us more," says the captain after you join the game circle (did he notice you cry?). "You know you're one of the most valuable members of our team, right?"
+
+- @contingent: "I love having value as long as I can perform well..."
+- @captain_thanks: "Thanks..."
+
+@contingent
+go-to: captain_thanks
+
+You love how your entire worth is contingent upon your academic/extracurricular performance. But you're not going to vocalize your bitterness.
+
+@captain_thanks
+
+"Um, okay," is what you manage to say.
+
+So you end up entering an ongoing game of apples to apples. You rub your eyes and look down at your cards. It's hard to have the presence of mind to even read the words.
+
+"Is [+ first_name : +] having one of her episodes again?" It was Krishna, talking to no one in particular.
+
+- @fuck_off: "Fuck off."
+- @sigh_loudly: Sigh loudly.
+
+@fuck_off
+go-to: having_a_moment
+
+You glare at him, your eyes still a bit puffy. "Fuck off," you whisper.
+
+@sigh_loudly
+go-to: having_a_moment
+
+You sigh loudly. Too loudly, you soon realize.
+
+@having_a_moment
+
+"Yep, she's definitely having one of those episodes," Krishna continues. "Just one of those days, huh?"
+
+"Hey, stop it," the captain snaps at Krishna. Then to you, "[+ first_name : +], are you alright? Do you need anything?"
+
+"No. I mean, I don't need anything..."
+
+You feel as if you're about to cry again, but you try to force the feeling away. You take a glance around the circle. Everyone is acting as if you don't exist, as is usual. Except...
+
+- @eye_contact_david: Make eye contact with David Nguyen.
+- @cry_again: Make eye contact with Aubrey Gao.
+- @eye_contact_none: Keep to yourself.
+
+
+@eye_contact_david
+view-if: david_scioly > 0
+
+You haven't talked to David today, but for some reason he makes eye contact with you. And for some unknown reason, you maintain it longer than is necessary.
+
+"Would you like to talk?", he says, in the same barely audible monotone as always. It's a moment before you realize that he's actually talking to you.
+
+"Oh, um..."
+
+- @follow_david: "Okay?"
+
+@follow_david
+
+He goes over to an empty couch and sits down. You follow, keeping a distance.
+
+"Sorry that Krishna was being a jerk," he says. You've heard rumors that they were dating or at least liked each other or something like that. Not that that's particularly relevant now.
+
+"Oh, um, that's okay. Thanks."
+
+"Is it okay if I ask you what's wrong?"
+
+- @nothing_wrong: "Nothing's wrong."
+
+@nothing_wrong
+
+"Nothing's wrong. I'm fine. I am a one hundred percent functional human being."
+
+A long pause. You stare at the carpet.
+
+"Can I guess what's wrong?", he says. You shrug.
+
+"People are here having fun or whatever, without you, like you don't exist, and you just feel, kind of dejected I guess. Feeling unnecessary, unneeded, unwanted, like... It's like, the realization that you could disappear and nobody would notice or care."
+
+- @seems_right: That seems... right?
+- @seems_wrong: That's wrong.
+
+@seems_right
+go-to: roxy_confession
+
+"Um, sort of, I guess? Maybe? But maybe it's just the neurotransmitters that are out of balance."
+
+"Oh. I've felt that way myself, sometimes."
+
+@seems_wrong
+go-to: roxy_confession
+
+"Okay, bargin bin Freud. It's just the neurotransmitters acting up. Not everything has a deep psychological reason rooted in trauma or whatever." Was that unnecessarily mean? Oh God it was. Why can't you just stop talking?
+
+"Oh, well, it was a guess," David says, shrugging. "I've felt that way sometimes myself. Sorry."
+
+"No, I mean... it's not, like, that wrong."
+
+@roxy_confession
+
+The nascent conversation ceases. In the semi-distance the game continues as the captain willed. They sound happy, but perhaps you imagine a cloud hanging over their laughs. Great job ruining everything once more. You notice some people glancing in your direction. Aubrey smiles at you. You look away.
+
+"Hey, [+ first_name : +]?" David breaks the silence. His voice is even quieter than usual, just barely above a whisper. "There's something I've been meaning to talk to you about. I was wondering if now is a good time."
+
+- @roxy_confession_2: "What?"
+
+@roxy_confession_2
+
+"What? I mean, I guess that's fine?" You glance over at him. He doesn't look nervous or any different from usual, but you're a poor judge of character.
+
+"I'm kind of not a boy, if that makes any sense."
+
+"Oh." 
+
+- @process_confession: It takes a moment for the statement to process.
+
+@process_confession
+on-arrival: loneliness -= 1; stress -= 1; roxana_seen = 1; growth_points += 1;
+
+It takes a moment for the statement to process. Then you can't help but smile.
+
+"Yeah I get it. That's, uh, pretty cool," you say, hoping it sounds sincere. "Do you, um, have different pronouns or names?"
+
+"I guess 'they' would be fine for now, but don't use it in public. And as for my name... I was thinking of 'Roxana' with one N, or maybe 'Roxy' for short. But again, don't use it in public."
+
+"Oh, uh, hi Roxana Nguyen. That's, uh, sounds nice."
+
+"But again, please never utter that name in public. Ever." Even as they're whispering that to you, they're smiling. And you're smiling too.
+
+"I mean, yeah, of course."
+
+- @krishna_walks_over: It's then that Krishna walks over.
+
+@krishna_walks_over
+
+"Hey David, how's your feelings jam going? Do you like that reference?"
+
+"Oh shut up," Roxana (David?) says. Then, to you, "I hope you feel better."
+
+The party is practically over after that. Aubrey walks over and touches you on the shoulder as she heads out. Roxana smiles and waves at you prior to leaving, which is more in terms of interaction than they've ever had with you in the previous three years in which the two of you were acquainted.
+
+"Good luck," the captain says as you finally get ready to leave.
+
+There was not much studying done here, or much partying.
+
+But... in the end, things turned out okay. Maybe human interactions are worthwhile after all.
+
+
+@eye_contact_none
+
+Think rationally for a moment: why would anyone be concerned about you if you haven't even let anyone know that something was wrong? Why would you expect people to read your mind? Should you really expect other people to help you if you can't even bother to talk to them? And why would you be so hypocritical about the emotional literacy of this group? As if you have a nonzero amount of emotional literacy? As if you ever ask your friends about how *they* feel (which friends)?
+
+God, you should really just disappear forever.
+
+- @cry_again: Why do you feel like crying again?
+
+@cry_again
+
+"Hey, [+ first_name : +]? Let's go somewhere else for a minute." You realize Aubrey tugging on your shoulder.
+
+- @follow_aubrey: Follow Aubrey.
+- @keep_playing: Don't go.
+
+@follow_aubrey
+on-arrival: aubrey += 1; aubrey_scioly_study_party = 1
+
+"Okay," you croak.
+
+No one says anything as the two of you make your way to an empty couch.
+
+"Hey [+ first_name : +], what's up?"
+
+- @umm_nothing: "Nothing?"
+
+@umm_nothing
+
+"Um... Nothing. Nothing is up."
+
+"Are you sure? You looked like you were crying. How have you been feeling?"
+
+- @be_honest: Be honest.
+- @hide_feelings: Hide your feelings.
+
+
+@be_honest
+
+You've forgotten how to use words.
+
+You *want* to 'talk about your feelings', whatever that's supposed to mean, but it's as if the word-producing part of your brain (you're not a neuroscientist so you don't know what that's actually called) isn't functioning right now.
+
+What is that part of the brain called, anyway?
+
+"Hey um, what do you call the part of the brain that makes words?"
+
+"That's Broca's Area."
+
+"Oh, um, thanks. Uh, I think mine isn't working. Sorry."
+
+Aubrey makes a seemingly forced chortle. "That's impossible, since you obviously don't have aphasia. Man, you're really acting like you were back in middle school."
+
+- @aubrey_reminisce: Let Aubrey reminisce.
+
+@hide_feelings
+go-to: be_honest
+
+@aubrey_reminisce
+
+It is only now that you remember the fact that Aubrey Gao knows enough about you to destroy you.
+
+"Do you remember middle school, [+ first_name : +]?"
+
+"No, nothing. It's, like, I don't remember it."
+
+"That's too bad. I think you were kind of funny back then. Remember when you made up that space station where-"
+
+"No. I don't remember."
+
+"And like you were the-"
+
+"Stop it. I don't remember."
+
+"Oh. Haha. You don't have to be embarrassed by it!"
+
+- @aubrey_reminisce_2: "But..."
+
+@aubrey_reminisce_2
+
+"But I am. I can't help being like this or whatever. It's just..."
+
+What were you even going to say? Did you even have anything to say?
+
+"Look, it's okay," Aubrey says as she pats your hair. "Don't listen to people like Krishna, okay?" She holds you closer now, wrapping her arm around you and pulling your head on her shoulder. Oh God this must be the closest you've ever been.
+
+Surprisingly enough, you don't end up crying. Or talking. Even as she attempts to calm you, your mind spins through the potential implications of this moment. Is Aubrey okay with your presence here? Why is she attempting to comfort you? Pity? Does she secretly despise you? Does she have any awareness of the fact that you've had a crush on her for years and possibly still do? Would she despise you more if she found out?
+
+But these worries dissipate eventually, so all that's left in your mind is a warm glow. Probably because of the endorphins released into your brain due to prolonged physical contact which doesn't feel bad at all...
+
+...Wait, is that how endorphins even work, you think as Aubrey releases you. Soon enough the party ends. No one pays you much attention, except some people who mouth "sorry" or something like that at Aubrey and/or you. It's time to go back home again.
+
+- @more_lonely: Somehow you feel even more lonely after the party...
+- @less_lonely: But you can make the positive feelings from Aubrey last...
+
+@more_lonely
+
+@less_lonely
+
+
+
+
+@keep_playing
+
+"No, um, I'm fine..." You try to approximate a smile.
+
+"Are you sure...? We can go somewhere else if you'd like."
+
+- @follow_aubrey: Okay...
+- @dont_follow_aubrey: No...
+
+@dont_follow_aubrey
+
+"No, um, it's fine."
+
+"Okayyyy..." Aubrey seems unconvinced, but she sits down.
+
+- @eye_contact_david: David Nguyen is staring at you again.
+- @fuck_up: Forget about it.
+
+@fuck_up
+
+This was a once-in-a-lifetime opportunity that you just squandered.
+
+But despite yourself, you have fun. The game is fun. You forget what you were upset about, at least for a while. At least until you get home, when the feelings rush back. You're alone and lying on your bed and you replay the memories in your head countless times until eventually you fall asleep. Tomorrow, it's going to be fine. Right?
+
+
+
+
+
+
+
+@aubrey
+view-if: aubrey_party_viewed = 0
+on-arrival: aubrey_party_viewed = 1
+
+Aubrey is in a circle with most of the other girls in the team and some of the boys. You stand near them, hovering around Aubrey in the hopes that she would acknowledge you without you having to bear the burden of initiating contact.
+
+Are they playing Apples to Apples again? Yes. Aubrey doesn't look at you, or doesn't notice you. It's getting awkward standing by yourself.
+
+- @conversation: Look for another group.
+
+
+@captain
+view-if: captain_party_viewed = 0
+on-arrival: captain_party_viewed = 1
+
+The captain is one of the few people who is actually doing something productive. You walk towards him.
+
+"Glad you could come, [+ first_name : +]! We're working on the bridge right now, but once we're done we can do Disease."
+
+After waving at you he turns his attention back to glueing pieces of balsa wood together in the rough shape of a truss. You are left standing awkwardly.
+
+- @conversation: Look for another group.
+
+
+@krishna
+view-if: krishna_party_viewed = 0
+on-arrival: krishna_party_viewed = 1
+
+Krishna, David, and a bunch of the other nerdy Asian boys are clearly not focused on work right now.
+
+For some reason they're talking about the MBTI. That stands for Myers-Briggs Type Indicator, by the way. It's become one of Krishna's obsessions lately. And now he's roping David into the conversation too, David who usually doesn't talk to anyone else.
+
+"Hey, [+ first_name : +], what's your type?", Krishna asks.
+
+Of course you've taken the MBTI before.
+
+- @intp: INTP
+- @infp: INFP
+- @actually: Actually there is no empirical scientific basis for the MBTI.
+
+@intp
+go-to: david_intp
+
+"Uh, INTP."
+
+"Of course."
+
+"I usually get INFP though. But INTP fits better. Or, like, I guess."
+
+@infp
+go-to: david_intp
+
+"Uh, INFP?"
+
+"Eh..."
+
+"That's what I got on tests at least. Most of the time. Sometimes I get INTP though."
+
+@actually
+
+"Um, actually there's no empirical basis for the MBTI. It's practically pseudoscience based upon individual intuition and not actual evidence. Like a horoscope essentially."
+
+"So, you're INTP?", Krishna says.
+
+"No. I mean, like... the MBTI isn't real... it literally doesn't matter..."
+
+"But it can be useful in interpreting human behavior."
+
+The boys re-enter their own conversation, purposefully or inadvertently leaving you out of their circle.
+
+- @conversation: Join a different group.
+
+@david_intp
+
+"I think INTP definitely fits you better. By the way, David's also an INTP, along with like half the team."
+
+"Oh. That's, uh, predictable, I guess."
+
+The boys re-enter their own conversation, purposefully or inadvertently leaving you out of their circle.
+
+- @conversation: Join a different group.
+

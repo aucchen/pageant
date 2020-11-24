@@ -1,0 +1,20 @@
+title: Family Dinner
+subtitle: Home, Evening
+new-page: yes 
+view-if: week >= 1 and week_progress < 3 and family = 0 and class_visited = 1 and week < 10
+on-arrival: week_progress += 1; family += 1 
+tags: top, family
+
+Obviously in Chinese culture food is very important, blah blah blah. Which is why you're eating dinner with your parents and your *didi* (younger brother), Chun-chun (Kevin, also called Chunyi but he doesn't like that). Or something like that.
+
+In China you and your family would be considered northerners. What people usually think of as "typical" Chinese food is usually southern food, with rice and stir fries drenched in sauces. Northern cuisine is a bit different: you eat steamed buns, noodle soups with thickly cut slabs of noodles, and simple vegetable and meat dishes stir-fried in oil and nothing else. It's blander than the Chinese food in restaurants, but to you it's the beautiful taste of home and culture. Or something like that. But really, you do like eating your parents' cooking. Most of the time.
+
+Anyway as usual your parents question you about the school day, and you give one or two word responses. *"How were the classes?"* *"Okay."* *"Did you have any tests?"* *"No."* *"Have you started preparing for the *pageant?" "Sort of." And so on.
+
+- @wash_dishes: Afterwards, it's your responsibility to clean up.
+
+@wash_dishes
+
+After finishing the rice on your plate, and waiting for everyone else to finish, you place plastic wrap over the leftovers and gather them in the refrigerator. Then you wash the dishes, or rather just rinse them before putting them in the dishwasher.
+
+Your family disperses. Mom and Dad watch CCTV dramas on dad's laptop. Kevin plays games on his ipad. And you head into your room, the one you supposedly share with Kevin (he usually prefers to sleep in the room with your parents). You have a load of homework tonight, like every other night. You'd better get to it.

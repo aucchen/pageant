@@ -1,0 +1,27 @@
+title: Feeling tired
+subtitle: Home, Afternoon
+new-page: yes
+view-if: stress > 6 and week_progress < 3 and week < 100
+on-arrival: stress -= 3; week_progress += 1
+max-visits: 3
+priority: 3
+tags: top, stress
+
+It's a rare afternoon that you have to yourself, staying in your room while Kevin is playing with your parents. You're barely awake, and your brain is racing. Maybe it's better to take a nap. But you have stuff to do: readings in AP World, AP Lit, a test on friday in AP Calc... not to mention research, science olympiad, pageant prep,...
+
+- @sleep: Sleep.
+- @work: Go back to work.
+
+@sleep
+on-arrival: gpa -= 0.02; loneliness += 1
+
+You're going numb. You can't focus on anything anymore. But you can't fall asleep either, with so many thoughts racing through your brain. So instead you lie in bed with your eyes closed until mom opens the door an indeterminate time later.
+
+*"Why is the light closed?"*, she asks, and turns on the light. Your eyes burn.
+
+@work
+on-arrival: stress += 1
+
+You can barely move your body. But you try anyway, shifting this way and that until you're out of bed. The homework looks like a jumble of letters, the text undiscernable. But still, you manage to focus, and read a couple of pages before collapsing, lying on your desk with your eyes closed until mom opens the door.
+
+*"Why is the light closed?"*, she asks, and turns on the light. Your eyes burn.

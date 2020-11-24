@@ -1,0 +1,88 @@
+title: Loneliness
+subtitle: Another normal evening
+new-page: yes
+view-if: loneliness > 2 and week_progress < 3 and loneliness_1_week_seen >= 1 and week < 100
+on-arrival: week_progress += 1; trauma_points += 1; loneliness_2_week_seen += 1
+priority: 3
+max-visits: 2
+tags: loneliness
+
+Your parents are asleep, and tonight Kevin sleeps in the room with your parents. And you're at your desk. You flip through your regular internet haunts. Nothing interesting. Do you have anything to do? Any homework? Of course you do. And EC stuff. And even pageant stuff probably. But you don't feel like any of that. You wish you could talk to another human being. But it's like 12AM and, well...
+
+God, you feel so lonely and don't even know why.
+
+- @contact_miri: Talk to Miri
+- @contact_emily: Talk to Emily
+- @sleep: Try to sleep
+
+@contact_miri
+view-if: miri >= 2
+
+First of all, she might be asleep. Wait, no, she has an even later sleeping schedule than you do. But then, what could you talk about? You don't have anything to say... And if you bother her with your problems, will she still be your friend? What if you're being a toxic influence on her life? Will she be justfied in cutting you out if you're nothing but a constant source of negativity?
+
+- @contact_miri_2: Just message her.
+- @sleep: Forget it.
+
+@contact_miri_2
+on-arrival: loneliness -= 1
+
+What should you say? You agonize for minutes over what you could possibly say at this hour.
+
+- @hey: "Hello..."
+- @imlonely: "I'm feeling lonely do you want to talk"
+- @forget_about_it: Forget about it.
+
+@contact_emily
+view-if: emily >= 7
+on-arrival: stress += 1
+
+The hour is beyond midnight, but you have the impression that Emily is the type of person whose circadian rhythm is even more nocturnal than yours.
+
+But what would you say? She's usually the one who initiates your conversations and meetings. You have no idea how to compose a basic one-sentence message; in order to put it off, you browse Wikipedia and various other internet sites. Soon it is three hours until school starts. You'll have two hours to sleep. It's fine. It really is. 
+
+
+@hey
+
+You feel your heart pound as you send the message. You lie in bed, eyes closed but not able to fall asleep, waiting for the vibration that would signal a response. The reply doesn't come before you finally fall asleep.
+
+- @up: You wake up.
+
+@imlonely
+
+You feel your heart pound as you send the message. You lie in bed, eyes closed but not able to fall asleep, waiting for the vibration that would signal a response. The reply doesn't come before you finally fall asleep.
+
+- @up: You wake up.
+
+@forget_about_it
+on-arrival: stress += 1
+
+Why would you contact Miri at this hour? Why would you contact anyone at this hour? Why would you contact anyone, at any time? Why anything?
+
+Threads of thoughts wind into knots, twisting inside your mind. You turn around. You can't fall asleep, until you eventually do.
+
+It's 6:30 AM, time for you to get up, and you're not sure if you were actually asleep at any time last night/morning.
+
+
+@sleep
+on-arrival: loneliness -= 1; stress += 2
+
+You try to sleep, but it doesn't work. Too many things on your mind. But you can't think of anything in particular. Your brain is a mess, a jumble of images and feelings and bizarre ideas and noise and words and God knows what else.
+
+It's 6:30 AM, time for you to get up, and you're not sure if you were actually asleep at any time last night/morning.
+
+@up
+on-arrival: loneliness -=2; stress += 1
+
+You wake up and remember to check your phone.
+
+Of course Miri replied.
+
+Miri: are you alright?
+
+You read the message over and over, trying to come up with something to say, but your mind blanks. Your heart beats faster as you close your eyes, come up with something how hard could it be? How hard can it be to just talk to people why can't you be normal why did you even send that message in the first place isn't she your best friend this isn't the first time this has happened why...
+
+It's time to go to school. Oh well. Everything will be fine.
+
+- @end: Everything will be fine.
+
+@end

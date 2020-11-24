@@ -1,0 +1,91 @@
+title: Research
+subtitle: Your lab meeting
+new-page: yes 
+view-if: week >= 1 and week < 10 and week_progress < 3 and research = 3 and weekly_research = 0 and stress < 15
+on-arrival: week_progress += 1; research += 1; stress += 1; weekly_research = 1 
+tags: top, research
+
+Today is the lab meeting. Professor Chen has asked you to make a presentation, talking about your work.
+
+- @what: What even is your work, though?
+
+
+@what
+
+You can't succinctly describe it. Actually, you can't describe it at all. You're using computers. You're working with RNA sequencing data. And, like, somewhere along the way, there's alignment, and calling a bunch of software packages, and stringing together it all with python, and...
+
+This is kind of a problem, if you're going to do a presentation.
+
+So you stayed up last night, trying to pull together some slides and some words.
+
+- @present: And now it's time for you to present.
+
+@present
+
+The room is centered around a big oval table, with a projector screen on the opposite side from the door. You walk to the front. Professor Chen's laptop has your first slide projected.
+
+- @present_1: And now what?
+
+@present_1
+
+You take a deep breath, and glance around the room. It's going to be fine. It's going to be fine. It's going to be fine.
+
+- @um: "Um..."
+
+@um
+
+"Um..."
+
+- @freeze: You freeze.
+
+@freeze
+
+You freeze. Glance around the room again. Take rapid, shallow breaths. It's going to be fine.
+
+- @um_2: "Um..."
+
+@um_2
+
+"Um..."
+
+- @so: "So..."
+
+@so
+
+"So... I'm [+ first_name : +], and, I'm a high school student, and um..." You close your eyes. It's going to be fine. 
+
+- @present_2: "I'll be presenting on..."
+
+@present_2
+
+"I'll be presenting on... the work that I've done so far." Click.
+
+- @present_3: You're on a roll. Keep going.
+
+@present_3
+
+"I've only been here for a few weeks, and I've been working on... understanding the developmental processes of stem cells using..."
+
+- @present_4: Keep going.
+
+@present_4
+
+And you continue. Stumbling more than a few times, but mentioning all the correct points. Or did you? You aren't sure.
+
+At the end comes the questions, except there aren't any. Instead, Professor Chen congratulates you.
+
+"[+ first_name : +] did a very good job! She is only a high school student, and already she is doing science with us!"
+
+- @smile: You can't help but crack a smile.
+
+@smile
+
+You can't help but crack a smile, before going back down to your seat.
+
+"Hey, that was good," Stella says, patting you on the back.
+
+"Thanks."
+
+The meeting continues: a couple of grad students are presenting on their research, which you don't really understand. You almost fall asleep, tired from last night. And then it's over and it's time for you to go home.
+
+But the positive feelings you've gotten today could probably sustain you for a while. That's good, right?

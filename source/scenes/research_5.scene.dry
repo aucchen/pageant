@@ -1,0 +1,59 @@
+title: Research
+subtitle: A new project
+new-page: yes 
+view-if: week >= 1 and week < 10 and week_progress < 3 and research = 4 and weekly_research = 0 and stress < 15
+on-arrival: week_progress += 1; research += 1; stress += 1; weekly_research = 1 
+tags: top, research
+
+You show up at the lab after school, as you've been doing for the past few weeks. It's become a routine by now, just one more part of your daily existence. You don't even feel the nervousness within your heart anymore.
+
+"Hey, I have something to tell you," Stella says as you enter. "The project we're working on, Professor Chen things it can get published. Of course it's going to take a while, but you might be an author eventually."
+
+- @oh: "Oh."
+
+@oh
+
+"Oh... I mean, this is good, right?"
+
+"Yeah!" Stella beams. "Very few high school students get to do this. I certainly didn't."
+
+Your heart rises. This is what you've always dreamed of, right? What you've always wanted? Your first step to becoming a true scientist.
+
+- @work: And that just means more work.
+- @empty: So why do you feel so empty?
+
+@work
+on-arrival: stress += 1
+
+Always more work. As if you didn't have enough to do already. Along with school, more school, scioly, and the pageant. Oh God the pageant. That's something that you have to do. The thought petrifies you even right now, even as you're supposed to be doing science...
+
+"Hey [+ first_name : +]?", you hear Stella say. You remember that you're supposed to talk right now. Or something like that.
+
+- @thanks: "Thanks?"
+
+@empty
+on-arrival: loneliness += 1
+
+No... is that it? Is that what you're feeling? You have no rational reason to feel this way. The only rational response is to be happy, to be grateful for all you've been given. But you're not. For some reason this doesn't feel real. Nothing really does.
+
+"Hey [+ first_name : +]?", you hear Stella say. You remember that you're supposed to talk right now. Or something like that.
+
+- @thanks: "Thanks?"
+
+@thanks
+
+"Huh? Oh. Uh, thanks. Uh, for this opportunity."
+
+"Yeah... are you okay?"
+
+"Yeah. I'm fine. I should, uh, continue?"
+
+"Let's talk about the project. Is now okay?"
+
+- @meeting: "Sure..."
+
+@meeting
+
+And you have another meeting with Stella, where she talks and you listen. Your new project is a continuation with the old project, RNA-seq analysis of the cells of some zebrafish embryonic stage. Your mom's lab is also on this project as a collaborator, so she'll probably be a co-author as well. You feel a little bad about this bit of nepotism, but Stella says that it'll be okay, since it's not like mom's your actual boss here.
+
+Then you're back at your computer, facing away from her. You have to work.

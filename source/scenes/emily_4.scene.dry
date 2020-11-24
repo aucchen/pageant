@@ -1,0 +1,164 @@
+title: Meeting with Emily
+subtitle: Reconfiguration
+new-page: yes
+view-if: emily = 4 and week_progress < 3 and stress < 15 and thanksgiving = 0
+on-arrival: week_progress += 1; pageant_appearance += 1; stress += 1; emily_4_seen = 1
+max-visits: 1
+tags: top, social
+
+"Why are you still here?"
+
+- @what: "What?"
+
+@what
+
+Emily takes a sip from her coffee, sighs, and rests her face against her palm.
+
+"Sorry. I was just wondering, like, why are you still coming to these, like, meetings or whatever?" Her eyes are trained away from you, somewhere in the distance. As you stare at her face she turns to look at you. You look away.
+
+"I mean, are you still looking for help with the pageant? It's pretty obvious I can't give you any more." Emily sighs again. "Sorry if this is, like, weird."
+
+- @no_idea: You have no idea what to say.
+
+@no_idea
+
+The meeting this week has been infected with a strange miasma, a reminder of the previous online conversation.
+
+What are you supposed to say to that?
+
+- @omniscient: An omniscient deity is compelling you to talk to her.
+- @like: You like Emily. Like, like her.
+- @pageant: You really actually do care about the pageant.
+- @more: Two or more of the above.
+
+@omniscient
+go-to: so_what
+
+That's literally impossible.
+
+@like
+go-to: so_what
+
+What does that even mean? You banish that thought from your head.
+
+@pageant
+go-to: so_what
+
+Really? Do you really though?
+
+@more
+go-to: so_what
+
+@so_what
+
+"Does it matter?", you say. "I'm here because, um, I want to be?"
+
+Emily gives you a strange look. Actually all her looks are at least a little strange, but this one slightly more so. She turns to the floor again, and plays with her hair, sometimes sipping from her coffee. It's a few awkward minutes before she speaks again.
+
+"So, like, what do you want to do now?"
+
+- @hate: You hate questions like that.
+
+@hate
+
+You never know how to answer open ended questions like that. There's obviously something the other party wants to hear, even though they never say such, and you've never been particularly adept at reading people's thoughts.
+
+But you don't have to. Emily looks at you again.
+
+"So, I guess, are we friends now?"
+
+- @yes_friends: "Yeah, I guess."
+- @idk: "Um, I don't know..."
+
+@yes_friends
+on-arrival: emily = 6
+
+"Yeah." You try to smile, or something like that. "We're friends. Right?"
+
+"Yeah," Emily says. There's yet another awkward pause, as Emily shrinks into herself, glancing at everything in the room besides you. Meanwhile you finish your strawberry drink.
+
+"Let's take a walk," Emily says, breaking the silence.
+
+- @walk: Okay...
+
+@idk
+
+"Um... I don't know, um,..."
+
+"No, it's fine." Emily sighs. "Alright. I should go now. Bye."
+
+You wave as she leaves, coffee still unfinished. You finish the rest of your strawberry drink by yourself.
+
+- @what_was_wrong: What's wrong with you?
+- @do_not_want: Actually, maybe you didn't like her anyway.
+
+
+@what_was_wrong
+
+Can't you be normal just once? Will you ever stop being a freak when you're around other people? She wanted to be your friend, too; what's wrong with you?
+
+You messed this one up, just like you've messed up everything else.
+
+Whatever. You have homework to do.
+
+
+@do_not_want
+
+If you put your mind to it, you could think of a multitude of reasons why you shouldn't like Emily Chen. But do you really want to do that? Do you actually dislike Emily or... or are you just afraid of getting closer to her? But why would you be afraid of that?
+
+Anyway it's pointless to think about these things. You have homework to do.
+
+
+@walk
+
+The sun is still out, just barely, peaking over the buildings to the west. You have homework to do, but being around Emily feels more important right now.
+
+She walks quickly, head held high, staring straight ahead. Meanwhile you try to avoid slouching, and walk faster to keep up with her. She must have noticed, and slows down.
+
+"Did you know that I practiced walking?", Emily says.
+
+"Oh."
+
+"It's all an act. Everything I do is fake. Did you know that?"
+
+"No..."
+
+"Well, it's true."
+
+- @respond: Respond.
+- @silent: Stay silent.
+
+@respond
+
+"Didn't you say that everything you do is fake? So, like, isn't that fake as well?"
+
+"What is?"
+
+"That last sentence where you say 'it's true'."
+
+Emily makes a slight chuckle. "I just made a contradiction then. Nerd."
+
+"Hey. You're a nerd since you... like, know the word contradiction. And like that time when we first met when you talked about, like, optimization and stuff."
+
+Emily makes some hand gesture. "Hey. Was I wrong though?"
+
+"Yeah I think you were." You try to say this in a joking way. (are you bantering now? is this how banter works?)
+
+- @end: Eventually you have to separate.
+
+
+@silent
+
+You stay quiet. What can you even say?
+
+Emily doesn't say much after that. The two of you walk around the boring light commercial streets of your town. There aren't that many people outside, and Emily purposefully ignores the few who are.
+
+Is your silence companiable or awkward? You've never been able to tell.
+
+- @end: Eventually you have to separate.
+
+@end
+
+Emily has to take the bus home to her distant suburb. And your parents are probably awaiting you for dinner. So you wave goodbye.
+
+You walk home feeling unusually pleasant, with a light feeling in your heart. Or something like that?

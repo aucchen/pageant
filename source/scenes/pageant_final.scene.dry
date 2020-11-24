@@ -1,0 +1,679 @@
+title: Pageant
+subtitle: This is it.
+new-page: yes
+view-if: week = 12
+on-arrival: pageant_score = 0
+priority: 3
+tags: weekend
+
+This is it. This is the pageant, the culmination of three months of preparation and a lifetime of anti-preparation.
+
+- @stress_full: But try as you might, you can't force yourself up.
+- @preparation: You've tried to get ready for this. Somewhat.
+
+@stress_full
+view-if: stress >= 15
+
+It's 8AM. You haven't slept at all last night. You've been awake for at least 24 hours. This isn't the first time, but now, your body and mind are breaking apart. Mom opens the door to your room without knocking.
+
+*"Qiuyi, today is your contest. Are you ready to go?"*
+
+- @get_up: Try to get up.
+- @cant_get_up: No. You can't.
+
+@get_up
+go-to: cant_get_up
+
+But you can't. 
+
+@cant_get_up
+
+You lie on the bed, mind racing. Your thoughts are barely coherent, but all you know is that you can't do this.
+
+- @cry: Cry.
+
+@cry
+
+You begin to cry. Quietly. Mom is still watching. It's a while before she notices.
+
+*"It's really not fine? Okay. Then you don't have to go. Is that good?"*
+
+She closes the door, and leaves. She says something to dad; you don't hear the words but he sounds angry. Your tears continue for no apparent reason. You still can't fall sleep.
+
+- @ending_pageant_failure: It's over.
+
+@preparation
+view-if: stress <= 15
+
+There are potentially an infinite number of tasks that you could have done to prepare. By definition you have not done most of them. But maybe it's time to start.
+
+- @paperwork: Step 0: Paperwork.
+
+@paperwork
+
+Fortunately you're already mostly done with paperwork. You have the resume, the platform statement, and the miscellaneous forms all in order.
+
+- @hair_1: Step 1: Hair.
+
+@hair_1
+
+Step 1: hair. Should you have straight hair or curled hair? Straight hair would be more "natural". Either way, your normal bird's nest of tangles is inappropriate.
+
+- @straight_hair: Straight hair
+- @curly_hair: Curled hair
+
+@straight_hair
+
+Okay. This is closer to your natural hairstyle. All you really need is a ton of conditioner, and a ton of brushing to undo the knots that have formed. Every time you brush, a handful of hairs come loose; that's part of why you're not such a fan of brushing your hair. 
+
+In the end, it's not entirely straight, still kind of wavy in a fluffy way at the ends, but that's fine.
+
+- @makeup: Next is makeup.
+
+@curly_hair
+
+This is somewhat difficult. Mom has a curling thingy saved for this type of extremely rare occasion, even though dad was utterly against her buying it, which led to an argument inside Target a year back. Now mom has her comeuppance, or something like that.
+
+In the end, your hair looks kind of weird, but mom said it looked good.
+
+- @makeup: Next is makeup.
+
+@makeup
+
+Next is makeup. Well then. It's not as if you have much practice with makeup. Mom has offered to help you. [? if emily >= 2 : So has Emily Chen, but she's not exactly able to come right now. ?][? if miri >= 3 : So has Miri, and she also isn't able to come right now. ?]
+
+You do need help with makeup, so help from mom it is. Her style is different from the videos you watched online. Different, but hopefully no worse. More "naturalistic", no contouring, less visible eyeshadow. Red lipstick.
+
+- @dress: Now, you have to pick a dress.
+
+@dress
+
+First of all, what are you wearing exactly? You have to be wearing a dress to show up. Not a ball gown, that's for a later stage, but a shorter dress. A normal dress, for the interview and everything besides the evening gown phase. What exactly is a normal dress, anyway?
+
+[? if shopping = 0 : Maybe you should have actually bought a new dress for this occasion. Far too late for that now. ?]
+
+- @emilys_dress: Wear a dress you borrowed from Emily.
+- @emilys_goodwill_dress: Wear the dress that you bought with Emily at Goodwill.
+- @moms_dress: Wear one of mom's dresses.
+- @bought_dress_red: Wear the dress that you bought with mom.
+- @bought_dress_green: Wear the dress that you bought with mom.
+- @bought_dress_purple: Wear the dress that you bought with mom.
+
+@emilys_dress
+on-arrival: pageant_dress = 1
+go-to: pick_evening_dress
+
+Emily has lent you a black cocktail dress for the interview. You're not sure if it works with your aesthetic, but at least it fits surprisingly well.
+
+@emilys_goodwill_dress
+on-arrival: pageant_dress = 2
+view-if: has_emily_goodwill_dress = 1
+go-to: pick_evening_dress
+
+At Goodwill with Emily, you acquired a deep blue dress. It seems a bit plain, but it'll have to do.
+
+@moms_dress
+on-arrival: pageant_dress = 3
+go-to: pick_evening_dress
+
+Mom has a black dress that looks too middle-aged for you, but it'll have to do.
+
+@bought_dress_red
+on-arrival: pageant_dress = 4
+view-if: red_dress = 1
+go-to: pick_evening_dress
+
+This is a red lace dress with ruffles at the waist, and rather uncomfortable fabric. It'll have to do.
+
+@bought_dress_green
+on-arrival: pageant_dress = 5
+view-if: green_dress = 1
+go-to: pick_evening_dress
+
+This is a shimmery green pleated dress. It looks decent enough, in your admittedly untrained opinion.
+
+@bought_dress_purple
+on-arrival: pageant_dress = 6
+view-if: purple_dress = 1
+go-to: pick_evening_dress
+
+This is a frilly purple strapless dress with a black stripe around the waist. It looks decent enough, in your admittedly untrained opinion.
+
+
+@pick_evening_dress
+
+Now, you have to pick your outfit for the evening dress.
+
+- @already_picked_dress: You've already picked out your outfit.
+- @havent_picked_dress: Mom picked an outfit for you.
+
+
+
+@already_picked_dress
+view-if: ball_gown > 0
+go-to: going_to_pageant
+
+Yes, you had a ball gown that mom borrowed earlier. 
+[? if ball_gown = 1 : It is a black gown with a white bowtie belt. ?]
+[? if ball_gown = 2 : It is a simple deep green strapless pleated dress. ?]
+[? if ball_gown = 3 : It is a light blue V-neck dress. ?]
+[? if ball_gown = 4 : It is a shiny blood-red strapless dress. ?]
+
+It is already neatly packed.
+[? if try_on_ball_gown = 0 : Unfortunately, you never got a chance to try it on, but mom assures you that it will fit. ?]
+
+
+@havent_picked_dress
+on-arrival: pageant_appearance -= 2; ball_gown = 2
+go-to: going_to_pageant
+
+Mom borrowed a ball gown without consultation on your part. It's a dark green strapless dress, looking somewhat formal and somber. Unfortunately you don't even have time to try it on; mom assures you that it will fit.
+
+
+@going_to_pageant
+
+What else do you need? Athletic wear? Your *erhu* and a *qipao* to wear for the talent show? Got it. 
+
+- @high_heel_shoes: High-heel shoes?
+- @shoes: Shoes?
+
+@high_heel_shoes
+view-if: has_high_heels = 1
+go-to: jewelry
+
+High heel shoes? Ugh. Unfortunately you purchased a pair.
+
+@shoes
+go-to: jewelry
+
+Shoes? Ugh. Fortunately you don't actually have any high heel shoes, and mom's size does not fit you at all, so she reluctantly agrees to you wearing flats.
+
+@jewelry
+
+Jewelry? Ugh again, but slightly less so. You have the old jade pendant with a carved ox, representing your zodiac sign.
+
+- @piercings_yes: You got your ears pierced.
+- @piercings_no: You never got your ears pierced.
+
+@piercings_yes
+on-arrival: piercings = 1
+
+It was somewhat of an ordeal, but you had your ears pierced a while back.
+
+- @car: It's time to leave.
+
+@piercings_no
+on-arrival: percings = 0
+
+How many girls in the pageants don't have earrings, mom says, or something like that. Unfortunately you do not have piercings, so clip-ons it is. Mom has some unobtrusive ones with glass crystals.
+
+- @car: It's time to leave.
+
+@car
+
+The regional pageant is held in the basement conference rooms of a mid-tier hotel in Cambridge. Your parents are driving you, dad in the driver's seat and mom sitting shotgun, Kevin and you in the back. The ride is quiet save the monotone voice of the NPR news reporter.
+
+At the hotel there is the submission of paperwork; yours is already in order.
+
+"Good luck," dad says. Kevin echoes him. Mom gives you a hug. You wave them goodbye.
+
+Then you are led towards a back room, where the other pageant contestants sit in waiting. Some of them smile at you. You make your best attempt to smile back, or something like that. Some of them chat amongst themselves. One girl talks to you. You don't really know what to say in response, as usual, so she smiles and walks away.
+
+You close your eyes. Soon enough it is time.
+
+- @pageant_introductions: Introductions.
+
+@pageant_introductions
+on-arrival: introduction_score = pageant_appearance/4 + pageant_interview/2
+
+The first step in any pageant is the introduction. Here, you're supposed to walk on stage in front of the judges and parents (fortunately you don't see your family there), and say your name and a brief statement about yourself, while making a pose. You're one of the last ones up; from a seat by the side of the stage, you watch no more than ten girls before you walk and do their thing. They all seem so elegant, so prepared, and you do not expect to live up to them.
+
+- @introduction_correct: Pronounce your last name correctly.
+- @introduction_wrong: Pronounce your last name incorrectly, the way most non-Asian people do.
+
+@introduction_correct
+on-arrival: name_correct = 1
+go-to: introduction_end
+
+@introduction_wrong
+on-arrival: name_correct = 0
+go-to: introduction_end
+
+@introduction_end
+
+"My name is [+ first_name +] Zhao. I am 17 years old, from --- High School."
+
+[? if introduction_score >= 5 : Surprisingly, you don't do terribly. Not extremely well, but you fit in with the rest of the girls, and don't stand out like an absolute loser. ?]
+
+[? if introduction_score < 5 : As you would expect, you kind of fail at your introduction. Your gestures are all wrong. Your words are too monotone. Your facial expression is a mistake. You see your failure reflected in the faces of the judges. ?]
+
+After the introduction, you are herded back to the waiting room to prepare for the interview.
+
+- @interview: Interview.
+
+@interview
+on-arrival: interview_score = 0; pageant_score += introduction_score
+
+To say that you're nervous would be am understatement, even more so than usual.
+
+The room is in the hotel's basement, with patterned carpet and blank walls, devoid of all decorations except the folding tables and chairs. You are sitting in your dress before a panel of three adults, on a hard, uncomfortable folding chair. They are staring at you, their gazes piercing.
+
+- @interview_avert: Avert their gazes.
+- @interview_stare: Stare back at them.
+- @interview_look: Look back at them, expression soft.
+
+@interview_avert
+go-to: interview_questions
+
+You look away, as is your instinct. Out of the corner of your eyes you can perhaps see one of them frown.
+
+
+@interview_stare
+on-arrival: interview_score += 1
+go-to: interview_questions
+
+You reciprocate their stares, your expression probably somewhere between blank and murderous. They don't shift. 
+
+
+@interview_look
+view-if: pageant_interview >= 3
+on-arrival: interview_score += 2
+go-to: interview_questions
+
+You attempt a gentle smile, even in the face of their hard gazes. It works, maybe. One of them smiles back. The other two are implacable.
+
+@interview_questions
+
+"Hello, [+ first_name : +]. How are you doing today?", opens one of the interviewers.
+
+[? if pageant_interview >= 5 : "I'm doing well, thank you," you answer with the appropriate smile and eye contact. ?]
+
+[? if pageant_interview <= 4 : "Um, I'm doing well," you answer, with perhaps a bit too much hesitation. ?]
+
+Now the real questions begin. "Tell me, [+ first_name : +], what made you decide to enter the pageant?"
+
+- @interview_college: To do better in the college application process.
+- @interview_scholarship: To win a scholarship.
+- @interview_obligation: To fulfill your obligations to your parents.
+- @interview_comfort_zone: To expand your horizons.
+- @interview_total_fail: Fuck.
+
+
+@interview_total_fail
+view-if: pageant_interview <= 4
+on-arrival: pageant_total_failure = 1
+
+"Um..."
+
+Your brain freezes. You can't think. Inchoate images expand to fill every part of your brain, drowning out every coherent sentence. Noise.
+
+You blink. Close your eyes. Open them again. Breathe. It doesn't work. Your heart is pounding. Your mind is exploding.
+
+"Um, I..."
+
+No. You can't do this.
+
+- @interview_cry: All you can do is cry.
+
+
+@interview_cry
+
+You feel your eyes become wet. Fuck. You've failed. You've failed for real. You've failed your parents. You've failed the judges. You've failed yourself. You've failed everyone who ever relied upon you, everyone who ever believed that you could ever do anything good with yourself.
+
+You can't do this. You can't do this. You can't do this. Why did you think that you could ever do a pageant? Why did you think that you could ever stand up in front of a bunch of strangers while wearing a skimpy and scratchy dress, while smiling and making poses and speaking as if you're not just a person, but an exemplar of a particular ideal of womanhood that you never subscribed to in the first place?
+
+Why did you think you could do this?
+
+"Would you like to go back?", one of the judges says in a moment of kindness. You nod.
+
+- @over: It's over.
+
+
+@interview_college
+view-if: pageant_interview >= 2
+on-arrival: interview_score += pageant_interview - 4
+
+[? if pageant_interview >= 6 : "One reason is that I would like to show the college admissions committee that I am capable of success at something beyond academics." ?]
+
+[? if pageant_interview <= 5 : "Um, I would like to show my college admissions committee that, um, I'm not just the kind of person who's only good at academics." ?]
+
+"But you're here, and we're not your college admissions committee," the interviewer replies. You realize that you gave the wrong answer, but it is too late.
+
+- @interview_2: The questions continue.
+
+
+@interview_scholarship
+view-if: pageant_interview >= 2
+on-arrival: interview_score += pageant_interview - 4
+
+[? if pageant_interview >= 6 : "I need a way to pay for college, and well, the pageant has a great record of providing scholarships to young women." ?]
+
+[? if pageant_interview <= 5 : "I need to pay for college somehow... and the pageant provides great scholarships." ?]
+
+"Yes, I see," the interviewer answers, giving you a noncommittal look.
+
+- @interview_2: The questions continue.
+
+
+@interview_obligation
+view-if: pageant_interview >= 2
+on-arrival: interview_score += pageant_interview - 3
+
+[? if pageant_interview >= 5 : "My parents were the ones who discovered the pageant and told me about it," you answer, which is when you realize that it is the wrong answer. ?]
+
+[? if pageant_interview <= 4 : "My parents signed me up originally," you answer, which is when you realize that it is the wrong answer. ?]
+
+"But what about you? Why do you want to do the pageant?"
+
+[? if pageant_interview >= 5 : "My parents may have signed me up originally, but I followed through because I wanted to prove myself, that I'm able to succeed at whatever life throws at me." Is this a nice save? The interviewer gives a noncommittal look. ?]
+
+[? if pageant_interview <= 4 : "Um... I didn't want to challenge my parents." The interviewer frowns.?]
+
+- @interview_2: The questions continue.
+
+
+@interview_comfort_zone
+on-arrival: interview_score += pageant_interview + 1
+view-if: pageant_interview >= 5
+
+This was one of the most common example questions in the pageant preparation sites. But you still have to act as if you just thought up the answer on the spot.
+
+"So much of my life has been focused around academics. People often see me as some kind of robotic nerd..."
+
+- @interview_comfort_zone_2: "... which is something I would like to disprove."
+- @interview_comfort_zone_3: "... which has a grain of truth to it, but..."
+
+
+@interview_comfort_zone_2
+
+"... which is something I would like to disprove. I would like to expand my horizons, to explore something beyond my comfort zone, and the pageant provides that opportunity."
+
+The interviewer smiles. It seems that you gave the correct answer.
+
+- @interview_2: The questions continue.
+
+@interview_comfort_zone_3
+
+"...which has a grain of truth to it, to be honest." You smile, hoping the judges would understand it as a mildly self-deprecating joke. They do not react. "Nevertheless, I would like to expand my horizons, to explore something beyond my comfort zone, and the pageant provides that opportunity."
+
+The interviewer smiles. It seems that you gave the correct answer.
+
+- @interview_2: The questions continue.
+
+@interview_2
+
+"Now, tell me about yourself," the interviewer asks now.
+
+- @interview_2_fail: Oh shit oh fuck.
+- @interview_2_okay: You've thought about this question.
+
+@interview_2_fail
+
+"Um..."
+
+You despise open-ended questions with the force of a thousand suns. Now is no exception. You have read this question in the practice guides, but it still catches you off guard.
+
+"Okay, so, my name is [+ first_name : +] Zhao," you begin, [? if name_correct : pronouncing it in the proper Mandarin way ?][? if name_correct = 0 : pronouncing it in the (incorrect) Americanized way ?]. Try to recover. Just say the very basic facts. "I was born in Changchun, in China. I'm 17 years old. And... I'm a junior in high school."
+
+The interviewer sighs.
+
+- @interview_end: There are more questions.
+
+@interview_2_okay
+view-if: pageant_interview >= 5
+
+This was another one of the most common questions. You've rehearsed the answer, but you still have to sound as if you're just starting out.
+
+"Well, my name is [+ first_name : +] Zhao," you begin, [? if name_correct : pronouncing it in the proper Mandarin way ?][? if name_correct = 0 : pronouncing it in the (incorrect) Americanized way ?]. "I'm a junior in high school, and I'm interested in science, especially biology. I was born in China and first came to America when I was 8 years old, so I would be one of the rare immigrants to participate in the pageant."
+
+The interviewer nods.
+
+- @interview_end: There are more questions.
+
+
+@interview_end
+on-arrival: pageant_score += interview_score
+
+There are more questions from the entire panel. You go through them as you practiced, or didn't practice.
+
+[? if pageant_interview >= 6 : Overall, the interview seems to have gone as well as it could have. You didn't exhibit your usual foibles and follies. ?]
+
+[? if pageant_interview < 6 : The interview process... did not go well. You exhibited most of your usual flaws when it comes to social interaction; the constant use of filler words, alternating between seeming too rehearsed and too uncertain... ?]
+
+Anyway, you're escorted back to the waiting room. The next section is where you explain your platform.
+
+- @platform: Platform
+
+
+@platform
+on-arrival: pageant_score += pageant_platform
+
+The platform review is a speech in front of the judges where you're supposed to expound on your platform.
+
+...You did practice the speech, right?
+
+- @platform_good: Yeah, kind of.
+- @platform_bad: No, of course not.
+
+
+@platform_good
+view-if: pageant_platform > 2 and platform_doc_completed = 1
+on-arrival: pageant_score += 1
+
+Yes, you did write down a speech and practice it at home. You talk about the benefits of basic scientific research and why more people should care about it, and how you're going to bring science to the masses. Or something like that. It kind of works.
+
+- @gown: The next section is evening wear.
+
+@platform_bad
+on-arrival: pageant_score -= 5
+
+Nope. You didn't write a speech at all. You either forgot that it was part of the competition, or remembered but never got around to it. Oh well.
+
+You are not particularly good at making up speeches on the spot either. You had some general ideas about what to say, but they're lost among a tangle of filler words.
+
+- @gown: The next section is evening wear.
+
+
+@gown
+on-arrival: pageant_score += pageant_appearance
+
+This section is open to the parents, and there will be parents watching. You hope your parents didn't bother to read the part of the info packet where they could watch. But they definitely want to see you in a beautiful dress or something like that, or at least mom does.
+
+Fortunately, they haven't been in the audience so far. That's one less anxiety source, out of at least ten.
+
+In the changing room you put on your gown, with the help of one of the other contestants (it wasn't as awkward as it could have been; you helped her in turn).
+[? if ball_gown = 1 : Your gown is a simple black gown with a white bowtie belt. ?]
+[? if ball_gown = 2 : Your gown is a simple deep green strapless pleated dress, with a soft texture. ?]
+[? if ball_gown = 3 : Your gown is a somewhat simple-looking light blue V-neck dress with a belt of shiny stones. ?]
+[? if ball_gown = 4 : Your gown is a very fancy, shiny blood-red strapless dress. ?]
+[? if try_on_ball_gown = 1 : When you tried it on before, you had never realized how revealing the top was. Or maybe it's just the eyes that are now all upon you. ?]
+
+- @gown_2_no_practice: Unfortunately, you had never put on the gown before.
+- @gown_2: You've had at least a little bit of practice with the gown...
+
+
+@gown_2_no_practice
+go-to: gown_final
+view-if: try_on_ball_gown = 0
+on-arrival: pageant_score -= 5
+
+You are not used to the sensation of walking in a long dress. It feels strange; the fabric folds between your legs and makes walking uncomfortable. You almost trip. You barely pay attention to the audience or the judges. How does your face look right now? What are you supposed to do with your arms? Does it even matter anymore?
+
+It's an ordeal, [? if pageant_appearance > 10 : made only slightly better by your confidence in the other facets of your preparation. ?][? if pageant_appearance <= 10 : unvarnished in its illustration of your ineptitude. ?] There is polite clapping for you as you finish. The judges' faces are impassive as usual, but perhaps there are hints of cringes and winces.
+
+
+@gown_2
+go-to: gown_final
+view-if: try_on_ball_gown = 1
+
+You've only tried on the ball gown a couple of times, but it's enough to get a sense of how it feels, and how to move within it. You're not comfortable, and maybe you'll never be, but you won't trip over yourself, at least.
+
+Overall... [? if pageant_appearance > 10 : you do surprisingly well on the evening gown section. Your posture, your dress, even your facial expression were all exactly as practiced. The judges' faces look impassive as usual, but there was some clapping from the audience. ?][? if pageant_appearance <= 10 and pageant_appearance > 6 : you do okay on the evening gown presentation, in your opinion. You didn't fail utterly. There is polite clapping for you at the end, and the judges look impassive as usual. ?][? if pageant_appearance <= 6 : you do horribly on the evening gown presentation, as one would expect. You barely avoid tripping over the hem of the dress as you walk down the makeshift stage. Maybe there were winces from the crowd, or maybe you just imagined them. ?]
+
+
+@gown_final
+
+Anyway, it's over now. You walk back to the changing room, take off your dress with assistance, and prepare for the next section.
+
+- @athletic: Athletic wear
+
+
+@athletic
+
+This section is also open to parents, but as before, you don't see them here. Some other pageants would require a swimsuit section; out of a desire to not objectify teenagers, this pageant does not, thank God. But you still have to wear clothes that show off too much of your extremities, like gym shorts and a tank top or t-shirt. It is bad, but not as bad as it could have been.
+
+- @athletic_results: You just have to walk around and make poses...
+- @athletic_failure: You can't do this anymore.
+
+
+@athletic_failure
+view-if: pageant_appearance <= 6 and try_on_ball_gown = 0
+on-arrival: pageant_total_failure = 1
+
+It starts in the dressing room. There's a full-length mirror, where you can see your entire body. And then it finally dawns upon you that you're *doing this*. You're in the pageant where you're supposed to show off your body to a bunch of strangers who judge you, and for what? For a pittance of a scholarship? For a slightly nonzero chance at improving your college apps, in the opinion of your parents who didn't even grow up in this country?
+
+Why are you even here, letting others *look* at you like this, letting strangers gaze upon your forlorn expressions and misshapen body as if you're an automaton who exists for the sake of others' gazes?
+
+Your eyes feel wet. You can't do this anymore.
+
+- @knock: There is a knock at the door.
+
+
+@knock
+
+"Hey, are you there, [+ first_name : +]? It's starting soon."
+
+You're crying. You can't open the door. You turn away from the mirror but it is unavoidable, as if the mirror is warping itself around the room, encompassing everything you can see.
+
+- @knock_2: More knocks.
+
+
+@knock_2
+
+More knocks. You're sitting on the floor now, hugging your knees. Your face must be disgusting. The door unlocks. Voices. Someone takes your arm. You surrender yourself.
+
+- @over: It's over.
+
+
+@over
+
+Your parents pick you up. Neither mom nor dad say much. They must be disappointed, but perhaps they developed some sympathy after seeing their daughter with tear streaks on her face. Soon you're home. It's over.
+
+- @epilogue: Epilogues
+
+
+@athletic_results
+view-if: pageant_appearance > 6 or try_on_ball_gown = 1
+on-arrival: pageant_score += pageant_appearance
+
+[? if pageant_appearance > 10 : You do well on the athletic wear section. ?]
+
+[? if pageant_appearance <= 10 and pageant_appearance > 6 : You do okay on this. ?]
+
+Now, you have to change again.
+
+- @talent: Talent
+
+
+@talent
+on-arrival: pageant_score += 3*pageant_talent
+
+The next section is the talent, another open segment where each of the contestants shows off one of their special talents.
+
+You play a traditional Chinese tune on the *erhu*, a traditional Chinese violin-like instrument. You've changed into a *qipao* for this occasion; apparently the pageant organizers love this sort of thing.
+
+[? if pageant_talent < 1 : Unfortunately you're severely out of practice. From the first note, it is clear that you have no idea what you're doing. Your only hope is for the novelty of the instrument to sway the judges, or something like that. ?]
+[? if pageant_talent = 1 or pageant_talent = 2 : You've only practiced a couple of times in the past few weeks, so you're out of practice, but you hope the novelty of the exercise will carry you through. There is no sign from the judges as to your success. ?]
+[? if pageant_talent > 2 : You've practiced somewhat adequately, enough that you've memorized your piece and can play it through in its entirety, without extremely noticeable errors. ?]
+
+Soon enough it's over. You change back into your original dress. You're shunted back to the waiting room. The pageant is over. Now comes the wait.
+
+- @pageant_wait_for_results: Wait.
+
+
+@pageant_wait_for_results
+
+Now, all the pageant contestants are called back to the stage. The contestants, you among them, stand in a semicircle facing the audience (of course they won't let you sit). You look for your family among them. They're there. They wave at you.
+
+- @wave_back: Wave back.
+- @pretend_didnt: Pretend you didn't see them.
+
+@wave_back
+go-to: pretend_didnt
+
+You wave back and smile.
+
+@pretend_didnt
+
+One of the judges stands up. He starts with all the requisite banalities, talking about how amazing all of the young women here are. How you're all special even for getting to this stage, or something like that. He talks a lot. Too much. You're tired. You're bored. 
+
+- @pageant_success: And the winner is...
+- @pageant_fail: And the winner is...
+
+
+@pageant_success
+view-if: pageant_score >= 50
+on-arrival: pageant_success = 1
+
+The announcer makes a sweeping arm gesture before announcing. "[+ first_name : +] Zhao!"
+
+- @really_winner: ...Really?
+
+
+@really_winner
+
+It's you. It's really you. Eyes turn in your direction. "[+ first_name : +] Zhao, please come up!"
+
+- @cant_believe: It's unbelievable.
+
+
+@cant_believe
+
+It's unbelievable. You make small walking motions, but end up having to be led by the host up front. You've forgotten all your pageant postures and facial expressions. They must regret picking you already.
+
+You don't hear much of what follows. The host shakes your hand and puts a sash over you. Your parents run up towards the stage and you run down towards them. Mom hugs you. Dad hugs you both. Kevin joins the cuddle pile. Applause all around, but you barely notice the audience.
+
+- @victory: It's over. You've won.
+
+
+@victory
+
+You've won. Mom and dad praise you like never before. Mom is smiling and hugging you all the way home.
+
+- @epilogue: Epilogues
+
+
+@pageant_fail
+view-if: pageant_score < 50
+on-arrival: pageant_success = 0
+
+The winner is a name you don't remember. You've lost. There is an announcement for the runner-up. Not you. Then there are the special awards.
+
+- @special_award_stem: There's an award for STEM excellence...
+- @no_special_awards: Of course you don't win any.
+
+
+@special_award_stem
+view-if: pageant_platform >= 2 and pageant_appearance >= 10 and pageant_interview >= 6
+on-arrival: special_award = 1
+go-to: final
+
+"And [+ first_name : +] Zhao, for the award for STEM excellence!"
+
+You smile and walk up to the host. He hands you a medal. It's a consolation prize, but a prize nevertheless. And it comes with a real scholarship.
+
+
+@no_special_awards
+view-if: pageant_platform < 2 or pageant_appearance < 10 or pageant_interview < 6
+go-to: final
+
+Of course you don't win any of the special awards.
+
+
+@final
+
+It's over. Good job, you tried your best, mom says, or something like that. Don't worry, dad says, or something like that. I think you did good, Kevin *di-di* says.
+
+Your parents take you home in their car.
+
+- @epilogue: Epilogues

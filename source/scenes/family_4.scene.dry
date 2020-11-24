@@ -1,0 +1,109 @@
+title: Family Dinner
+subtitle: A parental incident
+new-page: yes 
+view-if: week > 1 and week_progress < 3 and family > 2 and weekly_family = 0 and argument_viewed = 0 and week < 10
+on-arrival: week_progress += 1; family += 1; weekly_family = 1; argument_viewed = 1; stress += 1; trauma_points += 1 
+max-visits: 1
+tags: top, family 
+
+It's leftovers for dinner tonight: 西红柿炒鸡蛋 (tomato stir-fried with eggs) and a rice 粥 from last night. The family is seated around the table. Mom and dad are both reading on their cell phones. The microwave chimes.
+
+*"You go get it,"* mom says to dad.
+
+Dad sets down his phone with a thud, and sighs loudly. He kicks his chair. It clatters to the floor.
+
+"你干什么？*What are you doing?*" Mom gets up, pushing her chair to the side.
+
+- @watch: Watch.
+- @leave: Leave.
+
+@watch
+go-to: leave
+
+Dad sighs again. *"I hate it when you're like this,"* he says, his voice almost becoming a shout.
+
+*"Like what?"*
+
+- @leave: You can't stand this anymore.
+
+@leave
+
+You get up. Kevin looks at you, with what must be a knowing look. He follows you to your room. They noticed you leaving, but no one stops you. Of course they only get worse from here. There's more shouting.
+
+- @dad_1: Dad: "没有她我该早有博士了!"
+- @mom_1: Mom: "你真得找不着电脑的工作吗?"
+
+@dad_1
+
+"没有她我该早有博士了! *If it weren't for her, I'd already have my doctorate!*"
+
+You close your eyes. It doesn't matter. You'll be fine. He doesn't mean it.
+
+- @mom_2: Mom says something indistinct, yet sharp.
+
+@mom_2
+
+You don't hear (or don't want to hear?) mom's exact words, just some snippets, and her anger.
+
+Then there's dad's reply. *"Why did you have to keep her?"* Mom replies quietly. Then, banging on the table or the wall.
+
+Then more shouting interspersed with moments of calm.
+
+- @kevin: Kevin plays Minecraft on the iPad.
+
+@mom_1
+
+"你真的找不着电脑的工作吗? *You really can't find a job in computers?*"
+
+Even through the door you can hear dad sigh.
+
+*"Who needs a masters in geography these days?"*
+
+*"You can't learn something new?"*
+
+*"Aiya. You can't lay it off for one moment? You always have to nag me!"*
+
+*"If the American government found out they'd get you for sure!"*
+
+The voices and sounds become indistinct.
+
+- @kevin: Kevin plays Minecraft on the iPad.
+
+@kevin
+
+Your parents got the iPad for you for Christmas. You gave it to Kevin. He proceeded to become a Minecraft addict.
+
+*"How's it going?"*, you ask.
+
+"Uh. Good," he says. He doesn't pay attention to you or anything else. You start on some homework. It's hard to concentrate. 
+
+It's quiet outside now. How long has it been? An hour? Two? Three? There's a knock on the door.
+
+- @answer: Answer it.
+
+@answer
+
+"对不起“, mom says. *"I'm sorry."*
+
+"Oh. Okay." You look at the floor. 
+
+*"We're really sorry. It's really unimaginable, how we acted. Remember that we always love you."* Her eyes are bloodshot, with marks of tears. She reaches towards you.
+
+- @hug: Accept her hug.
+- @retreat: Back away from her.
+
+@hug
+
+You let mom put her arms around you.
+
+"Love you," she says, and she starts crying again. You hug her back. The lights in the kitchen are out.
+
+Kevin leaves, sneaking past the two of you. Eventually mom lets go. You close the door. Suddenly you feel tired, more so than usual.
+
+@retreat
+
+Almost without thinking, you back away into your room. Mom frowns. But she's used to it. She knows the way you act. Hopefully.
+
+"Sorry," you say, looking away. *"I'll wash the dishes later."*
+
+Mom leaves. You don't look at her face. Kevin sneaks away after her. You close the door. Suddenly you feel tired, more so than usual.

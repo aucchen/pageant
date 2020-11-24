@@ -1,0 +1,73 @@
+on-arrival: debug_mode = 1;
+min-choices: 3
+max-choices: 8
+go-to: game_start if week = 0
+new-page: true
+
+= Weekly Activities 
+
+Week: [+ week : +]
+
+Activities remaining: [+ 3-week_progress : +]
+
+[? if week = 1 : The pageant can't be the only thing you spend your time on. As a top university-bound student you need to have, in addition to a full load of AP classes, a full portfolio of extracurricular activities and leadership opportunities filling up every moment of every waking hour. Okay, that was an exaggeration. But not by much. You're a part of the science olympiad team, and everyone's counting on you to help carry the team or something. Also, you're supposed to be working with a professor (whom your mom set you up with) on a research project. And somewhere along the way your parents and brother want to see you at home for dinner. And don't forget more pageant prep. ?]
+
+[? if week = 1 : There's a quiz in AP Calc on differentiation techniques. Obviously you're already prepared. There's also a lab in AP Chem, like there is every week. ?]
+
+[? if week = 2 : In AP Lit, you've been reading *Oryx and Crake* by Margaret Atwood. You seem to be enjoying the book more than most people in the class. Maybe because you have a thing for morally ambiguous biologists. ?]
+
+[? if week = 3 : In AP Lit, you have to write an essay about how symbolism is used to illustrate the themes present in the book. Did the book even have any symbolism? It was all rather straightforward. ?]
+
+[? if week = 4 : AP World is starting on the middle ages in Asia. Given that half the class is Asian, you're almost surprised the teacher didn't make any snide remarks. ?]
+
+[? if week = 4 and research = 0 : Mom asks you why you haven't met with Professor Chen for research yet. You didn't have a good answer. ?]
+
+[? if week >= 4 and pageant_prep <= 2 : You've made approximately zero progress on pageant preparations. Maybe you should get started? ?]
+
+[? if week = 5 : This is the week of Thanksgiving break. Your AP teachers aren't letting you out easy, though. ?]
+
+[? if week = 6 : This week there's an exam in AP Chem on thermodynamics. And in AP Lit, you're starting to read Hemingway's *A Farewell to Arms*. ?]
+
+[? if week = 7 : AP Calc is starting to talk about integrals now. It's about time, some of the super math nerds say. You have no opinion one way or the other. ?]
+
+[? if week = 7 and scioly >= 2 : The science olympiad invitational is this weekend. You should probably get ready, or something like that. ?]
+
+[? if week = 8 : AP Chem has a memorize-the-periodic-table quiz, somehow going along with all the quantum stuff that's also being covered. ?]
+
+[? if week = 9 : Winter break is almost here. The teachers are more anxious if anything; there's an essay in AP Lit, a quiz in Calc, and one last pre-Christmas lab in Chem. ?]
+
+[? if week = 10 : Winter break is here. There's no more school, but that doesn't mean that you have any shortage of responsibilities. ?]
+
+[? if week = 11 : Winter break is over, and the pageant is next weekend. You should probably get ready if you haven't already. ?]
+
+[? if week = 100 : The pageant is over. What happens next? ?]
+
+- #debug
+- #enter_weekend
+- #loneliness
+- #stress
+- #introspect
+- #pageant_prep
+- #social
+- #research
+- #scioly
+- #family
+- #christmas
+- #epilogue
+
+
+@game_start
+new-page: true
+
+= Pageant
+
+- @1: Start game
+- @debug_credits
+- #debug
+
+
+@debug_credits
+title: Achievements and Credits
+subtitle: Go to ending
+view-if: week = 0
+go-to: achievements

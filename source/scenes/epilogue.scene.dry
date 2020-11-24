@@ -1,0 +1,185 @@
+title: Epilogue
+new-page: yes
+on-arrival: week = 100
+tags: ending, top
+go-to: all_epilogues
+
+= Epilogues
+
+
+@all_epilogues
+
+- @ep_pageant_win: The Pageant
+- @ep_pageant_lose: The Pageant
+- @ep_school: School
+- @ep_scioly_good: Science Olympiad
+- @ep_scioly_neutral: Science Olympiad
+- @ep_research_good: Research
+- @ep_family_good: Family
+- @ep_family_bad: Family
+- @ep_emily_date: Emily
+- @ep_emily_friends: Emily
+- @ep_miri_date_done: Miri
+- @ep_miri_friends: Miri
+- @ep_miri_uncertain: Miri
+- @ep_miri_neutral: Miri
+- @ep_miri_bad: Miri
+- @ep_aubrey_date: Aubrey
+- @ep_aubrey_friends: Aubrey
+- @achievements: Achievements (exit game)
+
+@ep_pageant_win
+view-if: pageant_success = 1
+max-visits: 1
+go-to: all_epilogues
+
+Winning the regional pageant gives you new opportunities and responsibilities. But before anything else, mom doesn't stop. She heaps more praise upon you than she ever has in the past. She makes hour-long WeChat calls to relatives back in Xi'an and Changchun, often talking about how surprising that her daughter succeeded in an American beauty competition. You try to avoid listening to her talk about you, but it's difficult.
+
+As the winner of the regional pageant, you've qualified for the state pageant, and if you win that, you go all the way to nationals. Even as just the regional pageant winner, you still have some responsibilities, like showing up to various social functions and community gatherings and the like. It's anxiety-inducing as usual, and you have to pretend to be someone you're not, but it gets better over time. Now it's mostly just boring.
+
+Of course you don't end up winning the state pageant. But that's a different story.
+
+
+@ep_pageant_lose
+view-if: pageant_success = 0
+max-visits: 1
+go-to: all_epilogues
+
+With the pageant over, this chapter of your life is definitively concluded. The gown was returned. Speeches, interviews, platforms, all forgotten soon enough. Mom still tells you that it was a good experience, that she's glad you participated in the pageant. [? if special_award = 1 : And there is the STEM special award, which comes with a small scholarship. ?]
+
+Overall, was it worth it? It's too early to tell.
+
+
+@ep_school
+max-visits: 1
+go-to: all_epilogues
+
+School continues on, as usual. College applications loom in the distance, less than one year away. You should take the SATs and maybe ACTs. And APs. And SAT subject tests. You might even need to take the TOEFL because of some arcane legalistic requirement for non-US citizens, despite English being your only literate language.
+
+You need to write essays, too. Maybe the pageant really will be helpful.
+
+
+@ep_scioly_good
+max-visits: 1
+go-to: all_epilogues
+view-if: scioly_final_seen = 1
+
+Science Olympiad continued with the regional competition, which your school passed, and the state competition, where your school placed seventh out of 20-something. Despite the mediocre placement, the captain considered it a success. 
+
+Speaking of which, elections for the new captain have come up. You ended up running, as the captain essentially ordered you to. And surprisingly enough, you won one of the captain slots, along with Krishna. That was a great moment. He's been nicer to you than usual lately. 
+
+
+@ep_scioly_neutral
+max-visits: 1
+go-to: all_epilogues
+view-if: invitational = 1 and scioly_final_seen = 0
+
+Science Olympiad continued with the regional competition, which your school passed, and the state competition, where your school placed ninth out of 20-something. Despite the mediocre placement, the captain considered it a success. 
+
+Speaking of which, elections for the new captain have come up. The winner was the slate of Krishna and his friend Daniel. Krishna has been slightly nicer than usual lately.
+
+
+@ep_research_good
+max-visits: 1
+go-to: all_epilogues
+view-if: research >= 5
+
+You're continuing on with your research work with Professor Chen and Stella. It's become a part of your routine. The work is generally pretty interesting, and you're learning a little about how science works, which might become useful in your future career. You're not going to change the world, not yet anyway, but it's a start.
+
+
+@ep_family_good
+max-visits: 1
+go-to: all_epilogues
+view-if: family >= 5
+
+Recently, with the pageant and all, you've grown a bit closer with your family, spending more time with them and so on. There are good times and there are bad times. Recently, mom and dad haven't been getting along too well. Part of you wonders if they could separate, or divorce.
+
+
+
+@ep_family_bad
+max-visits: 1
+go-to: all_epilogues
+view-if: family < 5
+
+Recently, you haven't had so much time to spend with your family. Mom sometimes wishes you would spend time with them rather than sequester yourself in your tiny room. Isn't it better with more people, she would say. But you mostly ignore her. Dad ignores you, for the most part.
+
+
+
+@ep_emily_date
+max-visits: 1
+go-to: all_epilogues
+view-if: emily_date = 1
+
+You sort of obliquely confessed to Emily, and she said that you could date after graduating, or something like that. In the meantime, you've become friends, of a sort. You've been keeping in touch via the despicable platform known as facebook. She complains about her parents, and you complain about your parents. She talks about obscure internet jokes and gender, and you talk about webcomics (apparently she's also a fan of *the webcomic*).
+
+
+@ep_emily_friends
+max-visits: 1
+go-to: all_epilogues
+view-if: emily >= 8 and emily_date = 0
+
+Emily Chen is your friend now. Probably. You've been keeping in touch via the despicable platform known as facebook. She complains about her parents, and you complain about your parents. She talks about obscure internet jokes and gender, and you talk about webcomics (apparently she's also a fan of *the webcomic*).
+
+
+@ep_emily_acquaintance
+max-visits: 1
+go-to: all_epilogues
+view-if: emily < 8 and emily_date = 0
+
+Ever since the pageant ended, there hasn't been much of an excuse for Emily and you to connect. And so you're slowly but surely drifting apart. [? if pageant_success = 1 : Even though she could probably help you prepare for the state pageant, it's been difficult to bring yourself to reach out to her, and she's been more reticent about reaching out to you. ?]
+
+
+@ep_miri_date_done
+max-visits: 1
+go-to: all_epilogues
+view-if: miri_date >= 2 
+
+You're now officially dating Miri Brooks. She's your girlfriend, and you're hers. It's still a little weird to think of your relationship like that. You've become more comfortable around her, physically as well as emotionally. Sometimes you even hold hands in school, or while walking ouside during the day. You're still scared when she does that, and you haven't told your parents, but things are going good. Probably.
+
+
+@ep_miri_friends
+max-visits: 1
+go-to: all_epilogues
+view-if: miri_date = -1
+
+Miri confessed to you, and you rejected her. But your friendship survived, much as it did before.
+
+
+@ep_miri_neutral
+max-visits: 1
+go-to: all_epilogues
+view-if: miri_date = 0 and miri_escape = 0 and miri >= 2
+
+You're still friends with Miri, and your friendship continues on much as it did before. The pageant and all it involved changed nothing in that regard.
+
+
+@ep_miri_uncertain
+max-visits: 1
+go-to: all_epilogues
+view-if: miri_date = 1
+
+Miri Brooks confessed to you, but you never gave a certain answer. And perhaps you never will. She acts as if she never asked. Still, your friendship survived, much as it did before.
+
+
+@ep_miri_bad
+max-visits: 1
+go-to: all_epilogues
+view-if: miri_escape = 1
+
+You've ruined your friendship with Miri. Or something like that. She doesn't actively avoid you at school, but it does feel as if something has changed between the two of you.
+
+
+@ep_aubrey_date
+max-visits: 1
+go-to: all_epilogues
+view-if: aubrey_date = 2
+
+After your date with Aubrey, she asked if you could do something like that again, but as friends. Friend-dates or something like that. Apparently it's an actual ritual that a lot of women partake in. Sure, why not, you said. It can't be that bad. And it isn't. But part of you still has *feelings* for her, and you still wonder...
+
+
+@ep_aubrey_friends
+max-visits: 1
+go-to: all_epilogues
+view-if: aubrey_date < 2
+
+Your "relationship" with Aubrey hasn't changed much. Perhaps your one-time crush on her has diminished. You still spend time with her at the Saturday bible study gatherings that you attend with your family, and at science olympiad, but not much besides.

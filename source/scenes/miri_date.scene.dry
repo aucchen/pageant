@@ -1,0 +1,505 @@
+title: Miri
+subtitle: A date?
+new-page: yes
+view-if: (week = 11 or week = 9 or week = 8) and miri > 4 and weekly_miri = 0 and miri_date = 2
+on-arrival: miri_date = 3; growth_points += 1
+tags: top, miri
+
+When Miri invites you over to her house after school, it is one of the very few times when she is alone at home.
+
+"Alright. We have one hour by ourselves. What are we gonna do?"
+
+- @stare_at_miri: Stare at Miri.
+- @um: Take a deep breath...
+
+
+@stare_at_miri
+
+Before the past few weeks, you've never realized how pretty Miri was. She has a round face framed by ringlets of curly hair falling to about shoulder length, smiling like she always does. She is shorter than you, her eyes just reaching your lips. Today she is wearing a nice purple dress and cardigan over tights; she almost never wears dresses so she must have picked it out for this occasion. Your outfit is banal compared to hers, with jeans and flannel; you regret not putting your pageantry skills to use. You've taken her for granted too for too long.
+
+"You're staring," she says. Oh. Right.
+
+- @um: Take a deep breath...
+
+
+@um
+
+You close your eyes and take several deep breaths, while holding your hands together. There. Your heart is not exploding anymore. Miri does not notice, or does not care.
+
+This is your first "date" with Miri, insofar that the previous friendly gatherings could not be considered "dates" despite the now-recognizeable subtext. Nevertheless, it feels like any of the other encounters you have had with her; the fact that you are apparently in a "romantic" relationship now still must have not entirely percolated through your mind.
+
+Her house is within walking distance of yours, a duplex on a side street with a small garden out front. Usually, at least one of her older siblings or parents would be home, but this time, apparently she is alone.
+
+Oh yeah, what do you want to do with Miri?
+
+- @a1: "Um..."
+- @a2: "So, how about that upd8?"
+- @a3: Have a long and meaningful discussion about life, the universe, and everything.
+
+@a1
+
+"Um..."
+
+Miri sits on her living room couch. You sit down next to her, close but not touching.
+
+"Let's talk about..." Miri makes a spinning gesture with her hand. "The future."
+
+- @future_1: The future?
+
+@a2
+
+"So, uh, how about that upd8?"
+
+Miri laughs. "I stopped reading after the gigapause. Game Over just sounded so bleak. It's not even interesting, and the other stuff just seems like more trolling."
+
+"Oh. Well..."
+
+- @hs_good: "Well I think it's good..."
+- @hs_okay: "It might not be good, but I want to finish it..."
+
+
+@hs_good
+
+"Um, I think it's good... I mean there's still hope for something good to come out of it."
+
+"Yeah? Maybe. If it ever does get good again, tell me."
+
+A lull. Miri seems to be not so interested in the topic.
+
+- @webcomics: Have a long and scintillating conversation about internet media.
+- @a3: Have a long and meaningful conversation about literally anything else.
+
+
+@hs_okay
+
+"I mean, it might not be good, but we've already gotten this far..."
+
+"What do they call that? The sunk cost fallacy?"
+
+A lull. Miri seems to be not so interested in the topic.
+
+- @webcomics: Have a long and scintillating conversation about internet media.
+- @a3: Have a long and meaningful conversation about literally anything else.
+
+@webcomics
+
+"Yeah, I haven't been following ever since the gigapause," she says. "I just kind of lost interest. From what I heard Game Over kind of sucked."
+
+"Um, I think there's going to be a way to fix it. He's not going to be that mean..."
+
+"Yeah, well, it doesn't really matter."
+
+- @a3: Have a long and meaningful conversation about literally anything else.
+- @awkwardness: Sit in awkward silence.
+
+
+@a3
+
+"Can we have a long and meaningful discussion about, um," you start, not knowing what exactly you would like to have a long and meaningful conversation about.
+
+"Sure, I'm always up for long and meaningful discussions. Let's talk about..." She makes a spinning motion with her hand. "The future."
+
+- @future_1: The future?
+
+@future_1
+
+"What do you mean by 'future'?", you say. "Do you mean like, tomorrow future, or in a year future, or fifty years future? Or like, a million years?"
+
+"Hmm, let's say, five years," she says. "Do you think the world will be a better or worse place than it is today?"
+
+- @future_what: "What do you mean, better or worse?"
+- @future_why: "Why are you asking?"
+
+
+@future_what
+go-to: miri_thinking
+
+"Um, what do you mean by 'better or worse'? By what metric?"
+
+"Ha. Should have expected you would have said something like that." Miri sighs.
+
+
+@future_why
+go-to: miri_thinking
+
+"Um, why are you asking?"
+
+"I don't know..." Miri sighs. "It's... kind of weird. Sorry."
+
+
+@miri_thinking
+
+"There's a part of me that's terrified of the future," she continues. "Like, I just feel like everything's getting more and more horrible. Like, there's all the suffering going on in the world, with climate change and wars and people dying for no reason and... And what am I supposed to do? Like, God, I just don't know and that's terrifying."
+
+She turns to you, as if expecting something. "God, this is a terrible way to start a first date. This is a first date, right?"
+
+Does she want to be comforted right now? Or...
+
+- @unable_to_provide: You are unable to comfort anyone...
+- @can_try: But you can try...?
+- @sorry: "Um, sorry..."
+
+
+@unable_to_provide
+
+You've never been good at the whole "showing compassion" thing. At least visibly. You always come off as somewhat insincere, regardless of your actual feelings.
+
+- @wait: Wait. You don't know what to do.
+- @can_try: But you can try...?
+
+
+@wait
+
+You sit on the couch, not knowing exactly what to do. You're supposed to comfort her, right? You want to comfort her, right? Because you care about her, right?
+
+What's the point of this train of thought? Are you attempting to craft a transactional framework for your relationship?
+
+- @sorry: "Sorry..."
+- @wait_2: Sit in silence.
+
+
+@wait_2
+
+Miri is just sitting there in silence, so you might as well do so as well. You don't have a good sense of time; it could have been seconds or minutes for all you know.
+
+- @sorry: "Sorry...?"
+- @wait_3: Keep sitting in silence.
+
+
+@wait_3
+go-to: awkwardness
+
+"Okay, so..." Miri breaks the silence. "Sorry I acted all weird. Do you want to try doing something else?" She glances at you, her brown eyes gleaming.
+
+"God, I'm so sorry," she continues. "This is supposed to be a first date and I'm acting all like this. It fucking sucks."
+
+
+@can_try
+
+Okay. You take a deep breath and think of what to say. 'Things will be fine?' No, that's a lie. 'Don't worry?' No, that's a command. 'Actually the state of the world is improving in ways x, y, and z?' No, that's probably insensitive or something like that, and you're skeptical of such panglossian thinking in the first place.
+
+- @sorry: "Sorry...?"
+- @wait: Just wait. You don't know what to say.
+
+
+@sorry
+
+"Um, sorry...?", you say, not knowing what else to say exactly.
+
+"Yeah, I mean, it's not your fault. You don't have to say sorry."
+
+- @preemptive: "Actually I am preemptively apologizing for my failure to be a good friend/girlfriend by being unable to emotionally assist you in a moment of need..."
+- @actually_2: "Actually I am sorry about the state of the world today..."
+
+
+@preemptive
+go-to: inches_closer
+
+You have a weird thought, but can you actually say something like that? You take time putting the words together in your mind. Then you take deep breaths.
+
+"Um, I'm sorry that I'm not really good at, like, being comforting..."
+
+Miri laughs. "It's fine!"
+
+
+@actually_2
+go-to: inches_closer
+
+"Actually I'm, um, sorry about the state of the world today..."
+
+Miri laughs. "Hey, it's not your fault! You are like, literally the person least responsible for the shittinesss of the world."
+
+
+@inches_closer
+
+She inches closer towards you. Her hand is on top of yours. It's warm.
+
+"Sorry, is it okay if I hold your hand right now?"
+
+- @stop_saying_sorry: "You don't have to say sorry."
+- @sure_go_ahead: "Sure, go ahead..."
+- @please_dont: "Please don't..."
+
+
+@stop_saying_sorry
+go-to: touching
+
+"Um, you don't have to say sorry..."
+
+
+@sure_go_ahead
+go-to: touching
+
+"Um, sure, go ahead..."
+
+
+@please_dont
+
+"Um... please don't..."
+
+"Oh. Sorry." Miri pulls away.
+
+- @awkwardness: There is an awkward silence.
+
+
+@touching
+on-arrival: miri_touch = 1
+
+Miri slides closer to you, so that her head leans against your shoulders. Her fingers intertwine with yours. Her hand is warm. Her skin feels nice. You close your eyes for a moment.
+
+Endorphins are being released, or something like that. That's why you feel pleasant right now, or something like that.
+
+"Hey, [+ first_name : +]?"
+
+"Yeah?"
+
+"Thanks."
+
+"For what?"
+
+"Just being here, I guess. That's enough for now."
+
+- @youre_welcome: "You're welcome?"
+
+
+@youre_welcome
+
+"Um, you're welcome?"
+
+"Yeah. Sure." Miri's hands are still on top of yours.
+
+- @another_pause: Another pause.
+
+@another_pause
+
+"Okay, so, I'm going to decare the deep conversation to be over now," she says after another pause of indeterminate length. "That was kind of depressing. Do you want to do something fun next?"
+
+"Um, sure...?"
+
+"Okay, so, we could play video games? There's an old Wii, if that's what you're into. And an Xbox. Or we could watch TV?"
+
+- @videogames: Play videogames?
+- @tv: Watch TV?
+
+
+@videogames
+
+"Let's just play the videogames."
+
+"Sure, great!"
+
+You have approximately an hour before her brother gets home, so you play a few rounds of Super Smash Bros Brawl. Miri wins every round; it's usually not even close.
+
+"You can't just keep on flying up and doing the brick thing!", she says. "It might work against AI and noobs but an actually good player can destroy you easily!"
+
+"Are you implying that you're an actually good player?"
+
+Miri laughs, and punches you in the arm. "Maybe we can play more, once you're done with all that... stuff."
+
+- @kiss: It's time to leave...
+- @no_kiss: It's time to leave...
+
+
+@kiss
+view-if: miri_touch = 1
+
+"So, can we kiss?", Miri asks as you're about to leave.
+
+Oh. Um.
+
+- @less_awkward: You aren't feeling so awkward anymore...
+- @nonono: Oh no oh no oh no...
+
+
+@less_awkward
+
+You're feeling less awkward about physical contact, and you really do *like* her, so...
+
+- @do_kiss: Do it.
+- @dont_kiss_1: Your heart is beating super fast.
+
+
+@nonono
+
+Wait, shouldn't you be excited about this? Isn't this what you want?
+
+- @do_kiss: Do it.
+- @dont_kiss_1: Your heart is beating super fast.
+
+
+@do_kiss
+
+You hear Palpatine's voice in your head telling you to *do it*. You listen to the voice.
+
+"Okay," you say. "But, like, this is the first time I've..."
+
+"Me too!" Miri smiles and closes her eyes. You do too. She holds your waist and pulls you in. You lean down.
+
+- @now_kiss: It happens.
+
+
+@now_kiss
+on-arrival: miri_kiss = 1
+
+It happens, and then it's over. Miri releases you. You open your eyes.
+
+Part of you expected more climactic feelings for your first romantic kiss. You imagined overwhelming waves of emotions roiling over you like nothing you've felt before, an ecstasy like the ones described in novels. But instead what you felt was... Maybe it was the overwhelming nervousness?
+
+But it felt good. It was very good. You can't help but smile. Miri is smiling too, somehow more so than usual.
+
+"You should have taken off your glasses," she says. "Haven't you watched any movies?"
+
+"Um, I don't watch movies."
+
+"Right. Well. Maybe next time. We can practice more."
+
+- @next_time: "Yeah. Next time."
+
+
+@next_time
+
+"Yeah. Next time..."
+
+Miri waves as you leave. Her brother's car pulls up by the sidewalk. You walk home.
+
+
+@dont_kiss_1
+
+You need to calm down for a moment. Take some deep breaths. They don't help much, if at all.
+
+"Oh, you don't have to," Miri says. "If you don't want to, that's fine."
+
+- @do_kiss: Do it.
+- @dont_kiss_2: No. You can't do it.
+
+
+@dont_kiss_2
+
+"Um, sorry..."
+
+"No, it's fine! I know you're nervous about physical contact so... maybe next time? Is a hug fine?"
+
+- @hug: Go for the hug.
+- @no_hug: Actually you just don't want any form of physical contact.
+
+
+@hug
+on-arrival: miri_hug = 1
+
+"Um, sure. A hug is good."
+
+She approaches you and wraps her arms around your waist. You hug her back, or something like that. It's a few seconds before she lets go.
+
+"Well, see you next time."
+
+"Yeah. Next time..."
+
+She waves as you leave. Her brother's car pulls up by the sidewalk. You walk home.
+
+
+@no_hug
+on-arrival: miri_hug = 0
+
+"Um, sorry..."
+
+"It's okay! Maybe next time."
+
+"Yeah. Next time..."
+
+She looks slightly sad as you leave. Her brother's car pulls up by the sidewalk. You walk home.
+
+@no_kiss
+view-if: miri_touch = 0
+
+"So, was this fun?", Miri asks.
+
+- @yeah_fun: "Yeah..."
+- @no_fun: Not really but you can't say that.
+
+
+@yeah_fun
+
+"Yeah..."
+
+"Well, it could have gone better," she says, sensing some hesitation. "If you want to do this again, we can think of something better to do." A pause, as you put on your shoes. "So, is a hug okay?"
+
+- @hug: Go for the hug.
+- @no_hug: Actually you just don't want any form of physical contact.
+
+
+@no_fun
+
+You can't just say that you didn't have fun. So what can you say? You think...
+
+"Well, it could have gone better," she says, as if interpreting your silence as an answer. "If you want to do this again, we can think of something better to do." A pause, as you put on your shoes. "So, is a hug okay?"
+
+- @hug: Go for the hug.
+- @no_hug: Actually you just don't want any form of physical contact.
+
+
+
+@tv
+
+"Maybe we could watch something?"
+
+"Sure, great! What should we watch? Wait, I know!"
+
+You have approximately an hour before her brother gets home. Miri puts on some recent anime series. In all honesty it's kind of forgettable, and you let her know.
+
+"So this series sucks, right?", she says. "We should have watched something better."
+
+"Yeah, but it was nice just... being here. With you."
+
+"Oh shush." She punches you in the arm, probably affectionately.
+
+- @kiss: It's time to leave...
+- @no_kiss: It's time to leave...
+
+
+@awkwardness
+on-arrival: miri_awkwardness = 1
+
+There is an awkward silence. You feel as if you should say something right now, but your mind is blank, somewhat more so than usual. Suddenly you become aware of the humming of the refrigerator, the buzzing of cars outside, the bare branches of the tree by the window blown by the wind.
+
+You are aware of Miri breathing next to you.
+
+- @sneak_glance: Stare at Miri.
+- @wait_awkwardness: Wait.
+
+
+@sneak_glance
+go-to: do_something_fun
+
+You slowly turn towards her. She has an unreadable expression as she meets your gaze. Not smiling. A little sad? You don't know.
+
+You turn away.
+
+
+@wait_awkwardness
+go-to: do_something_fun
+
+It goes on and on. You listen to Miri's breathing.
+
+
+@do_something_fun
+
+"Hey, [+ first_name : +]?", Miri says suddenly.
+
+"Yeah?"
+
+"Do you want to, like, do something fun?"
+
+- @um_sure_fun: "Sure?"
+
+
+@um_sure_fun
+
+"Um, sure...?"
+
+"Okay, so, we could play video games? There's an old Wii, if that's what you're into. And an Xbox. Or we could watch TV?"
+
+- @videogames: Play videogames?
+- @tv: Watch TV?
+
+
+

@@ -1,0 +1,298 @@
+title: Pageant Prep
+subtitle: The mandatory meeting
+new-page: yes
+view-if: week = 1 and class_visited = -1
+on-arrival: pageant_prep += 1; week_progress += 1; mandatory_meeting_calm = 0; class_visited = 1; introspection = 1
+priority: 2
+tags: top, pageant_prep
+
+There's a mandatory meeting for pageant contestants today. Well, not technically mandatory, just highly recommended, especially for new contestants. It's probably important.
+
+- @starting: You took the train and bus to get there.
+
+@starting
+
+You went by yourself, of course, down to a not-so-fancy hotel in Cambridge. You stand at the door. You don't see anyone else who looks like a contestant. Will there be parents there? What will all the people look like? What if you see someone you recognize? What if they recognize you? What if you have to do something to prove that you're ready to be a contestant? And what if your parents were supposed to come but you told mom that she didn't have to come because it would just make it more awkward and for some reason she listened to you (actually she's just busy at work and didn't want to come) but...
+
+Your heart pounds in your chest. Your hands are trembling.  Oh God you're not ready for this.
+
+- @calm: Breathe.
+
+@calm
+view-if: mandatory_meeting_calm < 3
+on-arrival: mandatory_meeting_calm += 1
+
+[+ mandatory_meeting_calm : +]...
+
+- @calm: Breathe.
+- @next: Just enter.
+
+@next
+view-if: mandatory_meeting_calm = 3
+
+Okay. It's going to be alright. And if it isn't you'll never see any of these people ever again. Hopefully.
+
+You open the door to the hotel, and follow the signs to the pageant meeting room. When you finally reach the marked door, someone approaches you from behind. You almost jump as she taps your shoulder.
+
+"Oh, um, hi," she says. "Are you here for the pageant thing?"
+
+Her voice sounds strange, but perhaps you're just imagining things.
+
+- @yeah: "Yeah..."
+- @stare: Stare at her.
+
+@yeah
+
+"Um, y-yeah..."
+
+"Great," she replies, and opens the door, letting you enter first.
+
+The two of you are greeted with stares. You look at the floor. She's already moving, and sits near the back. She waves at you.
+
+- @sit_emily: Sit next to her.
+- @sit_random: Sit somewhere else.
+
+@stare
+go-to: yeah
+on-arrival: emily_stared = 1
+
+Well, she's... a person...
+
+She's Asian, skinny, and about your height, with messy shoulder-length hair tied up in a loose ponytail, and what looks like loads of makeup. She wears layers of black, a black skirt with black leggings and black shoes and a black sweater and thick black-framed glasses. Is this a pageant contestant? Someone you'll compete with and have to eventually defeat but probably won't?
+
+@sit_emily
+on-arrival: sit_emily = 1
+
+You sit down next to the girl you just met.
+
+"I'm Emily," she says.
+
+"Oh, uh, I'm [+ first_name : +]."
+
+- @start_meeting: The meeting begins.
+
+@sit_random
+
+Instead of sitting next to the girl you just met, you find a random spot far from anyone else.
+
+- @really: Really? Maybe you'd rather sit with her...
+- @yeah_really: Yeah, really.
+
+@really
+on-arrival: sit_emily = 1
+
+Maybe it's better to have at least one ally in this place, so you move next to her.
+
+"Hi! I'm Emily," she says. "Emily Chen."
+
+"Oh, uh, I'm [+ first_name : +]. Zhao."
+
+- @start_meeting: The meeting begins.
+
+@yeah_really
+on-arrival: sit_emily = 0
+
+You sit by yourself, looking downward as you try to avoid accidental eye contact.
+
+- @start_meeting: The meeting begins.
+
+@start_meeting
+
+The first speaker is one of the organizers of the pageant. She starts with the formalities, like congratulating everyone on being here, and so on. Then comes the important part: the fees and paperwork. Your parents took care of most of those, but there's still some personal forms that you'll have to fill out yourself. Finally there's some information about the pageant.
+
+- @listen: Listen.
+- @tune_out: Tune out.
+- @look_at_emily: Look at Emily.
+
+@listen
+
+The regional pageant will take place on Saturday, January 17th. The winner and runner-up will get to compete at the state pageant in March, and the winner of that will compete at the national pageant in June. 
+
+Next comes the discussion of the pageant mechanics. There are several components: evening gown, athletic wear, the interview, a talent show, and the platform. Each of these events is 20% of the final score.
+
+You know all of this already.
+
+- @ashley_speech: The next speech...
+
+@tune_out
+
+From the sound of it, you know everything she's going to say already. So why bother listening? After all, you're much better at assimilating information when it comes in the form of written words, and all this information should be online anyways.
+
+- @ashley_speech: The next speech...
+
+@look_at_emily
+view-if: sit_emily = 1
+
+You glance over at Emily. She has a notebook in hand, scribbling furiously. But she doesn't seem to be listening to the speech. And her notebook doesn't seem to be filled with notes, but math equations and diagrams.
+
+She notices you, and puts down her notebook, smiling sheepishly. Then she at least pretends to listen. But it seems like the speech is already over. Hopefully it wasn't too important.
+
+- @ashley_speech: The next speech...
+
+@ashley_speech
+
+The next speech is by last year's winner in this region.
+
+Wait... this is someone you know. She attends your high school, and she was one of the first people you knew in Massachusetts. But you've grown apart in the past few years, as she increasingly traveled in different different social circles. So it's strange that she's also into pageants. Or maybe not strange, considering how pretty and popular she is.
+
+- @stare_ashley: Stare at Ashley.
+- @listen_ashley: Listen.
+- @zone_out_ashley: Zone out.
+
+@stare_ashley
+go-to: listen_ashley
+on-arrival: ashley_stared = 1
+
+Ashley stands quite a bit taller than you, with an athletic body and wavy light brown hair that cascades down her back. Ashley is pretty, attractive in a conventional way or something like that, which is probably how she got into pageant stuff. Not to mention the string of boyfriends you've seen her walking the halls with. She's also an AP student with a higher GPA than you.
+
+@listen_ashley
+
+Ashley's speech is about nothing in particular, like student council speeches or any of the principal's motivational speeches. You try to listen, but the words fail to reach your brain.
+
+- @social: The speech ends.
+
+@zone_out_ashley
+
+You can't really focus on her speech, for some reason. It's as if the words bounce off your brain.
+
+- @social: The speech ends.
+
+@social
+
+After the speeches, there's a period for the pageant contestants to socialize. You're supposed to get to know each other, or something like that.
+
+- @socialize_emily: Socialize with Emily.
+- @socialize_new_girl: Socialize with the girl you saw earlier.
+- @socialize_ashley: Socialize with Ashley.
+- @socialize_none: Leave early.
+- @socialize_none_emily: Leave early.
+
+@social_continue
+
+- @socialize_emily: Socialize with Emily.
+- @socialize_new_girl: Socialize with the girl you saw earlier.
+- @socialize_ashley: Socialize with Ashley.
+- @socialize_end: Leave.
+
+@socialize_emily
+view-if: sit_emily = 1 and emily = 0
+
+You close your eyes, and feel your heartbeat rise. You can do this; just talk to her, how hard can it be?
+
+"Um, hi," you manage to say.
+
+"Hi," she replies. "I guess we're supposed to socialize or whatever. Haha."
+
+"Um, yeah." This is awkward, not that you expect any different.
+
+"So, are you doing the pageant?", she asks after a pause.
+
+- @socialize_emily_2: "Yeah..."
+
+@socialize_new_girl
+view-if: sit_emily = 0 and emily = 0
+
+You find the girl you met on the way in, still sitting in the back corner. She's one of the very few Asians in this room, and while she looks intimidating, she's somehow less so than any of the others here. You close your eyes, and feel your heartbeat rise. You can do this; just talk to her, how hard can it be?
+
+"Um, hi," you say.
+
+"Hi. I think I saw you earlier? My name's Emily. Emily Chen."
+
+"I'm [+ first_name : +] Zhao..." An awkward pause. "So, um, are you doing the pageant?"
+
+- @socialize_emily_2: "Yeah..."
+
+@socialize_emily_2
+on-arrival: stress += 1
+
+"Yeah..."
+
+"Great! Well, uh, no offense but you don't look like the sort to be into pageants. I mean, same here."
+
+Emily glances around. No one else is near. You don't know how to continue the conversation, or even if Emily wants you to be around or if she's just waiting for you to leave. Her voice sounds strange. She's sort of pretty (why are you thinking about that?). You're stuck, mind blank, not knowing what to say or what to do or where to place your hands or...
+
+Emily continues, "Do you, I mean, would you like some, uh, assistance? With the pageant, I mean?"
+
+- @socialize_emily_3: "Yeah..."
+
+@socialize_emily_3
+on-arrival: emily = 1
+
+"Yeah..."
+
+Emily smiles. Maybe? "Okay, great! Um, do you want my phone number or something? If that's not too weird?"
+
+"It's, uh, fine, I guess."
+
+"Great!" You exchange cell phone numbers, and she says she'll add you on facebook or something. She suggests meeting up later somewhere, but she has to leave soon, and now you're left alone again.
+
+- @social_continue: That was better than expected.
+
+
+@socialize_ashley
+view-if: ashley = 0
+on-arrival: ashley = 1; stress += 1
+
+You find Ashley at the front of the room, taking a break from talking to people. Does she recognize you?
+
+"[+ first_name : +]?" Apparently she did. "What are you doing here?"
+
+"Um, pageant, I guess."
+
+"Wait. Seriously?"
+
+- @socialize_ashley_2: "I guess."
+
+@socialize_ashley_2
+
+"I guess."
+
+"Huh." An awkward pause. You avert her withering gaze. "I mean, I'm probably not doing it this year."
+
+"Um, yeah."
+
+"Great. Maybe we can meet up sometime."
+
+- @socialize_ashley_3: "Are you sure?"
+
+@socialize_ashley_3
+
+"Are you sure?"
+
+"Yeah I'm sure. Look, just talk to me after lunch one of these days. I promise, okay?"
+
+"Um, thanks..."
+
+She glances away from you, shifting her attention to another girl. The conversation is over.
+
+- @social_continue: Anyway...
+
+@socialize_none
+view-if: sit_emily = 0
+
+You normally can't stand social events and interactions and the like. But if you want to do well in the pageant, maybe it's best if you talk to someone who's done it before.
+
+- @leave_early: Yeah.
+- @social: Um, not really.
+
+@socialize_none_emily
+view-if: sit_emily = 1 and emily = 0
+
+You can't stand social events and interactions and the like, so you decide to leave.
+
+"Wait!" Emily calls out to you before you stand up. "Um, hi, but, can I talk to you about something?"
+
+You freeze, and turn to look at her. "Um, sure," you manage to say.
+
+"You're doing the pageant, right?"
+
+- @socialize_emily_2: "Yeah..."
+
+@leave_early
+on-arrival: loneliness += 1
+
+No, you'd rather not socialize with these people. What's the point?
+
+@socialize_end
+
+It's time for you to leave, to go back home to do homework or whatever. Quietly you open the door and walk outside.

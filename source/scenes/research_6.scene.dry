@@ -1,0 +1,139 @@
+title: Research
+subtitle: Emily and the Professor
+new-page: yes 
+view-if: week > 6 and week < 10 and week_progress < 3 and research = 5 and weekly_research = 0 and stress < 15
+on-arrival: week_progress += 1; research += 1; stress += 1; weekly_research = 1 
+tags: top, research
+
+
+Your next research project, the one that Stella described in such a tantalizing fashion, happens to be a collaboration that involves mom's lab. It's supposed to be a comprehensive and complex collaboration, involving at least five different wet lab groups and three computational data analysis teams. You're just one part of this vast machine, a new cog in the research-industrial complex that defines biomedical science in America today.
+
+It's a commitment, for sure.
+
+- @ready: But you're ready for this...
+- @not_ready: Maybe you're not ready...
+
+@ready
+
+Of course you're ready to enter the world of science for real now. You've been ready since birth (okay perhaps an exaggeration, but given your mom's career and to a lesser extent your dad's, not much of one).
+
+Besides, even if you fail, you are not essential and can be replaced. Always a comforting thought.
+
+- @stella: Talk to Stella?
+
+@not_ready
+
+For whatever reason, you're having second thoughts. It's a step into the unknown, a foray into a new place in the world that you have no control over. 
+
+On the other hand, even if you fail, you are not essential to the project and can always be replaced. Always a comforting thought.
+
+- @stella: Talk to Stella?
+
+@stella
+
+Stella and Professor Chen are having some sort of impromptu interaction, chatting in the meeting room. Both of them wave as you approach.
+
+"We were just talking about you," says Professor Chen. "My son is working here too. I want you to work with him, teach him about bioinformatics and science."
+
+You have a sinking feeling in your gut. "Oh, um, that's fine," you manage to say.
+
+"He should learn from you," he says. "Learn from how hard-working you are, how dedicated you are."
+
+"Oh. Okay."
+
+He smiles, unaware of your discomfort, perhaps purposefully so but more likely simply out of ignorance.
+
+"You can teach him right now. He's here."
+
+- @see_emily: Emily is here.
+
+@see_emily
+
+Emily is here. She isn't looking at you, and you're not looking at her. She sits completely still, hands on the table, not moving in any way.
+
+Professor Chen is not leaving. "Take out your computers," he commands. "We are going to learn today. [+ first_name : +], can you present your work for ---? He has to learn how to be a scientist."
+
+- @drama: There has to be something deeper here.
+- @dont_think: Don't think. Do.
+
+@drama
+
+There has to be some drama between them that led to this situation, that led to Professor Chen bringing Emily here for this humiliation. You know their family situation is not the best. And that Professor Chen uses you in their arguments, why can't you be like [+ first_name : +], you can imagine him saying. You are being used as a weapon in their internal war, against [? if emily_date >= 1 : your potential future girlfriend ?][? if emily_date = 0 : your friend ?].
+
+- @not_complicit: And you will not be complicit.
+- @dont_think: Better to ignore it.
+
+@dont_think
+
+Okay. You know how to deal with these situations. Just tune out and act as if nothing is special. Focus on the work and you'll be fine.
+
+You take out your laptop and open up to Google Docs. "So what I've been working on is..."
+
+- @continue_presentation: And so on.
+
+@continue_presentation
+
+You sleepwalk through your presentation. Professor Chen rarely asks questions and Emily is silent, eerily still. Most of your words probably made zero sense.
+
+But soon enough it's over. The professor smiles at you. Emily makes no expression, as usual. You wonder how much you're revealing by your glances. They leave. You leave. You get home.
+
+- @text_sorry: Text Emily, saying that you're sorry.
+- @dont_text: Don't text Emily.
+
+@text_sorry
+
+Okay. What do you say, exactly? That you're sorry for what your did or didn't do?
+
+Anyway, you spend approximately one hour composing a text before sending it. Emily replies soon after despite it being after midnight, "it's fine. dad's just like that."
+
+You breathe a sigh of relief.
+
+It's fine. It'll be fine.
+
+@dont_text
+
+She doesn't text you either. It was probably not a big deal, you tell yourself. It isn't that great of a moral failing compared to everything else you've been complicit in, just from living in a society. Right?
+
+It's fine. It'll be fine.
+
+
+@not_complicit
+on-arrival: growth_points += 1
+
+"--- is waiting," Professor Chen says. He crosses his arms. Emily makes no motion.
+
+[? if emily_date >= 1 : As a lesbian, you have long imagined a moment in which you would rescue your hypothetical girlfriend from their hostile parents. You never imagined that such a moment would be as asinine as this. ?][? if emily_date = 0 : You have long imagined a moment when you could finally be a hero, to protect someone you care about. You never imagined that such a moment would be as asinine as this. ?]
+
+"Sorry, I don't have anything prepared today," you say. "I would have to get ready. The two of us can talk about this later. I don't want to waste your time."
+
+Professor Chen frowns. "That's fine," he says. "---, let's go. [+ first_name : +], we will talk later."
+
+You're not sure if you did the right thing here, or if it even matters.
+
+- @emily_call: Emily texts you later that night.
+
+@emily_call
+
+Emily: "Thanks. You saved my life."
+
+- @youre_welcome: "Um... You're welcome?"
+
+@youre_welcome
+
+You: "Um... You're welcome?"
+
+Emily: "He's been talking forever about how I should be more like you. Be more tinghua and guai and all that shit."
+
+Emily: "Basically don't be a f-word but in a lot more words and also in Chinese."
+
+Emily: "I mean you kinda threw him off a little. So I had a reprieve. Briefly. Thanks."
+
+You have no idea how to reply.
+
+- @smiley_face: smiley face?
+
+@smiley_face
+
+You: ":)"
+
+It's almost midnight. You can imagine that Emily's lack of response within an hour was due to her going to bed. And so do you.

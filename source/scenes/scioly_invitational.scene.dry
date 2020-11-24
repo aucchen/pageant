@@ -1,0 +1,341 @@
+title: Science Olympiad
+subtitle: The first competition of the year...
+new-page: yes
+view-if: scioly >= 2 and week = 8
+on-arrival: invitational = 1; medal_count = 0; gold_count = 0; silver_count = 0; bronze_count = 0
+tags: weekend
+
+The first Science Olympiad tournament of the year is an invitational contest at MIT. You have a full schedule with four events, from the morning to the afternoon, with just a short 30-minute break for lunch. You've prepared [? if scioly > 4 and study_party = 1 : as best as you could, given the circumstances ?][? if scioly <= 4 or study_party = 0 : ... not as well as you could have, probably ?].
+
+At 8:30AM the team is already assembled in your assigned room. It's several hours earlier than you usually get up on weekends, so you're not exactly awake, as you essentially sleepwalked onto the bus and onto your destination. At least you didn't get lost in the tangle of classrooms. Nearly everyone else is here already. Some of the other students have cups of coffee, like the captain for example.
+
+The captain speaks to you as soon as he notices you.
+
+"[+ first_name : +]!" he exclaims with what must be false enthusiasm. "Ready to dominate?"
+
+- @not_ready: No. Not at all.
+
+@not_ready
+
+"No. Not at all."
+
+"Ha. Ha. Ha. Very funny. I know you'll do well [+ first_name : +]. Just don't stress yourself too much."
+
+"Yeah. Okay."
+
+- @disease_detectives: The first event is Disease Detectives.
+
+@disease_detectives
+
+You and the captain head towards the first event, at 9AM in a nondescript classroom. Soon other students from other schools fill in. The other schools are mostly rich suburban schools with far more resources than yours;
+
+The test goes...
+
+- @disease_good: Well.
+- @disease_okay: Fine.
+- @disease_bad: Poorly.
+
+@disease_good
+view-if: disease >= 2
+on-arrival: disease_medal = 2
+go-to: protein_modeling
+
+You've prepared somewhat adequately for this event, and the captain has prepared even more. The questions didn't end up too difficult given your preparations. Therefore, it seems like the event went well.
+
+@disease_okay
+view-if: disease = 1
+on-arrival: disease_medal = 1
+go-to: protein_modeling
+
+You've prepared a little, but not nearly adequately. Fortunately the captain has been more on top of things than you have, so things will likely turn out alright. He answered the majority of the questions with some help from you.
+
+@disease_bad
+view-if: disease = 0
+on-arrival: disease_medal = 0
+go-to: protein_modeling
+
+As the test begins, it soon dawns on you that you have had virtually zero preparation for this event.
+
+Fortunately, the captain is much more on top of things than you are. He answered about 95% of the questions by himself, without any of your input.
+
+
+@protein_modeling
+
+Next is Protein Modeling. This is the event you're doing with Aubrey. You rush over to the classroom, fortunately in the same building.
+
+The event has two portions, a building part and a knowledge test. Aubrey has already built the protein model and submitted it, so there's not much for you to do there. She says that she thinks it's going to be alright, and she's usually right about such things.
+
+The written test goes...
+
+- @protein_good: Well.
+- @protein_okay: Fine.
+- @protein_bad: Semi-adequately.
+
+@protein_good
+view-if: protein >= 2
+
+You know what you're doing here, given all that you've studied. Between Aubrey and you, it seems like all of the questions were covered.
+
+- @fossils: Next is Fossils.
+- @fossils_roxana: Next is Fossils.
+
+@protein_okay
+view-if: protein >= 1
+
+You've studied a little for this event, but it's hardly enough. Fortunately, you have plenty of background knowledge of biology, so you manage to get through somewhat adequately.
+
+- @fossils: Next is Fossils.
+- @fossils_roxana: Next is Fossils.
+
+@protein_bad
+view-if: protein = 0
+
+You did not adequately prepare for this event. In fact, you did not prepare for this event at all. Still, your background knowledge about biology comes in handly here.
+
+- @fossils: Next is Fossils.
+- @fossils_roxana: Next is Fossils.
+
+
+@fossils
+view-if: roxana_seen = 0
+
+Fossils is a test-only event, where you rotate around various stations that involve fossil identification as well as background questions.
+
+David arrives shortly after you, sitting next to you without a word.
+
+The test goes...
+
+- @fossils_good: Well.
+- @fossils_okay: Fine.
+- @fossils_bad: Semi-adequately.
+
+
+@fossils_roxana
+view-if: roxana_seen = 1
+
+Fossils is a test-only event, where you rotate around various stations that involve fossil identification as well as background questions.
+
+Roxana arrives shortly after you, sitting next to you with a brief wave and a barely noticeable smile. "Are you ready?", they ask. All you can really do is shrug.
+
+The test goes...
+
+- @fossils_good: Well.
+- @fossils_okay: Fine.
+- @fossils_bad: Semi-adequately.
+
+
+@fossils_good
+view-if: fossils >= 2
+
+It went well, you think. Your partner turns out to be quite the expert at fossil identification as well as a lot of the background questions, but you managed to fill in all the gaps. You were adequately prepared and all that.
+
+- @lunch: Next is lunch break.
+
+@fossils_okay
+view-if: fossils = 1
+
+The test went okay. Your partner turns out to be quite the expert at fossil identification as well as a lot of the background questions, but there were a few places where you could help.
+
+- @lunch: Next is lunch break.
+
+@fossils_bad
+view-if: fossils = 0
+
+The test did not go so well. You were extremely underprepared, letting your partner handle basically everything.
+
+- @lunch: Next is lunch break.
+
+@lunch
+
+The captain has ordered pizza for everyone. "How's it going?," he asks you. "You know you're one of our most important members, right?"
+
+"Um, yeah. I guess."
+
+"Good. I just want to let you know that we're all counting on you." He pats you on the back and moves to give similarly inspirational speeches to other members.
+
+You eat two pineapple and ham slices, your favorite. The next event is coming up soon.
+
+- @cell_biology: Next is Cell Biology.
+
+
+@cell_biology
+
+Krishna is already waiting for you.
+
+As you take the test, it's going...
+
+- @cell_good: Fine.
+- @cell_okay: Alright.
+- @cell_bad: Poorly.
+
+
+
+@cell_good
+view-if: cell >= 2
+
+It's all pretty easy, and Krishna seems to agree.
+
+- @waiting: Now you have to wait.
+
+@cell_okay
+view-if: cell = 1
+
+It's more difficult than you had hoped, and Krishna seems to agree.
+
+- @waiting: Now you have to wait.
+
+@cell_bad
+view-if: cell = 0
+
+It's more difficult than you had hoped, and Krishna seems to agree.
+
+- @waiting: Now you have to wait.
+
+@waiting
+go-to: medal_ceremony_disease
+
+There's about 30 minutes between your final event and the start of the medal ceremony. You have some time to go outside and wander around campus for a bit, by yourself. The cold is invigorating, and you need some time away from the others.
+
+
+@medal_ceremony_disease
+
+The medal ceremony takes place in a dark and cavernous auditorium. Its primary attribute is that it involves even more waiting. There has been a lot of waiting today. You find a seat between Aubrey and the captain.
+
+"How did it go?", the captain asks.
+
+You shrug. "Okay, I guess."
+
+"Hey, don't worry! I'm sure you did great!"
+
+Your school is not one of the "good" ones, not compared to the rich suburban schools, so despite the captain's words no one is expecting to do particularly well.
+
+The first event of yours to be announced is Disease Detectives.
+
+- @medal_ceremony_disease_gold: Gold!
+- @medal_ceremony_disease_bronze: Bronze!
+- @medal_ceremony_disease_none: No medal :(
+
+@medal_ceremony_disease_gold
+view-if: disease >= 2
+on-arrival: medal_count += 1; gold_count += 1
+go-to: medal_ceremony_protein
+
+You won the gold medal in Disease Detectives! It's the first medal of the day. The captain's smile is broad.
+
+@medal_ceremony_disease_bronze
+view-if: disease = 1
+on-arrival: medal_count += 1; bronze_count += 1
+go-to: medal_ceremony_protein
+
+You won the bronze medal in Disease Detectives! It's the first medal of the day.
+
+@medal_ceremony_disease_none
+view-if: disease = 0
+go-to: medal_ceremony_protein
+
+Unfortunately, your school's name is not called.
+
+"It's okay," the captain says. "We can always prepare better next time. I think we got top 10 at least."
+
+"There are only 20 teams."
+
+He chuckles. "Hey, better than nothing."
+
+@medal_ceremony_protein
+
+There's some more waiting. Your next event is Protein Modeling.
+
+Aubrey glances in your direction. "I think we did well," she whispers. "We'll probably get a medal." You are not so confident.
+
+- @medal_ceremony_protein_gold: Gold!
+- @medal_ceremony_protein_silver: Silver!
+- @medal_ceremony_protein_bronze: Bronze!
+
+@medal_ceremony_protein_gold
+view-if: protein >= 2
+on-arrival: medal_count += 1; gold_count += 1
+go-to: medal_ceremony_fossils
+
+You got a gold medal! Aubrey gives you a hug before running up to the stage, with you half-jogging behind her.
+
+@medal_ceremony_protein_silver
+view-if: protein = 1
+on-arrival: medal_count += 1; silver_count += 1
+go-to: medal_ceremony_fossils
+
+You got a silver medal! Aubrey gives you a brief hug before running up to the stage, with you half-jogging behind her.
+
+@medal_ceremony_protein_bronze
+view-if: protein = 0
+on-arrival: medal_count += 1; bronze_count += 1
+go-to: medal_ceremony_fossils
+
+You got a bronze medal! Aubrey gives you a high-five before running up to the stage, with you half-jogging behind her. You feel as if she is somewhat disappointed at the result, and is also blaming you for it. But that's just a supposition.
+
+@medal_ceremony_fossils
+
+The next event of yours to be announced is Fossils.
+
+- @medal_ceremony_fossils_gold: Gold!
+- @medal_ceremony_fossils_silver: Silver!
+- @medal_ceremony_fossils_bronze: Bronze!
+
+
+@medal_ceremony_fossils_gold
+view-if: fossils >= 2
+on-arrival: medal_count += 1; bronze_count += 1
+go-to: medal_ceremony_cell
+
+You got a gold medal in Fossils! [? if roxana_seen = 1 : Roxana ?][? if roxana_seen = 0 : David ?] walks up to the stage behind you. 
+
+@medal_ceremony_fossils_silver
+view-if: fossils = 1
+on-arrival: medal_count += 1; silver_count += 1
+go-to: medal_ceremony_cell
+
+You got a silver medal in Fossils! [? if roxana_seen = 1 : Roxana ?][? if roxana_seen = 0 : David ?] walks up to the stage behind you.
+
+@medal_ceremony_fossils_bronze
+view-if: fossils = 0
+on-arrival: medal_count += 1; bronze_count += 1
+go-to: medal_ceremony_cell
+
+You got a bronze medal in Fossils! To be honest it's somewhat better than you expected; [? if roxana_seen = 1 : Roxana ?][? if roxana_seen = 0 : David ?] could handle things quite well.
+
+@medal_ceremony_cell
+
+There is more waiting. Your school is not doing so well in the medal standings; only one other event has received a medal, and that was a bronze.
+
+The last of your events to be announced is Cell Biology.
+
+- @medal_ceremony_cell_gold: Gold!
+- @medal_ceremony_cell_bronze: Bronze!
+- @medal_ceremony_cell_none: No medal :(
+
+@medal_ceremony_cell_gold
+view-if: cell >= 2
+on-arrival: medal_count += 1; gold_count += 1
+go-to: medal_end
+
+You won a gold medal in Cell Biology. Krishna offers you a high five, and then pulls away, running to the front stage.
+
+@medal_ceremony_cell_bronze
+view-if: cell = 1
+on-arrival: medal_count += 1; bronze_count += 1
+go-to: medal_end
+
+So you won a bronze medal in Cell Biology. Krishna offers you a high five, and then pulls away, running to the front stage.
+
+@medal_ceremony_cell_none
+view-if: cell = 0
+go-to: medal_end
+
+You glance over at Krishna, who looks vaguely disappointed. He shrugs.
+
+@medal_end
+
+Soon enough the medal ceremony is over. As a whole, your school got [+ gold_count : +] gold medals, [+ silver_count : +] silver medals, and [+ bronze_count+1 : +] bronze medals.
+
+[? if disease = 2 and protein = 2 and fossils = 2 and cell = 2 : You won four gold medals here. In fact, all of the gold medals that your school got, you had some part in. This feels as if it should be some kind of great achievement. ?]
+
+The captain congratulates you on a job well done. The crowd disperses. It's time for you to go home.
