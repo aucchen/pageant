@@ -13,9 +13,10 @@ def test(output_path='output.txt', dump_stats=1, script_path='transcript.txt', d
     script = []
     transcript = ''
     current_paragraphs = set()
-    options = Options()
-    options.headless = True
-    driver = webdriver.Firefox(options=options)
+    #options = Options()
+    #options.headless = True
+    #driver = webdriver.Firefox(options=options)
+    driver = webdriver.PhantomJS()
     driver.get('file://' + file_path)
     link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
     data = driver.execute_script('return JSON.stringify(window.dendryUI.dendryEngine.getExportableState(), null, 2);');
@@ -23,13 +24,14 @@ def test(output_path='output.txt', dump_stats=1, script_path='transcript.txt', d
     while len(link_divs) > 0:
         link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
         # find main text: find all text elements under <div id="content"> 
-        content_text = driver.find_elements_by_xpath('//div[@id="content"]/p')
+        content_text = driver.find_elements_by_xpath('//div[@id="read-marker"]/following-sibling::p')
+        if len(content_text) == 0:
+            if len(driver.find_elements_by_id('read-marker')) == 0:
+                content_text = driver.find_elements_by_xpath('//div[@id="content"]/p')
         for i, paragraph in enumerate(content_text):
             if len(paragraph.text.strip()) == 0:
                 continue
             # filter paragraphs based on whether they're seen
-            if paragraph.text in current_paragraphs:
-                continue
             if i == 0 and paragraph.text not in current_paragraphs:
                 current_paragraphs = set()
                 if dump_stats:
@@ -77,9 +79,10 @@ def test_with_script(script_path, output_path='script_output.txt', dump_stats=0,
             script_data.append(line.strip())
     transcript = ''
     current_paragraphs = set()
-    options = Options()
-    options.headless = use_headless
-    driver = webdriver.Firefox(options=options)
+    #options = Options()
+    #options.headless = use_headless
+    #driver = webdriver.Firefox(options=options)
+    driver = webdriver.PhantomJS()
     driver.get('file://' + file_path)
     link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
     data = driver.execute_script('return JSON.stringify(window.dendryUI.dendryEngine.getExportableState(), null, 2);');
@@ -88,13 +91,14 @@ def test_with_script(script_path, output_path='script_output.txt', dump_stats=0,
     while len(link_divs) > 0:
         link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
         # find main text: find all text elements under <div id="content"> 
-        content_text = driver.find_elements_by_xpath('//div[@id="content"]/p')
+        content_text = driver.find_elements_by_xpath('//div[@id="read-marker"]/following-sibling::p')
+        if len(content_text) == 0:
+            if len(driver.find_elements_by_id('read-marker')) == 0:
+                content_text = driver.find_elements_by_xpath('//div[@id="content"]/p')
         for i, paragraph in enumerate(content_text):
             if len(paragraph.text.strip()) == 0:
                 continue
             # filter paragraphs based on whether they're seen
-            if paragraph.text in current_paragraphs:
-                continue
             if i == 0 and paragraph.text not in current_paragraphs:
                 current_paragraphs = set()
                 if dump_stats:
@@ -102,10 +106,10 @@ def test_with_script(script_path, output_path='script_output.txt', dump_stats=0,
                     transcript += '\n\nDATA:\n' + data
                 transcript += '\n'
             current_paragraphs.add(paragraph.text)
-            print('\n ', paragraph.text)
+            #print('\n ', paragraph.text)
             transcript += '\n ' + paragraph.text
         for link in link_divs:
-            print('\n -', link.text)
+            #print('\n -', link.text)
             transcript += '\n -' + link.text
         # click on link indicated by script
         links = driver.find_elements_by_xpath('//ul[@class="choices"]//a')
@@ -116,17 +120,17 @@ def test_with_script(script_path, output_path='script_output.txt', dump_stats=0,
         has_link_text = False
         for link in links:
             if script_data and link.text == script_data[0]:
-                print('\nSCRIPT LINE #' + str(script_location) + ' ' + link.text + '\n')
+            #    print('\nSCRIPT LINE #' + str(script_location) + ' ' + link.text + '\n')
                 transcript += '\nSCRIPT LINE #' + str(script_location) + ' ' + link.text + '\n'
                 script_location += 1
                 script_data = script_data[1:]
                 link_choice = link
                 has_link_text = True
                 break
-        if not has_link_text and len(links) > 1:
-            print('WARNING: link not found in script')
+        #if not has_link_text and len(links) > 1:
+            #print('WARNING: link not found in script')
         script_output.append(link_choice.text)
-        print('\n>>> ' + link_choice.text)
+        #print('\n>>> ' + link_choice.text)
         transcript += '\n>>> ' + link_choice.text
         link_choice.click()
     data = driver.execute_script('return JSON.stringify(window.dendryUI.dendryEngine.getExportableState(), null, 2);');

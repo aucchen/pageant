@@ -11,13 +11,13 @@
 
   var save = function() {
       var saveString = JSON.stringify(window.dendryUI.dendryEngine.getExportableState());
-      localStorage.dendrySaveString = saveString;
+      localStorage['pageant_dendry_save_1'] = saveString;
       window.alert("Saved.");
   };
 
   var load = function() {
-      if (localStorage.dendrySaveString) {
-          var saveString = localStorage.dendrySaveString;
+      if (localStorage['pageant_dendry_save_1']) {
+          var saveString = localStorage['pageant_dendry_save_1'];
           window.dendryUI.dendryEngine.setState(JSON.parse(saveString));
           window.alert("Loaded.");
       } else {
