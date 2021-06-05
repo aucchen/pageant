@@ -203,7 +203,7 @@ It was somewhat of an ordeal, but you had your ears pierced a while back.
 - @car: It's time to leave.
 
 @piercings_no
-on-arrival: percings = 0
+on-arrival: piercings = 0
 
 How many girls in the pageants don't have earrings, mom says, or something like that. Unfortunately you do not have piercings, so clip-ons it is. Mom has some unobtrusive ones with glass crystals.
 

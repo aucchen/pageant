@@ -173,21 +173,21 @@ As you take the test, it's going...
 @cell_good
 view-if: cell >= 2
 
-It's all pretty easy, and Krishna seems to agree.
+It's all pretty easy, and Krishna seems to agree. It's all topics that you've studied before: amino acid structures, Krebs Cycle, endosymbiosis, and so on.
 
 - @waiting: Now you have to wait.
 
 @cell_okay
 view-if: cell = 1
 
-It's more difficult than you had hoped, and Krishna seems to agree.
+It's more difficult than you had hoped, and Krishna seems to agree. He doesn't seem to have studied enough either. You didn't remember every amino acid or all the steps of Kreb's Cycle, which apparently would be a necessity for this exam.
 
 - @waiting: Now you have to wait.
 
 @cell_bad
 view-if: cell = 0
 
-It's more difficult than you had hoped, and Krishna seems to agree.
+It's more difficult than you had hoped, and Krishna seems to agree. Of course you knew that the mitochondrion is the powerhouse of the cell, but beyond than that? What the heck is the endosymbiotic hypothesis and how would you prove it? Maybe you should have studied more.
 
 - @waiting: Now you have to wait.
 
@@ -283,7 +283,7 @@ The next event of yours to be announced is Fossils.
 
 @medal_ceremony_fossils_gold
 view-if: fossils >= 2
-on-arrival: medal_count += 1; bronze_count += 1
+on-arrival: medal_count += 1; gold_count += 1
 go-to: medal_ceremony_cell
 
 You got a gold medal in Fossils! [? if roxana_seen = 1 : Roxana ?][? if roxana_seen = 0 : David ?] walks up to the stage behind you. 
