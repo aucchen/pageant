@@ -23,7 +23,7 @@ Let's be honest: you've never expected to win the pageant. The hope was to have 
 
 Nevertheless, you still desire to win, right? It's a human thing, the competitive instinct. The chance to prove your detractors wrong.
 
-Based on your current preparation, and on some formula you found on the internet, it appears that [? if temp_pageant_score <= 20 : you have no chance of winning the pageant. But that's what you expected, right? ?][? if temp_pageant_score > 20 and temp_pageant_score <= 40 : you might be able to get a respectable placement, but you won't win. But, that's better than you expected, right? ?][? if temp_score > 40 : ... well, you have some hope. Not a great deal of hope, but hope nevertheless. You'll still need more practice, though. ?]
+Based on your current preparation, and on some formula you found on the internet, it appears that [? if temp_pageant_score <= 20 : you have no chance of winning the pageant. But that's what you expected, right? ?][? if temp_pageant_score > 20 and temp_pageant_score <= 40 : you might be able to get a respectable placement, but you won't win. But, that's better than you expected, right? ?][? if temp_pageant_score > 40 : ... well, you have some hope. Not a great deal of hope, but hope nevertheless. You'll still need more practice, though. ?]
 
 - @details_2: Paperwork. There's always paperwork.
 - @details: Look up details about the pageant.
@@ -116,7 +116,7 @@ You browse through pictures of past pageant contestants. What do they have that 
 on-arrival: pageant_makeup += 1; pageant_appearance += 1
 max-visits: 1
 
-The last time you put on makeup was... perhaps the memory was so traumatic you've excised it from your brain. But you need to do this. It's s just a skill like any other, nothiing more to it.
+The last time you put on makeup was... perhaps the memory was so traumatic you've excised it from your brain. But you need to do this. It's s just a skill like any other, nothing more to it.
 
 Wikihow is where you end up at, of course. You write out the list of ingredients: moisturizer, primer, foundation, concealer,... God, that's a lot of money that could probably be put to better use. The videos all look so effortless. But in reality of course it's going to be anything but.
 

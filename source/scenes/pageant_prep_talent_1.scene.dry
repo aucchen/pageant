@@ -1,8 +1,8 @@
 title: Pageant Prep
 subtitle: Playing the erhu
 new-page: no
-view-if: week_progress < 3 and pageant_prep >= 1 and stress < 15
-on-arrival: week_progress += 1; stress += 1
+view-if: week_progress < 3 and pageant_prep >= 1
+on-arrival: week_progress += 1
 max-visits: 3
 
 [? if pageant_talent = 0 : What can you do for the talent portion? It should be something unique, but not so unique as to make the judges feel uncomfortable. You can play the *erhu*. That has to be unique, and it'll play up your "oriental" persona, if you go that route. ?]

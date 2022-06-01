@@ -153,11 +153,12 @@ Now, you have to pick your outfit for the evening dress.
 view-if: ball_gown > 0
 go-to: going_to_pageant
 
-Yes, you had a ball gown that mom borrowed earlier. 
+Yes, you have a ball gown already. 
 [? if ball_gown = 1 : It is a black gown with a white bowtie belt. ?]
 [? if ball_gown = 2 : It is a simple deep green strapless pleated dress. ?]
 [? if ball_gown = 3 : It is a light blue V-neck dress. ?]
 [? if ball_gown = 4 : It is a shiny blood-red strapless dress. ?]
+[? if ball_gown = 5 : It is Emily's unadorned violet v-neck dress. ?]
 
 It is already neatly packed.
 [? if try_on_ball_gown = 0 : Unfortunately, you never got a chance to try it on, but mom assures you that it will fit. ?]
@@ -245,7 +246,7 @@ go-to: introduction_end
 
 [? if introduction_score >= 5 : Surprisingly, you don't do terribly. Not extremely well, but you fit in with the rest of the girls, and don't stand out like an absolute loser. ?]
 
-[? if introduction_score < 5 : As you would expect, you kind of fail at your introduction. Your gestures are all wrong. Your words are too monotone. Your facial expression is a mistake. You see your failure reflected in the faces of the judges. ?]
+[? if introduction_score < 5 : As you would expect, your introduction is a disaster. Your gestures are all wrong. Your words are too monotone. Your facial expression is a mistake. You see your failure reflected in the faces of the judges. ?]
 
 After the introduction, you are herded back to the waiting room to prepare for the interview.
 
@@ -254,7 +255,7 @@ After the introduction, you are herded back to the waiting room to prepare for t
 @interview
 on-arrival: interview_score = 0; pageant_score += introduction_score
 
-To say that you're nervous would be am understatement, even more so than usual.
+To say that you're nervous would be an understatement, even more so than usual.
 
 The room is in the hotel's basement, with patterned carpet and blank walls, devoid of all decorations except the folding tables and chairs. You are sitting in your dress before a panel of three adults, on a hard, uncomfortable folding chair. They are staring at you, their gazes piercing.
 
@@ -367,7 +368,7 @@ on-arrival: interview_score += pageant_interview - 3
 
 [? if pageant_interview >= 5 : "My parents may have signed me up originally, but I followed through because I wanted to prove myself, that I'm able to succeed at whatever life throws at me." Is this a nice save? The interviewer gives a noncommittal look. ?]
 
-[? if pageant_interview <= 4 : "Um... I didn't want to challenge my parents." The interviewer frowns.?]
+[? if pageant_interview <= 4 : "Um... I didn't want to challenge my parents." The interviewer frowns. ?]
 
 - @interview_2: The questions continue.
 
@@ -422,7 +423,7 @@ The interviewer sighs.
 @interview_2_okay
 view-if: pageant_interview >= 5
 
-This was another one of the most common questions. You've rehearsed the answer, but you still have to sound as if you're just starting out.
+This was another one of the most common questions. You've rehearsed the answer, but you still have to sound as if you're answering it for the first time.
 
 "Well, my name is [+ first_name : +] Zhao," you begin, [? if name_correct : pronouncing it in the proper Mandarin way ?][? if name_correct = 0 : pronouncing it in the (incorrect) Americanized way ?]. "I'm a junior in high school, and I'm interested in science, especially biology. I was born in China and first came to America when I was 8 years old, so I would be one of the rare immigrants to participate in the pageant."
 

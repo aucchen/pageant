@@ -45,6 +45,8 @@ on-arrival: stress -= 2
 
 You nod, and the nurse smiles. Soon you fall back asleep.
 
+- @dad: Eventually, Dad arrives...
+
 @no_excuse
 on-arrival: stress += 1
 
@@ -64,6 +66,14 @@ You shake your head. After the nurse watches you for a moment, you finally open 
 
 The nurse leaves. Soon you fall back asleep.
 
+- @dad: Eventually, Dad arrives...
+
+@dad
+
+While you were sleeping, dad arrived, but he must have been waiting a while, as it's already afternoon by the time you see him.
+
+"你怎么总睡哪么晚啊？*Why do you always sleep so late?*" Dad chastises as he walks you back home. You wish they didn't call your parents; you could have just gone home yourself, as if nothing were wrong.
+
 @no_excuse_2
 
 You shake your head. After the nurse watches you for a moment, you finally open your mouth. "Yes. I mean, I don't need to be excused."
@@ -71,3 +81,4 @@ You shake your head. After the nurse watches you for a moment, you finally open 
 "Well, alright then."
 
 You get up. You can still walk. It's going to be fine.
+

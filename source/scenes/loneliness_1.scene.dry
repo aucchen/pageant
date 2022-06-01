@@ -4,7 +4,7 @@ new-page: yes
 view-if: loneliness > 2 and week_progress < 3 and week < 100
 on-arrival: week_progress += 1; trauma_points += 1; loneliness_1_week_seen += 1
 priority: 3
-max-visits: 3
+max-visits: 5
 tags: loneliness
 
 As usual, you are alone in your room. As usual, Kevin is sleeping in the same room as your parents, leaving his bed empty. As usual, you have had minimal social contact all day. As usual, you are on the computer, homework approximately 40% completed for the next few days, with some inkling of continuing for tonight.
@@ -36,14 +36,14 @@ You like starting out at the homepage, click one of the links, and seeing where 
 
 @social_media
 view-if: social_media_seen = 0
-on-arrival: social_media_seen = 1
+on-arrival: social_media_seen = 1; loneliness -= 1
 go-to: options
 
 You have twitter and tumblr accounts, but they are almost entirely used for lurking. You have never posted on your twitter account, and very rarely post on tumblr. The act of scrolling through your dashes is not particularly therapeutic; the opposite in fact. But still, it's something to do, something to make you feel a little less isolated, as if you are in fact not alone.
 
 @webcomic
 view-if: caught_up = 0
-on-arrival: caught_up = 1
+on-arrival: caught_up = 1; loneliness -= 1
 go-to: options
 
 It was Miri who introduced you to the webcomic, which is somewhat strange as she seemed to despise said webcomic despite following each of its "upd8s" like an eagle. The comic had been on hiatus for approximately a year; only recently did it start again, with a poorly conceived metatexual segment that is thankfully soon over.
@@ -52,7 +52,7 @@ You have not caught up to the latest developments yet, so you might as well do s
 
 @fanfic
 view-if: caught_up = 1 and fanfic_seen = 0
-on-arrival: fanfic_seen = 1
+on-arrival: fanfic_seen = 1; loneliness -= 1
 go-to: options
 
 There is a plethora of fanfiction for the webcomic. You like reading the ones about the romantic relationship between two of the girls, one a human and the other a vaguely insectoid alien. They are both canonically deceased now, but that is expected to be fixed, as the webcomic works on the principle of "all who die come back again." Or they'll end up as ghosts or something like that.

@@ -12,9 +12,11 @@ go-to: all_epilogues
 - @ep_pageant_win: The Pageant
 - @ep_pageant_lose: The Pageant
 - @ep_school: School
-- @ep_scioly_good: Science Olympiad
+- @ep_scioly_good_captain: Science Olympiad
+- @ep_scioly_good_no_captain: Science Olympiad
 - @ep_scioly_neutral: Science Olympiad
 - @ep_research_good: Research
+- @ep_research_neutral: Research
 - @ep_family_good: Family
 - @ep_family_bad: Family
 - @ep_emily_date: Emily
@@ -59,14 +61,25 @@ School continues on, as usual. College applications loom in the distance, less t
 You need to write essays, too. Maybe the pageant really will be helpful.
 
 
-@ep_scioly_good
+@ep_scioly_good_captain
 max-visits: 1
 go-to: all_epilogues
-view-if: scioly_final_seen = 1
+view-if: scioly_final_seen = 1 and (gold_count > 0 or silver_count > 0) and captain_desire > 0
+on-arrival: is_captain = 1
 
 Science Olympiad continued with the regional competition, which your school passed, and the state competition, where your school placed seventh out of 20-something. Despite the mediocre placement, the captain considered it a success. 
 
 Speaking of which, elections for the new captain have come up. You ended up running, as the captain essentially ordered you to. And surprisingly enough, you won one of the captain slots, along with Krishna. That was a great moment. He's been nicer to you than usual lately. 
+
+@ep_scioly_good_no_captain
+max-visits: 1
+go-to: all_epilogues
+view-if: scioly_final_seen = 1 and ((gold_count = 0 and silver_count = 0) or (captain_desire <= 0))
+
+Science Olympiad continued with the regional competition, which your school passed, and the state competition, where your school placed seventh out of 20-something. Despite the mediocre placement, the captain considered it a success. 
+
+Speaking of which, elections for the new captain have come up. You ended up running, as the captain essentially ordered you to. And unsurprisingly, you lose. The winner was the slate of Krishna and Daniel. 
+
 
 
 @ep_scioly_neutral
@@ -82,9 +95,17 @@ Speaking of which, elections for the new captain have come up. The winner was th
 @ep_research_good
 max-visits: 1
 go-to: all_epilogues
-view-if: research >= 5
+view-if: research >= 4
 
-You're continuing on with your research work with Professor Chen and Stella. It's become a part of your routine. The work is generally pretty interesting, and you're learning a little about how science works, which might become useful in your future career. You're not going to change the world, not yet anyway, but it's a start.
+You're continuing on with your research work with Professor Chen and Stella. It's become a part of your routine, attending lab meetings and taking on increasingly complicated programming assignments. The work is generally pretty interesting, and you're learning a little about how science works, which might become useful in your future career. You're not going to change the world, not yet anyway, but it's a start.
+
+@ep_research_neutral
+max-visits: 1
+go-to: all_epilogues
+view-if: research > 0 and research < 4
+
+You've started on the path of research with Professor Chen and Stella, but you haven't been devoting as much time to it as you could. You have so many things to do in life, and this little project has not been a priority. To be fair, Chen doesn't seem treat it as a priority either; no one from the lab has been on your case for missing meetings or failing to finish projects. They probably have more important things to do than to babysit a high school kid.
+
 
 
 @ep_family_good

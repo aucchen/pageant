@@ -264,7 +264,7 @@ The nascent conversation ceases. In the semi-distance the game continues as the 
 - @process_confession: It takes a moment for the statement to process.
 
 @process_confession
-on-arrival: loneliness -= 1; stress -= 1; roxana_seen = 1; growth_points += 1;
+on-arrival: loneliness -= 1; stress -= 1; roxana_seen = 1; growth_points += 1; dr_name = "Roxana"
 
 It takes a moment for the statement to process. Then you can't help but smile.
 

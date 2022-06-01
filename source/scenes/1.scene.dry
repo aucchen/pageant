@@ -2,7 +2,7 @@ title: Home
 subtitle: Sunday, Week 1
 new-page: yes
 view-if: week = 0
-on-arrival: week = 1; gpa = 3.95; loneliness = 1; growth_points = 0; trauma_points = 0; first_name = "Karen"
+on-arrival: week = 1; gpa = 3.95; loneliness = 1; growth_points = 0; trauma_points = 0; first_name = "Karen"; dr_name = "David"
 tags: top, pageant_prep
 
 Note: spoken dialogue is a mix of Mandarin and English. Mandarin dialogue will be in italics, like *"this"*.

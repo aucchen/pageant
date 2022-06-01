@@ -9,6 +9,7 @@ The ball gown that you discussed with mom earlier has been delivered. She enters
 [? if ball_gown = 2 : It is a simple deep green strapless pleated dress. ?]
 [? if ball_gown = 3 : It is a light blue V-neck dress. ?]
 [? if ball_gown = 4 : It is a shiny blood-red strapless dress. ?]
+[? if ball_gown = 5 : It is an unadorned violet v-neck dress. ?]
 
 *"Try it on,"* she tells you. *"I'll help you."*
 

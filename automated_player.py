@@ -24,7 +24,7 @@ def test(output_path='output.txt', dump_stats=1, script_path='transcript.txt', d
     while len(link_divs) > 0:
         link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
         # find main text: find all text elements under <div id="content"> 
-        content_text = driver.find_elements_by_xpath('//div[@id="read-marker"]/following-sibling::p')
+        content_text = driver.find_elements_by_xpath('//hr[@id="read-marker"]/following-sibling::p')
         if len(content_text) == 0:
             if len(driver.find_elements_by_id('read-marker')) == 0:
                 content_text = driver.find_elements_by_xpath('//div[@id="content"]/p')

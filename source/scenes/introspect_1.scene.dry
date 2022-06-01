@@ -73,7 +73,7 @@ on-arrival: first_name = "Vivian"
 
 @name
 
-[? if first_name != "Karen" : Right, your English name is [+ first_name : +]?].
+[? if first_name != "Karen" : Right, your English name is [+ first_name : +]. ?]
 
 Your name was assigned back in Changchun, Jilin Province, People's Republic of China, the city where you were born. On the first day of English class, the teacher had each kid pick out a name from a box. Yours was [+ first_name : +]. 
 

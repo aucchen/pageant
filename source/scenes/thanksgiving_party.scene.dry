@@ -587,7 +587,7 @@ go-to: ball_gown
 
 
 @ball_gown
-on-arrival: appearance += 1; has_gown = 1
+on-arrival: appearance += 1; has_emily_gown = 1
 
 "Oh, I have a ball gown," she says, and she's already inside the closet. "I don't know if it fits you but I think we're pretty similar in height at least."
 
@@ -660,7 +660,7 @@ You close your eyes and only open them when the door slams shut.
 
 
 @please_dont_1
-view-if: has_gown = 0
+view-if: has_emily_gown = 0
 
 "Wait! Um, please don't?"
 
@@ -679,7 +679,7 @@ Emily sighs before she ducks back into the closet, and emerges in her pajamas ag
 
 
 @please_dont_2
-view-if: has_gown = 1
+view-if: has_emily_gown = 1
 
 "Wait! Um, please don't?"
 

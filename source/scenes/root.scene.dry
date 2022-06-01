@@ -14,7 +14,7 @@ Activities remaining: [+ 3-week_progress : +]
 
 [? if week = 1 : There's a quiz in AP Calc on differentiation techniques. Obviously you're already prepared. There's also a lab in AP Chem, as there is almost every week. This one is about measuring light using a colorimeter. ?]
 [? if week = 2 : In AP Lit, you've been reading *Oryx and Crake* by Margaret Atwood. You seem to be enjoying the book more than most people in the class. Maybe because you have a thing for morally ambiguous biologists. ?]
-[? if week = 3 : In AP Lit, you have to write an essay about how symbolism is used to illustrate the themes present in the book. Did the book even have any symbolism? It was all rather straightforward. ?]
+[? if week = 3 : In AP Lit, you have to write an essay about how symbolism is used to illustrate the themes present in *Oryx and Crake*. Did the book even have any symbolism? It was all rather straightforward. ?]
 [? if week = 4 : AP World is starting on the middle ages in Asia. Given that half the class is Asian, you're almost surprised the teacher didn't make any snide remarks. ?]
 
 [? if week = 4 and research = 0 : Mom asks you why you haven't met with Professor Chen for research yet. You didn't have a good answer. ?]
@@ -29,6 +29,8 @@ Activities remaining: [+ 3-week_progress : +]
 [? if week = 9 : Winter break is almost here. The teachers are more anxious if anything; there's an essay in AP Lit, a quiz in Calc, and one last pre-Christmas lab in Chem. ?]
 [? if week = 10 : Winter break is here. There's no more school, but that doesn't mean that you have any shortage of responsibilities. ?]
 [? if week = 11 : Winter break is over, and the pageant is next weekend. You should probably get ready if you haven't already. ?]
+
+[? if stress > 15 : You're too tired to do much of anything. ?]
 
 [? if week = 100 : The pageant is over. What happens next? ?]
 

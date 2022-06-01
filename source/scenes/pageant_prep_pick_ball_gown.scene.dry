@@ -1,6 +1,7 @@
 title: Pick a ball gown
 on-arrival: pageant_appearance += 1
 view-if: ball_gown = 0
+go-to: dress_choice
 max-visits: 1
 
 You need to find a ball gown for the evening dress portion of the pageant; it is an absolute necessity. Or is it an evening gown? What's the difference, anyway? If there even is a difference?
@@ -17,46 +18,75 @@ Finally, there is a shiny blood-red strapless dress. It looks kind of fancy, wit
 
 Which one would you like?
 
+
+@dress_choice
+
 - @dress_1: The first (black) dress.
 - @dress_2: The second (green) dress.
 - @dress_3: The third (blue) dress.
 - @dress_4: The fourth (red) dress.
+- @dress_5: There's also the dress that Emily gave you...
 
  
 @dress_1
 on-arrival: ball_gown = 1
-go-to: done
 
 The black dress has an elegant simplicity to it, which fits your persona, or something like that.
 
 *"It looks like going to a funeral"*, mom says. *"But if you think it's good then it's good."*
 
+- @done: Pick this dress.
+- @dress_choice: Pick something else.
+
 
 @dress_2
 on-arrival: ball_gown = 2
-go-to: done
 
 The green dress is simple and elegant, and you like the color.
 
 *"It looks too simple,"* mom says. *"But if you think it's good then it's good."*
 
+- @done: Pick this dress.
+- @dress_choice: Pick something else.
+
 
 @dress_3
 on-arrival: ball_gown = 3
-go-to: done
 
-The blue dress looks... alright.
+The blue dress looks... alright? You aren't good at judging.
 
 *"It looks too childish," mom says. *"But if you think it's good then it's good."*
+
+- @done: Pick this dress.
+- @dress_choice: Pick something else.
 
 
 @dress_4
 on-arrival: ball_gown = 4
-go-to: done
 
 The red dress seems like the fanciest one, and it's beautiful, probably.
 
 *"For you, it's too exaggerated,"* mom says. *"But if you think it's good then it's good."*
+
+- @done: Pick this dress.
+- @dress_choice: Pick something else.
+
+@dress_5
+view-if: has_emily_gown = 1
+on-arrival: ball_gown = 5
+
+There's also the dress that Emily gave you. You're not sure if it's exactly *fancy* enough for a pageant, but it looks nice by your untrained eye. It is a rather unadorned violet v-neck dress.
+
+Is it okay if you show it to mom? Will you have to divulge its origin?
+
+"*I already have a dress*," you say. "*I got it myself.*"
+
+"*Fine*," mom says. "*But you should look at the ones I have.*"
+
+- @done: Pick Emily's dress.
+- @dress_choice: Pick something else.
+
+
 
 
 @done

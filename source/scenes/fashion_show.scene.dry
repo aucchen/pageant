@@ -1,0 +1,187 @@
+title: A Home Fashion Show
+subtitle: A practice pageant?
+view-if: shopping >= 1 and week != 6 and week <= 10
+on-arrival: pageant_appearance += 1
+max-visits: 1
+tags: weekend
+
+# TODO: you try out some outfits.
+
+"*We should have a practice*," mom says. "*Why don't you try some of the clothes we just bought? We can practice the* pageant. *Dad and I can judge you.*"
+
+It is a rare occasion that you are in possession of such a plethora of "feminine" clothes. There were the outfits from shopping with mom, of course. [? if has_emily_goodwill_dress = 1 : There were also the clothes you bought with Emily. ?] So you put on your dress, and get ready to face your makers.
+
+They are seated on one side of the dining table. Kevin is also there, but he's not watching you.
+
+- @interview: Step 1: Interview
+
+@interview
+on-arrival: pageant_interview += 1
+
+*"You look beautiful"*, mom says.
+
+"*Don't speak unnecessary words*," dad replies. "*We should make this like the real* pageant."
+
+Dad asks the first question in his halting English. "What is your reason for joining the pageant?"
+
+- @interview_good: You got this.
+- @interview_bad: You don't, in fact, have this.
+
+@interview_good
+choose-if: pageant_interview >= 5
+go-to: interview_2
+
+"I joined the pageant to expand my horizons, to move beyond my comfort zone of academics and school, to do something I thought I'd never do." You smile. There's no way they can hurt you now. 
+
+"*Fine*," dad says.
+
+Mom gives a thumbs-up.
+
+@interview_bad
+go-to: interview_2
+
+"Um, I joined the pageant to improve my college applications, because, um, I want to do something that was not just, um, related to school." Well, you messed that one up.
+
+Dad sighs. *"Don't always say *um. *Other than that, it's okay."*
+
+You nod. Mom smiles at you (pitying?).
+
+@interview_2
+
+*"There are other questions,"* dad continues.
+
+The interview continues - dad asks questions, and you answer them, [? if pageant_interview < 5 : poorly. ?][? if pageant_interview >= 5 : to the best of your ability. ?] Hearing dad speak makes you wonder if your accent is as noticeable as his. Kevin is playing some mobile game. You stare at him to avoid looking at dad. He doesn't notice or doesn't care.
+
+- @dress_have: Step 2: Evening Wear
+- @dress_dont_have: Step 2: Evening Wear
+
+@dress_have
+view-if: ball_gown > 0
+
+Normally, there would be a presentation of the platform, but your parents must not know about that. Mom tells you to put on your ball gown,
+[? if ball_gown = 1 :  a black gown with a white bowtie belt. ?]
+[? if ball_gown = 2 :  a simple deep green strapless pleated dress. ?]
+[? if ball_gown = 3 :  a light blue V-neck dress. ?]
+[? if ball_gown = 4 :  a shiny blood-red strapless dress. ?]
+[? if ball_gown = 5 :  an unadorned violet v-neck dress. ?]
+
+- @dress_first_time: You've never actually worn it before...
+- @dress_2: So you put it on.
+
+@dress_first_time
+view-if: try_on_ball_gown = 0
+on-arrival: try_on_ball_gown = 1
+
+It's your first time ever wearing the dress, so mom has to help you put it on, just the two of you in your room. The ordeal is another reminder of why wearing dresses is not for you.
+
+*"How beautiful!"* mom says. *"I've never seen you wear a dress like this."*
+
+"Oh. *Thanks.*"
+
+*"Really! After this is over you should try wearing more dresses."*
+
+- @okay_1: "Okay."
+
+@okay_1
+
+"Oh. Okay."
+
+*"You have to learn how to walk in this. You need good posture."*
+
+- @okay_2: "Okay."
+
+@okay_2
+
+"Okay."
+
+*"You have to learn how to smile."*
+
+- @okay_3: "Okay."
+
+@okay_3
+
+"Okay." You try to avoid visibly rolling your eyes.
+
+*"And, you can't do that with your eyes. And you can't sigh."*
+
+- @okay_4: *"Okay."*
+
+@okay_4
+
+*"Okay,"* you say in Chinese this time. *"I know."*
+
+*"It's not enough to know. It needs practice."*
+
+*"Should have given me this earlier,"* you say.
+
+*"Aiya, I know!"*, mom shouts, surprising you. *"I didn't have a way to get it! Should have practiced earlier, wearing other clothes is fine. You just need to practice more."*
+
+- @okay_5: "Can we start now?"
+
+@okay_5
+go-to: dress_3
+
+*"Can we start now?"*, you finally ask.
+
+*"Fine, fine."*
+
+
+
+@dress_2
+view-if: try_on_ball_gown > 0
+go-to: dress_3
+
+You know how to put it on, but mom insists on helping you with the zipper in the back. Someone can do that for you at the actual pageant too, she says.
+
+@dress_3
+
+You walk around the living room, still only wearing your usual slippers, and try to look good, or something like that. [? if pageant_appearance > 6 : It goes surprisingly well. At least you don't trip. Mom applauds. ?][? if pageant_appearance <= 6 : It doesn't go well. You barely avoid tripping over the hem of the dress as you dodge the sofas. "Ouch," remarks Kevin. ?]
+
+[? if pageant_appearance <= 6 : *"At least you should learn to not trip,"* he says. ?]
+
+- @talent: Step 3: Talent
+
+@talent
+on-arrival: pageant_appearance += 2
+
+Again, you're skipping over a step, the athletic wear, but whatever.
+
+*"Could you play the erhu for us?"*, mom asks.
+
+And you can. Hypothetically.
+[? if pageant_talent < 1 : Unfortunately you're severely out of practice. From the first note, it is clear that you have no idea what you're doing. Nevertheless, they still clap for you. ?]
+[? if pageant_talent = 1 or pageant_talent = 2 : You've only practiced a couple of times in the past few weeks, so you're out of practice, but at least it's not horrific. They clap for you. ?]
+[? if pageant_talent > 2 : You've practiced somewhat adequately, enough that you've memorized your piece and can play it through in its entirety, without extremely noticeable errors. They clap for you; Kevin joins in. ?]
+
+[? if pageant_talent <= 2 : *"You need to practice more,"* dad says. *"Yes, I agree,"* says mom. ?]
+[? if pageant_talent > 2 : *"Fine, good,"* dad says. ?]
+
+- @overall: And in the end...
+
+
+@overall
+on-arrival: pageant_talent += 1
+
+Overall, the practice... could have gone better. It could also have gone worse, theoretically.
+
+"That was fun," Kevin says, and gives you a hug, which is all the validation you need.
+
+
+@dress_dont_have
+view-if: ball_gown = 0
+
+Normally, there would be a presentation of the platform, but your parents must not know about that. Mom tells you to put on your ball gown.
+
+"*I don't have* ball gown," you say.
+
+Mom looks askance at you. "*How do you not have?*"
+
+*"We never bought one,"* you answer.
+
+*"How can this continue? We have to get one right now!"*
+
+She hurries to the phone, leaving the impromptu pageant judge's table. Dad sighs, and gets up too.
+
+The practice pageant is over.
+
+- @pageant_prep_pick_ball_gown: The next day...

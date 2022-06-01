@@ -25,7 +25,7 @@ max-visits: 1
 
 [? if emily = 9 : Save Emily's life (maybe). ?]
 
-[? if scioly_final_scene = 1 : Become Science Olympiad co-captain. ?]
+[? if is_captain = 1 : Become Science Olympiad co-captain. ?]
 
 [? if stories_viewed >= 1 and stories_2_viewed >= 1 : Listen to your parents' stories. ?]
 

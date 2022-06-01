@@ -22,7 +22,7 @@ max-visits: 1
 
 [? if pageant_interview >= 5 : You feel like you've made progress regarding the interview. Not that you've "cured" your social anxiety or anything like that, but for the very specific context of the pageant interview, you have established a nonzero amount of preparation. ?]
 
-As for your actual chances for winning the pageant... based on some formula that you found on the internet, it appears that [? if temp_pageant_score <= 20 : you have no chance of winning the pageant. But that's what you expected, right? ?][? if temp_pageant_score > 20 and temp_pageant_score <= 40 : you might be able to get a respectable placement, but you won't win. But, that's better than you expected, right? ?][? if temp_score > 40 : ... well, you have some hope. Not a great deal of hope, but hope nevertheless. You'll still need more practice, though. ?]
+As for your actual chances for winning the pageant... based on some formula that you found on the internet, it appears that [? if temp_pageant_score <= 20 : you have no chance of winning the pageant. But that's what you expected, right? ?][? if temp_pageant_score > 20 and temp_pageant_score <= 40 : you might be able to get a respectable placement, but you won't win. But, that's better than you expected, right? ?][? if temp_pageant_score > 40 : ... well, you have some hope. Not a great deal of hope, but hope nevertheless. You'll still need more practice, though. ?]
 
 [? if ball_gown = 0 : You still haven't picked out a ball gown yet. In order to do well on the pageant, you have to pick out a ball gown and try it on. ?]
 [? if ball_gown = 1 and try_on_ball_gown = 0 : You've picked out a ball gown, but you haven't tried it on yet. You should try it on if you'd like to do well at the pageant. ?]

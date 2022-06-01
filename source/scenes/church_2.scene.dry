@@ -1,6 +1,6 @@
 title: Bible Study
 subtitle: Teacher Wang
-view-if: church = 1 and week = 4
+view-if: church = 1 and week != 6 and week <= 7
 on-arrival: church += 1; aubrey += 1
 tags: weekend
 

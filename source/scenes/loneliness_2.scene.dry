@@ -3,7 +3,6 @@ subtitle: Another normal evening
 new-page: yes
 view-if: loneliness > 2 and week_progress < 3 and loneliness_1_week_seen >= 1 and week < 100
 on-arrival: week_progress += 1; trauma_points += 1; loneliness_2_week_seen += 1
-priority: 3
 max-visits: 2
 tags: loneliness
 

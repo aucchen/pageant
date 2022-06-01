@@ -1,7 +1,7 @@
 title: Science Olympiad
 subtitle: A regular meeting
 new-page: yes 
-view-if: week >= 1 and week < 8 and week_progress < 3 and scioly >= 1 and scioly <= 4 and weekly_scioly = 0 and stress < 15
+view-if: week >= 1 and week < 8 and week_progress < 3 and scioly >= 1 and weekly_scioly = 0 and stress < 15
 on-arrival: week_progress += 1; scioly += 1; stress += 1; weekly_scioly = 1 
 tags: top, scioly
 
@@ -292,14 +292,104 @@ on-arrival: david_scioly += 1; fossils += 1
 
 "So um... hi..."
 
-"Can you act like nothing's changed?", Roxana says.
+They are sitting alone at a table, eyes buried in a guidebook. All you can do is awkwardly sidle up to them, taking a seat in the general proximity.
+
+"Can you act like nothing's changed?", Roxana says, taking a single glance at you before going back to their book.
 
 "Oh, um. Okay."
 
-"Can we go over fossil identification now?"
+"Can we talk about geologic history? I feel like that's still our weak spot."
 
-"Um, sure."
+"Um, sure?"
 
+"Okay, here's a question: in which geologic period did the Taconic orogeny, which created parts of the present-day Appalachian mountains, occur?"
+
+- @rox_1: Cambrian?
+- @rox_2: Ordovician?
+- @rox_3: Silurian?
+- @rox_4: Devonian?
+
+@rox_1
+go-to: rox_1_incorrect
+
+"Um, the Cambrian?"
+
+@rox_2
+
+"Um, the Ordovician?"
+
+"Yes, that's right, but that sounded like a guess."
+
+"Yeah..."
+
+They leaf through their book some more. "Do you want another question?"
+
+- @rox_q2: "Yes, I want another question."
+- @rox_stop: "No, we should just read."
+
+@rox_3
+go-to: rox_1_incorrect
+
+"Um, the Silurian?"
+
+@rox_4
+go-to: rox_1_incorrect
+
+"Um, the Devonian?"
+
+@rox_1_incorrect
+
+"No, sorry. It's the Ordovician. That's kind of an obscure question." They leaf through their book some more. "Do you want another question?"
+
+- @rox_q2: "Yes, I want another question."
+- @rox_stop: "No, we should just study."
+
+@rox_q2
+
+"Here's a far easier question. In which geologic period were the first synapsids, or mammal-like reptiles, such as *Dimetrodon*, found?"
+
+- @rox_q2_1: Devonian?
+- @rox_q2_2: Carboniferous?
+- @rox_q2_3: Permian?
+- @rox_q2_4: Triassic?
+
+@rox_q2_1
+choose-if: fossils < 2
+go-to: rox_q2_incorrect
+
+"Um, the Devonian?"
+
+@rox_q2_2
+choose-if: fossils < 2
+go-to: rox_q2_incorrect
+
+"Um, the Carboniferous?"
+
+@rox_q2_3
+
+"The Permian."
+
+"Yeah. That was easy."
+
+- @rox_stop: Keep on studying.
+
+@rox_q2_4
+choose-if: fossils < 2
+go-to: rox_q2_incorrect
+
+"Um, the Triassic?"
+
+
+@rox_q2_incorrect
+
+"No, it's the Permian. If you really don't know this, you have to study a lot more." They sigh.
+
+- @rox_stop: Keep on studying.
+
+
+@rox_stop
+
+You spend the rest of the study time reading and discussing geologic time, hundreds of millions of years of the ebb and flow of life, the rise and fall of mountains and continents, extinctions and rebirth. It's all fascinating, and in the end, you brain is loaded with a compendium of knowledge.
 
 
 @krishna
