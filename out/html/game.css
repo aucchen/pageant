@@ -3,7 +3,7 @@ body {
   /*font-size: 1.125em;*/
   background-color: #f3f3e3;
   padding: 0;
-  line-height: 155%;
+  line-height: 165%;
 }
 header, #content, footer {
   color: #431;
@@ -150,6 +150,7 @@ blockquote + blockquote.attribution {
     bottom: 0;
     left: 0;
     z-index: 2;
+    overflow: scroll;
 }
 #saves_table {
     position: relative;

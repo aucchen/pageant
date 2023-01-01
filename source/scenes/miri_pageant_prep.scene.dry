@@ -24,7 +24,7 @@ You read over the message. Miri was extremely generous in offering to help you p
 view-if: gym = 0
 on-arrival: gym += 1; pageant_appearance += 1
 
-"Okay, what do we do now?", you ask, hoping Miri knows something you don't.
+"Okay, what do we do now?" you ask, hoping Miri knows something you don't.
 
 "I don't know." Your hopes are immediately dashed. "I mean, you asked to come here. I'm just along for the ride."
 
@@ -37,7 +37,7 @@ Right now you're standing in the entryway wearing utterly inappropriate clothes 
 
 @back_out
 
-"No, you can't just leave now!", Miri says, grabbing your arm. "You have to do this. I mean, I have to do this too. Just look at my physical manifestation."
+"No, you can't just leave now!" Miri says, grabbing your arm. "You have to do this. I mean, I have to do this too. Just look at my physical manifestation."
 
 "I think you're fine the way you are."
 
@@ -47,7 +47,7 @@ Miri rolls her eyes. "Whatever. Let's just get it over with."
 
 @gym_2
 
-"Wait. What do we actually do here?", Miri asks. "You know I've never been here before, right?"
+"Wait. What do we actually do here?" Miri asks. "You know I've never been here before, right?"
 
 "I think we, um, just... use one of these things."
 
@@ -65,7 +65,7 @@ There are two empty treadmills next to each other. You take one and Miri takes t
 
 You turn on the treadmill and start running. Of course, you get tired and go back to walking after five minutes. And it looks like Miri isn't doing any better; she's at the water fountain.
 
-"Wait, aren't you in gym?", Miri asks as she returns.
+"Wait, aren't you in gym?" Miri asks as she returns.
 
 "Well, technically it's not exactly gym. It's more of a, uh, health class. PE plus health."
 
@@ -77,7 +77,7 @@ You turn on the treadmill and start running. Of course, you get tired and go bac
 
 The two of you walk around the gym. There are weight machines. And people using them. Scary people, somewhat scarier than people in general.
 
-"Um, what do we do?", you ask.
+"Um, what do we do?" you ask.
 
 "Act like we belong," Miri replies. "And we do belong here, right?"
 
@@ -312,7 +312,7 @@ Miri keeps on asking questions, repeating many of the same ones you've already g
 view-if: miri_hang = 0 and miri > 2 and miri_practice > 0 and gym > 0
 on-arrival: miri_hang += 1
 
-"Wait, I thought you wanted to practice for the pageant?", she says.
+"Wait, I thought you wanted to practice for the pageant?" she says.
 
 "Maybe we can... like, take a break or something like that?" You try your best to keep your voice from being too serious.
 
@@ -342,7 +342,7 @@ What's that supposed to mean? What does it mean that you "like" her? Would she b
 
 @anyway
 
-"where do you want to go?", Miri asks. "Wait. If you don't know, how about let's go downtown, and like, just walk around?"
+"where do you want to go?" Miri asks. "Wait. If you don't know, how about let's go downtown, and like, just walk around?"
 
 "Um. Sure. I guess. Like an impromptu trip downtown for no reason other than to wander about aimlessly?"
 
@@ -386,7 +386,7 @@ Miri sighs. "I sometimes worry about you, you know."
 
 "Uh, self-improvement or whatever?"
 
-"Are you serious?", Miri says, but she already knows what your answer will be.
+"Are you serious?" Miri says, but she already knows what your answer will be.
 
 "Maybe? I mean that's what my dad says and sometimes he's... not wrong?"
 
@@ -403,7 +403,7 @@ Miri sighs. "I sometimes worry about you, you know."
 
 You've had this conversation with Miri before. In fact it constitutes a good portion of your "serious" conversations with her.
 
-"Is something wrong?", she continues. "You've seemed kind of down lately. Would you like to talk about it?"
+"Is something wrong?" she continues. "You've seemed kind of down lately. Would you like to talk about it?"
 
 - @nothing_wrong: Nothing's wrong.
 
@@ -411,7 +411,7 @@ You've had this conversation with Miri before. In fact it constitutes a good por
 
 You take a long breath. "No. Um, nothing's wrong." Not technically a lie, just an extreme misdirection.
 
-"What do you mean?", she says, glancing into your eyes. The two of you are sitting on a bench overlooking a small artificial lake. No one else is close by; it's an overcast day too cold for tourists or joggers, and you can see her breath forming clouds between you.
+"What do you mean?" she says, glancing into your eyes. The two of you are sitting on a bench overlooking a small artificial lake. No one else is close by; it's an overcast day too cold for tourists or joggers, and you can see her breath forming clouds between you.
 
 "You can tell me anything," Miri continues. "We're friends, right?"
 
@@ -445,7 +445,7 @@ You've seen this happen before and you've tried to avert it. Miri thinks that ta
 
 "Sorry," you say. "Why do you always ask what's wrong with me? Why don't you talk about your own problems?"
 
-"Come on!", Miri says. "Now's not the time for this."
+"Come on!" Miri says. "Now's not the time for this."
 
 - @upset: For some reason, you're feeling kind of upset.
 
@@ -463,7 +463,7 @@ She turns away.
 
 You regret your words instantly. You lied. Of course something's wrong with you; it's the fact that you fuck up every time words come out of your mouth. You fucked up. Why would Miri ever talk to you again? Why would she not regret making your acquaintance? You should disappear forever, retreat from social life, never talk to anyone ever again.
 
-"Are you crying?", Miri asks in a neutral tone, but it's a rhetorical question.
+"Are you crying?" Miri asks in a neutral tone, but it's a rhetorical question.
 
 - @cry_for_no_reason: Cry for no reason.
 
@@ -555,6 +555,7 @@ There are no more words.
 @fuck_you_miri
 view-if: stress >= 6
 on-arrival: miri_escape = 1; trauma_points += 1
+achievement: miri_escape
 
 The very fact that you desired to say that to Miri makes you despise yourself, slightly more than usual.
 
@@ -665,7 +666,7 @@ on-arrival: loneliness -= 1
 
 @lull_conversation
 
-"Is this a good time?", Miri says, breaking a long pause.
+"Is this a good time?" Miri says, breaking a long pause.
 
 "Good time for what?"
 
@@ -745,7 +746,7 @@ view-if: emily_date = 1
 
 You see Miri looking at you again, eyes wide, smiling broadly for some reason.
 
-"Wait, really?", she asks, seemingly surprised.
+"Wait, really?" she asks, seemingly surprised.
 
 "It's, uh, complicated I guess."
 
@@ -833,6 +834,7 @@ The two of you head back to your hometown on the train, leaning against each oth
 
 @miri_no_date_2
 on-arrival: miri_date = -1; loneliness += 1;
+achievement: miri_rejection
 
 "I'm not really interested in, um,... that... right now. Sorry."
 

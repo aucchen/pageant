@@ -54,7 +54,7 @@ She looks you in the eye. You must have been staring, so you look away. "So, uh,
 
 @are_you
 
-"So what about you?", you ask.
+"So what about you?" you ask.
 
 "What do you mean?"
 
@@ -177,13 +177,13 @@ At some point she makes up some equations (those were definitely fake), and some
 @meet_again
 go-to: emily_goodbye
 
-"Um, see you later?", you say. You kind of want to see her again. Well, that depends on what she wants.
+"Um, see you later?" you say. You kind of want to see her again. Well, that depends on what she wants.
 
 
 @maybe_not_meet_again
 go-to: emily_goodbye
 
-"Um, goodbye?", you say. You're not sure if you would ever see her again. Well, that depends on what she wants.
+"Um, goodbye?" you say. You're not sure if you would ever see her again. Well, that depends on what she wants.
 
 
 @emily_goodbye

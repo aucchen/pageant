@@ -105,6 +105,7 @@ Oh God you're crying. "Um, I mean, yeah, I guess. Sorry."
 
 @yes_date
 on-arrival: emily_date = 1
+achievement: emily_date
 
 "Yeah..."
 

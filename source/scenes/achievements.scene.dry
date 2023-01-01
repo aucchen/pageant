@@ -7,52 +7,52 @@ max-visits: 1
 
 = Your Achievements:
 
-[? if pageant_success = 1 : Win the pageant. ?]
+[? if achievement_pageant_success = 1 : Win the pageant. ?]
 
-[? if special_award = 1 : Win a consolation prize at the pageant. ?]
+[? if achievement_special_award = 1 : Win a consolation prize at the pageant. ?]
 
-[? if pageant_total_failure = 1 : Quit the pageant before it finishes. ?]
+[? if achievement_pageant_total_failure = 1 : Quit the pageant before it finishes. ?]
 
-[? if miri_date = 3 : Go on a date with Miri. ?]
+[? if achievement_miri_date = 1 : Go on a date with Miri. ?]
 
-[? if miri_date = -1 : Miri confesses to you, but you reject her. ?]
+[? if achievement_miri_rejection = 1 : Miri confesses to you, but you reject her. ?]
 
-[? if miri_escape = 1 : Ruin your relationship with Miri. ?]
+[? if achievement_miri_escape = 1 : Ruin your relationship with Miri. ?]
 
-[? if aubrey_date = 2 : Go on a date with Aubrey. ?]
+[? if achievement_aubrey_date = 1 : Go on a date with Aubrey. ?]
 
-[? if emily_date = 1 : Confess to Emily. ?]
+[? if achievement_emily_date = 1 : Confess to Emily. ?]
 
-[? if emily = 9 : Save Emily's life (maybe). ?]
+[? if achievement_emily_save = 1 : Save Emily's life (maybe). ?]
 
-[? if is_captain = 1 : Become Science Olympiad co-captain. ?]
+[? if achievement_is_captain = 1 : Become Science Olympiad co-captain. ?]
 
-[? if stories_viewed >= 1 and stories_2_viewed >= 1 : Listen to your parents' stories. ?]
+[? if achievement_stories_viewed = 1 : Listen to your parents' stories. ?]
 
 
 = Locked Achievements:
 
-[? if pageant_success = 0 : Win the pageant. ?]
+[? if achievement_pageant_success = 0 : Win the pageant. ?]
 
-[? if special_award = 0 : Win a consolation prize at the pageant. ?]
+[? if achievement_special_award = 0 : Win a consolation prize at the pageant. ?]
 
-[? if pageant_total_failure = 0 : Quit the pageant before it finishes. ?]
+[? if achievement_pageant_total_failure = 0 : Quit the pageant before it finishes. ?]
 
-[? if miri_date < 3 : Go on a date with Miri. ?]
+[? if achievement_miri_date = 0 : Go on a date with Miri. ?]
 
-[? if miri_date != -1 : Miri confesses to you, but you reject her. ?]
+[? if achievement_miri_rejection = 0 : Miri confesses to you, but you reject her. ?]
 
-[? if miri_escape != 1 : Ruin your relationship with Miri. ?]
+[? if achievement_miri_escape != 1 : Ruin your relationship with Miri. ?]
 
-[? if aubrey_date < 2 : Go on a date with Aubrey. ?]
+[? if achievement_aubrey_date = 0 : Go on a date with Aubrey. ?]
 
-[? if emily_date = 0 : Confess to Emily. ?]
+[? if achievement_emily_date = 0 : Confess to Emily. ?]
 
-[? if emily < 9 : Save Emily's life (maybe). ?]
+[? if achievement_emily_save = 0 : Save Emily's life (maybe). ?]
 
-[? if scioly_final_scene = 0 : Become Science Olympiad co-captain. ?]
+[? if achievement_is_captain = 0 : Become Science Olympiad co-captain. ?]
 
-[? if stories_viewed = 0 or stories_2_viewed = 0 : Listen to your parents' stories. ?]
+[? if achievement_stories_viewed = 0 : Listen to your parents' stories. ?]
 
 - @credits_and_notes
 - @credits_debug

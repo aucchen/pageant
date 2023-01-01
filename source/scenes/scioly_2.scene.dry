@@ -19,11 +19,11 @@ During Science Olympiad meetings, you're supposed to meet with your event partne
 
 @aubrey
 view-if: aubrey_scioly = 0
-on-arrival: aubrey_scioly += 1; aubrey += 1; protein_modeling += 1
+on-arrival: aubrey_scioly += 1; aubrey += 1; protein += 1
 
 Aubrey is sitting in front of her open laptop. She does not stop typing as you sit across from her.
 
-"Um, like, what is protein modeling?", you ask, even though you know full well what protein modeling is, just to break the awkward silence. This event wasn't around the last two years, but it is being re-introduced this year.
+"Um, like, what is protein modeling?" you ask, even though you know full well what protein modeling is, just to break the awkward silence. This event wasn't around the last two years, but it is being re-introduced this year.
 
 "Well, it's a combination study and building event. First of all you have to build a model of the protein, like a physical model out of plastic parts. The second part is building a protein model from scratch at the exam. And then there's a knowledge-based test on proteins."
 
@@ -33,7 +33,7 @@ Aubrey is sitting in front of her open laptop. She does not stop typing as you s
 
 @aubrey_scioly_2
 
-"So, how do you want to split this?", Aubrey asks, breaking the silence.
+"So, how do you want to split this?" Aubrey asks, breaking the silence.
 
 - @protein_study: "I can do the knowledge thing..."
 - @protein_either: "Either is fine..."
@@ -68,7 +68,7 @@ Aubrey nods. "Sure. Tell me about protein structure."
 
 "Um, there's primary structure which is just the amino acid chain. Then secondary structure is repeated structural elements like the sheets and helices and stuff, and then tertiary structure which is how these elements are assembled together. And there's quaternary structure, which is like, multiple proteins interacting together?"
 
-"That works. How many amino acids are there, that make up proteins?", Aubrey asks, starting off with the basics.
+"That works. How many amino acids are there, that make up proteins?" Aubrey asks, starting off with the basics.
 
 - @protein_20_amino_acids: 20?
 
@@ -92,11 +92,11 @@ Aubrey nods. "Sure. Tell me about protein structure."
 
 @aubrey2
 view-if: aubrey_scioly > 0
-on-arrival: aubrey_scioly += 1; protein_modeling += 1; aubrey += 1
+on-arrival: aubrey_scioly += 1; protein += 1; aubrey += 1
 
 Aubrey is sitting by herself in a corner of the classroom. She waves at you as you approach and sit next to her.
 
-"Ready to prepare?", she asks.
+"Ready to prepare?" she asks.
 
 "Um, yeah, I guess."
 
@@ -115,7 +115,7 @@ You should know this, but you're still not sure...
 @a1
 go-to: protein_question_2
 
-"Yes, that's right!", Aubrey says. [? if aubrey_scioly >= 2 : "Just making sure you remembered." ?]
+"Yes, that's right!" Aubrey says. [? if aubrey_scioly >= 2 : "Just making sure you remembered." ?]
 
 @a2
 go-to: wrong_study
@@ -264,7 +264,7 @@ He shows you the pictures of various archetypal Burgess Shale organisms: *Opabin
 
 @david_talk_about_fossils
 
-"So what are the hypotheses?", you ask, trying to provoke conversation with perhaps the only Science Olympiad team member who's more awkward than you.
+"So what are the hypotheses?" you ask, trying to provoke conversation with perhaps the only Science Olympiad team member who's more awkward than you.
 
 "Um... it's kind of a long story..." He rolls his eyes, but continues. "So this is about the relationship between the Ediacaran biota and the Cambrian ones. The Ediacaran period was immediately before the Cambrian, around 600 to 540 million years ago. The Ediacaran period had a bunch of, you know, really weird life forms. So did the Cambrian, but at least they were recognizable as arthropods or molluscs and stuff like that. But the Ediacaran life was stranger; they looked like weird leaf-like blobs with asymmetrical segmentation, like *Dickinsonia*, or things that sort of rememble worms but aren't actually like worms at all, like *Spriggina*, or that kind of thing. They might not even have been animals." He pauses. "You should already know all this, right?"
 
@@ -294,7 +294,7 @@ on-arrival: david_scioly += 1; fossils += 1
 
 They are sitting alone at a table, eyes buried in a guidebook. All you can do is awkwardly sidle up to them, taking a seat in the general proximity.
 
-"Can you act like nothing's changed?", Roxana says, taking a single glance at you before going back to their book.
+"Can you act like nothing's changed?" Roxana says, taking a single glance at you before going back to their book.
 
 "Oh, um. Okay."
 
@@ -408,7 +408,7 @@ Krishna Rao is notable for being the only other gay in Science Olympiad. That yo
 
 Cell bio is yet another event where you just have to memorize as much about the relevant topics as possible. The topics in question being, obviously, cell biology. It's like an AP bio exam, only harder, or something like that. You do a lot of those events because you're good at memorizing boatloads of useless information.
 
-"How do you want to split up the topics?", Krishna asks.
+"How do you want to split up the topics?" Krishna asks.
 
 - @cell_bio_split: "Um, it doesn't matter?"
 
@@ -492,7 +492,7 @@ This is an easy question.
 
 @cell_easy
 
-"What are the functions of microtubules?", you ask.
+"What are the functions of microtubules?" you ask.
 
 "Stabilizing cell structure and shape, and cell motility, like how amoebas move. Oh yeah, they also position chromosomes during mitosis."
 
@@ -527,7 +527,7 @@ The captain was Aubrey's boyfriend last year. Your parents first heard it from A
 
 The distinguishing characteristics for the captain are that he's overly enthusiastic and obviously loves science.
 
-"Are you ready to work on Disease Detectives?", he asks.
+"Are you ready to work on Disease Detectives?" he asks.
 
 - @disease_detectives:  "Um, sure..."
 

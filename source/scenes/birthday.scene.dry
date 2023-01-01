@@ -60,11 +60,11 @@ And now you're home alone on your birthday. You shouldn't feel lonely. You shoul
 
 In the end you manage to finish a lab report for AP Chem, but not before wasting a couple of hours on the internet. A couple of precious hours thrown away on useless trivialities, a couple of hours that you'll never get back.
 
-"Happy birthday!", read all the messages on Facebook. You don't reply to any of them. You never reply to your wall posts on Facebook. It might be a bad habit. 
+"Happy birthday!" read all the messages on Facebook. You don't reply to any of them. You never reply to your wall posts on Facebook. It might be a bad habit. 
 
 "happy bday", read Miri's text. "sorry we didn't do anything today?"
 
-"We'll make it up later?", you replied.
+"We'll make it up later?" you replied.
 
 It's around 7 in the evening when your family returns. Your brother can't wait to tell you about his adventures at the museum.
 
@@ -104,7 +104,7 @@ Eventually the four of you leave to have dinner in Chinatown. It's a Peking Duck
 
 *"Congratulations, congratulations!"*, dad says.
 
-"For what?", you say.
+"For what?" you say.
 
 *"Passing birthday! Let's sing!"*
 
@@ -258,7 +258,7 @@ on-arrival: miri += 1; aubrey += 1; loneliness -= 1; stress += 1
 
 "So, this is a party!" Miri laughs. "I thought it would be just the two of us."
 
-"Oh, hi, Miri, right?", Aubrey says with a quick wave. "I know your name but I don't really, like, know you. Do you know [+ first_name : +] well?"
+"Oh, hi, Miri, right?" Aubrey says with a quick wave. "I know your name but I don't really, like, know you. Do you know [+ first_name : +] well?"
 
 "Yeah! I'm pretty sure I know her better than most other humans. Anyway, what are you doing here?"
 
@@ -270,9 +270,9 @@ This is going to be an awkward day.
 
 You're frozen in place. Aubrey and Miri have started to hit it off. They're talking to each other. Their words are coherent but you don't hear them. You're alone, staring awkwardly, tossing your phone from one hand to the other. Your brain can't focus. Your hand is trembling. You drop the phone.
 
-"Oh, sorry!", Miri says. "I can't believe we were ignoring you on your birthday!" 
+"Oh, sorry!" Miri says. "I can't believe we were ignoring you on your birthday!" 
 
-She walks closer to you and puts her arm around your shoulder. Aubrey watches. "What do you want to do?", she asks.
+She walks closer to you and puts her arm around your shoulder. Aubrey watches. "What do you want to do?" she asks.
 
 "Um..." Your eyes dart, to Miri, to Aubrey, to the stain on the carpet, to the ceiling, averting their gazes. You try to say something. 
 
@@ -329,9 +329,9 @@ You start laughing. Oh god, why? And for some reason you can't stop. Your throat
 
 @okay
 
-"Are you okay?", Aubrey asks. Miri's started to laugh too.
+"Are you okay?" Aubrey asks. Miri's started to laugh too.
 
-"No, but I've never been okay. And like, that's the one constant fact that's existed throughout my whole life or something like that, like it's that i've never been okay and i don't get why people always ask that and..."
+"No, but I've never been okay. And like, that's the one constant fact that's existed throughout my whole life or something like that, like it's that I've never been okay and I don't get why people always ask that and..."
 
 "Hey. It's fine," Miri says. "Want some water?"
 
@@ -343,7 +343,7 @@ You start laughing. Oh god, why? And for some reason you can't stop. Your throat
 
 Miri goes to the fridge and gets a cup of water, handing it to you. Your throat feels a little better now.
 
-"Group hug?", Miri says, eyeing you and Aubrey.
+"Group hug?" Miri says, eyeing you and Aubrey.
 
 - @group_hug: Group hug.
 
@@ -353,7 +353,7 @@ Miri goes to the fridge and gets a cup of water, handing it to you. Your throat 
 
 She hands you a gift card and a Madoka Magica DVD set.
 
-"What's that?", Aubrey asks.
+"What's that?" Aubrey asks.
 
 "Oh boy do I have news for you," Miri says with a smirk. "Let's put it on."
 

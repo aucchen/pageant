@@ -27,7 +27,7 @@ on-arrival: stress += 1
 
 Always more work. As if you didn't have enough to do already. Along with school, more school, scioly, and the pageant. Oh God the pageant. That's something that you have to do. The thought petrifies you even right now, even as you're supposed to be doing science...
 
-"Hey [+ first_name : +]?", you hear Stella say. You remember that you're supposed to talk right now. Or something like that.
+"Hey [+ first_name : +]?" you hear Stella say. You remember that you're supposed to talk right now. Or something like that.
 
 - @thanks: "Thanks?"
 
@@ -36,7 +36,7 @@ on-arrival: loneliness += 1
 
 No... is that it? Is that what you're feeling? You have no rational reason to feel this way. The only rational response is to be happy, to be grateful for all you've been given. But you're not. For some reason this doesn't feel real. Nothing really does.
 
-"Hey [+ first_name : +]?", you hear Stella say. You remember that you're supposed to talk right now. Or something like that.
+"Hey [+ first_name : +]?" you hear Stella say. You remember that you're supposed to talk right now. Or something like that.
 
 - @thanks: "Thanks?"
 

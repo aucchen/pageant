@@ -5,6 +5,7 @@ import random
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.by import By
 
 file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'index.html')
 
@@ -13,21 +14,21 @@ def test(output_path='output.txt', dump_stats=1, script_path='transcript.txt', d
     script = []
     transcript = ''
     current_paragraphs = set()
-    #options = Options()
-    #options.headless = True
-    #driver = webdriver.Firefox(options=options)
-    driver = webdriver.PhantomJS()
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
+    #driver = webdriver.PhantomJS()
     driver.get('file://' + file_path)
-    link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
+    link_divs = driver.find_elements(By.XPATH, '//ul[@class="choices"]//li')
     data = driver.execute_script('return JSON.stringify(window.dendryUI.dendryEngine.getExportableState(), null, 2);');
     print(data)
     while len(link_divs) > 0:
-        link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
+        link_divs = driver.find_elements(By.XPATH, '//ul[@class="choices"]//li')
         # find main text: find all text elements under <div id="content"> 
-        content_text = driver.find_elements_by_xpath('//hr[@id="read-marker"]/following-sibling::p')
+        content_text = driver.find_elements(By.XPATH, '//hr[@id="read-marker"]/following-sibling::p')
         if len(content_text) == 0:
-            if len(driver.find_elements_by_id('read-marker')) == 0:
-                content_text = driver.find_elements_by_xpath('//div[@id="content"]/p')
+            if len(driver.find_elements(By.ID, 'read-marker')) == 0:
+                content_text = driver.find_elements(By.XPATH, '//div[@id="content"]/*[self::p or self::h1]')
         for i, paragraph in enumerate(content_text):
             if len(paragraph.text.strip()) == 0:
                 continue
@@ -45,7 +46,7 @@ def test(output_path='output.txt', dump_stats=1, script_path='transcript.txt', d
             print('\n -', link.text)
             transcript += '\n -' + link.text
         # click on a random link
-        links = driver.find_elements_by_xpath('//ul[@class="choices"]//a')
+        links = driver.find_elements(By.XPATH, '//ul[@class="choices"]//a')
         if len(links) == 0:
             break
         link_choice = random.choice(links)
@@ -79,22 +80,21 @@ def test_with_script(script_path, output_path='script_output.txt', dump_stats=0,
             script_data.append(line.strip())
     transcript = ''
     current_paragraphs = set()
-    #options = Options()
-    #options.headless = use_headless
-    #driver = webdriver.Firefox(options=options)
-    driver = webdriver.PhantomJS()
+    options = Options()
+    options.headless = use_headless
+    driver = webdriver.Firefox(options=options)
     driver.get('file://' + file_path)
-    link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
+    link_divs = driver.find_elements(By.XPATH, '//ul[@class="choices"]//li')
     data = driver.execute_script('return JSON.stringify(window.dendryUI.dendryEngine.getExportableState(), null, 2);');
     print(data)
     script_location = 0
     while len(link_divs) > 0:
-        link_divs = driver.find_elements_by_xpath('//ul[@class="choices"]//li')
+        link_divs = driver.find_elements(By.XPATH, '//ul[@class="choices"]//li')
         # find main text: find all text elements under <div id="content"> 
-        content_text = driver.find_elements_by_xpath('//div[@id="read-marker"]/following-sibling::p')
+        content_text = driver.find_elements(By.XPATH, '//div[@id="read-marker"]/following-sibling::p')
         if len(content_text) == 0:
-            if len(driver.find_elements_by_id('read-marker')) == 0:
-                content_text = driver.find_elements_by_xpath('//div[@id="content"]/p')
+            if len(driver.find_elements(By.ID, 'read-marker')) == 0:
+                content_text = driver.find_elements(By.XPATH, '//div[@id="content"]/*[self::p or self::h1]')
         for i, paragraph in enumerate(content_text):
             if len(paragraph.text.strip()) == 0:
                 continue
@@ -112,12 +112,11 @@ def test_with_script(script_path, output_path='script_output.txt', dump_stats=0,
             #print('\n -', link.text)
             transcript += '\n -' + link.text
         # click on link indicated by script
-        links = driver.find_elements_by_xpath('//ul[@class="choices"]//a')
+        links = driver.find_elements(By.XPATH, '//ul[@class="choices"]//a')
         if len(links) == 0:
             break
         link_choice = random.choice(links)
         # if the link text is not in the script, then just continue randomly.
-        has_link_text = False
         for link in links:
             if script_data and link.text == script_data[0]:
             #    print('\nSCRIPT LINE #' + str(script_location) + ' ' + link.text + '\n')
@@ -125,7 +124,6 @@ def test_with_script(script_path, output_path='script_output.txt', dump_stats=0,
                 script_location += 1
                 script_data = script_data[1:]
                 link_choice = link
-                has_link_text = True
                 break
         #if not has_link_text and len(links) > 1:
             #print('WARNING: link not found in script')
@@ -176,6 +174,5 @@ def random_n_script_tests(n, script_path, dump_stats=0, starting_index=0):
 
 if __name__ == '__main__':
     print(file_path)
-    #random_n_tests(20, starting_index=51)
+    random_n_tests(100)
     #test_with_script('standard_runs/emily.txt', output_path='standard_runs/emily_output.txt', data_path='standard_runs/emily_data.txt')
-    random_n_script_tests(10, 'standard_runs/basic_script.txt')

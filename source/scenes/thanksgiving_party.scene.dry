@@ -74,7 +74,7 @@ When you see the person who emerges, you almost do a double take. It's Emily Che
 
 @play_nicely
 
-*"Play nicely with Qiuyi-jiejie, okay?"*, Professor Chen says. He leaves, leaving the two of you alone.
+*"Play nicely with Qiuyi-jiejie, okay?"* Professor Chen says. He leaves, leaving the two of you alone.
 
 - @talk_emily: ...
 - @say_hi: "Um. Hi."
@@ -115,7 +115,7 @@ You sit down on the carpet. A long moment of silence passes between the two of y
 
 You sit down on the carpet, as Emily sits at her desk. Her computer is on, and it looks like she's typing some sort of essay.
 
-"Don't tell anyone, okay?", she reiterates.
+"Don't tell anyone, okay?" she reiterates.
 
 "Of course."
 
@@ -246,7 +246,7 @@ As you do the reading, you hear tapping on the keyboard. Your host is writing so
 @homework
 view-if: emily = 0
 
-"Can I do my homework here?", you say.
+"Can I do my homework here?" you say.
 
 "Oh, sure. What is it?"
 
@@ -256,7 +256,7 @@ view-if: emily = 0
 
 You unzip your backpack and take out your textbook. The assignment is just to read the relevant chapters of the textbook and answer a few basic questions on them. Maybe you'll get something done after all.
 
-"Hey, what classes are you taking?", he asks, breaking your focus.
+"Hey, what classes are you taking?" he asks, breaking your focus.
 
 - @homework_2: You're taking...
 
@@ -296,7 +296,7 @@ The two of you head downstairs, following the fragrance of steamed rice and myri
 @eat_research_known
 view-if: research > 0
 
-*"How have you been progressing with the research?"*, Professor Chen asks.
+*"How have you been progressing with the research?"* Professor Chen asks.
 
 "Um, a little bit..."
 
@@ -332,7 +332,7 @@ view-if: meet_emily = 1
 
 The conversations continue. Emily is accosted by another parent asking about her college application plans. You lose track of her after a while. Someone asks you about why you're entering a beauty pageant, because apparently it's a low-tier extracurricular. *"But for Chinese kids it's different because not many Chinese kids do this,"* your mom argues. *"And she doesn't have other specialties."*
 
-- @listen_more: Keep on eating. and listening.
+- @listen_more: Keep on eating. And listening.
 
 @listen_more
 
@@ -356,7 +356,7 @@ view-if: meet_emily = 0
 
 You're done eating, so you throw away your paper plate and put your chopsticks in the sink, and head upstairs again, back to ---'s room.
 
-"What were they talking about down there?", --- asks.
+"What were they talking about down there?" --- asks.
 
 - @tell: Tell --- about the conversation.
 - @dont_tell: Don't tell --- about the conversation.
@@ -472,7 +472,7 @@ She pauses for a moment and glances at you. You look away; you realize that you 
 
 Or maybe not.
 
-"Um, why are you staring at me?", Emily asks.
+"Um, why are you staring at me?" Emily asks.
 
 "Oh. Sorry," you say, and you look away.
 
@@ -506,7 +506,7 @@ view-if: meet_emily = 1
 
 You're done eating, so you throw away your paper plate and put your chopsticks in the sink, and head upstairs again, back to Emily's room.
 
-"What were they talking about down there?", Emily asks.
+"What were they talking about down there?" Emily asks.
 
 - @tell_failure: "That I'm a failure at everything I do?"
 - @tell_gay: "That they think you're gay or whatever?"
@@ -521,7 +521,7 @@ Emily shrugs. "Par for the course, I guess."
 
 @what_mean
 
-"What does that expression even mean, par for the course?", you ask. To keep the conversation flowing in the only way you know.
+"What does that expression even mean, par for the course?" you ask. To keep the conversation flowing in the only way you know.
 
 "Well, a par is like in golf. It's supposed to be the average score, I guess? So it must mean that something's typical. Expected."
 
@@ -595,7 +595,7 @@ Emily tosses a violet dress in your direction, and it drapes over your head.
 
 "Thanks, I guess." You quickly shove it in your backpack.
 
-"Want anything else?", she asks. "I don't want my parents to find any of my dresses. They know they're there, they just don't know where to look. Not yet."
+"Want anything else?" she asks. "I don't want my parents to find any of my dresses. They know they're there, they just don't know where to look. Not yet."
 
 "Um..."
 
@@ -807,7 +807,7 @@ on-arrival: pageant_appearance += 2
 
 You and Emily go over her clothes. She tells you what each piece is called, when you should wear them, what you should wear them with. She sounds excited, her words so quick that they skip by your ears. Your backpack bulges.
 
-"Where did you get all this?", you ask when she finally stops talking.
+"Where did you get all this?" you ask when she finally stops talking.
 
 "Oh, Internet. And, like, goodwill."
 

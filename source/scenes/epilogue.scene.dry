@@ -66,6 +66,7 @@ max-visits: 1
 go-to: all_epilogues
 view-if: scioly_final_seen = 1 and (gold_count > 0 or silver_count > 0) and captain_desire > 0
 on-arrival: is_captain = 1
+achievement: is_captain
 
 Science Olympiad continued with the regional competition, which your school passed, and the state competition, where your school placed seventh out of 20-something. Despite the mediocre placement, the captain considered it a success. 
 

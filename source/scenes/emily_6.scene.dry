@@ -201,7 +201,7 @@ Emily stays silent for a while.
 
 @emily_parents
 
-"I guess that's it for today?", Emily says. "My parents expect me at home. Before that I have to go change. And before that I have to take the bus to Lexington. So..."
+"I guess that's it for today?" Emily says. "My parents expect me at home. Before that I have to go change. And before that I have to take the bus to Lexington. So..."
 
 She gets up and glances at you. "Bye."
 
@@ -247,6 +247,7 @@ go-to: beautiful
 
 @sit_next
 on-arrival: emily_date = 1; emily = 7; growth_points += 1
+achievement: emily_date
 
 "And that girl is sitting next to me right now. Sorry."
 

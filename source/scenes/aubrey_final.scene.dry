@@ -4,13 +4,14 @@ new-page: yes
 view-if: week = 11 and aubrey_date = 1 and week_progress < 3
 on-arrival: aubrey_date = 2
 tags: top, weekend, aubrey, social
+achievement: aubrey_date
 max-visits: 1
 
 Aubrey had originally sent you a list of potential locations for the date. Then, realizing that you are really bad at making choices, she unilaterally decided that you two were going to go downtown and just wander around. Which is basically what you would have chosen for a date. Which is a positive sign. Probably.
 
 Now the two of you are sitting in a brick-covered, concrete-lined downtown plaza, by the Brutalist city hall. The sun is about to set. Tourists and workers are swarming about.
 
-"So, how was the date?", Aubrey asks.
+"So, how was the date?" Aubrey asks.
 
 - @date_beginning: To answer, you must go back in time.
 
@@ -67,7 +68,7 @@ You thought about holding hands, but quickly backed off on the idea; it would ha
 
 @walk_path
 
-"Just wondering, have you ever done anything like this before?", Aubrey asked. "Like, a date or anything like that?"
+"Just wondering, have you ever done anything like this before?" Aubrey asked. "Like, a date or anything like that?"
 
 - @no_date: No...
 - @yes_date: (lie) Yes, of course!
@@ -89,7 +90,7 @@ After a pause, she continued. "I'm sorry I'm ruining your first date, then. Haha
 
 @why_ruin_date
 
-"Why?", you ask.
+"Why?" you ask.
 
 "You know, because I'm not like, you know."
 
@@ -167,7 +168,7 @@ go-to: aubrey_hold_hand
 
 A pause. Aubrey slowly glances around the surroundings, and you follow her gaze. The sun has mostly set; the sky is a gradient of orange and red. The crowds are starting to thin. No one is looking in your direction.
 
-"Can you hold my hand?", she says, looking at you with a smile.
+"Can you hold my hand?" she says, looking at you with a smile.
 
 *What.*
 
@@ -193,7 +194,7 @@ on-arrival: aubrey_hold_hand = 1
 
 She reaches towards your lap, and lays her gloved hand on top of your bare hand. You place your other hand on top of hers.
 
-"Hey, this is nice!", she says.
+"Hey, this is nice!" she says.
 
 "Yeah. It is."
 
@@ -224,7 +225,7 @@ Now Aubrey leans her body against you. "Isn't it nice to just sit close to someo
 
 Is Aubrey someone you care about? Yes, of course. Otherwise, why would you be sitting here with her?
 
-"So, am I someone you care about?", she asks. She has a wide smile, perhaps a bit too wide.
+"So, am I someone you care about?" she asks. She has a wide smile, perhaps a bit too wide.
 
 "Um... yes? I guess?"
 
@@ -265,7 +266,7 @@ But even so, you're friends, right? She cares about you, right? Right?
 
 "Um, sorry but..." You keep your hands on your lap. Suddenly the situation feels incredibly awkward.
 
-"It's okay!", Aubrey says. "I know you're not good with touching!"
+"It's okay!" Aubrey says. "I know you're not good with touching!"
 
 "Oh. Thanks." But you wonder how she knows that.
 

@@ -60,7 +60,7 @@ Right now there's nothing you would like more than to go home. Back where you ca
 
 But then Aubrey looks at you, and you melt away. You can't deal with this.
 
-"Hey, do you want to sit down?", she says.
+"Hey, do you want to sit down?" she says.
 
 You sit next to her. Why is she leaning against you. The probability that this *means* anything is approximately zero. But it's a pleasant feeling. Sort of. Maybe. Insofar that any feelings are pleasant.
 
@@ -145,7 +145,7 @@ Oh God. No. It's too embarrassing. How could you just talk about something like 
 
 @karen_talk
 
-"Hey [+ first_name : +], are you thinking about something?", Aubrey asks you out of the blue.
+"Hey [+ first_name : +], are you thinking about something?" Aubrey asks you out of the blue.
 
 - @huh: "Huh?"
 
@@ -187,7 +187,7 @@ on-arrival: aubrey_interact += 1
 
 It's awkward being here (as if anything's not), but being around Aubrey doesn't feel so bad. She's a nice person, unlike you. Why is she even here, though? Doesn't she have homework to do? She never seems busy, but she must have the same amound of homework as you, plus ECs and stuff so... maybe you should ask her?
 
-"Hey, do you want to sit down?", she says.
+"Hey, do you want to sit down?" she says.
 
 "Oh. Um, okay."
 

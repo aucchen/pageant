@@ -191,7 +191,7 @@ go-to: said_too_much
 
 "Haha. I've probably said too much." Stella takes out her laptop and opens it next to you. "We were talking about college apps, right? Do you need any help with that? God, it feels like so long ago."
 
-- @taking_interest: She seems to be taking an uncomfortable amount of interest in you...
+- @taking_interest: Why is she even doing this?
 - @could_use_help: You could use her help...
 - @what_help: Or is she just being nice and making a socially required offer not expecting you to actually accept?
 

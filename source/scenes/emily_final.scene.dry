@@ -4,6 +4,7 @@ new-page: yes
 view-if: emily = 8 and week_progress < 3 and stress < 15 and week = 11 and weekly_emily = 0
 on-arrival: week_progress += 1; stress += 1; emily += 1; pageant_interview += 1; pageant_appearance += 1
 tags: top, social
+achievement: emily_save
 
 It is late in the evening, and you are in your room alone. You are using the abominable internet platform known as "Facebook Messenger" in order to communicate with Emily. You've been talking with her more and more, almost becoming habituated to her presence online.
 
@@ -193,7 +194,7 @@ You watch the lights go by before the train plunges underground.
 
 Emily is in the train station, sitting alone on a bench with her head bowed. She wears her usual all-black outfit with a black overcoat, and carries a stuffed backpack.
 
-"Hey, um, Emily?", you manage to say, barely aloud. She somehow hears you.
+"Hey, um, Emily?" you manage to say, barely aloud. She somehow hears you.
 
 "Yeah. That's me. Sorry I made you come all the way out here." She lifts her head and glances at you. You sit down next to her, not too close, but not too far. She is silent for a while. When you glance at her face, you see a few streaks of tears. She covers her face with her hands.
 

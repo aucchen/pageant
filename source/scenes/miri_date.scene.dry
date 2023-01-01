@@ -3,6 +3,7 @@ subtitle: A date?
 new-page: yes
 view-if: (week = 11 or week = 9 or week = 8) and miri > 4 and weekly_miri = 0 and miri_date = 2
 on-arrival: miri_date = 3; growth_points += 1
+achievement: miri_date
 tags: top, miri
 
 When Miri invites you over to her house after school, it is one of the very few times when she is alone at home.
@@ -103,7 +104,7 @@ A lull. Miri seems to be not so interested in the topic.
 
 @future_1
 
-"What do you mean by 'future'?", you say. "Do you mean like, tomorrow future, or in a year future, or fifty years future? Or like, a million years?"
+"What do you mean by 'future'?" you say. "Do you mean like, tomorrow future, or in a year future, or fifty years future? Or like, a million years?"
 
 "Hmm, let's say, five years," she says. "Do you think the world will be a better or worse place than it is today?"
 
@@ -184,7 +185,7 @@ Okay. You take a deep breath and think of what to say. 'Things will be fine?' No
 
 @sorry
 
-"Um, sorry...?", you say, not knowing what else to say exactly.
+"Um, sorry...?" you say, not knowing what else to say exactly.
 
 "Yeah, I mean, it's not your fault. You don't have to say sorry."
 
@@ -290,7 +291,7 @@ Endorphins are being released, or something like that. That's why you feel pleas
 
 You have approximately an hour before her brother gets home, so you play a few rounds of Super Smash Bros Brawl. Miri wins every round; it's usually not even close.
 
-"You can't just keep on flying up and doing the brick thing!", she says. "It might work against AI and noobs but an actually good player can destroy you easily!"
+"You can't just keep on flying up and doing the brick thing!" she says. "It might work against AI and noobs but an actually good player can destroy you easily!"
 
 "Are you implying that you're an actually good player?"
 
@@ -303,7 +304,7 @@ Miri laughs, and punches you in the arm. "Maybe we can play more, once you're do
 @kiss
 view-if: miri_touch = 1
 
-"So, can we kiss?", Miri asks as you're about to leave.
+"So, can we kiss?" Miri asks as you're about to leave.
 
 Oh. Um.
 
@@ -411,7 +412,7 @@ She looks slightly sad as you leave. Her brother's car pulls up by the sidewalk.
 @no_kiss
 view-if: miri_touch = 0
 
-"So, was this fun?", Miri asks.
+"So, was this fun?" Miri asks.
 
 - @yeah_fun: "Yeah..."
 - @no_fun: Not really but you can't say that.
@@ -446,7 +447,7 @@ You can't just say that you didn't have fun. So what can you say? You think...
 
 You have approximately an hour before her brother gets home. Miri puts on some recent anime series. In all honesty it's kind of forgettable, and you let her know.
 
-"So this series sucks, right?", she says. "We should have watched something better."
+"So this series sucks, right?" she says. "We should have watched something better."
 
 "Yeah, but it was nice just... being here. With you."
 
@@ -483,7 +484,7 @@ It goes on and on. You listen to Miri's breathing.
 
 @do_something_fun
 
-"Hey, [+ first_name : +]?", Miri says suddenly.
+"Hey, [+ first_name : +]?" Miri says suddenly.
 
 "Yeah?"
 

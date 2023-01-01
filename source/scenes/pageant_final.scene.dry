@@ -285,7 +285,7 @@ You attempt a gentle smile, even in the face of their hard gazes. It works, mayb
 
 @interview_questions
 
-"Hello, [+ first_name : +]. How are you doing today?", opens one of the interviewers.
+"Hello, [+ first_name : +]. How are you doing today?" opens one of the interviewers.
 
 [? if pageant_interview >= 5 : "I'm doing well, thank you," you answer with the appropriate smile and eye contact. ?]
 
@@ -303,6 +303,7 @@ Now the real questions begin. "Tell me, [+ first_name : +], what made you decide
 @interview_total_fail
 view-if: pageant_interview <= 4
 on-arrival: pageant_total_failure = 1
+achievement: pageant_total_failure
 
 "Um..."
 
@@ -325,7 +326,7 @@ You can't do this. You can't do this. You can't do this. Why did you think that 
 
 Why did you think you could do this?
 
-"Would you like to go back?", one of the judges says in a moment of kindness. You nod.
+"Would you like to go back?" one of the judges says in a moment of kindness. You nod.
 
 - @over: It's over.
 
@@ -530,6 +531,7 @@ This section is also open to parents, but as before, you don't see them here. So
 @athletic_failure
 view-if: pageant_appearance <= 6 and try_on_ball_gown = 0
 on-arrival: pageant_total_failure = 1
+achievement: pageant_total_failure
 
 It starts in the dressing room. There's a full-length mirror, where you can see your entire body. And then it finally dawns upon you that you're *doing this*. You're in the pageant where you're supposed to show off your body to a bunch of strangers who judge you, and for what? For a pittance of a scholarship? For a slightly nonzero chance at improving your college apps, in the opinion of your parents who didn't even grow up in this country?
 
@@ -615,6 +617,7 @@ One of the judges stands up. He starts with all the requisite banalities, talkin
 @pageant_success
 view-if: pageant_score >= 50
 on-arrival: pageant_success = 1
+achievement: pageant_success
 
 The announcer makes a sweeping arm gesture before announcing. "[+ first_name : +] Zhao!"
 
@@ -657,6 +660,7 @@ The winner is a name you don't remember. You've lost. There is an announcement f
 @special_award_stem
 view-if: pageant_platform >= 2 and pageant_appearance >= 10 and pageant_interview >= 6
 on-arrival: special_award = 1
+achievement: special_award
 go-to: final
 
 "And [+ first_name : +] Zhao, for the award for STEM excellence!"

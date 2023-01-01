@@ -25,7 +25,7 @@ Your family is one of the last ones to arrive. Cars line the sides of the street
 
 You freeze for a moment. Is Emily here? It could be just a coincidence. You try to run the probability calculations; how many teenagers have that name in the area? It can't be that many; there are only tens of thousands of Chinese people around here. How likely are they to be acquainted with the Gao family? How many Chinese Christmas parties are going on in the Boston area at this time?
 
-"Hey, are you coming?", Aubrey says, breaking your attempt at a Fermi calculation.
+"Hey, are you coming?" Aubrey says, breaking your attempt at a Fermi calculation.
 
 "Um, yeah. Sure."
 
@@ -51,7 +51,7 @@ go-to: feeling_neutral
 
 Whatever. It doesn't matter anyway. The important thing is, Emily is here. Right now.
 
-It must have been a long moment, as Aubrey interrupts your reverie. "So, do you two know each other?", she asks.
+It must have been a long moment, as Aubrey interrupts your reverie. "So, do you two know each other?" she asks.
 
 "Kind of," Emily says, not turning her head.
 
@@ -168,7 +168,7 @@ on-arrival: come_out_christmas_party = 1
 
 The two of you reenter Aubrey's room. No one else is there. You take a peek at Emily's face. No expression, as usual.
 
-"What took you guys so long?", Aubrey asks.
+"What took you guys so long?" Aubrey asks.
 
 "Hey, um," you begin.
 
@@ -203,7 +203,7 @@ Emily sighs. "Sorry. This wasn't a good idea. Forget I said anything."
 
 @go_back_to_game
 
-"What took you guys so long?", Aubrey asks as the two of you return.
+"What took you guys so long?" Aubrey asks as the two of you return.
 
 Emily shrugs. "Not much. We just knew each other from before."
 
@@ -214,7 +214,7 @@ Emily shrugs. "Not much. We just knew each other from before."
 
 @continue_game_2
 
-One of the younger kids comes in. "Can you help us with the TV?", he says to Aubrey. Then to Emily, "You sit like a girl". Emily is sitting with her legs tucked to the side.
+One of the younger kids comes in. "Can you help us with the TV?" he says to Aubrey. Then to Emily, "You sit like a girl". Emily is sitting with her legs tucked to the side.
 
 "Thanks," Emily replies, her face blank as usual. You almost feel like snickering, and you can't help but grin a little. Hopefully no one notices.
 
@@ -230,7 +230,7 @@ view-if: stared_emily = 1
 
 It's close, but you managed to use Q and Z, which made the difference in the end.
 
-"Okay, the two of you are definitely staring at each other, right?", Aubrey says. "Is there something going on that I'm not aware of?"
+"Okay, the two of you are definitely staring at each other, right?" Aubrey says. "Is there something going on that I'm not aware of?"
 
 "No, nothing's going on," Emily says. "We've just known each other before. Our parents work together. That's all."
 
@@ -286,7 +286,7 @@ You close your eyes and clasp your hands, as usual, letting Wang Laoshi's words 
 
 @start_eating
 
-Now it is time to start eating. The younger children go first, your brother among them. Then it is the teenagers. Emily picks the meat away, taking only the vegetables and rice. "Are you a vegetarian?", Aubrey asks. "Trying, at least," Emily replies. "Wow," some adults say. *"How can a child be like this?"*
+Now it is time to start eating. The younger children go first, your brother among them. Then it is the teenagers. Emily picks the meat away, taking only the vegetables and rice. "Are you a vegetarian?" Aubrey asks. "Trying, at least," Emily replies. "Wow," some adults say. *"How can a child be like this?"*
 
 The three of you carry your paper plates and plastic sporks back up to Aubrey's room.
 
@@ -305,7 +305,7 @@ Emily, of course, stares at Aubrey for a few tense moments. "Fine. What do you w
 
 Emily visibly rolls her eyes once more and shakes her head.
 
-"Sorry! Is that a bad question?", Aubrey continues.
+"Sorry! Is that a bad question?" Aubrey continues.
 
 "Ugh. I mean, sorry, just forget I ever mentioned that. Can we go back to the game?"
 
@@ -344,7 +344,7 @@ Soon enough the three of you are finished eating. Everyone returns to the game o
 
 @anywhere_else_2
 
-"What do you mean by 'thing'?", you respond.
+"What do you mean by 'thing'?" you respond.
 
 "Forget it," Aubrey says. "Let's go back to scrabble."
 
@@ -414,7 +414,7 @@ You just make some sort of awkward shrug. Aubrey sighs.
 
 She sits down on the couch, and glances at you. You sit down next to her.
 
-"So, I'm really an idiot, huh?", she says, her expression in between a smile and a grimace.
+"So, I'm really an idiot, huh?" she says, her expression in between a smile and a grimace.
 
 "Um... no... you're not?"
 
@@ -571,7 +571,7 @@ Aubrey and Emily aren't talking very much. Or at all. You aren't either.
 
 Emily is silent. And so are you, for the moment.
 
-"So, uh, I guess I won?", she says.
+"So, uh, I guess I won?" she says.
 
 "Um, yeah, I guess you did."
 
@@ -593,7 +593,7 @@ You and Emily clean up the board game and cups and paper plates, and bring the t
 @ask_emily_sat
 go-to: aubrey_is_sorry
 
-"Um, what did you get?", you ask Emily, trying to seem as nonchalant as possible.
+"Um, what did you get?" you ask Emily, trying to seem as nonchalant as possible.
 
 "2190," she replies. "Yeah, it's not that good. What about you?"
 

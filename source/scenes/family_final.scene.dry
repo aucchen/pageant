@@ -5,6 +5,7 @@ view-if: week = 11 and week_progress < 3 and family >= 5 and weekly_family = 0 a
 on-arrival: week_progress += 1; family += 1; weekly_family = 1; stress += 1; loneliness += 1; stories_2_viewed += 1
 tags: top, family
 max-visits: 2
+achievement: stories_viewed
 
 At dinner, in between bites of stir-fried tofu and steamed rice, your parents tell you stories of the past. They enjoy reminiscing about their old lives, all the places and things that your brother and you have not and will not experience. They like to remind you of all that they went through so that they are able to provide you with a good life in America.
 
